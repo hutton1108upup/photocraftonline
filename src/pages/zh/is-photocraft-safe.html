@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<script src="/scripts/theme.js">
+</script>
+<link as="font" crossorigin="" href="/assets/fonts/38df7484fe560b25-s.p.0_h8~hcb-m6kp.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="/assets/fonts/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="/assets/fonts/f5031e7b18bdfbb3-s.p.17530ebvtj~5g.woff2" rel="preload" type="font/woff2"/>
+<link data-precedence="next" href="/assets/css/15sc_v~et~i94.css" rel="stylesheet"/>
+<link data-precedence="next" href="/assets/css/0x4i1d-5t.ch3.css" rel="stylesheet"/>
+<title>PhotoCraft 安全吗？下载来源、文件隐私与核验方法</title>
+<meta content="核对 PhotoCraft 下载来源与 SHA256 校验值，了解本站浏览器文件处理、隐私边界及实测范围，再决定是否用于自己的文件。" name="description"/>
+<meta content="PhotoCraft 安全吗？下载来源、文件隐私与核验方法" property="og:title"/>
+<meta content="核对 PhotoCraft 下载来源与 SHA256 校验值，了解本站浏览器文件处理、隐私边界及实测范围，再决定是否用于自己的文件。" property="og:description"/>
+<meta content="PhotoCraft Online" property="og:site_name"/>
+<meta content="https://www.photocraftonline.com/og-image.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="PhotoCraft Online" property="og:image:alt"/>
+<meta content="website" property="og:type"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="PhotoCraft 安全吗？下载来源、文件隐私与核验方法" name="twitter:title"/>
+<meta content="核对 PhotoCraft 下载来源与 SHA256 校验值，了解本站浏览器文件处理、隐私边界及实测范围，再决定是否用于自己的文件。" name="twitter:description"/>
+<meta content="https://www.photocraftonline.com/og-image.png" name="twitter:image"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/favicon.ico" rel="icon" sizes="32x32"/>
+<link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="noindex, nofollow" name="robots"/>
+<link href="/styles/custom.css" rel="stylesheet"/>
+<link rel="canonical" href="https://freephotocraft.online/zh/is-photocraft-safe"/>
+<link rel="alternate" hreflang="en" href="https://freephotocraft.online/is-photocraft-safe"/>
+<link rel="alternate" hreflang="zh" href="https://freephotocraft.online/zh/is-photocraft-safe"/>
+<link rel="alternate" hreflang="x-default" href="https://freephotocraft.online/is-photocraft-safe"/>
+</head>
+<body class="inter_b2991b2-module__9mH_6q__variable libre_baskerville_17390e78-module__pDOJMW__variable font-sans antialiased" data-locale="zh" data-page="is-photocraft-safe">
+<div class="bg-background text-foreground flex min-h-screen flex-col">
+<!-- @include zh/header -->
+<main class="guide-page">
+<header class="guide-intro"><p class="guide-kicker">免费 PHOTOCRAFT · 指南与资源</p><h1>PhotoCraft 安全吗？下载来源、文件隐私与核验方法</h1><p>先确认你使用的是哪个版本、哪个网站。开源提供了可检查的源代码，但不能保证每个构建、下载文件和文档处理流程都安全。</p></header>
+<div class="guide-body"><aside class="guide-note">资料核查：2026 年 10 月 10 日。下文浏览器观察来自本站 WebAssembly 构建 <code>72921900975c7e6f</code> 的本地预览，仅覆盖指定流程；不是独立安全审计或桌面安装包的恶意软件扫描。</aside><section id="scope"><h2>先区分上游软件、本站在线版与其他同名网站</h2>
+<p>上游桌面应用、FreePhotoCraft.online 托管的浏览器编辑器、其他使用相同名称的网站或下载文件，需要分别核对。一个版本的结论不能直接套用到其他版本。</p><p><a href="https://github.com/storytold/photocraft" target="_blank" rel="noopener noreferrer">storytold/photocraft</a> 是项目链接的上游源码仓库。本站独立于 ArtCraft 和 PhotoCraft 开发团队；编辑器文件存放在本站，不会自动更新为最新桌面发布版。<a href="/zh/github">源码与许可证说明</a> · <a href="/zh/about">关于本站</a></p>
+</section><section id="downloads"><h2>安装前怎样核对 PhotoCraft 下载文件</h2>
+<ol><li>从<a href="https://github.com/storytold/photocraft/releases" target="_blank" rel="noopener noreferrer">上游 GitHub Releases</a>选择发布版本及符合系统、架构的文件，避免不相关的镜像下载。</li><li>如果该发布提供校验文件，从<strong>同一个发布版本</strong>下载安装包及 <code>SHA256SUMS.txt</code>，在校验文件中找到完全相同的文件名。</li><li>Windows 中右键点击下载文件，选择<strong>复制文件地址 / Copy as path</strong>；较旧系统可能需要按住 Shift 再右键。打开 PowerShell，把下方占位文字换成该完整路径，保留路径外的一层引号（复制结果已带引号时不要重复添加），然后执行。</li><li>把输出的 SHA256 值与校验文件中对应条目比较，字母大小写不影响结果。不一致时停止安装，重新核对版本、文件名和下载。</li></ol>
+<pre><code>Get-FileHash -Algorithm SHA256 -LiteralPath 'PASTE_DOWNLOADED_FILE_PATH_HERE'</code></pre>
+<p>哈希一致说明文件与发布的校验值一致，不等于软件没有风险。系统显示发布者或安全警告时，先核对具体提示，不要关闭保护来完成安装。本站没有逐个平台验证签名、公证和安装结果。<a href="/zh/download">桌面下载指南</a></p>
+</section><section id="files"><h2>本站浏览器编辑器会上传图片吗？</h2>
+<p>在桌面 Chrome 本地预览中，我们打开 640 × 400 PNG、复制图层、画一条线、保存两层 PSD、重新打开并导出 PNG。该流程没有观察到图片上传、非 GET 请求或外部主机请求，导出像素保留了编辑结果。<a href="/zh/tutorial#save-layers">跟随教程重复这套样例</a>。</p><p>本站代码没有图片上传接口。这些观察只覆盖指定构建和操作，不能说明所有工具、其他网站、未来更新或桌面应用的行为。</p><p>打开网站仍会向托管服务发送页面和资源请求，以及提供这些内容所需的普通请求信息；主题偏好可能使用浏览器存储。本站当前没有配置 Google Analytics、Clarity、广告标签或会话回放。外部社区与下载链接遵循各自服务的规则。<a href="/zh/privacy-policy">完整隐私说明</a>。</p>
+</section><section id="documents"><h2>保留原稿，并重新打开输出检查</h2>
+<p>重要文档先使用副本。成功打开不代表字体、蒙版、智能对象、颜色配置或全部图层效果都能在保存后保留。本次简单 PSD 测试只确认两层像素图层与笔刷修改，不是 Photoshop 兼容性认证。</p><p>关闭编辑器前先下载、重新打开并检查结果。浏览器标签页和偏好存储不能替代备份。未知来源的文档也可能导致解析错误或资源耗尽；开源软件同样需要更新和谨慎处理文件。</p>
+</section><section id="report"><h2>安全问题应向哪里反馈？</h2>
+<p>上游引擎漏洞请按项目<a href="https://github.com/storytold/photocraft/blob/main/SECURITY.md" target="_blank" rel="noopener noreferrer">安全政策</a>处理，其中说明了反馈流程和当前限制。不要把私人文档、凭据或可利用的样例放进公开问题。</p><p>普通编辑器故障可通过<a href="https://github.com/storytold/photocraft/issues" target="_blank" rel="noopener noreferrer">上游 Issues</a>提供构建、浏览器和不含敏感信息的复现步骤。该追踪器属于上游项目，不是本站的私密客服渠道。</p>
+</section><section id="faq"><h2>PhotoCraft 安全常见问题</h2>
+<h3>开源就能保证 PhotoCraft 安全吗？</h3><p>不能。开源允许按许可证检查和复用源码；构建来源、依赖、文件处理和更新仍需核对。</p><h3>FreePhotoCraft.online 是官方站吗？</h3><p>不是。本站独立托管浏览器构建并提供指南，请另行核对上游仓库。</p><h3>可以处理客户机密文件吗？</h3><p>样例测试不能认证机密工作流。使用敏感文件前，应核对组织要求，以及具体构建和操作。</p><p>判断 PhotoCraft 是否适合你的安全要求时，先核对来源、保留备份并检查输出。<a href="/zh/editor">尝试练习流程</a> · <a href="/zh/photocraft-alternatives">比较替代工具</a></p>
+</section></div>
+</main>
+<!-- @include zh/footer -->
+</div>
+<script src="/scripts/site.js" defer></script>
+</body>
+</html>

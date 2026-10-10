@@ -44,10 +44,13 @@
 <h1>PhotoCraft 与 Photoshop：免费编辑器适合你吗？</h1>
 <p>按任务选择工具，价格只是其中一个因素。本页区分本站浏览器版本的实测结果与上游项目介绍的功能。</p>
 </header>
-<div class="guide-body"><aside class="guide-note">核查时间：2026 年 10 月 10 日；本站浏览器构建：<code>72921900975c7e6f</code>。已实测 PNG 导入、复制图层、笔刷修改和 PNG 导出；未进行 Photoshop 跑分或 PSD 兼容性对照测试。</aside>
+<div class="guide-body"><aside class="guide-note">核查时间：2026 年 10 月 10 日；本站浏览器构建：<code>72921900975c7e6f</code>。已实测 PNG 导入、复制图层、笔刷修改、两层 PSD 保存与重开及 PNG 导出；未在 Photoshop 中执行对照或跑分。</aside>
 <section id="comparison">
 <h2>快速对比</h2>
-<div class="guide-table-wrap"><table><caption>使用方式与工作流比较</caption><thead><tr><th>项目</th><th>本站 PhotoCraft</th><th>Photoshop</th></tr></thead><tbody><tr><th>开始使用</th><td>免费在线编辑；实测 PNG 流程没有付款步骤。</td><td>Adobe 提供付费方案和试用；以当前地区条款为准。</td></tr><tr><th>账号与安装</th><td>本站在线版无需账号和桌面安装。</td><td>使用 Adobe 账号和相应方案；提供桌面及 Web 版本。</td></tr><tr><th>图层与 PNG</th><td>本站已实测复制图层、笔刷修改和 PNG 导出。</td><td>Adobe 文档提供图层编辑与进阶图片工作流。</td></tr><tr><th>PSD 工作流</th><td>上游介绍了 PSD 支持；本站未验证你的具体 PSD 文档。</td><td>Photoshop 原生文档工作流；仍需核对字体、插件和链接素材。</td></tr><tr><th>支持渠道</th><td>社区问题追踪与本站基础教程。</td><td>Adobe 官方文档和支持渠道。</td></tr></tbody></table></div>
+<p class="guide-table-hint">表格可左右滚动，查看全部列；键盘用户可选中表格区域后使用方向键。</p><div class="guide-table-wrap" tabindex="0" role="region" aria-label="可横向滚动的比较表格"><table><caption>使用方式与工作流比较</caption><thead><tr><th>项目</th><th>本站 PhotoCraft</th><th>Photoshop</th></tr></thead><tbody><tr><th>开始使用</th><td>免费在线编辑；实测 PNG 流程没有付款步骤。</td><td>Adobe 提供付费方案和试用；以当前地区条款为准。</td></tr><tr><th>账号与安装</th><td>本站在线版无需账号和桌面安装。</td><td>使用 Adobe 账号和相应方案；提供桌面及 Web 版本。</td></tr><tr><th>图层与 PNG</th><td>本站已实测复制图层、笔刷修改和 PNG 导出。</td><td>Adobe 文档提供图层编辑与进阶图片工作流。</td></tr><tr><th>PSD 工作流</th><td>简单两层像素 PSD 保存与重开已测试；复杂 PSD 和 Photoshop 往返尚未验证。</td><td>Photoshop 原生文档工作流；仍需核对字体、插件和链接素材。</td></tr><tr><th>支持渠道</th><td>社区问题追踪与本站基础教程。</td><td>Adobe 官方文档和支持渠道。</td></tr></tbody></table></div>
+</section>
+<section id="tested-workflow"><h2>本站 PhotoCraft 的实际测试结果</h2>
+<p>在桌面 Chrome 本地预览中使用本站 640 × 400 练习 PNG。复制 Background 图层并画一条黑线，保存 PSD、重新打开，再导出 PNG。</p><p class="guide-table-hint">表格可左右滚动，查看全部列；键盘用户可选中表格区域后使用方向键。</p><div class="guide-table-wrap" tabindex="0" role="region" aria-label="可横向滚动的比较表格"><table><caption>样例结果及结论边界</caption><thead><tr><th>检查</th><th>结果</th><th>能够说明什么</th></tr></thead><tbody><tr><th>PNG 导入和尺寸</th><td>通过；640 × 400</td><td>这张 PNG 在本构建中可打开。</td></tr><tr><th>图层编辑</th><td>复制图层后可画笔修改</td><td>基本像素图层流程可完成。</td></tr><tr><th>保存并重开 PSD</th><td>两个图层名称和笔刷修改保留</td><td>此简单样例可在 PhotoCraft 内继续编辑。</td></tr><tr><th>重开后导出 PNG</th><td>640 × 400；测试像素从 RGB(22, 78, 71) 变为 RGB(0, 0, 0)</td><td>修改保留在合成图中。</td></tr><tr><th>复杂 PSD、文字与透明背景</th><td>本次未测试</td><td>不能作完整兼容性结论。</td></tr><tr><th>Photoshop 同文件对照与性能</th><td>未执行</td><td>不提供速度排名或功能一致性认证。</td></tr></tbody></table></div><p><a href="/zh/tutorial#save-layers">按相同步骤重复样例</a>。浏览器观察也见<a href="/zh/is-photocraft-safe#files">文件隐私说明</a>。</p>
 </section>
 <section id="cost">
 <h2>免费使用与付费方案</h2>
@@ -66,6 +69,12 @@
 <li>有交付期限、印刷生产、复杂 PSD 协作或插件依赖时，更换工具前请先验证完整流程。</li>
 </ul>
 <p><a class="guide-button" href="/zh/editor">打开免费编辑器</a> · <a href="/zh/tutorial">新手教程</a> · <a href="/zh/download">桌面下载</a></p>
+</section>
+<section id="migration-check"><h2>更换编辑器前，用自己的文件怎样对照？</h2>
+<ol><li>复制一个代表性文档，记录尺寸、字体、图层、蒙版、透明区域及依赖的插件。</li><li>在准备使用的两个版本中分别打开副本，完成同一修改，分别保存可编辑文档并导出 PNG。</li><li>重新打开保存的文档，核对图层结构和可编辑性；并排查看 PNG 的文字换行、边缘、颜色和透明区域。</li><li>把不同之处记录为任务限制；无法保留关键内容时继续使用原流程，或考察<a href="/zh/photocraft-alternatives">其他替代工具</a>。</li></ol><p>这是供你执行的验证方法，不是本站已经完成的 Photoshop 测试。</p>
+</section>
+<section id="faq"><h2>PhotoCraft 与 Photoshop 对比常见问题</h2>
+<h3>PhotoCraft 能完全替代 Photoshop 吗？</h3><p>本次测试不能支持这一结论。简单图层练习可以完成，专业文件与交付流程需另行验证。</p><h3>PSD 测试通过意味着复杂文档都兼容吗？</h3><p>不意味着。这里只验证两层像素样例在 PhotoCraft 内保存和重开，没有验证 Photoshop 或复杂效果。</p><h3>应选浏览器版还是桌面版？</h3><p>浏览器版便于开始；需要桌面环境时可考察上游发行版，但功能和要求可能不同。<a href="/zh/download">桌面下载</a>。</p><p>对比 PhotoCraft 与 Photoshop 时，先用实际任务与重开结果作决定。<a href="/zh/tutorial">开始练习</a>。</p>
 </section>
 <section id="sources">
 <h2>来源与核查范围</h2>
