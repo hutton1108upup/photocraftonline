@@ -13,7 +13,11 @@ GitHub Actions 负责质量检查；Cloudflare 从检查通过的生产构建发
 
 本项目根目录执行 `npm.cmd run build:production`、`npm.cmd run check:production`。
 随后在已确认的 Cloudflare 账户选择 `Create application → Upload your static files`，
-上传 `dist` 目录，项目命名为 `freephotocraft-online`，检查资源列表后点击 `Deploy`。
+上传 `dist` 目录，或上传仅包含 `dist` 内部文件的 ZIP（根目录必须直接有 `index.html`，
+不能再包一层 `dist`）。确认界面展开为 71 个文件，项目命名为 `freephotocraft-online`。
+在 `Advanced settings` 设置 Assets directory 为 `/`、HTML handling 为
+`drop-trailing-slash`、Not found handling 为 `404-page`，再点击 `Deploy`。
+后续更新进入此 Worker，点击 `New deployment` 上传新的生产包。
 
 以下 Git 构建参数保留为将来可选方案，只有另行授权专用构建凭据时才使用：
 
@@ -55,6 +59,8 @@ Cloudflare 的 Git 集成、Worker 与域名必须属于用户确认的同一个
 - `sitemap.xml` 仅包含可索引的页面；本地预览始终禁止索引。
 - `release.json` 记录构建时的 Git revision，便于核对部署的具体提交。
 - 原版 WASM 保持 24,710,609 字节，小于 Cloudflare 单文件 25 MiB 限制。
+- 编辑器入口通过 `<base href="/editor-app/">` 固定资源目录，避免无尾斜杠地址
+  `/editor-app` 使原版相对 JS/WASM 路径指向网站根目录。
 - 图片按真实 WebP 扩展名提供，WASM 以 `.wasm` 扩展名保证正确 MIME。
 
 部署工具使用 Cloudflare 官方文档：
