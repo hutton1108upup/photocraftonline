@@ -8,7 +8,14 @@
 ## 构建设置
 
 这是静态网站及 WebAssembly，不是需要 OpenNext 适配器的 Next.js 应用。
-Cloudflare Workers Builds 使用：
+本次用户选择 **直接上传静态文件，不新建 Token**，不连接 GitHub 自动部署。
+GitHub Actions 负责质量检查；Cloudflare 从检查通过的生产构建发布。
+
+本项目根目录执行 `npm.cmd run build:production`、`npm.cmd run check:production`。
+随后在已确认的 Cloudflare 账户选择 `Create application → Upload your static files`，
+上传 `dist` 目录，项目命名为 `freephotocraft-online`，检查资源列表后点击 `Deploy`。
+
+以下 Git 构建参数保留为将来可选方案，只有另行授权专用构建凭据时才使用：
 
 | 设置 | 值 |
 | --- | --- |
