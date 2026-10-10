@@ -27,10 +27,10 @@
       }
     },
     "hero": {
-      "headline": "PhotoCraft online — layers & PSD in your browser",
-      "subheadline": "Free, open-source image editor with WebGPU acceleration. Professional tools, zero install.",
-      "cta": "Launch Editor",
-      "secondary": "Download Desktop",
+      "headline": "Free PhotoCraft Online Editor",
+      "subheadline": "Open images, work with layers, and export your edits. Start in your browser, or get the free desktop app and follow our guides.",
+      "cta": "Open Free Editor",
+      "secondary": "Download PhotoCraft Free",
       "github_cta": "View on GitHub",
       "lineage": "Based on the open-source project at github.com/storytold/photocraft. PhotoCraft Online is an independent site — not affiliated with ArtCraft.",
       "chips": {
@@ -138,7 +138,7 @@
     "cta": {
       "headline": "Ready to edit?",
       "subheadline": "Free, open-source — no signup required.",
-      "button": "Launch Editor"
+      "button": "Open Free Editor"
     },
     "footer": {
       "tagline": "Free online access to the open-source PhotoCraft editor.",

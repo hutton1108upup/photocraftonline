@@ -12,7 +12,7 @@ await mkdir(output, { recursive: true });
 await cp(path.join(root, 'public'), output, { recursive: true });
 await cp(path.join(root, 'src/styles'), path.join(output, 'styles'), { recursive: true });
 await mkdir(path.join(output, 'scripts'), { recursive: true });
-for (const script of ['theme.js', 'site.js']) await cp(path.join(root, 'src/scripts', script), path.join(output, 'scripts', script));
+for (const script of ['theme.js', 'site.js', 'editor-status.js']) await cp(path.join(root, 'src/scripts', script), path.join(output, 'scripts', script));
 for (const page of manifest.routes) {
   const directory = path.join(output, page.route.slice(1));
   await mkdir(directory, { recursive: true });

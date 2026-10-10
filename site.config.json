@@ -1,5 +1,13 @@
 {
   "origin": "https://freephotocraft.online",
   "workerName": "freephotocraft-online",
-  "indexablePages": ["index", "download", "github", "about"]
+  "indexablePages": [
+    "index",
+    "download",
+    "github",
+    "about",
+    "tutorial",
+    "photocraft-vs-photoshop",
+    "help/photocraft-not-loading"
+  ]
 }

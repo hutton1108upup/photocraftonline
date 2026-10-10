@@ -7,42 +7,42 @@
       "route": "/",
       "locale": "en",
       "page": "index",
-      "title": "PhotoCraft Online — Free Open-Source Image Editor in Your Browser",
+      "title": "Free PhotoCraft Online – Open-Source Image Editor",
       "source_sha256": "0387b76fe9891f420ebd357653db5d70af99402dee3799de6ccbd0f2117f1221"
     },
     {
       "route": "/zh",
       "locale": "zh",
       "page": "index",
-      "title": "PhotoCraft Online — Free Open-Source Image Editor in Your Browser",
+      "title": "Free PhotoCraft Online – Open-Source Image Editor",
       "source_sha256": "952cfd98f65ddd41531b1035b535efedcb2bb31cae3dd68089f404546c41fd99"
     },
     {
       "route": "/editor",
       "locale": "en",
       "page": "editor",
-      "title": "Editor | PhotoCraft Online",
+      "title": "PhotoCraft Editor – Edit Images Online for Free",
       "source_sha256": "c52b057fdb9103187b28f7310cbc8ba4ada1e6347755ef847e3b4459b3ecf1ca"
     },
     {
       "route": "/zh/editor",
       "locale": "zh",
       "page": "editor",
-      "title": "Editor | PhotoCraft Online",
+      "title": "PhotoCraft 编辑器 – 免费在线编辑图片",
       "source_sha256": "f75941c0c635553dafb07d548c871d833e3d0324695af2a705cbf18fe7b8c964"
     },
     {
       "route": "/download",
       "locale": "en",
       "page": "download",
-      "title": "Download PhotoCraft | PhotoCraft Online",
+      "title": "PhotoCraft Free Download for Windows, Mac & Linux",
       "source_sha256": "5763a9958cfeb9b0e299f557ceaaa00b03deae4f016af15f63fb0e97d6b009dd"
     },
     {
       "route": "/zh/download",
       "locale": "zh",
       "page": "download",
-      "title": "Download PhotoCraft | PhotoCraft Online",
+      "title": "PhotoCraft 免费下载 – Windows、Mac 与 Linux",
       "source_sha256": "b0f50af1c5e362ca3032f1a20cf87d6956eb80bd6024551c41938bfeb4dffef1"
     },
     {
@@ -63,42 +63,42 @@
       "route": "/about",
       "locale": "en",
       "page": "about",
-      "title": "About PhotoCraft Online | PhotoCraft Online",
+      "title": "About FreePhotoCraft.online – Project & Site Information",
       "source_sha256": "0a4eaf5855a26cc63f8f9c77dc0dcd804d5718e3c22d6a0955dca1fde825ee43"
     },
     {
       "route": "/zh/about",
       "locale": "zh",
       "page": "about",
-      "title": "About PhotoCraft Online | PhotoCraft Online",
+      "title": "关于 FreePhotoCraft.online – 项目与网站说明",
       "source_sha256": "bfd3f3f4f3200e78082d6437a6ac7ebc815bb9aca0ebffeeb7e287493733d136"
     },
     {
       "route": "/privacy-policy",
       "locale": "en",
       "page": "privacy-policy",
-      "title": "Privacy Policy | PhotoCraft Online",
+      "title": "Privacy Policy – FreePhotoCraft.online",
       "source_sha256": "14f5367a4933efcbde2fc830db9c41c3da94d95f37b86765f72f7a4b9b53e111"
     },
     {
       "route": "/zh/privacy-policy",
       "locale": "zh",
       "page": "privacy-policy",
-      "title": "隐私政策 | PhotoCraft Online",
+      "title": "隐私政策 – FreePhotoCraft.online",
       "source_sha256": "0dfe50db937e15b62cd157229f98f0297bbf5fe910e164ee259a68b28dee15de"
     },
     {
       "route": "/terms-of-service",
       "locale": "en",
       "page": "terms-of-service",
-      "title": "Terms of Service | PhotoCraft Online",
+      "title": "Terms of Use – FreePhotoCraft.online",
       "source_sha256": "ea43e401ccfa79110d0d438d32a200b7e1b138ffb58b2d90b0925b0acd6c6142"
     },
     {
       "route": "/zh/terms-of-service",
       "locale": "zh",
       "page": "terms-of-service",
-      "title": "服务条款 | PhotoCraft Online",
+      "title": "使用条款 – FreePhotoCraft.online",
       "source_sha256": "20c85bcb9b6cb9fcc8b3bd9e72e077c5b05086d538d1dfb7e22caca6be2c84a7"
     },
     {
@@ -142,6 +142,42 @@
       "page": "blog",
       "title": "博客 | PhotoCraft Online",
       "source_sha256": "d8b2703609007d63f52283105936a06d2959eb4f5e64d7de0b57a831e0d60dba"
+    },
+    {
+      "route": "/tutorial",
+      "locale": "en",
+      "page": "tutorial",
+      "title": "PhotoCraft Tutorial – How to Use the Free Editor"
+    },
+    {
+      "route": "/photocraft-vs-photoshop",
+      "locale": "en",
+      "page": "photocraft-vs-photoshop",
+      "title": "PhotoCraft vs Photoshop – Free Editor or Paid Workflow?"
+    },
+    {
+      "route": "/help/photocraft-not-loading",
+      "locale": "en",
+      "page": "help/photocraft-not-loading",
+      "title": "PhotoCraft Not Loading? Browser Checks and Fixes"
+    },
+    {
+      "route": "/zh/tutorial",
+      "locale": "zh",
+      "page": "tutorial",
+      "title": "PhotoCraft 新手教程 – 免费在线编辑与导出图片"
+    },
+    {
+      "route": "/zh/photocraft-vs-photoshop",
+      "locale": "zh",
+      "page": "photocraft-vs-photoshop",
+      "title": "PhotoCraft 与 Photoshop 对比 – 免费编辑器是否适合你？"
+    },
+    {
+      "route": "/zh/help/photocraft-not-loading",
+      "locale": "zh",
+      "page": "help/photocraft-not-loading",
+      "title": "PhotoCraft 无法加载？浏览器检查与排查步骤"
     }
   ],
   "assets": [

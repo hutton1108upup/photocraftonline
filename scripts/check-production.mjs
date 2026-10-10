@@ -24,6 +24,10 @@ for (const page of manifest.routes) {
   assert.doesNotMatch(html, /https:\/\/www\.photocraftonline\.com|\/scripts\/reload\.js|__next_f|googletagmanager\.com/);
   assert.ok(html.includes(`href="${site.origin}${page.route === '/' ? '' : page.route}"`), `Wrong canonical: ${page.route}`);
   assert.ok(html.includes('id="site-copy"'));
+  assert.ok(html.includes(`<title>${page.title.replaceAll('&', '&amp;')}</title>`), `Title does not match route manifest: ${page.route}`);
+  for (const block of html.matchAll(/<script\b[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)) {
+    try { JSON.parse(block[1]); } catch (error) { assert.fail(`Invalid structured data on ${page.route}: ${error.message}`); }
+  }
   if (site.indexablePages.includes(page.page)) {
     assert.ok(html.includes('content="index, follow"'), `Noindex on acquisition page: ${page.route}`);
   } else assert.ok(html.includes('noindex, nofollow'), `Thin/private page indexable: ${page.route}`);

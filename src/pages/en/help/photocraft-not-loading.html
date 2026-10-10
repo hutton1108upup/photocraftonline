@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<script src="/scripts/theme.js">
+</script>
+<link as="font" crossorigin="" href="/assets/fonts/38df7484fe560b25-s.p.0_h8~hcb-m6kp.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="/assets/fonts/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="/assets/fonts/f5031e7b18bdfbb3-s.p.17530ebvtj~5g.woff2" rel="preload" type="font/woff2"/>
+<link as="image" imagesizes="(max-width: 896px) 100vw, 896px" imagesrcset="/assets/images/hero-editor-640-q75.webp 640w, /assets/images/hero-editor-750-q75.webp 750w, /assets/images/hero-editor-828-q75.webp 828w, /assets/images/hero-editor-1080-q75.webp 1080w, /assets/images/hero-editor-1200-q75.webp 1200w, /assets/images/hero-editor-1920-q75.webp 1920w, /assets/images/hero-editor-2048-q75.webp 2048w, /assets/images/hero-editor-3840-q75.webp 3840w" rel="preload"/>
+<link data-precedence="next" href="/assets/css/15sc_v~et~i94.css" rel="stylesheet"/>
+<link data-precedence="next" href="/assets/css/0x4i1d-5t.ch3.css" rel="stylesheet"/>
+<title>PhotoCraft Not Loading? Browser Checks and Fixes</title>
+<meta content="Troubleshoot PhotoCraft loading with browser graphics checks, retry steps and file-opening guidance. Find a desktop fallback and the upstream issue tracker." name="description"/>
+<meta content="PhotoCraft Not Loading? Browser Checks and Fixes" property="og:title"/>
+<meta content="Troubleshoot PhotoCraft loading with browser graphics checks, retry steps and file-opening guidance. Find a desktop fallback and the upstream issue tracker." property="og:description"/>
+<meta content="PhotoCraft Online" property="og:site_name"/>
+<meta content="https://www.photocraftonline.com/og-image.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="PhotoCraft Online" property="og:image:alt"/>
+<meta content="website" property="og:type"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="PhotoCraft Not Loading? Browser Checks and Fixes" name="twitter:title"/>
+<meta content="Troubleshoot PhotoCraft loading with browser graphics checks, retry steps and file-opening guidance. Find a desktop fallback and the upstream issue tracker." name="twitter:description"/>
+<meta content="https://www.photocraftonline.com/og-image.png" name="twitter:image"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/favicon.ico" rel="icon" sizes="32x32"/>
+<link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="noindex, nofollow" name="robots"/>
+<link href="/styles/custom.css" rel="stylesheet"/>
+<link rel="canonical" href="https://freephotocraft.online/help/photocraft-not-loading"/>
+<link rel="alternate" hreflang="en" href="https://freephotocraft.online/help/photocraft-not-loading"/>
+<link rel="alternate" hreflang="zh" href="https://freephotocraft.online/zh/help/photocraft-not-loading"/>
+<link rel="alternate" hreflang="x-default" href="https://freephotocraft.online/help/photocraft-not-loading"/>
+</head>
+<body class="inter_b2991b2-module__9mH_6q__variable libre_baskerville_17390e78-module__pDOJMW__variable font-sans antialiased" data-locale="en" data-page="help/photocraft-not-loading">
+<div class="bg-background text-foreground flex min-h-screen flex-col">
+<!-- @include en/header -->
+<main class="guide-page">
+<header class="guide-intro"><p class="guide-kicker">FREE PHOTOCRAFT · GUIDES & RESOURCES</p>
+<h1>PhotoCraft Not Loading or Working Online?</h1>
+<p>Start with the symptom you can see. These checks help identify the cause; they cannot guarantee that every browser or file will work.</p>
+</header>
+<div class="guide-body"><aside class="guide-note">Tested October 10, 2026: the PNG tutorial succeeded in desktop Chrome. We also tested the site’s missing-WebGPU message and a blocked WebAssembly request. Mac, Linux and mobile hardware were not tested.</aside>
+<section id="graphics">
+<h2>1. Check Your Browser and Graphics Support</h2>
+<ol><li>Use an updated desktop Chrome or Edge and open the editor again. A phone browser may not provide the same controls or GPU support.</li>
+<li>In Chrome, open Settings → System and check “Use graphics acceleration when available.” In Edge, search Settings for “graphics acceleration.” If you change it, restart the browser.</li>
+<li>If this site says WebGPU is unavailable, try another supported desktop browser or the desktop app. Do not disable browser security or use experimental flags as a general fix.</li>
+</ol>
+<p><a class="guide-button" href="/editor">Open Free Editor</a> · <a href="/download">Desktop downloads</a></p>
+</section>
+<section id="loading">
+<h2>2. When the Editor Stops Loading</h2>
+<ol><li>Allow time for the first download. The current WebAssembly file is about 25 MB; network speed affects startup.</li>
+<li>If a retry prompt appears before you have opened a document, choose Retry editor. Reloading discards any unsaved editor work.</li>
+<li>Open Developer Tools → Network, reload, and look for a failed <code>.wasm</code> or <code>photocraft-web-…js</code> request. An HTTP error or blocked request is a loading issue, not evidence that your image is corrupt.</li>
+<li>If the file requests succeed but startup still stalls, try a fresh browser tab and a different supported browser. Record the visible error before reporting it.</li>
+</ol>
+</section>
+<section id="files">
+<h2>3. When a File Will Not Open</h2>
+<p>First open the small PNG used in our tutorial. If it works, test a copy of your original file. A complex PSD or large image can fail for different reasons than editor startup.</p>
+<p><a href="/tutorial">Beginner tutorial</a></p>
+<p>Keep backups, reduce file size where practical, and avoid uploading confidential documents to a public issue tracker. We have not validated every supported format or every PSD feature.</p>
+</section>
+<section id="desktop">
+<h2>4. Try the Desktop Version</h2>
+<p>If browser graphics support is the blocker, the native app uses a different environment. Choose the correct OS and architecture from the official release. A desktop download is an alternative to test, not a guarantee that a file problem will disappear.</p>
+<p><a href="/download">Desktop downloads</a> · <a href="https://github.com/storytold/photocraft/releases/tag/v0.6.0" target="_blank" rel="noopener noreferrer">GitHub Releases · v0.6.0</a></p>
+</section>
+<section id="report">
+<h2>5. Report a PhotoCraft Problem</h2>
+<p>For an editor-engine problem, search existing issues first, then include your OS, browser version, hosted build ID, steps to reproduce and a screenshot without private content. This site is independent of the upstream team.</p>
+<p><a href="https://github.com/storytold/photocraft/issues" target="_blank" rel="noopener noreferrer">Open the official issue tracker</a></p>
+</section>
+</div>
+</main>
+<!-- @include en/footer -->
+</div>
+<script src="/scripts/site.js" defer></script>
+</body>
+</html>

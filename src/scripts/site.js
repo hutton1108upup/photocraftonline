@@ -4,7 +4,7 @@ const locale = document.body.dataset.locale;
 
 // The editor's original 32px site toolbar hides after three seconds so it
 // doesn't cover the canvas application's File/Edit menu.
-if (document.body.dataset.page === 'editor') {
+if (document.body.dataset.page === 'editor' && !document.getElementById('photocraft-frame')) {
   const toolbar = document.querySelector('header');
   let timer;
   const scheduleHide = () => {
