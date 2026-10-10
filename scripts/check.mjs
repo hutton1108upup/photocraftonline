@@ -25,7 +25,7 @@ for (const page of manifest.routes) {
   assert.equal(response.headers.get('x-photocraft-local'), '1', 'Wrong app on preview port');
   assert.match(response.headers.get('content-type'), /text\/html/);
   const html = await response.text();
-  assert.ok(html.includes(`<title>${page.title}</title>`), `Title ${page.route}`);
+  assert.ok(html.includes(`<title>${page.title.replaceAll('&', '&amp;')}</title>`), `Title ${page.route}`);
   assert.ok(html.includes('noindex, nofollow'), 'Local pages must not be indexed');
   assert.doesNotMatch(html, /__next_f|googletagmanager\.com|gtag\('config'|https:\/\/editor\.photocraftonline\.com\/index\.html/, `Upstream runtime dependency: ${page.route}`);
   assert.ok(!html.includes('<!-- @include'), `Unresolved partial ${page.route}`);

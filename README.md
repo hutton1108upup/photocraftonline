@@ -2,13 +2,13 @@
 
 `https://freephotocraft.online` 的网站源码与 Cloudflare Workers 静态部署配置。
 基于原公开 PhotoCraft Online 页面复刻，保留未修改的 PhotoCraft WebAssembly 编辑器。
-还原两种语言、首页、编辑器、下载、开源页、关于、隐私、条款、博客列表及两篇文章，共 20 个页面。
+还原两种语言、首页、编辑器、下载、开源页、关于、隐私、条款、博客列表及两篇文章，新增中英文入门教程、Photoshop 对比及故障帮助，共 26 个页面。
 
 ## 打开本地网站
 
 1. 在本项目文件夹双击 **启动本地预览.cmd**，保留弹出的终端窗口。
 2. 在 Chrome 打开 <http://localhost:5173>；中文首页是 <http://localhost:5173/zh>。
-3. 终端看到 `PhotoCraft local development` 且首页显示 `PhotoCraft online — layers & PSD in your browser`，表示启动成功。
+3. 终端看到 `PhotoCraft local development` 且首页显示 `Free PhotoCraft Online Editor`，表示启动成功。
 4. 修改 `src` 中的文件并保存，浏览器会自动刷新。关闭终端窗口或按 `Ctrl+C` 停止服务。
 
 也可以在本目录的 PowerShell 依次执行：
@@ -29,6 +29,10 @@ npm.cmd run dev
 | 英文首页文案、布局、图片 | `src/pages/en/index.html` |
 | 中文首页 | `src/pages/zh/index.html` |
 | 下载页面 | `src/pages/en/download.html`、`src/pages/zh/download.html` |
+| 入门教程 | `src/pages/en/tutorial.html`、`src/pages/zh/tutorial.html` |
+| Photoshop 对比 | `src/pages/en/photocraft-vs-photoshop.html`、`src/pages/zh/photocraft-vs-photoshop.html` |
+| 加载帮助 | `src/pages/en/help/photocraft-not-loading.html`、`src/pages/zh/help/photocraft-not-loading.html` |
+| 编辑器加载状态 | `src/scripts/editor-status.js` |
 | 开源说明 | `src/pages/en/github.html`、`src/pages/zh/github.html` |
 | 关于、隐私、条款 | 各语言目录下的 `about.html`、`privacy-policy.html`、`terms-of-service.html` |
 | 博客列表 | `src/pages/en/blog.html`、`src/pages/zh/blog.html` |
@@ -39,9 +43,9 @@ npm.cmd run dev
 | 系统主题跟随 | `src/scripts/theme.js` |
 | 原始图片 | `public/imgs/`；原样响应式图片在 `public/assets/images/` |
 | 原版编辑器 | `public/editor-app/`，iframe 从同一本地服务器加载 |
-| 原站公开的文字字典 | `src/content/en.json`、`zh.json`；大部分页面文案已落在 HTML，改文案请修改 HTML |
+| 页面文字字典 | `src/content/en.json`、`zh.json`；大部分页面文案已落在 HTML，改文案请修改 HTML |
 
-例如：在编辑器中打开 `src/pages/en/index.html`，搜索 `Free, open-source image editor`，只替换对应 `<p>` 内的文字，按 `Ctrl+S` 保存。返回本地浏览器即可看到新文案；原线上网站不会改变。
+例如：在编辑器中打开 `src/pages/en/index.html`，搜索 `Open images, work with layers`，只替换对应 `<p>` 内的文字，按 `Ctrl+S` 保存。返回本地浏览器即可看到新文案；原线上网站不会改变。
 页面用原站的 Tailwind 类名，原始 CSS 已包含现有类。新增原站没有的样式请写在 `custom.css`，避免加了新类却没有对应 CSS。
 
 ## 构建与检查
@@ -56,7 +60,7 @@ npm.cmd run check:production
 npm.cmd run deploy:dry-run
 ```
 
-检查成功显示 `PASS`；构建成功显示 `Built 20 production pages`，输出位于 `dist/`。
+检查成功显示 `PASS`；构建成功显示 `Built 26 production pages`，输出位于 `dist/`。
 如需检查构建后的页面，执行 `npm.cmd run preview`，打开 <http://localhost:4173>。
 `npm.cmd run build` 生成禁止索引的本地构建，正式上线使用 `build:production`。
 生产构建设置新域名 canonical 与 sitemap；编辑器和模板博客保持 noindex。
@@ -70,7 +74,7 @@ npm.cmd run deploy:dry-run
 - 编辑器需要浏览器与 GPU 支持，建议使用桌面 Chrome/Edge。`localhost` 属于浏览器安全上下文。原站已有的引擎限制继续存在。
 - 导航、页面链接和编辑器都指向本地；GitHub Releases、上游官网和编辑器内的社区链接仍指向相应外部网站，与原站一致。
 - 删除线上 Google Analytics 初始化及 Next.js 客户端代码；不在本地访问时向生产统计上报。不新增同意弹窗。
-- 保留原站已有的文字和现状，包括中文路由里尚未翻译的英文内容、模板博客和法律文本，方便下一轮有证据地调整。
+- 首页保留现有布局；新教程、对比、故障帮助、下载及法律页提供中英文版本。模板博客保持 noindex。法律页描述当前本站行为，不复用账号与支付模板。
 - `src/site-manifest.json` 记录构建所需路由、资源 URL、字节数及 SHA-256。
 - 原开发目录的 `reference/`、`evidence/`、本地基准采集工具与日志仅供本地对照，不进入 GitHub 或部署。
 - 第三方许可见 [声明](THIRD-PARTY-NOTICES.md) 和 `public/licenses/`。

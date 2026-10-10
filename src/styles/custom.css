@@ -7,6 +7,71 @@
   background: var(--accent);
   color: var(--accent-foreground);
 }
+.guide-page { width: min(100% - 40px, 960px); margin: 0 auto; padding: 56px 0 64px; }
+.guide-intro { max-width: 760px; margin-bottom: 32px; }
+.guide-kicker { color: var(--muted-foreground); font-size: 11px; letter-spacing: .12em; margin-bottom: 16px; }
+.guide-intro h1 { font-family: var(--font-libre-baskerville, Georgia), serif; font-size: clamp(28px, 4vw, 42px); font-weight: 400; line-height: 1.25; letter-spacing: -.025em; }
+.guide-intro > p:last-child { color: var(--muted-foreground); font-size: 17px; line-height: 1.7; margin-top: 16px; }
+.guide-body { font-size: 15px; line-height: 1.8; }
+.guide-body section { padding: 30px 0; border-bottom: 1px solid var(--border); scroll-margin-top: 68px; }
+.guide-body h2, .guide-home-resources h2 { font-family: Georgia, serif; font-weight: 400; font-size: 25px; line-height: 1.35; margin-bottom: 16px; }
+.guide-body h3 { font-size: 17px; font-weight: 600; margin: 20px 0 8px; }
+.guide-body p, .guide-body ul, .guide-body ol { margin: 12px 0; }
+.guide-body ol, .guide-body ul { padding-left: 24px; }
+.guide-body ol { list-style: decimal; }
+.guide-body ul { list-style: disc; }
+.guide-body li { padding-left: 4px; margin: 8px 0; }
+.guide-body a:not(.guide-button), .guide-toc a, .guide-home-start a { text-decoration: underline; text-underline-offset: 3px; }
+.guide-body a { overflow-wrap: anywhere; }
+.guide-note { border: 1px solid var(--border); border-left: 3px solid var(--foreground); padding: 18px 20px; background: var(--muted); border-radius: 6px; }
+.guide-toc { display: flex; flex-wrap: wrap; gap: 12px 22px; padding: 18px 0; }
+.guide-body figure { margin: 24px 0; }
+.guide-body figure img { display: block; width: 100%; height: auto; border: 1px solid var(--border); border-radius: 8px; }
+.guide-body figcaption { color: var(--muted-foreground); font-size: 13px; margin-top: 8px; }
+.guide-button { display: inline-flex; align-items: center; justify-content: center; border-radius: 6px; padding: 10px 18px; background: var(--foreground); color: var(--background); font-size: 14px; font-weight: 500; text-decoration: none; }
+.guide-button:hover { opacity: .85; }
+.guide-button-secondary { background: var(--background); color: var(--foreground); border: 1px solid var(--border); }
+.guide-button:focus-visible, .editor-topbar a:focus-visible, .editor-status button:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+.guide-table-wrap { overflow-x: auto; }
+.guide-body table { width: 100%; min-width: 580px; border-collapse: collapse; font-size: 14px; }
+.guide-body caption { text-align: left; color: var(--muted-foreground); padding-bottom: 12px; }
+.guide-body td, .guide-body th { border: 1px solid var(--border); padding: 14px; text-align: left; vertical-align: top; }
+.guide-body thead { background: var(--muted); }
+.guide-body tbody th { min-width: 110px; }
+.guide-body kbd, .guide-body code { background: var(--muted); border: 1px solid var(--border); border-radius: 3px; padding: 1px 5px; font-size: 13px; overflow-wrap: anywhere; }
+.guide-platforms { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.guide-platforms article { border: 1px solid var(--border); padding: 20px; border-radius: 8px; min-width: 0; scroll-margin-top: 68px; }
+.guide-platforms article h3 { margin-top: 0; }
+.guide-home-resources { max-width: 1024px; margin: 0 auto; padding: 40px 24px; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 28px; }
+.guide-home-resources h2 { font-size: 22px; }
+.guide-home-resources p { font-size: 14px; line-height: 1.7; margin: 12px 0; color: var(--muted-foreground); }
+.guide-home-start { text-align: center; padding: 0 20px 30px; font-size: 14px; }
+.guide-home-faq { max-width: 760px; margin: 0 auto; padding: 36px 24px; }
+.guide-home-faq h2 { font-family: Georgia, serif; font-size: 28px; margin-bottom: 18px; }
+.guide-home-faq details { border-bottom: 1px solid var(--border); padding: 16px 0; }
+.guide-home-faq summary { cursor: pointer; font-size: 15px; font-weight: 500; }
+.guide-home-faq p { margin-top: 12px; color: var(--muted-foreground); font-size: 14px; line-height: 1.7; }
+.guide-home-faq > p a { text-decoration: underline; text-underline-offset: 3px; }
+.editor-shell { height: 100dvh; display: flex; flex-direction: column; background: #262626; color: #f5f5f5; }
+.editor-topbar { min-height: 44px; padding: 8px 16px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; border-bottom: 1px solid #444; background: #171717; }
+.editor-topbar h1 { font-size: 14px; font-weight: 500; }
+.editor-topbar nav { display: flex; flex-wrap: wrap; gap: 16px; font-size: 12px; margin-left: auto; }
+.editor-topbar a:hover { text-decoration: underline; }
+.editor-stage { position: relative; flex: 1; min-height: 0; }
+.editor-stage iframe { width: 100%; height: 100%; border: 0; display: block; }
+.editor-status { position: absolute; inset: 0; display: grid; place-content: center; gap: 14px; text-align: center; padding: 24px; background: #262626; z-index: 1; }
+.editor-status p { max-width: 520px; line-height: 1.65; font-size: 14px; }
+.editor-status h2 { font-size: 22px; }
+.editor-status a { text-decoration: underline; text-underline-offset: 3px; }
+.editor-status button { padding: 9px 18px; background: #f5f5f5; color: #171717; border-radius: 6px; cursor: pointer; }
+.editor-status-actions { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 20px; }
+.editor-noscript { position: absolute; inset: 0; background: #262626; padding: 48px 24px; z-index: 2; text-align: center; }
+@media (max-width: 800px) {
+  .guide-platforms, .guide-home-resources { grid-template-columns: 1fr; }
+  .guide-page { padding-top: 32px; }
+  .editor-topbar { padding: 8px 12px; gap: 8px; }
+  .editor-topbar nav { margin-left: 0; gap: 12px; }
+}
 @media (prefers-reduced-motion: no-preference) {
   [data-slot="accordion-content"]:not([hidden]) { animation: local-panel-in 150ms ease-out; }
   @keyframes local-panel-in { from { opacity: 0; } to { opacity: 1; } }
