@@ -1,0 +1,5 @@
+{
+  "origin": "https://freephotocraft.online",
+  "workerName": "freephotocraft-online",
+  "indexablePages": ["index", "download", "github", "about"]
+}

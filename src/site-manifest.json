@@ -1,0 +1,373 @@
+{
+  "captured_at": "2026-10-10",
+  "origin": "https://www.photocraftonline.com",
+  "editor_origin": "https://editor.photocraftonline.com",
+  "routes": [
+    {
+      "route": "/",
+      "locale": "en",
+      "page": "index",
+      "title": "PhotoCraft Online — Free Open-Source Image Editor in Your Browser",
+      "source_sha256": "0387b76fe9891f420ebd357653db5d70af99402dee3799de6ccbd0f2117f1221"
+    },
+    {
+      "route": "/zh",
+      "locale": "zh",
+      "page": "index",
+      "title": "PhotoCraft Online — Free Open-Source Image Editor in Your Browser",
+      "source_sha256": "952cfd98f65ddd41531b1035b535efedcb2bb31cae3dd68089f404546c41fd99"
+    },
+    {
+      "route": "/editor",
+      "locale": "en",
+      "page": "editor",
+      "title": "Editor | PhotoCraft Online",
+      "source_sha256": "c52b057fdb9103187b28f7310cbc8ba4ada1e6347755ef847e3b4459b3ecf1ca"
+    },
+    {
+      "route": "/zh/editor",
+      "locale": "zh",
+      "page": "editor",
+      "title": "Editor | PhotoCraft Online",
+      "source_sha256": "f75941c0c635553dafb07d548c871d833e3d0324695af2a705cbf18fe7b8c964"
+    },
+    {
+      "route": "/download",
+      "locale": "en",
+      "page": "download",
+      "title": "Download PhotoCraft | PhotoCraft Online",
+      "source_sha256": "5763a9958cfeb9b0e299f557ceaaa00b03deae4f016af15f63fb0e97d6b009dd"
+    },
+    {
+      "route": "/zh/download",
+      "locale": "zh",
+      "page": "download",
+      "title": "Download PhotoCraft | PhotoCraft Online",
+      "source_sha256": "b0f50af1c5e362ca3032f1a20cf87d6956eb80bd6024551c41938bfeb4dffef1"
+    },
+    {
+      "route": "/github",
+      "locale": "en",
+      "page": "github",
+      "title": "PhotoCraft on GitHub — Open-Source Image Editor | PhotoCraft Online",
+      "source_sha256": "5b863917aa322b7a212bee68eb1e3b0af425d16095e80d47859aa51477bdc8b6"
+    },
+    {
+      "route": "/zh/github",
+      "locale": "zh",
+      "page": "github",
+      "title": "PhotoCraft on GitHub — Open-Source Image Editor | PhotoCraft Online",
+      "source_sha256": "23d5b71730c7844add6b159f5ce682066314b4c07ed48e2b270e78c49161dc0d"
+    },
+    {
+      "route": "/about",
+      "locale": "en",
+      "page": "about",
+      "title": "About PhotoCraft Online | PhotoCraft Online",
+      "source_sha256": "0a4eaf5855a26cc63f8f9c77dc0dcd804d5718e3c22d6a0955dca1fde825ee43"
+    },
+    {
+      "route": "/zh/about",
+      "locale": "zh",
+      "page": "about",
+      "title": "About PhotoCraft Online | PhotoCraft Online",
+      "source_sha256": "bfd3f3f4f3200e78082d6437a6ac7ebc815bb9aca0ebffeeb7e287493733d136"
+    },
+    {
+      "route": "/privacy-policy",
+      "locale": "en",
+      "page": "privacy-policy",
+      "title": "Privacy Policy | PhotoCraft Online",
+      "source_sha256": "14f5367a4933efcbde2fc830db9c41c3da94d95f37b86765f72f7a4b9b53e111"
+    },
+    {
+      "route": "/zh/privacy-policy",
+      "locale": "zh",
+      "page": "privacy-policy",
+      "title": "隐私政策 | PhotoCraft Online",
+      "source_sha256": "0dfe50db937e15b62cd157229f98f0297bbf5fe910e164ee259a68b28dee15de"
+    },
+    {
+      "route": "/terms-of-service",
+      "locale": "en",
+      "page": "terms-of-service",
+      "title": "Terms of Service | PhotoCraft Online",
+      "source_sha256": "ea43e401ccfa79110d0d438d32a200b7e1b138ffb58b2d90b0925b0acd6c6142"
+    },
+    {
+      "route": "/zh/terms-of-service",
+      "locale": "zh",
+      "page": "terms-of-service",
+      "title": "服务条款 | PhotoCraft Online",
+      "source_sha256": "20c85bcb9b6cb9fcc8b3bd9e72e077c5b05086d538d1dfb7e22caca6be2c84a7"
+    },
+    {
+      "route": "/blog/blocks-vs-components",
+      "locale": "en",
+      "page": "blog/blocks-vs-components",
+      "title": "Blocks vs Components: What Survives a Rebrand | PhotoCraft Online",
+      "source_sha256": "de1c9cb5e3734b94cd5099c3777a3d6f23c4dc3103c9c83cbca3286418a594cc"
+    },
+    {
+      "route": "/zh/blog/blocks-vs-components",
+      "locale": "zh",
+      "page": "blog/blocks-vs-components",
+      "title": "Blocks 与 Components:改版后留下的是什么 | PhotoCraft Online",
+      "source_sha256": "d44b1b1e4f6b84f4010546b1ba1cf28e5d09a58aa8eccf7418b0a5d82196def9"
+    },
+    {
+      "route": "/blog/what-is-shipany",
+      "locale": "en",
+      "page": "blog/what-is-shipany",
+      "title": "What is ShipAny Next | PhotoCraft Online",
+      "source_sha256": "3f5b7bd6402e3e901ea133b5b851f899f1e22a171a6b5eb5b2cf3bfe69d9cee9"
+    },
+    {
+      "route": "/zh/blog/what-is-shipany",
+      "locale": "zh",
+      "page": "blog/what-is-shipany",
+      "title": "什么是 ShipAny Next | PhotoCraft Online",
+      "source_sha256": "f68c87c6f7a5ed55e919a407d4cea137db7483ad377181d6cb22498b1d242dcf"
+    },
+    {
+      "route": "/blog",
+      "locale": "en",
+      "page": "blog",
+      "title": "Blog | PhotoCraft Online",
+      "source_sha256": "d344354b88f6d225b4288f97bfe89772687446ef0e1b994b9833bfdc996720ad"
+    },
+    {
+      "route": "/zh/blog",
+      "locale": "zh",
+      "page": "blog",
+      "title": "博客 | PhotoCraft Online",
+      "source_sha256": "d8b2703609007d63f52283105936a06d2959eb4f5e64d7de0b57a831e0d60dba"
+    }
+  ],
+  "assets": [
+    {
+      "source": "https://www.photocraftonline.com/apple-touch-icon.png",
+      "local": "/apple-touch-icon.png",
+      "content_type": "image/png",
+      "bytes": 3575,
+      "sha256": "d140838a02596a850bab4519aedfbbba6abc23abae3df4feb8d8a81b6d4e5430"
+    },
+    {
+      "source": "https://www.photocraftonline.com/_next/static/chunks/0x4i1d-5t.ch3.css",
+      "local": "/assets/css/0x4i1d-5t.ch3.css",
+      "content_type": "text/css; charset=utf-8",
+      "bytes": 130924,
+      "sha256": "517cd808dda3a8b746204552914f52a42972744a3ac9e8761b2e071f0c85603c"
+    },
+    {
+      "source": "https://www.photocraftonline.com/_next/static/chunks/15sc_v~et~i94.css",
+      "local": "/assets/css/15sc_v~et~i94.css",
+      "content_type": "text/css; charset=utf-8",
+      "bytes": 5710,
+      "sha256": "1ccab9a6ac70a104a18b41af2a32c590037c8a40a2b8fd8a13af28668d5b82fe"
+    },
+    {
+      "source": "https://www.photocraftonline.com/_next/static/media/1bffadaabf893a1e-s.16ipb6fqu393i.woff2",
+      "local": "/assets/fonts/1bffadaabf893a1e-s.16ipb6fqu393i.woff2",
+      "content_type": "font/woff2",
+      "bytes": 85272,
+      "sha256": "a28eb6d3ccb534ae0c94ca999371df024aab60b08c3c8a5720ee9e32fa0faaa2"
+    },
+    {
+      "source": "https://www.photocraftonline.com/_next/static/media/2bbe8d2671613f1f-s.067x_6k0k23tk.woff2",
+      "local": "/assets/fonts/2bbe8d2671613f1f-s.067x_6k0k23tk.woff2",
+      "content_type": "font/woff2",
+      "bytes": 10280,
+      "sha256": "8db00ff46c67b22cda8bed865acf7077651cac8d2841d5b40980556b48961931"
+    },
+    {
+      "source": "https://www.photocraftonline.com/_next/static/media/2c55a0e60120577a-s.0bjc5tiuqdqro.woff2",
+      "local": "/assets/fonts/2c55a0e60120577a-s.0bjc5tiuqdqro.woff2",
+      "content_type": "font/woff2",
+      "bytes": 25844,
+      "sha256": "fccca918fea40089dacadc7045861314d1a6bc91f1f323cc1eeb22ebcdb321b5"
+    },
+    {
+      "source": "https://www.photocraftonline.com/_next/static/media/38df7484fe560b25-s.p.0_h8~hcb-m6kp.woff2",
+      "local": "/assets/fonts/38df7484fe560b25-s.p.0_h8~hcb-m6kp.woff2",
+      "content_type": "font/woff2",
+      "bytes": 33852,
+      "sha256": "b62b98ef69e6e55b28b9bcac84513eb1bdd1d312a344b1c76e979219923224a5"
+    },
+    {
+      "source": "https://www.photocraftonline.com/_next/static/media/5476f68d60460930-s.0wxq9webf.ew4.woff2",
+      "local": "/assets/fonts/5476f68d60460930-s.0wxq9webf.ew4.woff2",
+      "content_type": "font/woff2",
+      "bytes": 19044,
+      "sha256": "46dd4cdca58c26ae87cc6927657bf83b2e8abfc39ffd0ab176e301a8d28d22bf"
+    },
+    {
+      "source": "https://www.photocraftonline.com/_next/static/media/5c773c73f3b750dc-s.0qis_my1gal~q.woff2",
+      "local": "/assets/fonts/5c773c73f3b750dc-s.0qis_my1gal~q.woff2",
+      "content_type": "font/woff2",
+      "bytes": 35192,
+      "sha256": "7ca19d333229f3be14b0ad5f024f11e711282f20078b5f954f7e25796d80de67"
+    },
+    {
+      "source": "https://www.photocraftonline.com/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+      "local": "/assets/fonts/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+      "content_type": "font/woff2",
+      "bytes": 48432,
+      "sha256": "c940764593d0fe5d596be327ca7558855e018039fb78509aa21921fd3644c3e4"
+    },
+    {
+      "source": "https://www.photocraftonline.com/_next/static/media/8c352cd2dd0b7ed3-s.046_rt88lmymv.woff2",
+      "local": "/assets/fonts/8c352cd2dd0b7ed3-s.046_rt88lmymv.woff2",
+      "content_type": "font/woff2",
+      "bytes": 35460,
+      "sha256": "1b43b44b580f524de254ecb11fb2230bacb2a4a45533687473e8770b1737f25e"
+    },
+    {
+      "source": "https://www.photocraftonline.com/_next/static/media/9c72aa0f40e4eef8-s.0m6w47a4e5dy9.woff2",
+      "local": "/assets/fonts/9c72aa0f40e4eef8-s.0m6w47a4e5dy9.woff2",
+      "content_type": "font/woff2",
+      "bytes": 18744,
+      "sha256": "aebf2ab4a4ce6810d73c1ac7be7cafb4e5ec4cee2d6db5fb3e09691747ec4bd6"
+    },
+    {
+      "source": "https://www.photocraftonline.com/_next/static/media/ad66f9afd8947f86-s.11u06r12fd6v_.woff2",
+      "local": "/assets/fonts/ad66f9afd8947f86-s.11u06r12fd6v_.woff2",
+      "content_type": "font/woff2",
+      "bytes": 11272,
+      "sha256": "a2e2c783ca6f9c20486e81e72a279203e86730bbf8f01ff6a5ee9dbd09e1c271"
+    },
+    {
+      "source": "https://www.photocraftonline.com/_next/static/media/f5031e7b18bdfbb3-s.p.17530ebvtj~5g.woff2",
+      "local": "/assets/fonts/f5031e7b18bdfbb3-s.p.17530ebvtj~5g.woff2",
+      "content_type": "font/woff2",
+      "bytes": 31336,
+      "sha256": "a4a7031f5c5283f81711e2df162634c7d9ce2a422a7547f2b7a3b424616f6936"
+    },
+    {
+      "source": "https://www.photocraftonline.com/_next/image?url=%2Fimgs%2Fhero-editor.png&w=1080&q=75",
+      "local": "/assets/images/hero-editor-1080-q75.webp",
+      "content_type": "image/webp",
+      "bytes": 17710,
+      "sha256": "bd11e4d57f3a3014dab60d78dadf447053e462bcf4911bd23a27fac55315c463"
+    },
+    {
+      "source": "https://www.photocraftonline.com/_next/image?url=%2Fimgs%2Fhero-editor.png&w=1200&q=75",
+      "local": "/assets/images/hero-editor-1200-q75.webp",
+      "content_type": "image/webp",
+      "bytes": 19696,
+      "sha256": "4431a6011c09be7ff6b5af6f9fda187a1aa7cdf5edc1223f34525c726457b755"
+    },
+    {
+      "source": "https://www.photocraftonline.com/_next/image?url=%2Fimgs%2Fhero-editor.png&w=1920&q=75",
+      "local": "/assets/images/hero-editor-1920-q75.webp",
+      "content_type": "image/webp",
+      "bytes": 35538,
+      "sha256": "546db0c1e8be486d5b91efb25973730482ffae69f8b850994ce036b95aa96247"
+    },
+    {
+      "source": "https://www.photocraftonline.com/_next/image?url=%2Fimgs%2Fhero-editor.png&w=2048&q=75",
+      "local": "/assets/images/hero-editor-2048-q75.webp",
+      "content_type": "image/webp",
+      "bytes": 35538,
+      "sha256": "546db0c1e8be486d5b91efb25973730482ffae69f8b850994ce036b95aa96247"
+    },
+    {
+      "source": "https://www.photocraftonline.com/_next/image?url=%2Fimgs%2Fhero-editor.png&w=3840&q=75",
+      "local": "/assets/images/hero-editor-3840-q75.webp",
+      "content_type": "image/webp",
+      "bytes": 35538,
+      "sha256": "546db0c1e8be486d5b91efb25973730482ffae69f8b850994ce036b95aa96247"
+    },
+    {
+      "source": "https://www.photocraftonline.com/_next/image?url=%2Fimgs%2Fhero-editor.png&w=640&q=75",
+      "local": "/assets/images/hero-editor-640-q75.webp",
+      "content_type": "image/webp",
+      "bytes": 7852,
+      "sha256": "928576b9f784c15884e0e91dc80583c8bd336c8844d32d869afa0ec75e8aa707"
+    },
+    {
+      "source": "https://www.photocraftonline.com/_next/image?url=%2Fimgs%2Fhero-editor.png&w=750&q=75",
+      "local": "/assets/images/hero-editor-750-q75.webp",
+      "content_type": "image/webp",
+      "bytes": 10058,
+      "sha256": "df8b611bcb06c179cb5ce540e8e358e0b83561f16f44c52649b3ae517036240a"
+    },
+    {
+      "source": "https://www.photocraftonline.com/_next/image?url=%2Fimgs%2Fhero-editor.png&w=828&q=75",
+      "local": "/assets/images/hero-editor-828-q75.webp",
+      "content_type": "image/webp",
+      "bytes": 12530,
+      "sha256": "0390d0c67cefae5738da0238ce3efdce2dbf90ab58c7d3f42e40b1cd3c9ad5b7"
+    },
+    {
+      "source": "https://www.photocraftonline.com/_next/image?url=%2Flogo.png&w=32&q=75",
+      "local": "/assets/images/logo-32-q75.webp",
+      "content_type": "image/webp",
+      "bytes": 330,
+      "sha256": "ac7eab779ddaf1c901b6beb3d277eb97e71c1182c952bf18627f108ffa89bcfd"
+    },
+    {
+      "source": "https://www.photocraftonline.com/_next/image?url=%2Flogo.png&w=48&q=75",
+      "local": "/assets/images/logo-48-q75.webp",
+      "content_type": "image/webp",
+      "bytes": 470,
+      "sha256": "de8b0a07ebdaf85f3eaf83f7b8ec7f51b3e17910a1ba7e62396a5e66bf416e32"
+    },
+    {
+      "source": "https://editor.photocraftonline.com/photocraft-web-72921900975c7e6f.js",
+      "local": "/editor-app/photocraft-web-72921900975c7e6f.js",
+      "content_type": "text/javascript; charset=utf-8",
+      "bytes": 162311,
+      "sha256": "9d0cd08076224bfac6cf21b6e4bc68b2e4edd2492ecaeaff8d2a84ec0e23b8a4"
+    },
+    {
+      "source": "https://editor.photocraftonline.com/photocraft-web-72921900975c7e6f_bg.wasm",
+      "local": "/editor-app/photocraft-web-72921900975c7e6f_bg.wasm",
+      "content_type": "application/wasm",
+      "bytes": 24710609,
+      "sha256": "ba4f823d2d2f913411cdd272be71dad9ce9b5182bc3b038597502ca395ecc003"
+    },
+    {
+      "source": "https://www.photocraftonline.com/favicon.ico",
+      "local": "/favicon.ico",
+      "content_type": "image/vnd.microsoft.icon",
+      "bytes": 611,
+      "sha256": "40dc837bd28e70dd6e3149f32cb8219d3651755bbc7ef95c60527beba5120893"
+    },
+    {
+      "source": "https://www.photocraftonline.com/favicon.svg",
+      "local": "/favicon.svg",
+      "content_type": "image/svg+xml",
+      "bytes": 411,
+      "sha256": "dcaf8c8a7d6434acc8ddf089655c16558fb7323f0a526807aa0bfc15f216b974"
+    },
+    {
+      "source": "https://www.photocraftonline.com/imgs/hero-editor.png",
+      "local": "/imgs/hero-editor.png",
+      "content_type": "image/png",
+      "bytes": 183382,
+      "sha256": "da25186b0f2b35ae08b184df441e1e03af4c43ce163fe88be8bd0857c20e9a11"
+    },
+    {
+      "source": "https://www.photocraftonline.com/logo.png",
+      "local": "/logo.png",
+      "content_type": "image/png",
+      "bytes": 5316,
+      "sha256": "54eb82452841e79ea6292d560041688684c2d67725d65a3575f3a370cf7eb091"
+    },
+    {
+      "source": "https://www.photocraftonline.com/logo.svg",
+      "local": "/logo.svg",
+      "content_type": "image/svg+xml",
+      "bytes": 419,
+      "sha256": "52da18c14a9607aa28f91a07704b24b53e44dc179f1dd9ca4e8382825e071dc6"
+    },
+    {
+      "source": "https://www.photocraftonline.com/og-image.png",
+      "local": "/og-image.png",
+      "content_type": "image/png",
+      "bytes": 40897,
+      "sha256": "3a0aecb4543629bbce8a1abc930aa8b072c3eef5ec84b45ccf108a9087074f19"
+    }
+  ]
+}

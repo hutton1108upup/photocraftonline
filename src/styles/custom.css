@@ -1,0 +1,13 @@
+/* Add intentional visual adjustments here. The original site's CSS and fonts
+   are preserved under public/assets and need not be edited for routine work. */
+[hidden] { display: none !important; }
+.local-language-menu { position: fixed; z-index: 100; min-width: 128px; }
+.local-language-menu [role="menuitem"]:hover,
+.local-language-menu [role="menuitem"]:focus {
+  background: var(--accent);
+  color: var(--accent-foreground);
+}
+@media (prefers-reduced-motion: no-preference) {
+  [data-slot="accordion-content"]:not([hidden]) { animation: local-panel-in 150ms ease-out; }
+  @keyframes local-panel-in { from { opacity: 0; } to { opacity: 1; } }
+}

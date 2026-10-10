@@ -1,0 +1,10 @@
+* text=auto eol=lf
+*.cmd text eol=crlf
+*.wasm binary
+*.woff2 binary
+*.webp binary
+*.png binary
+*.ico binary
+# Preserve upstream runtime bytes (including SRI hashes) and license texts.
+public/editor-app/** -text whitespace=-blank-at-eol
+public/licenses/** -text whitespace=-blank-at-eol

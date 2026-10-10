@@ -1,0 +1,316 @@
+{
+  "landing": {
+    "nav": {
+      "features": "Features",
+      "editor": "Editor",
+      "download": "Download",
+      "about": "About"
+    },
+    "showcase": {
+      "title": "Built for real editing",
+      "description": "Professional image editing workflows — layers, PSD, and WebGPU — running free in your browser.",
+      "try_editor": "Try in editor",
+      "layers": {
+        "title": "Layers, masks & blend modes",
+        "description": "Work with raster layers, groups, layer masks, opacity, and non-destructive adjustment layers — the same panel layout you expect from a professional editor.",
+        "image_alt": "PhotoCraft layers panel with blend modes and masks in the browser"
+      },
+      "psd": {
+        "title": "Open PSD files online",
+        "description": "Import layered Photoshop documents, edit them in your browser, and export when you're done. Drop a PSD anywhere on the canvas to get started.",
+        "image_alt": "PhotoCraft open dialog — import PSD and image files in the browser"
+      },
+      "browser": {
+        "title": "Full editor in your browser",
+        "description": "No install required. The open-source WebAssembly build loads once (~25 MB), then runs locally with WebGPU — your files stay on your device.",
+        "image_alt": "PhotoCraft online image editor interface with menus, tools, and panels"
+      }
+    },
+    "hero": {
+      "headline": "PhotoCraft online — layers & PSD in your browser",
+      "subheadline": "Free, open-source image editor with WebGPU acceleration. Professional tools, zero install.",
+      "cta": "Launch Editor",
+      "secondary": "Download Desktop",
+      "github_cta": "View on GitHub",
+      "lineage": "Based on the open-source project at github.com/storytold/photocraft. PhotoCraft Online is an independent site — not affiliated with ArtCraft.",
+      "chips": {
+        "layers": "Layers",
+        "psd": "PSD",
+        "gpu": "WebGPU",
+        "opensource": "Open Source"
+      },
+      "screenshot_alt": "PhotoCraft image editor — layers, tools, and panels in the browser"
+    },
+    "lineage": {
+      "title": "Built on open source",
+      "description": "PhotoCraft is a free image editor written in Rust — layers, masks, adjustment layers, and real PSD support. This site hosts the official WebAssembly build and download guides.",
+      "repo": {
+        "title": "Source code",
+        "description": "MIT / Apache 2.0 — browse the repo, report bugs, and contribute."
+      },
+      "releases": {
+        "title": "GitHub Releases",
+        "description": "Desktop builds for macOS, Windows, and Linux."
+      },
+      "upstream": {
+        "title": "Official project",
+        "description": "Upstream site maintained by the PhotoCraft team."
+      },
+      "disclaimer": "PhotoCraft Online is an independent website. We mirror the official web build for convenience — we do not modify the editor engine.",
+      "learn_more": "Learn more"
+    },
+    "features": {
+      "title": "Built for real editing",
+      "description": "Open-source PhotoCraft — professional workflows in the browser.",
+      "layers": {
+        "title": "Layers & masks",
+        "description": "Groups, masks, blend modes, and adjustment layers."
+      },
+      "psd": {
+        "title": "PSD files",
+        "description": "Open, edit, and export layered Photoshop documents."
+      },
+      "gpu": {
+        "title": "WebGPU canvas",
+        "description": "GPU compositor — files stay on your device."
+      },
+      "familiar": {
+        "title": "Familiar UI",
+        "description": "Menus, shortcuts, and panels like pro editors."
+      },
+      "opensource": {
+        "title": "Open source",
+        "description": "MIT/Apache. Desktop builds for macOS, Windows, Linux."
+      },
+      "offline": {
+        "title": "Offline-ready",
+        "description": "Works in-browser after first load. No account needed."
+      }
+    },
+    "steps": {
+      "title": "How it works",
+      "description": "From browser tab to exported image in minutes.",
+      "open": {
+        "title": "Launch the editor",
+        "description": "Open PhotoCraft in your browser — first load may take 30–60 seconds."
+      },
+      "edit": {
+        "title": "Edit your project",
+        "description": "Open a PSD or image, adjust layers, masks, and filters."
+      },
+      "export": {
+        "title": "Export & save",
+        "description": "Export to PNG or continue in the free desktop app for full PSD round-trip."
+      }
+    },
+    "faq": {
+      "title": "FAQ",
+      "description": "Common questions about using PhotoCraft online.",
+      "official": {
+        "question": "Is this the official PhotoCraft website?",
+        "answer": "No. PhotoCraft Online is an independent site hosting the open-source WebAssembly build. For the upstream project, visit GitHub and getartcraft.com."
+      },
+      "safe": {
+        "question": "Is it safe to use?",
+        "answer": "Editing runs locally in your browser. We do not upload your images during editing. Download desktop builds from official GitHub Releases."
+      },
+      "requirements": {
+        "question": "System requirements?",
+        "answer": "Modern desktop browser with WebGPU (Chrome, Edge, or Firefox). First load downloads ~25 MB and may take 30–60 seconds."
+      },
+      "psd": {
+        "question": "Can I open PSD files online?",
+        "answer": "Yes. PhotoCraft supports layered PSD import and export. Still in early alpha — keep backups for critical work."
+      },
+      "bugs": {
+        "question": "Something isn't working — what should I do?",
+        "answer": "Report issues on the official GitHub repository. This site mirrors the official web build."
+      },
+      "desktop": {
+        "question": "How do I get the desktop app?",
+        "answer": "Visit our Download page or GitHub Releases for macOS, Windows, and Linux installers."
+      },
+      "github": {
+        "question": "Where is the PhotoCraft source code?",
+        "answer": "The official repository is at github.com/storytold/photocraft. Visit our GitHub page for source code, releases, and how this site relates to the upstream project."
+      }
+    },
+    "cta": {
+      "headline": "Ready to edit?",
+      "subheadline": "Free, open-source — no signup required.",
+      "button": "Launch Editor"
+    },
+    "footer": {
+      "tagline": "Free online access to the open-source PhotoCraft editor.",
+      "disclaimer": "PhotoCraft Online is an independent website and is not affiliated with, endorsed by, or sponsored by ArtCraft or the PhotoCraft development team.",
+      "product": "Product",
+      "resources": "Resources",
+      "legal": "Legal",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "editor": "Online Editor",
+      "download": "Download",
+      "about": "About",
+      "github_hub": "Open Source / GitHub",
+      "official_github": "PhotoCraft on GitHub",
+      "official_site": "ArtCraft (upstream)"
+    }
+  },
+  "editor": {
+    "meta_title": "编辑器",
+    "meta_description": "在浏览器中使用开源 PhotoCraft 图像编辑器。",
+    "iframe_title": "PhotoCraft 图像编辑器",
+    "report_bug": "在 GitHub 报告问题",
+    "download_desktop": "桌面版",
+    "open_new_tab": "在新标签页打开编辑器"
+  },
+  "download": {
+    "meta_title": "Download PhotoCraft",
+    "meta_description": "Download PhotoCraft for macOS, Windows, and Linux — free open-source image editor. Step-by-step install guide from GitHub Releases.",
+    "hero": {
+      "title": "Download PhotoCraft",
+      "subtitle": "Free, open-source desktop builds for macOS, Windows, and Linux — or use the editor in your browser.",
+      "browser_cta": "Launch in Browser",
+      "desktop_cta": "Desktop downloads"
+    },
+    "platforms": {
+      "title": "Choose your platform",
+      "recommended": "Recommended",
+      "alternative": "Also available",
+      "github_cta": "Open GitHub Releases",
+      "your_system": "Your system",
+      "install_title": "How to install",
+      "macos": {
+        "name": "macOS",
+        "recommended": "Universal disk image (.dmg)",
+        "alternative": "Apple Silicon and Intel in one file",
+        "steps": {
+          "1": "On GitHub Releases, under Assets, download the file ending in _universal.dmg.",
+          "2": "Open the .dmg and drag PhotoCraft into your Applications folder.",
+          "3": "If macOS blocks the app, open System Settings → Privacy & Security → Open Anyway."
+        }
+      },
+      "windows": {
+        "name": "Windows",
+        "recommended": "64-bit installer (.msi)",
+        "alternative": "Portable .zip (no install)",
+        "steps": {
+          "1": "On GitHub Releases, under Assets, download the .msi installer (or .zip for portable).",
+          "2": "Run the installer and follow the setup wizard.",
+          "3": "Launch PhotoCraft from the Start menu or desktop shortcut."
+        }
+      },
+      "linux": {
+        "name": "Linux",
+        "recommended": "AppImage (x86_64)",
+        "alternative": ".deb, .rpm, or tarball on Releases",
+        "steps": {
+          "1": "On GitHub Releases, under Assets, download the .AppImage file.",
+          "2": "Make it executable: chmod +x PhotoCraft_*.AppImage",
+          "3": "Run the AppImage, or install .deb / .rpm if you prefer a package manager."
+        }
+      }
+    },
+    "github": {
+      "title": "How to download from GitHub",
+      "description": "All desktop builds are published on the official GitHub Releases page.",
+      "steps": {
+        "1": "Open the PhotoCraft Releases page on GitHub.",
+        "2": "Select the latest release (marked Latest).",
+        "3": "Scroll down and expand the Assets section.",
+        "4": "Click the file that matches your platform (see the table below)."
+      },
+      "table": {
+        "platform": "Platform",
+        "file": "Look for",
+        "macos": "macOS",
+        "macos_file": "*.dmg (Universal)",
+        "windows": "Windows",
+        "windows_file": "*.msi or *.zip",
+        "linux": "Linux",
+        "linux_file": "*.AppImage, .deb, or .rpm"
+      },
+      "cta": "Go to GitHub Releases"
+    },
+    "developers": {
+      "title": "For developers",
+      "description": "Self-host the WebAssembly build on your own static hosting (Cloudflare R2, S3, etc.).",
+      "web_zip": "Download photocraft-web-*.zip from GitHub Releases Assets.",
+      "docs": "See our R2 setup guide in the project repository docs folder."
+    },
+    "faq": {
+      "title": "Common questions",
+      "browser": {
+        "q": "Do I need to download anything?",
+        "a": "No. You can use PhotoCraft entirely in your browser at /editor — no install required. First load downloads ~25 MB."
+      },
+      "which_file": {
+        "q": "Which file should I download?",
+        "a": "macOS: .dmg · Windows: .msi (or .zip portable) · Linux: .AppImage. When in doubt, use the recommended option on your platform card above."
+      },
+      "requirements": {
+        "q": "System requirements?",
+        "a": "Desktop: macOS 11+, Windows 10+, or modern Linux. Browser editor: Chrome, Edge, or Firefox with WebGPU; HTTPS required."
+      },
+      "safe": {
+        "q": "Is it safe to download?",
+        "a": "Only download from github.com/storytold/photocraft/releases or getartcraft.com. Avoid third-party mirrors."
+      },
+      "alpha": {
+        "q": "Is PhotoCraft stable?",
+        "a": "PhotoCraft is in early alpha. Expect bugs — keep backups of important PSD files."
+      }
+    },
+    "disclaimer": "PhotoCraft Online is an independent site. Desktop builds are maintained by the upstream PhotoCraft project on GitHub."
+  },
+  "github": {
+    "meta_title": "PhotoCraft on GitHub",
+    "meta_description": "PhotoCraft is a free, open-source Rust image editor on GitHub. Source code, releases, license info, and how PhotoCraft Online relates to the upstream project.",
+    "hero": {
+      "title": "PhotoCraft on GitHub",
+      "subtitle": "Free, open-source image editor written in Rust — layers, masks, adjustment layers, and real PSD support. Early alpha.",
+      "repo_cta": "View repository",
+      "releases_cta": "GitHub Releases",
+      "editor_cta": "Try in browser"
+    },
+    "about": {
+      "title": "About the project",
+      "description": "PhotoCraft aims to offer a familiar Photoshop-style workflow with professional tools — entirely free and open source.",
+      "license_label": "License",
+      "license_value": "MIT / Apache 2.0",
+      "language_label": "Language",
+      "language_value": "Rust + WebAssembly",
+      "status_label": "Status",
+      "status_value": "Early alpha — expect bugs and missing features"
+    },
+    "relationship": {
+      "title": "How this site relates to GitHub",
+      "description": "PhotoCraft Online is an independent website — not affiliated with ArtCraft or the PhotoCraft development team.",
+      "upstream": {
+        "title": "Upstream (GitHub)",
+        "description": "The official source code, issues, and desktop releases are maintained at github.com/storytold/photocraft."
+      },
+      "this_site": {
+        "title": "PhotoCraft Online (this site)",
+        "description": "We host the official WebAssembly build for browser use, plus download guides and documentation."
+      },
+      "official": {
+        "title": "ArtCraft (official site)",
+        "description": "The upstream team’s project page at getartcraft.com/apps/photocraft."
+      }
+    },
+    "contribute": {
+      "title": "Report bugs & contribute",
+      "description": "Found a bug in the editor? Report it on the upstream GitHub repository — not on this website.",
+      "issues_cta": "Open GitHub Issues",
+      "download_cta": "Download desktop app"
+    }
+  },
+  "blog": {
+    "title": "博客",
+    "description": "来自团队的产品动态、使用指南与工程笔记。",
+    "no_posts": "暂无文章,敬请期待。",
+    "back_to_blog": "返回博客",
+    "read_more": "阅读全文"
+  }
+}
