@@ -42,6 +42,30 @@
 .guide-platforms { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
 .guide-platforms article { border: 1px solid var(--border); padding: 20px; border-radius: 8px; min-width: 0; scroll-margin-top: 68px; }
 .guide-platforms article h3 { margin-top: 0; }
+.download-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 20px 0; }
+.download-nav { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0; }
+.guide-body .download-nav a { border: 1px solid var(--border); border-radius: 6px; padding: 7px 14px; text-decoration: none; }
+.download-platforms { display: grid; gap: 24px; margin-top: 24px; }
+.download-platforms article { border: 1px solid var(--border); padding: 24px; border-radius: 8px; min-width: 0; scroll-margin-top: 80px; }
+.download-platforms article > h3 { margin-top: 0; font-size: 22px; }
+.download-platforms h4 { font-weight: 600; margin: 18px 0 8px; }
+.download-platforms .download-recommended { border-color: var(--foreground); box-shadow: 0 0 0 1px var(--foreground); }
+.download-system-badge { display: inline-block; background: var(--foreground); color: var(--background); border-radius: 4px; font-size: 11px; padding: 2px 8px; margin-bottom: 12px; }
+.download-controls { margin: 18px 0; }
+.download-controls label { display: block; font-weight: 600; margin-bottom: 6px; }
+.download-controls select { display: block; width: min(100%, 420px); padding: 10px 12px; border: 1px solid var(--border); border-radius: 6px; background: var(--background); color: var(--foreground); font: inherit; }
+.download-file { font-size: 13px; color: var(--muted-foreground); overflow-wrap: anywhere; }
+.download-platforms details, .download-developer { border-top: 1px solid var(--border); padding: 14px 0; }
+.download-platforms summary, .download-developer summary { cursor: pointer; font-weight: 600; }
+.download-command { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 10px 0; }
+.download-command code { display: block; max-width: 100%; white-space: pre-wrap; overflow-wrap: anywhere; padding: 8px 10px; }
+.download-success { color: var(--muted-foreground); font-size: 14px; }
+.download-anchor { display: block; scroll-margin-top: 80px; }
+.download-nav a:focus-visible, .download-controls select:focus-visible, .download-platforms summary:focus-visible, .download-developer summary:focus-visible { outline: 2px solid var(--foreground); outline-offset: 3px; }
+@media (max-width: 600px) {
+  .download-platforms article { padding: 18px; }
+  .download-actions .guide-button { white-space: normal; text-align: center; }
+}
 .guide-home-resources { max-width: 1024px; margin: 0 auto; padding: 40px 24px; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 28px; }
 .guide-home-resources h2 { font-size: 22px; }
 .guide-home-resources p { font-size: 14px; line-height: 1.7; margin: 12px 0; color: var(--muted-foreground); }
