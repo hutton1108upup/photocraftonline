@@ -36,14 +36,14 @@
       "locale": "en",
       "page": "download",
       "title": "PhotoCraft Free Download for Windows, Mac & Linux",
-      "source_sha256": "91435e246073b22acd3e7bbc6c5b858bf1e2a2c295e10b78878c2cd4baba9e9d"
+      "source_sha256": "fabcfeaae18450e2da359f5dd7efc2ce305692cc52bcbea30eded96c513e3c61"
     },
     {
       "route": "/zh/download",
       "locale": "zh",
       "page": "download",
       "title": "PhotoCraft 免费下载 – Windows、Mac 与 Linux",
-      "source_sha256": "6b4e6e50906fe86799e36431da3b72a5cc7acad881e3143a65b1b0e2314fafbe"
+      "source_sha256": "1937c8dbf589db782ef355e6d3f590d52e9082089f825d4a554adcca291a3cda"
     },
     {
       "route": "/github",

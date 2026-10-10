@@ -8,7 +8,6 @@
 <link as="font" crossorigin="" href="/assets/fonts/38df7484fe560b25-s.p.0_h8~hcb-m6kp.woff2" rel="preload" type="font/woff2"/>
 <link as="font" crossorigin="" href="/assets/fonts/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2" rel="preload" type="font/woff2"/>
 <link as="font" crossorigin="" href="/assets/fonts/f5031e7b18bdfbb3-s.p.17530ebvtj~5g.woff2" rel="preload" type="font/woff2"/>
-<link as="image" imagesizes="(max-width: 896px) 100vw, 896px" imagesrcset="/assets/images/hero-editor-640-q75.webp 640w, /assets/images/hero-editor-750-q75.webp 750w, /assets/images/hero-editor-828-q75.webp 828w, /assets/images/hero-editor-1080-q75.webp 1080w, /assets/images/hero-editor-1200-q75.webp 1200w, /assets/images/hero-editor-1920-q75.webp 1920w, /assets/images/hero-editor-2048-q75.webp 2048w, /assets/images/hero-editor-3840-q75.webp 3840w" rel="preload"/>
 <link data-precedence="next" href="/assets/css/15sc_v~et~i94.css" rel="stylesheet"/>
 <link data-precedence="next" href="/assets/css/0x4i1d-5t.ch3.css" rel="stylesheet"/>
 <title>PhotoCraft 免费下载 – Windows、Mac 与 Linux</title>
@@ -40,61 +39,129 @@
 <div class="bg-background text-foreground flex min-h-screen flex-col">
 <!-- @include zh/header -->
 <main class="guide-page">
-<header class="guide-intro"><p class="guide-kicker">免费 PHOTOCRAFT · 指南与资源</p>
+<header class="guide-intro">
+<p class="guide-kicker">免费 PHOTOCRAFT · 下载与安装</p>
 <h1>免费下载 PhotoCraft</h1>
-<p>从官方项目选择桌面安装包。想直接开始，也可以打开免费在线编辑器。</p>
+<p>获取免费、开源的 Windows、Mac 与 Linux 桌面版。按系统选择安装包，或直接在浏览器里开始编辑。</p>
 </header>
-<div class="guide-body"><p><a class="guide-button" href="/zh/editor">打开免费编辑器</a></p>
-<aside class="guide-note">发布资产核查时间：2026 年 10 月 10 日，版本 <a href="https://github.com/storytold/photocraft/releases/tag/v0.6.0" target="_blank" rel="noopener noreferrer">GitHub Releases · v0.6.0</a>。这里是核查时的快照，后续更新请查看官方发布页。已核实文件名和来源，未在每种操作系统上安装测试。</aside>
-<section id="platforms">
-<h2>选择桌面下载版本</h2>
-<div class="guide-platforms"><article id="mac"><h3>PhotoCraft Mac 版</h3>
-<p>Apple Silicon 与 Intel 通用 DMG。</p>
-<p><a href="https://github.com/storytold/photocraft/releases/download/v0.6.0/photocraft-0.6.0-macos-universal.dmg" target="_blank" rel="noopener noreferrer">photocraft-0.6.0-macos-universal.dmg</a></p>
-<ol><li>从官方发布页下载 universal DMG。</li>
-<li>打开 DMG，把 PhotoCraft 拖入 Applications。</li>
-<li>打开应用。若被 macOS 阻止，先核对发布者与官方来源，再按系统具体提示处理；不要关闭系统安全保护。</li>
-</ol>
-</article>
-<article id="windows"><h3>PhotoCraft Windows 版</h3>
-<p>提供 x64、arm64 与 x86。先打开 Settings → System → About，查看 System type，再选择对应文件。</p>
-<p><a href="https://github.com/storytold/photocraft/releases/download/v0.6.0/photocraft-0.6.0-windows-x64.msi" target="_blank" rel="noopener noreferrer">photocraft-0.6.0-windows-x64.msi</a></p>
-<p><a href="https://github.com/storytold/photocraft/releases/download/v0.6.0/photocraft-0.6.0-windows-x64-portable.zip" target="_blank" rel="noopener noreferrer">photocraft-0.6.0-windows-x64-portable.zip</a></p>
-<p>ARM64 或 32 位 x86 设备请在发布页 Assets 中选择对应 MSI 或 portable ZIP。</p>
-<ol><li>下载对应 MSI 并运行安装程序。</li>
-<li>按安装窗口提示完成，再打开 PhotoCraft。</li>
-<li>使用 portable ZIP 时，先把整个压缩包解压到一个文件夹，再运行其中的应用。</li>
-</ol>
-</article>
-<article id="linux"><h3>PhotoCraft Linux 版</h3>
-<p>x86_64 与 aarch64 均提供 AppImage、DEB、RPM、Flatpak 和 tar.gz。按架构和发行版选择。</p>
-<p><a href="https://github.com/storytold/photocraft/releases/download/v0.6.0/photocraft-0.6.0-linux-x86_64.AppImage" target="_blank" rel="noopener noreferrer">photocraft-0.6.0-linux-x86_64.AppImage</a></p>
-<p>兼容的 Debian/Ubuntu 系统可选择 DEB，兼容的 RPM 系统可选择 RPM。安装前查看上游系统要求与依赖。</p>
-<p>AppImage 可能需要执行权限及发行版运行时支持。本页不把未实测的 Linux 安装命令写成已验证步骤。</p>
-</article>
+<div class="guide-body">
+<p>FreePhotoCraft.online 是独立的指南与在线编辑网站。桌面安装包来自上游 storytold/photocraft 项目，本站不要求购买。</p>
+<div class="download-actions"><a class="guide-button" href="#platforms">选择桌面下载版本</a><a class="guide-button guide-button-secondary" href="/zh/editor">打开免费在线编辑器</a></div>
+<nav class="download-nav" aria-label="下载分区"><a href="#windows">Windows</a><a href="#macos">Mac</a><a href="#linux">Linux</a><a href="#portable">免安装 ZIP</a><a href="#updates">最新发布</a></nav>
+<p id="download-system-hint" class="download-success">系统识别仅用于推荐，各系统入口始终保留。下载前请核对目标电脑的处理器架构。</p>
+<aside class="guide-note">下载链接核验时间：2026 年 10 月 10 日，版本 <a href="https://github.com/storytold/photocraft/releases/tag/v0.6.0" target="_blank" rel="noopener noreferrer">v0.6.0</a>。以下链接是已核验版本快照，不代表始终为最新版本。已核对文件名和来源，尚未在 Windows、Mac、Linux 上实测安装。</aside>
+<section id="platforms"><h2>选择桌面下载版本</h2><div class="download-platforms">
+<article id="windows" data-download-platform="windows"><h3>PhotoCraft Windows 版</h3>
+<p>打开 Windows 设置 → 系统 → 关于 → 系统类型。64 位 Intel/AMD 电脑选 x64，Snapdragon 等 ARM 电脑选 ARM64，32 位 Windows 选 x86。下方默认显示 x64，不代表已自动识别处理器。</p>
+<div data-download-chooser>
+<div class="download-controls" data-download-controls hidden><label for="windows-arch">Windows 处理器架构</label><select id="windows-arch"><option value="x64">x64 · 64 位 Intel / AMD</option><option value="arm64">ARM64 · Snapdragon / ARM 电脑</option><option value="x86">x86 · 32 位 Windows</option></select></div>
+<div data-download-arch="x64"><h4>x64</h4>
+<p><a href="https://github.com/storytold/photocraft/releases/download/v0.6.0/photocraft-0.6.0-windows-x64.msi" target="_blank" rel="noopener noreferrer" class="guide-button guide-button-secondary">下载 MSI 安装版</a></p><p class="download-file">photocraft-0.6.0-windows-x64.msi</p>
+<p><a href="https://github.com/storytold/photocraft/releases/download/v0.6.0/photocraft-0.6.0-windows-x64-portable.zip" target="_blank" rel="noopener noreferrer" class="guide-button guide-button-secondary">下载免安装 ZIP</a></p><p class="download-file">photocraft-0.6.0-windows-x64-portable.zip</p>
 </div>
-<p><a href="https://github.com/storytold/photocraft/releases/tag/v0.6.0" target="_blank" rel="noopener noreferrer">查看全部官方发布资产</a> · <a href="https://github.com/storytold/photocraft/releases/latest" target="_blank" rel="noopener noreferrer">查看最新发布</a></p>
-</section>
-<section id="verify">
-<h2>安装前核对来源</h2>
-<p>以上链接指向 storytold/photocraft 的 GitHub 发布资产，Assets 还提供 <code>SHA256SUMS.txt</code>。需要校验下载文件时，可使用该校验清单。“官方”描述的是上游来源；FreePhotoCraft.online 本身是独立网站。</p>
-</section>
-<section id="online">
-<h2>不想安装？使用 PhotoCraft 在线版</h2>
-<p>本站 Web 版本可在支持的桌面浏览器中免账号运行；版本与功能可能不同于桌面发布版。</p>
-<p><a class="guide-button" href="/zh/editor">打开免费编辑器</a> · <a href="/zh/tutorial">新手教程</a></p>
-</section>
-<section id="faq">
-<h2>PhotoCraft 下载常见问题</h2>
-<h3>下载需要付费吗？</h3>
-<p>链接指向开源项目发布资产；本站不要求购买。</p>
-<h3>Windows 应该选哪个包？</h3>
-<p>按系统选择 x64、arm64 或 x86。MSI 用于安装，ZIP 用于便携文件夹；不要只按列表第一个文件选择。</p>
-<h3>桌面版能解决所有浏览器问题吗？</h3>
-<p>不能保证。它可以避开浏览器特有的限制，但文件兼容和应用问题仍需测试。 <a href="/zh/help/photocraft-not-loading">加载与浏览器故障帮助</a></p>
-</section>
-<section><h2>下载安全与替代工具</h2><p><a href="/zh/is-photocraft-safe#downloads">来源与 SHA256 核验步骤</a> · <a href="/zh/photocraft-alternatives">按任务比较替代工具</a></p></section></div>
-</main>
+<div data-download-arch="arm64"><h4>arm64</h4>
+<p><a href="https://github.com/storytold/photocraft/releases/download/v0.6.0/photocraft-0.6.0-windows-arm64.msi" target="_blank" rel="noopener noreferrer" class="guide-button guide-button-secondary">下载 MSI 安装版</a></p><p class="download-file">photocraft-0.6.0-windows-arm64.msi</p>
+<p><a href="https://github.com/storytold/photocraft/releases/download/v0.6.0/photocraft-0.6.0-windows-arm64-portable.zip" target="_blank" rel="noopener noreferrer" class="guide-button guide-button-secondary">下载免安装 ZIP</a></p><p class="download-file">photocraft-0.6.0-windows-arm64-portable.zip</p>
+</div>
+<div data-download-arch="x86"><h4>x86</h4>
+<p><a href="https://github.com/storytold/photocraft/releases/download/v0.6.0/photocraft-0.6.0-windows-x86.msi" target="_blank" rel="noopener noreferrer" class="guide-button guide-button-secondary">下载 MSI 安装版</a></p><p class="download-file">photocraft-0.6.0-windows-x86.msi</p>
+<p><a href="https://github.com/storytold/photocraft/releases/download/v0.6.0/photocraft-0.6.0-windows-x86-portable.zip" target="_blank" rel="noopener noreferrer" class="guide-button guide-button-secondary">下载免安装 ZIP</a></p><p class="download-file">photocraft-0.6.0-windows-x86-portable.zip</p>
+</div>
+</div>
+<h4>安装 MSI 版本</h4>
+<ol><li>保存与系统对应的 MSI，在“下载”文件夹中双击打开。</li><li>按安装向导选择安装目录并点击 Install；确认要安装此包时，允许 Windows 的安装提示。</li><li>在 Finish 页面启动 PhotoCraft，或打开开始菜单搜索 PhotoCraft。</li></ol>
+<p class="download-success">成功检查：看到 PhotoCraft 窗口；点击 File → Open，选择一张测试图片，确认图片出现在画布中。</p>
+<span class="download-anchor" id="portable"></span><h4>运行 portable ZIP，免安装</h4>
+<ol><li>选择名称同时含 windows 和 portable 的对应 ZIP。“Source code (zip)”是源码，不是 Windows 应用。</li><li>在“下载”文件夹右键 ZIP → 全部解压缩，选择可写文件夹，完整解压。</li><li>打开解压后的文件夹，双击 photocraft.exe。保留同目录的 portable.txt 和其他文件，不要直接在压缩包内运行。</li></ol>
+<p class="download-success">成功检查：看到 PhotoCraft 窗口；点击 File → Open，选择一张测试图片，确认图片出现在画布中。</p>
+</article>
+<article id="macos" data-download-platform="macos"><span class="download-anchor" id="mac"></span><h3>PhotoCraft Mac 版</h3>
+<p>Apple Silicon 与 Intel 共用一个 Universal DMG。选择桌面版 DMG，不要误选单独的命令行工具 ZIP。</p>
+<p><a href="https://github.com/storytold/photocraft/releases/download/v0.6.0/photocraft-0.6.0-macos-universal.dmg" target="_blank" rel="noopener noreferrer" class="guide-button guide-button-secondary">下载 Universal DMG</a></p><p class="download-file">photocraft-0.6.0-macos-universal.dmg</p>
+<ol><li>保存以 -macos-universal.dmg 结尾的文件，在 Finder → 下载中双击打开。</li><li>把 PhotoCraft 拖入 Applications（应用程序），等待复制完成，再推出磁盘映像。</li><li>在 Finder → 应用程序中双击 PhotoCraft；若 macOS 询问是否打开下载的应用，核对后点击“打开”。</li></ol>
+<p class="download-success">成功检查：看到 PhotoCraft 窗口；点击 File → Open，选择一张测试图片，确认图片出现在画布中。</p>
+<p>若提示开发者未验证，先核对发布来源与发布者；仅针对该提示，系统设置 → 隐私与安全性中可能显示“仍要打开”。若提示应用已损坏或含恶意软件，应停止并查看上游帮助，不绕过该警告。</p></article>
+<article id="linux" data-download-platform="linux"><h3>PhotoCraft Linux 版</h3>
+<p>打开终端执行 uname -m。x86_64 对应 64 位 Intel/AMD，aarch64 对应 ARM64。独立运行选 AppImage，Debian/Ubuntu 选 DEB，Fedora/RHEL/openSUSE 选 RPM，使用 Flatpak 的系统可选 Flatpak 包。</p>
+<div class="download-command"><code>uname -m</code></div>
+<p>以下命令对应已核验的 v0.6.0 文件。在文件管理器中打开下载文件所在文件夹，选择“在终端中打开”。只执行所选格式的命令；任一步报错就停在该步，先查看错误。</p>
+<div data-download-chooser>
+<div class="download-controls" data-download-controls hidden><label for="linux-arch">Linux 处理器架构</label><select id="linux-arch"><option value="x86_64">x86_64 · Intel / AMD</option><option value="aarch64">aarch64 · ARM64</option></select></div>
+<div data-download-arch="x86_64"><h4>x86_64</h4>
+<details open><summary>AppImage</summary><p>独立文件：赋予执行权限后运行。</p>
+<p><a href="https://github.com/storytold/photocraft/releases/download/v0.6.0/photocraft-0.6.0-linux-x86_64.AppImage" target="_blank" rel="noopener noreferrer" class="guide-button guide-button-secondary">下载 AppImage</a></p><p class="download-file">photocraft-0.6.0-linux-x86_64.AppImage</p>
+<div class="download-command"><code>chmod +x photocraft-0.6.0-linux-x86_64.AppImage</code></div>
+<div class="download-command"><code>./photocraft-0.6.0-linux-x86_64.AppImage</code></div>
+<p>若提示缺少 FUSE 或其他运行时，按发行版说明处理，或选择 DEB、RPM、Flatpak。成功运行后会看到 PhotoCraft 窗口。</p>
+</details>
+<details><summary>DEB · Debian / Ubuntu</summary><p>使用 apt 安装本地包并处理依赖。</p>
+<p><a href="https://github.com/storytold/photocraft/releases/download/v0.6.0/photocraft-0.6.0-linux-x86_64.deb" target="_blank" rel="noopener noreferrer" class="guide-button guide-button-secondary">下载 DEB · Debian / Ubuntu</a></p><p class="download-file">photocraft-0.6.0-linux-x86_64.deb</p>
+<div class="download-command"><code>sudo apt install ./photocraft-0.6.0-linux-x86_64.deb</code></div>
+<p>安装成功后在应用菜单搜索 PhotoCraft，或在终端执行 photocraft。</p>
+<div class="download-command"><code>photocraft</code></div>
+</details>
+<details><summary>RPM · Fedora / RHEL / openSUSE</summary><p>按发行版选择命令，不要两条都执行。</p>
+<p><a href="https://github.com/storytold/photocraft/releases/download/v0.6.0/photocraft-0.6.0-linux-x86_64.rpm" target="_blank" rel="noopener noreferrer" class="guide-button guide-button-secondary">下载 RPM · Fedora / RHEL / openSUSE</a></p><p class="download-file">photocraft-0.6.0-linux-x86_64.rpm</p>
+<p>Fedora / RHEL:</p>
+<div class="download-command"><code>sudo dnf install ./photocraft-0.6.0-linux-x86_64.rpm</code></div>
+<p>openSUSE:</p>
+<div class="download-command"><code>sudo zypper install ./photocraft-0.6.0-linux-x86_64.rpm</code></div>
+<p>安装成功后在应用菜单打开 PhotoCraft，或执行 photocraft。</p>
+<div class="download-command"><code>photocraft</code></div>
+</details>
+<details><summary>Flatpak</summary><p>需要已安装 Flatpak；安装时可能提示从 Flathub 安装 freedesktop 运行时。</p>
+<p><a href="https://github.com/storytold/photocraft/releases/download/v0.6.0/photocraft-0.6.0-linux-x86_64.flatpak" target="_blank" rel="noopener noreferrer" class="guide-button guide-button-secondary">下载 Flatpak</a></p><p class="download-file">photocraft-0.6.0-linux-x86_64.flatpak</p>
+<div class="download-command"><code>flatpak install --user ./photocraft-0.6.0-linux-x86_64.flatpak</code></div>
+<div class="download-command"><code>flatpak run ai.storyteller.photocraft</code></div>
+</details>
+</div>
+<div data-download-arch="aarch64"><h4>aarch64</h4>
+<details open><summary>AppImage</summary><p>独立文件：赋予执行权限后运行。</p>
+<p><a href="https://github.com/storytold/photocraft/releases/download/v0.6.0/photocraft-0.6.0-linux-aarch64.AppImage" target="_blank" rel="noopener noreferrer" class="guide-button guide-button-secondary">下载 AppImage</a></p><p class="download-file">photocraft-0.6.0-linux-aarch64.AppImage</p>
+<div class="download-command"><code>chmod +x photocraft-0.6.0-linux-aarch64.AppImage</code></div>
+<div class="download-command"><code>./photocraft-0.6.0-linux-aarch64.AppImage</code></div>
+<p>若提示缺少 FUSE 或其他运行时，按发行版说明处理，或选择 DEB、RPM、Flatpak。成功运行后会看到 PhotoCraft 窗口。</p>
+</details>
+<details><summary>DEB · Debian / Ubuntu</summary><p>使用 apt 安装本地包并处理依赖。</p>
+<p><a href="https://github.com/storytold/photocraft/releases/download/v0.6.0/photocraft-0.6.0-linux-aarch64.deb" target="_blank" rel="noopener noreferrer" class="guide-button guide-button-secondary">下载 DEB · Debian / Ubuntu</a></p><p class="download-file">photocraft-0.6.0-linux-aarch64.deb</p>
+<div class="download-command"><code>sudo apt install ./photocraft-0.6.0-linux-aarch64.deb</code></div>
+<p>安装成功后在应用菜单搜索 PhotoCraft，或在终端执行 photocraft。</p>
+<div class="download-command"><code>photocraft</code></div>
+</details>
+<details><summary>RPM · Fedora / RHEL / openSUSE</summary><p>按发行版选择命令，不要两条都执行。</p>
+<p><a href="https://github.com/storytold/photocraft/releases/download/v0.6.0/photocraft-0.6.0-linux-aarch64.rpm" target="_blank" rel="noopener noreferrer" class="guide-button guide-button-secondary">下载 RPM · Fedora / RHEL / openSUSE</a></p><p class="download-file">photocraft-0.6.0-linux-aarch64.rpm</p>
+<p>Fedora / RHEL:</p>
+<div class="download-command"><code>sudo dnf install ./photocraft-0.6.0-linux-aarch64.rpm</code></div>
+<p>openSUSE:</p>
+<div class="download-command"><code>sudo zypper install ./photocraft-0.6.0-linux-aarch64.rpm</code></div>
+<p>安装成功后在应用菜单打开 PhotoCraft，或执行 photocraft。</p>
+<div class="download-command"><code>photocraft</code></div>
+</details>
+<details><summary>Flatpak</summary><p>需要已安装 Flatpak；安装时可能提示从 Flathub 安装 freedesktop 运行时。</p>
+<p><a href="https://github.com/storytold/photocraft/releases/download/v0.6.0/photocraft-0.6.0-linux-aarch64.flatpak" target="_blank" rel="noopener noreferrer" class="guide-button guide-button-secondary">下载 Flatpak</a></p><p class="download-file">photocraft-0.6.0-linux-aarch64.flatpak</p>
+<div class="download-command"><code>flatpak install --user ./photocraft-0.6.0-linux-aarch64.flatpak</code></div>
+<div class="download-command"><code>flatpak run ai.storyteller.photocraft</code></div>
+</details>
+</div>
+</div>
+<p class="download-success">成功检查：看到 PhotoCraft 窗口；点击 File → Open，选择一张测试图片，确认图片出现在画布中。</p>
+<p>在 Wayland 下，若拖入文件不能打开，请使用 File → Open。其他压缩格式见 <a href="https://github.com/storytold/photocraft/releases/tag/v0.6.0" target="_blank" rel="noopener noreferrer">已核验发布页</a>.</p></article>
+</div></section>
+<section id="updates"><h2>最新版本与发布记录</h2>
+<p>本页安装包链接固定为已核验的 v0.6.0。查看上游最新发布，确认是否有新版本，再选择相同系统与架构。</p>
+<div class="download-actions"><a href="https://github.com/storytold/photocraft/releases/latest" target="_blank" rel="noopener noreferrer" class="guide-button">查看最新发布</a><a href="https://github.com/storytold/photocraft/releases" target="_blank" rel="noopener noreferrer" class="guide-button guide-button-secondary">全部版本与更新记录</a></div></section>
+<section id="verify"><h2>核对下载来源</h2><p>所有安装包按钮均直接指向 storytold/photocraft 的 GitHub 发布资产。发布页还提供 SHA256SUMS.txt，可用于核对下载文件。</p>
+<p><a href="https://github.com/storytold/photocraft/releases/tag/v0.6.0" target="_blank" rel="noopener noreferrer">查看 v0.6.0 全部文件</a> · <a href="https://github.com/storytold/photocraft#downloads" target="_blank" rel="noopener noreferrer">上游下载说明</a></p></section>
+<section id="online"><h2>不想安装？使用 PhotoCraft 在线版</h2><p>本站 Web 版本可在支持的桌面浏览器中免账号运行；版本与功能可能不同于桌面发布版。</p>
+<p><a class="guide-button" href="/zh/editor">打开免费编辑器</a> · <a href="/zh/tutorial">新手教程</a></p></section>
+<section id="faq"><h2>PhotoCraft 下载常见问题</h2>
+<h3>下载 PhotoCraft 需要付费吗？</h3><p>这些安装包来自免费、开源的上游项目，无需在本站购买或注册账号。</p>
+<h3>所有 ZIP 都是免安装应用吗？</h3><p>不是。Windows 免安装包的文件名包含 portable；Source code 是给开发者的源码，web ZIP 是用于自行部署网站的构建包。</p>
+<h3>不知道架构时应该怎么选？</h3><p>Windows 查看“系统类型”，Linux 执行 uname -m；Mac 的 Intel 与 Apple Silicon 共用 Universal DMG。不要把本站系统推荐当成处理器架构识别。</p>
+<h3>桌面版能解决所有浏览器问题吗？</h3><p>它可以避开浏览器特有的限制，但应用与文件兼容仍需测试。 <a href="/zh/help/photocraft-not-loading">加载与浏览器故障帮助</a></p></section>
+<details class="download-developer"><summary>开发者：Web 构建与自行部署</summary><p>photocraft-web ZIP 用于部署浏览器版本，不是桌面安装包。在发布页 Assets 中获取，并按上游托管文档部署。</p><p><a href="https://github.com/storytold/photocraft/blob/v0.6.0/packaging/web/README.md" target="_blank" rel="noopener noreferrer">Web 托管文档</a></p></details>
+<section id="safety-and-alternatives"><h2>下载安全与替代工具</h2><p><a href="/zh/is-photocraft-safe#downloads">来源与 SHA256 核验步骤</a> · <a href="/zh/photocraft-alternatives">按任务比较替代工具</a></p></section>
+</div></main>
 <!-- @include zh/footer -->
 </div>
 <script src="/scripts/site.js" defer></script>
