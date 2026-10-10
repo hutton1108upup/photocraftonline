@@ -23,6 +23,10 @@
 .guide-body li { padding-left: 4px; margin: 8px 0; }
 .guide-body a:not(.guide-button), .guide-toc a, .guide-home-start a { text-decoration: underline; text-underline-offset: 3px; }
 .guide-body a { overflow-wrap: anywhere; }
+.guide-body pre { max-width: 100%; overflow-x: auto; padding: 16px; border: 1px solid var(--border); border-radius: 6px; background: var(--muted); font-size: 13px; line-height: 1.6; }
+.guide-body pre code { white-space: pre; }
+.guide-body .guide-table-hint { color: var(--muted-foreground); font-size: 13px; }
+.guide-table-wrap:focus-visible { outline: 2px solid var(--foreground); outline-offset: 3px; }
 .guide-note { border: 1px solid var(--border); border-left: 3px solid var(--foreground); padding: 18px 20px; background: var(--muted); border-radius: 6px; }
 .guide-toc { display: flex; flex-wrap: wrap; gap: 12px 22px; padding: 18px 0; }
 .guide-body figure { margin: 24px 0; }

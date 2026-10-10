@@ -12,9 +12,9 @@
 <link data-precedence="next" href="/assets/css/15sc_v~et~i94.css" rel="stylesheet"/>
 <link data-precedence="next" href="/assets/css/0x4i1d-5t.ch3.css" rel="stylesheet"/>
 <title>PhotoCraft Tutorial – How to Use the Free Editor</title>
-<meta content="Learn PhotoCraft step by step: open a practice image, duplicate a layer, make a brush edit, and export a PNG with screenshots from our browser build." name="description"/>
+<meta content="Learn how to use PhotoCraft: open a PNG, edit layers, save and reopen a simple PSD, export your image and check download problems with real screenshots." name="description"/>
 <meta content="PhotoCraft Tutorial – How to Use the Free Editor" property="og:title"/>
-<meta content="Learn PhotoCraft step by step: open a practice image, duplicate a layer, make a brush edit, and export a PNG with screenshots from our browser build." property="og:description"/>
+<meta content="Learn how to use PhotoCraft: open a PNG, edit layers, save and reopen a simple PSD, export your image and check download problems with real screenshots." property="og:description"/>
 <meta content="PhotoCraft Online" property="og:site_name"/>
 <meta content="https://www.photocraftonline.com/og-image.png" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
@@ -23,7 +23,7 @@
 <meta content="website" property="og:type"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="PhotoCraft Tutorial – How to Use the Free Editor" name="twitter:title"/>
-<meta content="Learn PhotoCraft step by step: open a practice image, duplicate a layer, make a brush edit, and export a PNG with screenshots from our browser build." name="twitter:description"/>
+<meta content="Learn how to use PhotoCraft: open a PNG, edit layers, save and reopen a simple PSD, export your image and check download problems with real screenshots." name="twitter:description"/>
 <meta content="https://www.photocraftonline.com/og-image.png" name="twitter:image"/>
 <link href="/favicon.ico" rel="shortcut icon"/>
 <link href="/favicon.ico" rel="icon" sizes="32x32"/>
@@ -44,8 +44,8 @@
 <h1>How to Use PhotoCraft: A Free Beginner Tutorial</h1>
 <p>Make your first edit in one short workflow. No account, desktop installation, or payment is needed for this exercise.</p>
 </header>
-<div class="guide-body"><aside class="guide-note">Tested on October 10, 2026 in desktop Chrome with the hosted WebAssembly build <code>72921900975c7e6f</code>. Screenshots show this build, not the latest desktop release. Start with a copy of your own work.</aside>
-<nav class="guide-toc" aria-label="On this page"><a href="/editor">Open editor</a><a href="#open">Open an image</a><a href="#layers">Edit with layers</a><a href="#export">Export PNG</a></nav>
+<div class="guide-body"><aside class="guide-note">Tested on October 10, 2026 in a desktop Chrome local preview of the hosted WebAssembly build <code>72921900975c7e6f</code>. Screenshots show this build, not the latest desktop release. Start with a copy of your own work.</aside>
+<nav class="guide-toc" aria-label="On this page"><a href="/editor">Open editor</a><a href="#open">Open an image</a><a href="#layers">Edit with layers</a><a href="#export">Export PNG</a><a href="#save-layers">Save layers</a><a href="#export-help">Export help</a></nav>
 <section id="start">
 <h2>1. Start PhotoCraft Online</h2>
 <p>Open the editor, wait until the welcome screen appears, and choose a desktop browser with working graphics support. The initial download includes about 25 MB of WebAssembly.</p>
@@ -82,7 +82,13 @@
 <li>Open the downloaded PNG and confirm the brush stroke appears. PNG is a flattened image; it does not preserve your editable layers.</li>
 </ol>
 <figure><img src="/assets/tutorial/export-png.png" alt="File → Export → Quick Export as PNG in the hosted editor." width="1440" height="1000" loading="lazy"/><figcaption>File → Export → Quick Export as PNG in the hosted editor.</figcaption></figure>
-<p>We verified this PNG workflow. PSD round trips, every file format and all professional workflows have not been validated in this tutorial.</p>
+<p>We verified the PNG edit and the simple two-layer PSD save and reopen below. Complex PSDs, text, masks and every professional workflow still need separate tests.</p>
+</section>
+<section id="save-layers"><h2>6. Save Layers So You Can Edit Again</h2>
+<p>The exported PNG is a flattened image. Save a separate editable document if you want to keep working with layers.</p><ol><li>Keep the two-layer practice document open and choose <strong>File → Save As…</strong>. Our browser test downloaded <code>practice-image.psd</code>.</li><li>Find the PSD in your browser Downloads list and confirm it is stored on your computer.</li><li>Choose <strong>File → Open…</strong> and reopen the PSD. Check that Layers still contains <strong>Background copy</strong> and <strong>Background</strong>, and that the brush edit remains visible.</li><li>Keep the PSD for editing; export a separate PNG for the flattened result.</li></ol><figure><img src="/assets/tutorial/save-and-reopen-psd.png" alt="Reopened PSD retaining Background copy, Background and the brush edit." width="1440" height="1000" loading="lazy"/><figcaption>October 10, 2026 local browser test: save and reopen two pixel layers, then export a PNG retaining the edit.</figcaption></figure><p>This is a simple check of our build, not a Photoshop round-trip test or a guarantee for text, smart objects, masks or other PSD effects.</p>
+</section>
+<section id="export-help"><h2>What to Check When You Cannot Find the Export</h2>
+<ol><li>Confirm a document is open and the canvas shows your intended edit, then choose <strong>File → Export → Quick Export as PNG</strong>.</li><li>Check the browser Downloads list and downloads folder for a failed or blocked entry. Repeated downloads may have a numbered filename.</li><li>If the browser asks for download permission or a save location, follow that specific prompt. Keep the editor tab open until the file is saved.</li><li>If a file exists but looks wrong, reopen the PNG, check layer visibility and export again. Keep your original if the task still fails, then consult <a href="/help/photocraft-not-loading">loading help</a> or <a href="/photocraft-alternatives">alternative editors</a>.</li></ol><p>This site does not provide a dependable automatic backup. Keep your original, PSD and exported image yourself. <a href="/is-photocraft-safe">File handling and safety checks</a>.</p>
 </section>
 <section id="questions">
 <h2>Common Beginner Questions</h2>

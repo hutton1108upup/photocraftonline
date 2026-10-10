@@ -2,7 +2,7 @@
 
 `https://freephotocraft.online` 的网站源码与 Cloudflare Workers 静态部署配置。
 基于原公开 PhotoCraft Online 页面复刻，保留未修改的 PhotoCraft WebAssembly 编辑器。
-还原两种语言、首页、编辑器、下载、开源页、关于、隐私、条款、博客列表及两篇文章，新增中英文入门教程、Photoshop 对比及故障帮助，共 26 个页面。
+还原两种语言、首页、编辑器、下载、开源页、关于、隐私、条款、博客列表及两篇文章，提供中英文入门教程、Photoshop 对比、故障帮助、安全核验与替代工具指南，共 30 个页面。
 
 ## 打开本地网站
 
@@ -33,6 +33,8 @@ npm.cmd run dev
 | Photoshop 对比 | `src/pages/en/photocraft-vs-photoshop.html`、`src/pages/zh/photocraft-vs-photoshop.html` |
 | 加载帮助 | `src/pages/en/help/photocraft-not-loading.html`、`src/pages/zh/help/photocraft-not-loading.html` |
 | 编辑器加载状态 | `src/scripts/editor-status.js` |
+| 安全与文件隐私 | `src/pages/en/is-photocraft-safe.html`、`src/pages/zh/is-photocraft-safe.html` |
+| 替代工具比较 | `src/pages/en/photocraft-alternatives.html`、`src/pages/zh/photocraft-alternatives.html` |
 | 开源说明 | `src/pages/en/github.html`、`src/pages/zh/github.html` |
 | 关于、隐私、条款 | 各语言目录下的 `about.html`、`privacy-policy.html`、`terms-of-service.html` |
 | 博客列表 | `src/pages/en/blog.html`、`src/pages/zh/blog.html` |
@@ -60,7 +62,7 @@ npm.cmd run check:production
 npm.cmd run deploy:dry-run
 ```
 
-检查成功显示 `PASS`；构建成功显示 `Built 26 production pages`，输出位于 `dist/`。
+检查成功显示 `PASS`；构建成功显示 `Built 30 production pages`，输出位于 `dist/`。
 如需检查构建后的页面，执行 `npm.cmd run preview`，打开 <http://localhost:4173>。
 `npm.cmd run build` 生成禁止索引的本地构建，正式上线使用 `build:production`。
 生产构建设置新域名 canonical 与 sitemap；编辑器和模板博客保持 noindex。
@@ -74,7 +76,7 @@ npm.cmd run deploy:dry-run
 - 编辑器需要浏览器与 GPU 支持，建议使用桌面 Chrome/Edge。`localhost` 属于浏览器安全上下文。原站已有的引擎限制继续存在。
 - 导航、页面链接和编辑器都指向本地；GitHub Releases、上游官网和编辑器内的社区链接仍指向相应外部网站，与原站一致。
 - 删除线上 Google Analytics 初始化及 Next.js 客户端代码；不在本地访问时向生产统计上报。不新增同意弹窗。
-- 首页保留现有布局；新教程、对比、故障帮助、下载及法律页提供中英文版本。模板博客保持 noindex。法律页描述当前本站行为，不复用账号与支付模板。
+- 首页保留现有布局；教程、对比、故障帮助、安全核验、替代工具、下载及法律页提供中英文版本。模板博客保持 noindex。法律页描述当前本站行为，不复用账号与支付模板。
 - `src/site-manifest.json` 记录构建所需路由、资源 URL、字节数及 SHA-256。
 - 原开发目录的 `reference/`、`evidence/`、本地基准采集工具与日志仅供本地对照，不进入 GitHub 或部署。
 - 第三方许可见 [声明](THIRD-PARTY-NOTICES.md) 和 `public/licenses/`。

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<script src="/scripts/theme.js">
+</script>
+<link as="font" crossorigin="" href="/assets/fonts/38df7484fe560b25-s.p.0_h8~hcb-m6kp.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="/assets/fonts/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="/assets/fonts/f5031e7b18bdfbb3-s.p.17530ebvtj~5g.woff2" rel="preload" type="font/woff2"/>
+<link data-precedence="next" href="/assets/css/15sc_v~et~i94.css" rel="stylesheet"/>
+<link data-precedence="next" href="/assets/css/0x4i1d-5t.ch3.css" rel="stylesheet"/>
+<title>Is PhotoCraft Safe? Download Sources, File Privacy &amp; Checks</title>
+<meta content="Is PhotoCraft safe? Check upstream downloads, SHA256 hashes, browser file handling and the limits of our tested workflow before using your own files." name="description"/>
+<meta content="Is PhotoCraft Safe? Download Sources, File Privacy & Checks" property="og:title"/>
+<meta content="Is PhotoCraft safe? Check upstream downloads, SHA256 hashes, browser file handling and the limits of our tested workflow before using your own files." property="og:description"/>
+<meta content="PhotoCraft Online" property="og:site_name"/>
+<meta content="https://www.photocraftonline.com/og-image.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="PhotoCraft Online" property="og:image:alt"/>
+<meta content="website" property="og:type"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Is PhotoCraft Safe? Download Sources, File Privacy & Checks" name="twitter:title"/>
+<meta content="Is PhotoCraft safe? Check upstream downloads, SHA256 hashes, browser file handling and the limits of our tested workflow before using your own files." name="twitter:description"/>
+<meta content="https://www.photocraftonline.com/og-image.png" name="twitter:image"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/favicon.ico" rel="icon" sizes="32x32"/>
+<link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="noindex, nofollow" name="robots"/>
+<link href="/styles/custom.css" rel="stylesheet"/>
+<link rel="canonical" href="https://freephotocraft.online/is-photocraft-safe"/>
+<link rel="alternate" hreflang="en" href="https://freephotocraft.online/is-photocraft-safe"/>
+<link rel="alternate" hreflang="zh" href="https://freephotocraft.online/zh/is-photocraft-safe"/>
+<link rel="alternate" hreflang="x-default" href="https://freephotocraft.online/is-photocraft-safe"/>
+</head>
+<body class="inter_b2991b2-module__9mH_6q__variable libre_baskerville_17390e78-module__pDOJMW__variable font-sans antialiased" data-locale="en" data-page="is-photocraft-safe">
+<div class="bg-background text-foreground flex min-h-screen flex-col">
+<!-- @include en/header -->
+<main class="guide-page">
+<header class="guide-intro"><p class="guide-kicker">FREE PHOTOCRAFT · GUIDES & RESOURCES</p><h1>Is PhotoCraft Safe? Sources, Downloads and File Privacy</h1><p>Check the exact version and website you plan to use. PhotoCraft’s open-source status gives you a source to inspect; it does not certify every build, download or document.</p></header>
+<div class="guide-body"><aside class="guide-note">Source check: October 10, 2026. Browser observations below cover our local preview of WebAssembly build <code>72921900975c7e6f</code>. This is a limited workflow check, not an independent security audit or desktop malware scan.</aside><section id="scope"><h2>Which PhotoCraft Are You Checking?</h2>
+<p>Three things need separate checks: the upstream desktop app, the browser editor hosted by FreePhotoCraft.online, and other websites or downloads using the same name. A finding about one does not automatically apply to the others.</p>
+<p><a href="https://github.com/storytold/photocraft" target="_blank" rel="noopener noreferrer">storytold/photocraft</a> is the upstream source repository linked by the project. This website is independent of ArtCraft and the PhotoCraft developers. Our browser build is stored on this site and does not automatically track the latest desktop release. <a href="/github">Source and license guide</a> · <a href="/about">About this site</a></p>
+</section><section id="downloads"><h2>Verify a PhotoCraft Download Before Installing</h2>
+<ol><li>Start at the <a href="https://github.com/storytold/photocraft/releases" target="_blank" rel="noopener noreferrer">upstream GitHub Releases page</a>. Choose a release and an asset matching your operating system and architecture. Avoid a file from an unrelated mirror.</li><li>Download the asset and <code>SHA256SUMS.txt</code> from the <strong>same release</strong>, when that release provides a checksum file. The checksum entry must match your exact filename.</li><li>On Windows, right-click the downloaded file in Explorer and choose <strong>Copy as path</strong> (older versions may require Shift + right-click). Open PowerShell and run the command below after replacing the placeholder with that full path. Keep one pair of quotes around the path; remove any extra pair included by Copy as path.</li><li>Compare the displayed SHA256 hash with the matching entry in the checksum file. Letter case does not matter. A mismatch means stop: check the release, filename and download again.</li></ol>
+<pre><code>Get-FileHash -Algorithm SHA256 -LiteralPath 'PASTE_DOWNLOADED_FILE_PATH_HERE'</code></pre>
+<p>A matching hash shows that the file agrees with the published checksum. It does not prove that the program is harmless. If your operating system shows a publisher or security warning, investigate that specific warning; do not disable protection to finish installation. We have not verified signing, notarization or installation on every platform. <a href="/download">Desktop download guide</a></p>
+</section><section id="files"><h2>Does This Browser Editor Upload Your Files?</h2>
+<p>In a desktop Chrome local preview, we opened a 640 × 400 PNG, duplicated a layer, painted a line, saved a two-layer PSD, reopened it and exported a PNG. The test observed no image-upload request, no non-GET request and no request to an external host. The exported pixel retained the edit. <a href="/tutorial#save-layers">Repeat the sample workflow</a>.</p>
+<p>The site code has no image-upload endpoint. These observations cover the tested build and operations; they do not establish the behavior of every tool, another website, a future update or the desktop app.</p>
+<p>Loading this website still sends ordinary page and asset requests to its host, including information needed to serve them. Theme preferences may use browser storage. This site currently configures no Google Analytics, Clarity, advertising tags or session replay. External community and download links use their own services. <a href="/privacy-policy">Read the full privacy notice</a>.</p>
+</section><section id="documents"><h2>Keep Your Original and Check the Output</h2>
+<p>Use a copy of an important document. A successful import does not prove that fonts, masks, smart objects, color profiles or all layer effects will survive saving. Our simple PSD check retained two pixel layers and a brush edit; it was not a Photoshop compatibility certification.</p>
+<p>Download your output, reopen it and inspect the result before closing the editor. A browser tab or stored preference is not a backup. Files from unknown sources can also cause parser errors or excessive resource use; open-source software still needs updates and careful file handling.</p>
+</section><section id="report"><h2>Where to Report a Security Concern</h2>
+<p>For an upstream engine vulnerability, follow the project’s <a href="https://github.com/storytold/photocraft/blob/main/SECURITY.md" target="_blank" rel="noopener noreferrer">security policy</a>. It describes the reporting process and current limitations. Do not place private documents, credentials or exploitable samples in a public issue.</p><p>For ordinary editor bugs, use <a href="https://github.com/storytold/photocraft/issues" target="_blank" rel="noopener noreferrer">upstream Issues</a> with the build, browser and safe reproduction steps. That tracker belongs to the upstream project and is not a private website support inbox.</p>
+</section><section id="faq"><h2>PhotoCraft Safety Questions</h2>
+<h3>Does open source mean PhotoCraft is guaranteed safe?</h3><p>No. It allows source inspection and reuse under the relevant license; build provenance, dependencies, document handling and updates still matter.</p><h3>Is FreePhotoCraft.online the official PhotoCraft website?</h3><p>No. We independently host a browser build and publish guides. Verify the upstream repository separately.</p><h3>Can I use confidential client files?</h3><p>Our sample test is not a certification for confidential workflows. Check your organization’s requirements and the exact build and operations before using sensitive documents.</p><p>To decide whether PhotoCraft is safe enough for your task, verify the source, keep a backup and check the exported result. <a href="/editor">Try the practice workflow</a> · <a href="/photocraft-alternatives">Compare alternatives</a></p>
+</section></div>
+</main>
+<!-- @include en/footer -->
+</div>
+<script src="/scripts/site.js" defer></script>
+</body>
+</html>
