@@ -105,6 +105,7 @@ if (languageButton) {
   menu.hidden = true;
   for (const [language, label] of [['en', 'English'], ['zh', '中文']]) {
     const link = document.createElement('a');
+    link.dataset.language = language;
     link.setAttribute('role', 'menuitem');
     link.className = 'relative flex items-center justify-between gap-2 rounded-md px-2 py-2 text-sm font-normal outline-none';
     link.textContent = label;
@@ -132,6 +133,10 @@ if (languageButton) {
     if (returnFocus) languageButton.focus();
   }
   function openLanguage() {
+    const current = location.pathname.replace(/^\/zh(?=\/|$)/, '').replace(/\/$/, '') || '/';
+    menu.querySelectorAll('[data-language]').forEach(link => {
+      link.href = (link.dataset.language === 'zh' ? '/zh' + (current === '/' ? '' : current) : current) + location.search + location.hash;
+    });
     menu.hidden = false;
     languageButton.setAttribute('aria-expanded', 'true');
     positionMenu();
@@ -157,14 +162,35 @@ if (languageButton) {
 }
 
 if (document.body.dataset.page === 'download') {
-  const platform = navigator.userAgentData?.platform || navigator.platform || navigator.userAgent;
-  const index = /mac/i.test(platform) ? 0 : /win/i.test(platform) ? 1 : /linux/i.test(platform) ? 2 : -1;
-  const card = document.querySelectorAll('#platforms article')[index];
+  const ua = navigator.userAgent;
+  // iPad desktop mode reports MacIntel; Android often reports Linux.
+  const mobile = navigator.userAgentData?.mobile || /android|iphone|ipad|ipod/i.test(ua)
+    || (/mac/i.test(navigator.platform) && navigator.maxTouchPoints > 1);
+  const platform = navigator.userAgentData?.platform || navigator.platform || ua;
+  const system = mobile ? null : /win/i.test(platform) ? 'windows' : /mac/i.test(platform) ? 'macos' : /linux/i.test(platform) ? 'linux' : null;
+  const card = system ? document.querySelector(`[data-download-platform="${system}"]`) : null;
   if (card) {
-    card.classList.add('ring-primary/30', 'ring-2');
+    card.classList.add('download-recommended');
     const badge = document.createElement('span');
-    badge.className = 'bg-primary text-primary-foreground mb-3 w-fit rounded-full px-2 py-0.5 text-[10px] font-medium tracking-wide uppercase';
+    badge.className = 'download-system-badge';
     badge.textContent = copy.yourSystem;
     card.prepend(badge);
   }
+  const hint = document.getElementById('download-system-hint');
+  if (hint && mobile) {
+    hint.textContent = locale === 'zh'
+      ? '你正在使用移动设备。桌面安装包需在电脑上运行，请按目标电脑选择 Windows、Mac 或 Linux。'
+      : 'You are on a mobile device. Desktop packages run on a computer; choose Windows, Mac or Linux for your target computer.';
+  }
+
+  document.querySelectorAll('[data-download-chooser]').forEach(chooser => {
+    const select = chooser.querySelector('select');
+    const groups = chooser.querySelectorAll('[data-download-arch]');
+    const update = () => groups.forEach(group => {
+      group.hidden = group.dataset.downloadArch !== select.value;
+    });
+    update();
+    select.addEventListener('change', update);
+    chooser.querySelector('[data-download-controls]').hidden = false;
+  });
 }
