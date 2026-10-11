@@ -45,6 +45,9 @@
 <p>按任务选择工具，价格只是其中一个因素。本页区分本站浏览器版本的实测结果与上游项目介绍的功能。</p>
 </header>
 <div class="guide-body"><aside class="guide-note">核查时间：2026 年 10 月 10 日；本站浏览器构建：<code>72921900975c7e6f</code>。已实测 PNG 导入、复制图层、笔刷修改、两层 PSD 保存与重开及 PNG 导出；未在 Photoshop 中执行对照或跑分。</aside>
+<section id="adobe-relationship"><h2>PhotoCraft 是 Adobe 产品吗？</h2>
+<p>不是。PhotoCraft 上游是 storytold/photocraft，项目自述目标是提供熟悉的 Photoshop 风格工作流。相似界面、快捷键和 PSD 支持，不表示由 Adobe 开发，也不证明全部功能一致。本站同样独立于 Adobe 和 ArtCraft。</p><p>先分清软件来源，再按实际任务比较。 <a href="/zh/artcraft-photocraft">品牌与系列工具关系</a> · <a href="/zh/github">PhotoCraft 源码</a>。</p>
+</section>
 <section id="comparison">
 <h2>快速对比</h2>
 <p class="guide-table-hint">表格可左右滚动，查看全部列；键盘用户可选中表格区域后使用方向键。</p><div class="guide-table-wrap" tabindex="0" role="region" aria-label="可横向滚动的比较表格"><table><caption>使用方式与工作流比较</caption><thead><tr><th>项目</th><th>本站 PhotoCraft</th><th>Photoshop</th></tr></thead><tbody><tr><th>开始使用</th><td>免费在线编辑；实测 PNG 流程没有付款步骤。</td><td>Adobe 提供付费方案和试用；以当前地区条款为准。</td></tr><tr><th>账号与安装</th><td>本站在线版无需账号和桌面安装。</td><td>使用 Adobe 账号和相应方案；提供桌面及 Web 版本。</td></tr><tr><th>图层与 PNG</th><td>本站已实测复制图层、笔刷修改和 PNG 导出。</td><td>Adobe 文档提供图层编辑与进阶图片工作流。</td></tr><tr><th>PSD 工作流</th><td>简单两层像素 PSD 保存与重开已测试；复杂 PSD 和 Photoshop 往返尚未验证。</td><td>Photoshop 原生文档工作流；仍需核对字体、插件和链接素材。</td></tr><tr><th>支持渠道</th><td>社区问题追踪与本站基础教程。</td><td>Adobe 官方文档和支持渠道。</td></tr></tbody></table></div>
@@ -72,6 +75,12 @@
 </section>
 <section id="migration-check"><h2>更换编辑器前，用自己的文件怎样对照？</h2>
 <ol><li>复制一个代表性文档，记录尺寸、字体、图层、蒙版、透明区域及依赖的插件。</li><li>在准备使用的两个版本中分别打开副本，完成同一修改，分别保存可编辑文档并导出 PNG。</li><li>重新打开保存的文档，核对图层结构和可编辑性；并排查看 PNG 的文字换行、边缘、颜色和透明区域。</li><li>把不同之处记录为任务限制；无法保留关键内容时继续使用原流程，或考察<a href="/zh/photocraft-alternatives">其他替代工具</a>。</li></ol><p>这是供你执行的验证方法，不是本站已经完成的 Photoshop 测试。</p>
+</section>
+<section id="migration-details"><h2>Photoshop 用户迁移时要核对哪些结果？</h2>
+<p class="guide-table-hint">表格可左右滚动；键盘用户可选中表格区域后使用方向键。</p><div class="guide-table-wrap" tabindex="0" role="region" aria-label="用同一副本检查关键内容"><table><caption>用同一副本检查关键内容</caption><thead><tr><th>项目</th><th>检查方法</th><th>决策依据</th></tr></thead><tbody><tr><th>字体与文字</th><td>记录字体、文字换行和可编辑状态，保存后重新打开。</td><td>关键字体或排版不能保留时，暂不迁移该任务。</td></tr>
+<tr><th>图层、蒙版和效果</th><td>核对结构、可见性和实际外观，不只检查是否能打开。</td><td>把无法保留的元素记录为该文件的限制。</td></tr>
+<tr><th>智能对象与链接素材</th><td>准备原始素材，确认保存、重开后是否还能按要求编辑。</td><td>成功输出合成图不代表源结构完整。</td></tr>
+<tr><th>颜色与透明区域</th><td>并排查看相同尺寸输出；需要专业色彩交付时另行验证。</td><td>本次简单样例没有认证这些工作流。</td></tr></tbody></table></div><p>这是你可以执行的检查方法。本站没有 Photoshop 同文件对照、性能跑分或 AI 功能一致性测试；也不把上游桌面 v0.7.0 的功能说明套用到本站固定 Web 构建。</p>
 </section>
 <section id="faq"><h2>PhotoCraft 与 Photoshop 对比常见问题</h2>
 <h3>PhotoCraft 能完全替代 Photoshop 吗？</h3><p>本次测试不能支持这一结论。简单图层练习可以完成，专业文件与交付流程需另行验证。</p><h3>PSD 测试通过意味着复杂文档都兼容吗？</h3><p>不意味着。这里只验证两层像素样例在 PhotoCraft 内保存和重开，没有验证 Photoshop 或复杂效果。</p><h3>应选浏览器版还是桌面版？</h3><p>浏览器版便于开始；需要桌面环境时可考察上游发行版，但功能和要求可能不同。<a href="/zh/download">桌面下载</a>。</p><p>对比 PhotoCraft 与 Photoshop 时，先用实际任务与重开结果作决定。<a href="/zh/tutorial">开始练习</a>。</p>

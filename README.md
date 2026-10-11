@@ -2,7 +2,7 @@
 
 `https://freephotocraft.online` 的网站源码与 Cloudflare Workers 静态部署配置。
 基于原公开 PhotoCraft Online 页面复刻，保留未修改的 PhotoCraft WebAssembly 编辑器。
-还原两种语言、首页、编辑器、下载、开源页、关于、隐私、条款、博客列表及两篇文章，提供中英文入门教程、Photoshop 对比、故障帮助、安全核验与替代工具指南，共 30 个页面。
+还原两种语言、首页、编辑器、下载、开源页、关于、隐私、条款、博客列表及两篇文章，提供中英文入门教程、Photoshop 对比、故障帮助、安全核验、替代工具、Windows 专页、ArtCraft 关系与 App 版本指南，共 36 个页面。
 
 ## 打开本地网站
 
@@ -28,6 +28,9 @@ npm.cmd run dev
 | --- | --- |
 | 英文首页文案、布局、图片 | `src/pages/en/index.html` |
 | 中文首页 | `src/pages/zh/index.html` |
+| PhotoCraft App 身份与版本 | `src/pages/en/photocraft-app.html`、`src/pages/zh/photocraft-app.html` |
+| ArtCraft 与 PhotoCraft 关系 | `src/pages/en/artcraft-photocraft.html`、`src/pages/zh/artcraft-photocraft.html` |
+| Windows 专页 | `src/pages/en/download/windows.html`、`src/pages/zh/download/windows.html` |
 | 下载页面 | `src/pages/en/download.html`、`src/pages/zh/download.html` |
 | 入门教程 | `src/pages/en/tutorial.html`、`src/pages/zh/tutorial.html` |
 | Photoshop 对比 | `src/pages/en/photocraft-vs-photoshop.html`、`src/pages/zh/photocraft-vs-photoshop.html` |
@@ -62,7 +65,7 @@ npm.cmd run check:production
 npm.cmd run deploy:dry-run
 ```
 
-检查成功显示 `PASS`；构建成功显示 `Built 30 production pages`，输出位于 `dist/`。
+检查成功显示 `PASS`；构建成功显示 `Built 36 production pages`，输出位于 `dist/`。
 如需检查构建后的页面，执行 `npm.cmd run preview`，打开 <http://localhost:4173>。
 `npm.cmd run build` 生成禁止索引的本地构建，正式上线使用 `build:production`。
 生产构建设置新域名 canonical 与 sitemap；编辑器和模板博客保持 noindex。
