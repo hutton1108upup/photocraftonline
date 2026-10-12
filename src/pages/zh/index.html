@@ -103,31 +103,57 @@
 </div>
 </div>
 </section>
+<section class="home-guide-section guide-body" id="desktop-downloads" aria-labelledby="home-download-title">
+<h2 id="home-download-title">PhotoCraft 下载与安装概览</h2>
+<p>按电脑系统选择桌面安装包。下载指南链接到上游官方发布文件，本站不提供另行打包的安装程序。</p>
+<p class="home-guide-meta">指南对应 v0.7.0，文件核对日期为 2026 年 10 月 11 日。本站浏览器构建单独维护；更新版本请查看上游最新发布。 <a href="https://github.com/storytold/photocraft/releases/latest" target="_blank" rel="noopener noreferrer">查看官方最新发布</a></p>
+<div class="guide-platforms home-install-cards"><article><h3>Windows</h3><p class="home-guide-meta">MSI 安装包或便携 ZIP · x64、ARM64、x86</p><p>在“设置 → 系统 → 关于”查看系统类型。运行对应 MSI，或先完整解压便携 ZIP，再打开 PhotoCraft。</p><a class="guide-button guide-button-secondary" href="/zh/download/windows">选择 Windows 下载包</a></article>
+<article><h3>Mac</h3><p class="home-guide-meta">通用 DMG · Apple Silicon 与 Intel</p><p>在“访达 → 下载”打开 DMG，将 PhotoCraft 拖入“应用程序”，然后从“应用程序”启动。</p><a class="guide-button guide-button-secondary" href="/zh/download#macos">获取 Mac DMG 与安装指南</a></article>
+<article><h3>Linux</h3><p class="home-guide-meta">AppImage、DEB、RPM 或 Flatpak · x86_64、ARM64</p><p>运行 uname -m 查看架构。按发行版选择格式，再按指南安装或为 AppImage 添加执行权限。</p><a class="guide-button guide-button-secondary" href="/zh/download#linux">选择 Linux 下载包</a></article></div>
+<p class="home-guide-meta">启动后选择 File → Open，确认一张小样例图片能显示在画布上。已测试 Windows x64 CLI 转换；未在本次验收中测试桌面图形界面启动或 Mac/Linux 安装。</p>
+</section>
+<section class="home-guide-section guide-body" id="feature-comparison" aria-labelledby="home-comparison-title">
+<h2 id="home-comparison-title">PhotoCraft 网页版、桌面版与 Photoshop 对比</h2>
+<p>先看要完成的任务，再选择编辑器。表中“实测”仅指本站简单样例；“文档说明”来自下方官方资料。</p>
+<p class="guide-table-hint" id="home-table-hint">手机上可左右滑动表格；键盘操作可先聚焦表格区域，再按方向键横向滚动。</p>
+<div class="guide-table-wrap" tabindex="0" role="region" aria-label="可横向滚动的 PhotoCraft 功能对比" aria-describedby="home-table-hint"><table><caption>选择编辑器前的六项检查</caption><thead><tr><th scope="col">任务</th><th scope="col">本站 PhotoCraft 网页版</th><th scope="col">PhotoCraft 桌面版 v0.7.0</th><th scope="col">Photoshop 桌面版</th></tr></thead><tbody><tr><th scope="row">开始使用</th><td>在浏览器打开，无需本站注册或桌面安装。</td><td>按系统与架构下载安装包。</td><td>需要 Adobe 账号与方案访问权限，通过 Adobe 安装。</td></tr>
+<tr><th scope="row">基础图层</th><td>实测：复制像素图层并用画笔编辑。</td><td>上游文档介绍图层编辑；本站未测试桌面图形界面。</td><td>Adobe 文档介绍图层编辑；未进行同场对比。</td></tr>
+<tr><th scope="row">导出 PNG</th><td>实测：下载编辑后的 PNG 并检查结果。</td><td>Windows x64 CLI 实测：PNG → PSD → PNG，样例像素保持一致。</td><td>Adobe 文档说明支持 PNG 导出。</td></tr>
+<tr><th scope="row">保存可编辑 PSD</th><td>实测：保存并重新打开含两个像素图层的 PSD。</td><td>CLI 已生成样例 PSD；图形界面编辑和多图层往返未验证。</td><td>原生文档格式；Adobe 文档说明可保存图层。</td></tr>
+<tr><th scope="row">复杂文档</th><td>字体、蒙版、智能对象及跨软件往返未验证。</td><td>本站未验证复杂 PSD 工作流程。</td><td>仍需核对项目所用字体、链接素材与插件。</td></tr>
+<tr><th scope="row">建议先做的检查</th><td>在浏览器完成小型 PNG 入门练习。</td><td>在自己的电脑上测试项目副本。</td><td>更换工具前核对原有工作流程与交付要求。</td></tr></tbody></table></div>
+<p><a href="/zh/photocraft-vs-photoshop">查看样例结果、来源与迁移检查</a> · <a href="/zh/photocraft-app#tested">版本与测试范围</a></p>
+<p class="home-guide-meta">官方资料: <a href="https://github.com/storytold/photocraft/tree/v0.7.0" target="_blank" rel="noopener noreferrer">PhotoCraft v0.7.0</a> · <a href="https://helpx.adobe.com/photoshop/using/export-artboards-layers.html" target="_blank" rel="noopener noreferrer">Photoshop PNG</a> · <a href="https://helpx.adobe.com/photoshop/using/saving-images.html" target="_blank" rel="noopener noreferrer">Photoshop PSD</a></p>
+</section>
 <section class="border-border bg-muted/30 border-y px-4 py-12 sm:py-14" id="how-it-works">
 <div class="mx-auto max-w-5xl">
 <div class="mb-8 text-center">
-<h2 class="font-serif text-2xl font-normal tracking-tight sm:text-3xl">How to Use PhotoCraft Online</h2>
-<p class="text-muted-foreground mx-auto mt-2 max-w-lg text-sm sm:text-base">From opening an image to a saved PNG. <a class="text-foreground hover:underline" href="/zh/tutorial">Follow the beginner tutorial</a>.</p>
+<h2 class="font-serif text-2xl font-normal tracking-tight sm:text-3xl">PhotoCraft 基础教程：三步完成第一张图片</h2>
+<p class="text-muted-foreground mx-auto mt-2 max-w-lg text-sm sm:text-base">从打开图片到保存编辑结果。 <a class="text-foreground hover:underline" href="/zh/tutorial">查看入门教程</a>.</p>
 </div>
 <div class="grid gap-6 sm:grid-cols-3">
 <div class="relative text-center"><span aria-hidden="true" class="text-muted-foreground/40 absolute top-5 left-[calc(50%+2rem)] hidden w-[calc(100%-4rem)] text-center text-lg sm:block">→</span>
 <div class="bg-background border-border mx-auto mb-3 flex size-10 items-center justify-center rounded-full border shadow-sm"><svg aria-hidden="true" class="lucide lucide-upload text-foreground size-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3v12"></path><path d="m17 8-5-5-5 5"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path></svg>
 </div>
-<h3 class="text-sm font-medium">Launch the editor</h3>
-<p class="text-muted-foreground mx-auto mt-1.5 max-w-[220px] text-xs leading-relaxed sm:text-sm">Open PhotoCraft in your browser — first load may take 30–60 seconds.</p>
+<h3 class="text-sm font-medium">1. 打开练习图片</h3>
+<p class="text-muted-foreground mx-auto mt-1.5 max-w-[220px] text-xs leading-relaxed sm:text-sm">下载下方练习 PNG，打开编辑器，选择 File → Open… 并选中图片。首次加载需要下载约 25 MB 引擎。</p>
 </div>
 <div class="relative text-center"><span aria-hidden="true" class="text-muted-foreground/40 absolute top-5 left-[calc(50%+2rem)] hidden w-[calc(100%-4rem)] text-center text-lg sm:block">→</span>
 <div class="bg-background border-border mx-auto mb-3 flex size-10 items-center justify-center rounded-full border shadow-sm"><svg aria-hidden="true" class="lucide lucide-layers text-foreground size-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path></svg>
 </div>
-<h3 class="text-sm font-medium">Edit your project</h3>
-<p class="text-muted-foreground mx-auto mt-1.5 max-w-[220px] text-xs leading-relaxed sm:text-sm">Open a small PNG, duplicate a layer, and make a basic brush edit.</p>
+<h3 class="text-sm font-medium">2. 复制图层并编辑</h3>
+<p class="text-muted-foreground mx-auto mt-1.5 max-w-[220px] text-xs leading-relaxed sm:text-sm">在图层面板复制 Background，选中副本，用左侧 Brush 画一条短线。完整教程提供逐步截图。</p>
 </div>
 <div class="relative text-center">
 <div class="bg-background border-border mx-auto mb-3 flex size-10 items-center justify-center rounded-full border shadow-sm"><svg aria-hidden="true" class="lucide lucide-download text-foreground size-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg>
 </div>
-<h3 class="text-sm font-medium">Export &amp; save</h3>
-<p class="text-muted-foreground mx-auto mt-1.5 max-w-[220px] text-xs leading-relaxed sm:text-sm">Export a PNG and check the downloaded image. Keep the original file and save your work before closing.</p>
+<h3 class="text-sm font-medium">3. 保存 PSD 并导出 PNG</h3>
+<p class="text-muted-foreground mx-auto mt-1.5 max-w-[220px] text-xs leading-relaxed sm:text-sm">用 File → Save As… 保存 PSD；再用 File → Export → Quick Export as PNG 导出图片，并在下载列表检查文件。</p>
 </div>
+</div>
+<div class="home-practice">
+<div><h3>用同一张图片开始练习</h3><p>下载本站原创的 640 × 400 PNG，按上方三步练习。保留原图，并分别保存可编辑 PSD 和最终 PNG。</p><div class="home-practice-actions"><a class="guide-button" href="/assets/tutorial/practice-image.png" download="practice-image.png">下载练习 PNG</a><a class="guide-button guide-button-secondary" href="/zh/tutorial">查看完整截图教程</a></div></div>
+<figure><a href="/zh/tutorial#save-layers"><img src="/assets/tutorial/save-and-reopen-psd.png" width="1440" height="1000" loading="lazy" decoding="async" alt="PhotoCraft 浏览器实测：重新打开的 PSD 保留 Background copy、Background 两个图层和黑色画笔编辑。"/></a><figcaption>2026 年 10 月 10 日本地浏览器实测截图：保存的 PSD 重新打开后，两个像素图层和画笔编辑仍在。该样例不代表复杂 PSD 的兼容性。</figcaption></figure>
 </div>
 </div>
 </section>
