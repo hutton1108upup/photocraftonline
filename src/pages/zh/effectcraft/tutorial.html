@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<script src="/scripts/theme.js">
+</script>
+<link as="font" crossorigin="" href="/assets/fonts/38df7484fe560b25-s.p.0_h8~hcb-m6kp.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="/assets/fonts/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="/assets/fonts/f5031e7b18bdfbb3-s.p.17530ebvtj~5g.woff2" rel="preload" type="font/woff2"/>
+<link data-precedence="next" href="/assets/css/15sc_v~et~i94.css" rel="stylesheet"/>
+<link data-precedence="next" href="/assets/css/0x4i1d-5t.ch3.css" rel="stylesheet"/>
+<title>EffectCraft 入门教程：原生项目、关键帧与 GIF 导出</title>
+<meta content="用原创两秒动画练习 EffectCraft：读取关键帧、修改位置、保存并重新打开原生项目，再按已验证的 Windows CLI 步骤导出 GIF 和 PNG。" name="description"/>
+<meta content="EffectCraft 入门教程：原生项目、关键帧与 GIF 导出" property="og:title"/>
+<meta content="用原创两秒动画练习 EffectCraft：读取关键帧、修改位置、保存并重新打开原生项目，再按已验证的 Windows CLI 步骤导出 GIF 和 PNG。" property="og:description"/>
+<meta content="PhotoCraft Online" property="og:site_name"/>
+<meta content="https://www.photocraftonline.com/og-image.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="PhotoCraft Online" property="og:image:alt"/>
+<meta content="website" property="og:type"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="EffectCraft 入门教程：原生项目、关键帧与 GIF 导出" name="twitter:title"/>
+<meta content="用原创两秒动画练习 EffectCraft：读取关键帧、修改位置、保存并重新打开原生项目，再按已验证的 Windows CLI 步骤导出 GIF 和 PNG。" name="twitter:description"/>
+<meta content="https://www.photocraftonline.com/og-image.png" name="twitter:image"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/favicon.ico" rel="icon" sizes="32x32"/>
+<link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="noindex, nofollow" name="robots"/>
+<link href="/styles/custom.css" rel="stylesheet"/>
+<link rel="canonical" href="https://freephotocraft.online/zh/effectcraft/tutorial"/>
+<link rel="alternate" hreflang="en" href="https://freephotocraft.online/effectcraft/tutorial"/>
+<link rel="alternate" hreflang="zh" href="https://freephotocraft.online/zh/effectcraft/tutorial"/>
+<link rel="alternate" hreflang="x-default" href="https://freephotocraft.online/effectcraft/tutorial"/>
+</head>
+<body class="inter_b2991b2-module__9mH_6q__variable libre_baskerville_17390e78-module__pDOJMW__variable font-sans antialiased" data-locale="zh" data-page="effectcraft/tutorial">
+<div class="bg-background text-foreground flex min-h-screen flex-col">
+<!-- @include zh/header -->
+<main class="guide-page"><header class="guide-intro"><p class="guide-kicker">FREE PHOTOCRAFT · EFFECTCRAFT GUIDES</p><h1>EffectCraft CLI 入门：保存与动画导出</h1><p>用原创两秒动画练习 EffectCraft：读取关键帧、修改位置、保存并重新打开原生项目，再按已验证的 Windows CLI 步骤导出 GIF 和 PNG。</p></header><nav class="guide-toc" aria-label="本页目录"><a href="#prepare">准备</a><a href="#inspect">关键帧</a><a href="#edit">修改</a><a href="#reopen">重开</a><a href="#export">导出</a><a href="#scope">范围</a></nav><div class="guide-body"><section id="result"><h2>练习目标：保存、重开并渲染一个原生动画</h2><p>这个两秒练习由背景和 Moving Block 两个纯色图层组成，24 fps、640 × 360。样例从 x=80 移动到 x=560；你将把末端改为 x=500，保存新项目、重新读取并导出 GIF/PNG。</p><p>以下 CLI 路径已用官方 Windows x64 v0.8.0 包验证。桌面图形界面参考流程单独列在后面，未作为本次实测结果。</p><figure><img src="/assets/effectcraft/first-motion-start.png" width="640" height="360" loading="lazy" alt="原始动画第零秒，黄色方块位于左侧。"/><figcaption>原始样例首帧，来自实际 CLI 渲染。</figcaption></figure><details class="effect-animation"><summary>查看原始两秒 GIF 预览</summary><figure><img src="/assets/effectcraft/first-motion.gif" width="640" height="360" loading="lazy" alt="实际导出的黄色方块从左向右移动的动画。"/><figcaption>原始样例 GIF：48 帧；你修改后的结果会在 x=500 停下。</figcaption></figure></details></section>
+<section id="prepare"><h2>1. 下载包和项目，打开正确的终端目录</h2><ol><li>从产品指南下载并核验 Windows x64 便携 ZIP；确认目标电脑确实是 x64。ARM64/x86 文件另列在产品页，本教程未验证这些架构。</li><li>完整解压 ZIP。打开包含 effectcraft-cli.exe 的子文件夹，不在 ZIP 内运行。</li><li>下载下方 first-motion.ecproj，将文件复制到同一个子文件夹。文件扩展名保留 .ecproj。</li><li>在资源管理器地址栏输入 powershell 并按 Enter。终端当前目录应同时包含 CLI 和练习项目。只在这个目录逐条执行下面命令；失败就停在对应步骤检查报错。</li></ol><p><a class="guide-button" href="/assets/effectcraft/first-motion.ecproj" download="first-motion.ecproj">下载原生练习项目</a> <a class="guide-button guide-button-secondary" href="/zh/effectcraft-app#downloads">选择官方程序包</a> · <a href="/assets/effectcraft/first-motion.gif" download="first-motion.gif">下载原始预览 GIF</a></p></section>
+<section id="inspect"><h2>2. 读取合成与关键帧</h2><pre><code>.\effectcraft-cli.exe info --project first-motion.ecproj --json</code></pre><p>成功输出应显示 First Motion、640 × 360、duration 2、frameRate 24 和两层。然后查看末端位置：</p><pre><code>.\effectcraft-cli.exe get &quot;First Motion&quot; &quot;Moving Block&quot; transform/position --time 1.5 --project first-motion.ecproj --json</code></pre><p>应看到两个关键帧：第 0 秒 [80,180,0]，第 1.5 秒 [560,180,0]。第三个 0 是位置的 Z 分量。关键帧让同一属性在不同时间拥有不同值，中间由插值生成运动。</p></section>
+<section id="edit"><h2>3. 改变末端位置，保存另一个项目</h2><pre><code>.\effectcraft-cli.exe set &quot;First Motion&quot; &quot;Moving Block&quot; transform/position &quot;[500,180]&quot; --time 1.5 --project first-motion.ecproj --save-as first-motion-edited.ecproj --json</code></pre><p>成功结果包含 saved，目标为 first-motion-edited.ecproj。原始文件仍保留；末端关键帧现在应为 [500,180,0]。只改一个参数，先验证简单结果。</p></section>
+<section id="reopen"><h2>4. 重新读取保存的项目，确认修改已保留</h2><pre><code>.\effectcraft-cli.exe get &quot;First Motion&quot; &quot;Moving Block&quot; transform/position --time 1.5 --project first-motion-edited.ecproj --json</code></pre><p>这是一个新的 CLI 调用，重新读取磁盘上的新项目。应显示两个关键帧，末端值 [500,180,0]；仅看到修改命令成功还不足以确认保存与重开。</p></section>
+<section id="export"><h2>5. 导出 GIF 和末帧 PNG</h2><pre><code>.\effectcraft-cli.exe render --project first-motion-edited.ecproj --comp &quot;First Motion&quot; --out first-motion-edited.gif --format gif --start 0 --end 2 --fps 24 --json</code></pre><pre><code>.\effectcraft-cli.exe render-frame --project first-motion-edited.ecproj --comp &quot;First Motion&quot; --time 1.5 --out first-motion-edited.png --json</code></pre><p>文件写入当前目录。GIF 应为 640 × 360、48 帧；PNG 应显示方块中心 x=500、y=180。打开两个文件检查运动与末端位置，再决定是否用于后续任务。本站下载的原始 GIF 末端为 x=560，和你修改的结果不同。</p><figure><img src="/assets/effectcraft/first-motion-end.png" width="640" height="360" loading="lazy" alt="原始项目第1.5秒渲染结果，黄色方块位于x=560。"/><figcaption>对照图为原始样例 x=560 的输出；修改后的位置应更靠左，为 x=500。</figcaption></figure></section>
+<section id="desktop"><h2>桌面操作参考：打开项目与检查时间线</h2><p>如希望使用桌面界面，可运行 effectcraft.exe，使用 Open Project 入口选择练习文件，进入 First Motion 合成，选中 Moving Block 并查看 Position 的两个关键帧。改动后另存项目，重新打开核对，再用应用提供的渲染队列或导出入口检查结果。</p><p>这段是依据官方界面和命令说明提供的参考路径，未验证菜单点击或快捷键。本站没有把 CLI 导出图当作 GUI 截图，也没有测试桌面安装与交互。</p></section>
+<section id="help"><h2>失败时检查什么？</h2><ul><li>提示找不到命令：确认终端当前目录含 effectcraft-cli.exe，且完整解压了程序包。</li><li>提示找不到文件：确认 first-motion.ecproj 在同一目录，未被加上 .txt 后缀。</li><li>没有 First Motion 或 Moving Block：先运行 info，使用本教程原始项目核对名称；不要把示例命令套到其他项目。</li><li>保存或导出失败：检查文件夹可写、完整报错和输出路径；保留原始项目。</li><li>Web 版显示图形设备丢失：本次环境也遇到此情况。CLI 样例采用独立 CPU 路径，不能据此确认 Web 或 GUI 功能。</li></ul></section>
+<section id="scope"><h2>验证范围、常见问题与来源</h2><p>2026 年 10 月 12 日 Windows 11 x64 CPU CLI 实测：原生项目保存重开、位置读取、末端修改保存后重开、48 帧 GIF、首尾及修改后 PNG。像素检查确认方块移动；未测试桌面 GUI、Web 交互、音频、字体、复杂效果、3D 或跨系统表现。</p><h3>可以把 AE 项目改扩展名后打开吗？</h3><p>不可以。这里使用真正的 EffectCraft 原生项目；改扩展名不会转换文件结构。</p><h3>样例需要字体或外部素材吗？</h3><p>不需要，只有两个纯色图层。</p><h3>可以直接投入客户项目吗？</h3><p>这个简单练习只验证小范围流程，不能替代对完整项目、效果和输出要求的验证。</p><p><a href="https://github.com/storytold/effectcraft/blob/v0.8.0/docs/agents.md" target="_blank" rel="noopener noreferrer">官方 CLI 文档</a> · <a href="https://github.com/storytold/effectcraft/blob/v0.8.0/README.md" target="_blank" rel="noopener noreferrer">v0.8.0 README</a> · <a href="/zh/effectcraft-app#after-effects">AE 对比与限制</a></p></section></div></main>
+<!-- @include zh/footer -->
+</div>
+<script src="/scripts/site.js" defer></script>
+</body>
+</html>

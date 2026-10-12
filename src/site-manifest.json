@@ -8,14 +8,14 @@
       "locale": "en",
       "page": "index",
       "title": "Free PhotoCraft Online – Open-Source Image Editor",
-      "source_sha256": "1a86e8a8ebd5173f328a089bb25dc03d05a8a532cf87ba43bddc9fa255d03ddb"
+      "source_sha256": "4f77a581b72c2f27d1c5103a2e8ce54348080f5d4525ac85f20b6f9e71be41a0"
     },
     {
       "route": "/zh",
       "locale": "zh",
       "page": "index",
       "title": "Free PhotoCraft Online – Open-Source Image Editor",
-      "source_sha256": "4eb04f1579783ceee8c52d92b01a9d6fff5760aa776879b6b977d47e44066c99"
+      "source_sha256": "5d9d72ee5d7c2919086208b0eb2e57184e663c86dfbcbb3681636a673f7c4b70"
     },
     {
       "route": "/editor",
@@ -232,14 +232,14 @@
       "locale": "en",
       "page": "artcraft-photocraft",
       "title": "ArtCraft Apps Guide: PhotoCraft, VectorCraft and GitHub",
-      "source_sha256": "43b9639868c733668848968fcab49efe66dc7424f924f37ed06b60b2258ca4c3"
+      "source_sha256": "abc88536f885be1d0a76f7f63c8332fab5f1949b3c8e7f0c87dccd8317ae479c"
     },
     {
       "route": "/zh/artcraft-photocraft",
       "locale": "zh",
       "page": "artcraft-photocraft",
       "title": "ArtCraft Apps 工具导航：PhotoCraft、VectorCraft 与 GitHub",
-      "source_sha256": "62b334acdcf29c5f1b6559cd7376ad8c72aa9ad051ce4bc9d4d8c4455f7ea838"
+      "source_sha256": "8db387a52df5598a96c5366ad26e903b13baafbc0479fab15b13c831439fcaa8"
     },
     {
       "route": "/photocraft-app",
@@ -282,6 +282,34 @@
       "page": "getartcraft-review",
       "title": "GetArtCraft Review：PhotoCraft 与 VectorCraft 有限样例评估",
       "source_sha256": "197d966b0656f6e33ea3f6f7cc9d0ab30cb1310a1ebd20bbdb24a01845311c7f"
+    },
+    {
+      "route": "/effectcraft-app",
+      "locale": "en",
+      "page": "effectcraft-app",
+      "title": "EffectCraft Download and Guide: AE Limits and Native Sample",
+      "source_sha256": "dfb6055a4fb5839dbfb3ed5b23a18b0d59b8b09c3994ec41412c07acac6c98f2"
+    },
+    {
+      "route": "/effectcraft/tutorial",
+      "locale": "en",
+      "page": "effectcraft/tutorial",
+      "title": "EffectCraft Tutorial: Native Project, Keyframes and GIF Export",
+      "source_sha256": "8381393d5ecf707174484287498d42bdf6934a3020d9c80388a74a51778579c3"
+    },
+    {
+      "route": "/zh/effectcraft-app",
+      "locale": "zh",
+      "page": "effectcraft-app",
+      "title": "EffectCraft 下载与入门：安装、AE 对比和原生样例",
+      "source_sha256": "9489db9d99cee0600fbaa218abe00112b9ed901d1eba547fcbc4af94aacd2b48"
+    },
+    {
+      "route": "/zh/effectcraft/tutorial",
+      "locale": "zh",
+      "page": "effectcraft/tutorial",
+      "title": "EffectCraft 入门教程：原生项目、关键帧与 GIF 导出",
+      "source_sha256": "e915d6543fc12a2cd784cc7eb6450ac15f14421ba9f3581c68ad167bda52ea13"
     }
   ],
   "assets": [
