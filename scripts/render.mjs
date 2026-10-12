@@ -16,6 +16,35 @@ export async function render(route, { liveReload = false, production = false } =
     const partial = await readFile(path.join(root, 'src/partials', `${include[1]}.html`), 'utf8');
     html = html.replace(include[0], partial);
   }
+  if (page.page !== 'index' && site.indexablePages.includes(page.page)) {
+    const zh = page.locale === 'zh';
+    const prefix = zh ? '/zh' : '';
+    const labels = {
+      download: zh ? '下载与安装' : 'Downloads and installation',
+      'download/windows': 'Windows',
+      'artcraft-photocraft': zh ? 'Craft 工具导航' : 'Craft app directory',
+      'vectorcraft-app': zh ? 'VectorCraft 指南' : 'VectorCraft guide',
+      'getartcraft-review': zh ? '有限样例评测' : 'Limited sample review',
+      github: zh ? 'GitHub 与开源' : 'GitHub and open source',
+      tutorial: zh ? '入门教程' : 'Beginner tutorial',
+      'help/photocraft-not-loading': zh ? '加载帮助' : 'Loading help',
+      'is-photocraft-safe': zh ? '安全与文件隐私' : 'Safety and file privacy',
+      'photocraft-app': zh ? '软件与版本' : 'App and versions',
+      'photocraft-vs-photoshop': zh ? '与 Photoshop 对比' : 'Compare Photoshop',
+      'photocraft-alternatives': zh ? '替代工具' : 'Alternatives',
+      about: zh ? '关于本站' : 'About this site',
+    };
+    const items = [{ name: zh ? '首页' : 'Home', route: prefix || '/' }];
+    if (page.page === 'download/windows') items.push({ name: labels.download, route: `${prefix}/download` });
+    if (['vectorcraft-app', 'getartcraft-review'].includes(page.page)) {
+      items.push({ name: labels['artcraft-photocraft'], route: `${prefix}/artcraft-photocraft` });
+    }
+    items.push({ name: labels[page.page] || page.title, route });
+    const breadcrumbs = `<nav class="site-breadcrumbs" aria-label="${zh ? '面包屑导航' : 'Breadcrumb'}">${items.map((item, index) => `${index ? '<span aria-hidden="true">/</span>' : ''}${index === items.length - 1 ? `<span aria-current="page">${item.name}</span>` : `<a href="${item.route}">${item.name}</a>`}`).join('')}</nav>`;
+    html = html.replace(/(<main\b[^>]*>)/, `$1${breadcrumbs}`);
+    const schema = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: items.map((item, index) => ({ '@type': 'ListItem', position: index + 1, name: item.name, item: site.origin + (item.route === '/' ? '/' : item.route) })) };
+    html = html.replace('</head>', `<script type="application/ld+json">${JSON.stringify(schema).replace(/</g, '\\u003c')}</script></head>`);
+  }
   const copy = JSON.parse(await readFile(path.join(root, 'src/content', `${page.locale}.json`), 'utf8'));
   const options = {
     yourSystem: copy.download.platforms.your_system,

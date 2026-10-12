@@ -1,6 +1,35 @@
 /* Add intentional visual adjustments here. The original site's CSS and fonts
    are preserved under public/assets and need not be edited for routine work. */
 [hidden] { display: none !important; }
+.site-header > div { max-width: 1200px; gap: 16px; }
+.site-desktop-nav { gap: 14px; }
+.site-nav-group { position: relative; font-size: 13px; }
+.site-nav-group summary { display: flex; align-items: center; gap: 6px; padding: 10px 0; cursor: pointer; list-style: none; white-space: nowrap; color: var(--muted-foreground); }
+.site-nav-group summary::-webkit-details-marker { display: none; }
+.site-nav-group summary::after { content: '⌄'; font-size: 13px; }
+.site-nav-group[open] summary, .site-nav-group[data-current] summary { color: var(--foreground); }
+.site-nav-panel { position: absolute; top: 100%; left: 0; z-index: 60; min-width: 220px; padding: 8px; background: var(--background); color: var(--foreground); border: 1px solid var(--border); border-radius: 8px; box-shadow: 0 8px 24px #0002; }
+.site-nav-group:last-child .site-nav-panel { left: auto; right: 0; }
+.site-nav-panel a { display: block; padding: 9px 12px; border-radius: 5px; text-decoration: none; }
+.site-nav-panel a:hover, .site-nav-panel a[aria-current] { background: var(--muted); color: var(--foreground); }
+.site-nav-group summary:focus-visible, .site-nav-panel a:focus-visible { outline: 2px solid var(--foreground); outline-offset: 3px; }
+.site-mobile-menu { max-height: calc(100dvh - 48px); overflow-y: auto; }
+.site-mobile-menu .site-nav-group { border-bottom: 1px solid var(--border); }
+.site-mobile-menu .site-nav-group summary { font-size: 15px; justify-content: space-between; padding: 12px; }
+.site-mobile-menu .site-nav-panel { position: static; min-width: 0; padding: 0 0 8px 12px; border: 0; box-shadow: none; }
+.site-footer-grid { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 24px; }
+.site-breadcrumbs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; font-size: 13px; color: var(--muted-foreground); }
+.site-breadcrumbs a { text-decoration: underline; text-underline-offset: 3px; }
+[data-page="artcraft-photocraft"] #apps table { min-width: 880px; }
+@media (max-width: 1099px) {
+  .site-header .site-desktop-nav, .site-header .site-desktop-action { display: none; }
+  .site-header .site-mobile-toggle { display: block; }
+}
+@media (min-width: 1100px) {
+  .site-header .site-desktop-nav, .site-header .site-desktop-action { display: flex; }
+  .site-header .site-mobile-toggle, .site-mobile-menu { display: none; }
+}
+@media (max-width: 800px) { .site-footer-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
 .local-language-menu { position: fixed; z-index: 100; min-width: 128px; }
 .local-language-menu [role="menuitem"]:hover,
 .local-language-menu [role="menuitem"]:focus {

@@ -2,7 +2,7 @@
 
 `https://freephotocraft.online` 的网站源码与 Cloudflare Workers 静态部署配置。
 基于原公开 PhotoCraft Online 页面复刻，保留未修改的 PhotoCraft WebAssembly 编辑器。
-还原两种语言、首页、编辑器、下载、开源页、关于、隐私、条款、博客列表及两篇文章，提供中英文入门教程、Photoshop 对比、故障帮助、安全核验、替代工具、Windows 专页、ArtCraft 关系与 App 版本指南，共 36 个页面。
+还原两种语言、首页、编辑器、下载、开源页、关于、隐私、条款、博客列表及两篇文章，提供中英文入门教程、Photoshop 对比、故障帮助、安全核验、替代工具、Windows 专页、Craft 工具导航、App 版本指南、VectorCraft 指南与有限样例评测，共 40 个页面。
 
 ## 打开本地网站
 
@@ -30,6 +30,8 @@ npm.cmd run dev
 | 中文首页 | `src/pages/zh/index.html` |
 | PhotoCraft App 身份与版本 | `src/pages/en/photocraft-app.html`、`src/pages/zh/photocraft-app.html` |
 | ArtCraft 与 PhotoCraft 关系 | `src/pages/en/artcraft-photocraft.html`、`src/pages/zh/artcraft-photocraft.html` |
+| VectorCraft 产品、源码与下载 | `src/pages/en/vectorcraft-app.html`、`src/pages/zh/vectorcraft-app.html` |
+| GetArtCraft 有限样例评测 | `src/pages/en/getartcraft-review.html`、`src/pages/zh/getartcraft-review.html` |
 | Windows 专页 | `src/pages/en/download/windows.html`、`src/pages/zh/download/windows.html` |
 | 下载页面 | `src/pages/en/download.html`、`src/pages/zh/download.html` |
 | 入门教程 | `src/pages/en/tutorial.html`、`src/pages/zh/tutorial.html` |
