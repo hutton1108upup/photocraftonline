@@ -24,6 +24,8 @@ export async function render(route, { liveReload = false, production = false } =
       'download/windows': 'Windows',
       'artcraft-photocraft': zh ? 'Craft 工具导航' : 'Craft app directory',
       'vectorcraft-app': zh ? 'VectorCraft 指南' : 'VectorCraft guide',
+      'effectcraft-app': zh ? 'EffectCraft 指南' : 'EffectCraft guide',
+      'effectcraft/tutorial': zh ? 'EffectCraft 入门教程' : 'EffectCraft tutorial',
       'getartcraft-review': zh ? '有限样例评测' : 'Limited sample review',
       github: zh ? 'GitHub 与开源' : 'GitHub and open source',
       tutorial: zh ? '入门教程' : 'Beginner tutorial',
@@ -36,8 +38,11 @@ export async function render(route, { liveReload = false, production = false } =
     };
     const items = [{ name: zh ? '首页' : 'Home', route: prefix || '/' }];
     if (page.page === 'download/windows') items.push({ name: labels.download, route: `${prefix}/download` });
-    if (['vectorcraft-app', 'getartcraft-review'].includes(page.page)) {
+    if (['vectorcraft-app', 'getartcraft-review', 'effectcraft-app', 'effectcraft/tutorial'].includes(page.page)) {
       items.push({ name: labels['artcraft-photocraft'], route: `${prefix}/artcraft-photocraft` });
+    }
+    if (page.page === 'effectcraft/tutorial') {
+      items.push({ name: labels['effectcraft-app'], route: `${prefix}/effectcraft-app` });
     }
     items.push({ name: labels[page.page] || page.title, route });
     const breadcrumbs = `<nav class="site-breadcrumbs" aria-label="${zh ? '面包屑导航' : 'Breadcrumb'}">${items.map((item, index) => `${index ? '<span aria-hidden="true">/</span>' : ''}${index === items.length - 1 ? `<span aria-current="page">${item.name}</span>` : `<a href="${item.route}">${item.name}</a>`}`).join('')}</nav>`;
