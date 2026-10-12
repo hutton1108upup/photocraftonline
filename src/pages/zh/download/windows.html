@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<script src="/scripts/theme.js">
+</script>
+<link as="font" crossorigin="" href="/assets/fonts/38df7484fe560b25-s.p.0_h8~hcb-m6kp.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="/assets/fonts/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="/assets/fonts/f5031e7b18bdfbb3-s.p.17530ebvtj~5g.woff2" rel="preload" type="font/woff2"/>
+<link data-precedence="next" href="/assets/css/15sc_v~et~i94.css" rel="stylesheet"/>
+<link data-precedence="next" href="/assets/css/0x4i1d-5t.ch3.css" rel="stylesheet"/>
+<title>PhotoCraft Windows 下载 – 安装、便携版与故障排查</title>
+<meta content="选择 PhotoCraft Windows 的 x64、ARM64 或 x86 文件，核对 v0.7.0 来源和校验值，查看 MSI、便携 ZIP、更新和启动排查步骤。" name="description"/>
+<meta content="PhotoCraft Windows 下载 – 安装、便携版与故障排查" property="og:title"/>
+<meta content="选择 PhotoCraft Windows 的 x64、ARM64 或 x86 文件，核对 v0.7.0 来源和校验值，查看 MSI、便携 ZIP、更新和启动排查步骤。" property="og:description"/>
+<meta content="PhotoCraft Online" property="og:site_name"/>
+<meta content="https://www.photocraftonline.com/og-image.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="PhotoCraft Online" property="og:image:alt"/>
+<meta content="website" property="og:type"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="PhotoCraft Windows 下载 – 安装、便携版与故障排查" name="twitter:title"/>
+<meta content="选择 PhotoCraft Windows 的 x64、ARM64 或 x86 文件，核对 v0.7.0 来源和校验值，查看 MSI、便携 ZIP、更新和启动排查步骤。" name="twitter:description"/>
+<meta content="https://www.photocraftonline.com/og-image.png" name="twitter:image"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/favicon.ico" rel="icon" sizes="32x32"/>
+<link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="noindex, nofollow" name="robots"/>
+<link href="/styles/custom.css" rel="stylesheet"/>
+<link rel="canonical" href="https://freephotocraft.online/zh/download/windows"/>
+<link rel="alternate" hreflang="en" href="https://freephotocraft.online/download/windows"/>
+<link rel="alternate" hreflang="zh" href="https://freephotocraft.online/zh/download/windows"/>
+<link rel="alternate" hreflang="x-default" href="https://freephotocraft.online/download/windows"/>
+</head>
+<body class="inter_b2991b2-module__9mH_6q__variable libre_baskerville_17390e78-module__pDOJMW__variable font-sans antialiased" data-locale="zh" data-page="download/windows">
+<div class="bg-background text-foreground flex min-h-screen flex-col">
+<!-- @include zh/header -->
+<main class="guide-page">
+<header class="guide-intro"><p class="guide-kicker">免费 PHOTOCRAFT · 产品与下载指南</p><h1>PhotoCraft Windows 下载与安装指南</h1><p>从官方发行版选对文件，再完成安装或便携运行。本站提供独立指南，程序来自上游项目。</p></header>
+<div class="guide-body"><aside class="guide-note">下载与源码检查日期：2026 年 10 月 11 日。当前链接固定为 v0.7.0；本站 Web 编辑器仍使用构建 72921900975c7e6f。不同版本应分别验证。</aside><nav class="guide-toc" aria-label="本页目录"><a href="#architecture">确认架构</a><a href="#packages">下载文件</a><a href="#msi">MSI</a><a href="#portable">便携版</a><a href="#startup">无法启动</a><a href="#updates">更新与卸载</a></nav><p id="download-system-hint" class="download-success">本页文件用于 Windows 电脑。系统提示只识别访问设备，不能确认目标电脑的处理器架构，请按目标电脑的系统类型选择。</p><section id="architecture"><h2>先确认 Windows 系统与处理器架构</h2>
+<p>按 Windows + I 打开设置，进入系统 → 系统信息（About），查看“系统类型”。按显示的信息选择，不要仅因为列表默认 x64 就下载。</p><p class="guide-table-hint">表格可左右滚动；键盘用户可选中表格区域后使用方向键。</p><div class="guide-table-wrap" tabindex="0" role="region" aria-label="系统类型与下载架构"><table><caption>系统类型与下载架构</caption><thead><tr><th>电脑信息</th><th>选择</th><th>需要留意</th></tr></thead><tbody><tr><th>64 位 Windows，Intel / AMD x64 处理器</th><td>x64</td><td>同时核对操作系统位数和处理器。</td></tr>
+<tr><th>ARM 电脑，例如 Snapdragon</th><td>arm64</td><td>使用上游 ARM64 文件，不把 x64 当成原生 ARM 包。</td></tr>
+<tr><th>32 位 Windows</th><td>x86</td><td>选 x86 文件；另行核对上游运行要求。</td></tr></tbody></table></div><p>版本号和架构匹配不保证所有电脑都能运行。图形驱动、系统环境和具体文档仍会影响结果。</p>
+</section><section id="packages"><h2>PhotoCraft Windows 下载：MSI 或便携 ZIP</h2>
+<p>MSI 用于安装到系统，便携 ZIP 用于解压后从文件夹运行。两者都应从同一已核验发布选择。这里不提供本站重新打包的程序。</p><article id="windows" data-download-platform="windows"><div data-download-chooser>
+<div class="download-controls" data-download-controls hidden><label for="windows-arch">Windows 处理器架构</label><select id="windows-arch"><option value="x64">x64 · 64 位 Intel / AMD</option><option value="arm64">ARM64 · Snapdragon / ARM 电脑</option><option value="x86">x86 · 32 位 Windows</option></select></div>
+<div data-download-arch="x64"><h3>x64</h3>
+<p><a href="https://github.com/storytold/photocraft/releases/download/v0.7.0/photocraft-0.7.0-windows-x64.msi" target="_blank" rel="noopener noreferrer" class="guide-button guide-button-secondary">下载 MSI 安装版</a></p><p class="download-file">photocraft-0.7.0-windows-x64.msi</p>
+<p><a href="https://github.com/storytold/photocraft/releases/download/v0.7.0/photocraft-0.7.0-windows-x64-portable.zip" target="_blank" rel="noopener noreferrer" class="guide-button guide-button-secondary">下载免安装 ZIP</a></p><p class="download-file">photocraft-0.7.0-windows-x64-portable.zip</p>
+</div>
+<div data-download-arch="arm64"><h3>arm64</h3>
+<p><a href="https://github.com/storytold/photocraft/releases/download/v0.7.0/photocraft-0.7.0-windows-arm64.msi" target="_blank" rel="noopener noreferrer" class="guide-button guide-button-secondary">下载 MSI 安装版</a></p><p class="download-file">photocraft-0.7.0-windows-arm64.msi</p>
+<p><a href="https://github.com/storytold/photocraft/releases/download/v0.7.0/photocraft-0.7.0-windows-arm64-portable.zip" target="_blank" rel="noopener noreferrer" class="guide-button guide-button-secondary">下载免安装 ZIP</a></p><p class="download-file">photocraft-0.7.0-windows-arm64-portable.zip</p>
+</div>
+<div data-download-arch="x86"><h3>x86</h3>
+<p><a href="https://github.com/storytold/photocraft/releases/download/v0.7.0/photocraft-0.7.0-windows-x86.msi" target="_blank" rel="noopener noreferrer" class="guide-button guide-button-secondary">下载 MSI 安装版</a></p><p class="download-file">photocraft-0.7.0-windows-x86.msi</p>
+<p><a href="https://github.com/storytold/photocraft/releases/download/v0.7.0/photocraft-0.7.0-windows-x86-portable.zip" target="_blank" rel="noopener noreferrer" class="guide-button guide-button-secondary">下载免安装 ZIP</a></p><p class="download-file">photocraft-0.7.0-windows-x86-portable.zip</p>
+</div>
+</div>
+</article><p><a href="https://github.com/storytold/photocraft/releases/tag/v0.7.0" target="_blank" rel="noopener noreferrer">查看 v0.7.0 全部文件与发布说明</a> · <a href="/zh/is-photocraft-safe#downloads">核对来源与 SHA256</a></p>
+</section><section id="msi"><h2>使用 MSI 安装 PhotoCraft</h2>
+<ol><li>下载与你的系统类型匹配的 MSI，并按<a href="/zh/is-photocraft-safe#downloads">校验步骤</a>核对文件。</li><li>在资源管理器中双击 MSI。上游安装向导提供安装目录、确认安装、进度与完成页面，默认目录为 Program Files 下的 PhotoCraft。</li><li>阅读安装目录和提示；如果你决定安装该包，按向导完成所需系统确认。</li><li>安装完成后，从开始菜单打开 PhotoCraft。选择 <strong>File → Open</strong>，用一张练习图片确认画布能显示，再检查导出结果。</li></ol><p>看到完整应用窗口和样例图片才算启动成功；仅出现安装完成提示还不够。上述向导行为依据发布标签中的上游打包配置，本站未执行 MSI 安装验收。</p>
+</section><section id="portable"><h2>使用 Portable ZIP，不安装到系统</h2>
+<ol><li>选择文件名含 <code>windows</code>、正确架构与 <code>portable.zip</code> 的文件。GitHub 的 Source code ZIP 和 Web ZIP 不是这个便携应用。</li><li>在下载文件夹右键 ZIP → 全部解压（Extract All）。解压完整文件夹到有写入权限的位置，不在 ZIP 内直接运行程序。</li><li>打开解压后的子文件夹，运行 <code>photocraft.exe</code>。保持 <code>portable.txt</code> 和其他文件与它放在一起。</li><li>用 File → Open 打开练习图，导出到独立文件并重新打开确认结果。</li></ol><p>上游的 <code>portable.txt</code> 说明：便携设置、笔刷预设和恢复文件存入程序旁的 <code>PhotoCraftData</code>。如果程序目录只读，上游说明便携模式可能退回 %APPDATA%\Photocraft。移动或更新时先确认数据位置，保留完整文件夹与已有数据；恢复文件不能代替作品备份。</p>
+</section><section id="startup"><h2>安装失败、打不开或看不到窗口时</h2>
+<p class="guide-table-hint">表格可左右滚动；键盘用户可选中表格区域后使用方向键。</p><div class="guide-table-wrap" tabindex="0" role="region" aria-label="先确认症状，再选择下一步"><table><caption>先确认症状，再选择下一步</caption><thead><tr><th>症状</th><th>先检查</th><th>接下来</th></tr></thead><tbody><tr><th>文件无法打开或提示架构不兼容</th><td>系统类型、文件名、解压是否完整、SHA256 是否匹配。</td><td>重新选择同一发布的正确架构包。</td></tr>
+<tr><th>Windows 显示安全或发布者提示</th><td>记录具体提示并核对来源；哈希一致不等于没有风险。</td><td>按具体提示和组织策略处理，不关闭系统保护。</td></tr>
+<tr><th>进程存在但没有窗口</th><td>用 Alt + Tab 与任务栏检查窗口；记录系统、架构、版本和现象。</td><td>先保存其他作品；避免反复启动，搜索上游同类问题。</td></tr>
+<tr><th>MSI 安装失败</th><td>保留完整错误文字和包文件名。</td><td>核对微软安装故障说明，并向上游反馈；不要直接删除注册表或系统文件。</td></tr>
+<tr><th>图片能打开，但保存结果有差异</th><td>检查原稿、副本、字体、图层和效果。</td><td>按迁移对照方法验证；这不是仅靠换安装包就能确认的兼容性。</td></tr></tbody></table></div><p>以上是排查顺序，不是对每个故障原因的诊断。本站的<a href="/zh/help/photocraft-not-loading">浏览器加载帮助</a>处理 Web 版问题，不直接套用为桌面修复。</p>
+</section><section id="updates"><h2>更新、卸载与作品保留</h2>
+<p>更新前，把原稿、可编辑文档和导出结果保存到独立作品文件夹并备份。查看<a href="https://github.com/storytold/photocraft/releases/latest" target="_blank" rel="noopener noreferrer">最新发行版</a>，重新匹配系统、架构并核对校验值。本页固定已检查的 v0.7.0，不会自动改变你的安装。</p><p>MSI 版可按 Windows 11 的设置 → 应用 → 已安装的应用，找到 PhotoCraft 后选择卸载；Windows 10 的相关入口为“应用和功能”。如果入口不适用，参考微软的卸载说明。不要假设卸载会自动备份作品或保留全部设置。</p><p>便携版关闭后可移动整个文件夹；删除前先单独备份作品和需要的 PhotoCraftData。使用新版本时先解压到另一个文件夹验证，不直接覆盖唯一副本。</p>
+</section><section id="sources"><h2>资料来源与本站核验范围</h2>
+<p>2026 年 10 月 11 日核对官方发行资产和 SHA256SUMS。下载的 Windows x64 便携 ZIP 哈希一致；在 Windows 11 x64 中，包内 CLI 完成 640 × 400 练习 PNG → PSD → PNG 的导入导出。本测试不覆盖桌面 GUI 启动、MSI 安装、ARM64/x86 运行或复杂 PSD。</p><p><a href="https://github.com/storytold/photocraft/blob/v0.7.0/README.md#downloads" target="_blank" rel="noopener noreferrer">上游下载说明</a> · <a href="https://github.com/storytold/photocraft/blob/v0.7.0/packaging/windows/portable.txt" target="_blank" rel="noopener noreferrer">便携模式说明</a> · <a href="https://github.com/storytold/photocraft/blob/v0.7.0/packaging/windows/photocraft.wxs" target="_blank" rel="noopener noreferrer">安装向导配置</a> · <a href="https://support.microsoft.com/en-us/windows/uninstall-or-remove-apps-and-programs-in-windows-4b55f974-2cc6-2d2b-d092-5905080eaf98" target="_blank" rel="noopener noreferrer">微软卸载说明</a> · <a href="https://support.microsoft.com/en-us/windows/deployment/install-upgrade/fix-problems-that-block-programs-from-being-installed-or-removed" target="_blank" rel="noopener noreferrer">微软安装故障说明</a></p>
+</section><section id="faq"><h2>PhotoCraft Windows 常见问题</h2>
+<h3>Windows 版收费吗？</h3><p>这里链接上游开源发布文件，本站不收取下载费用；相关许可见<a href="/zh/github">源码说明</a>。</p><h3>不知道架构，可以直接选 x64 吗？</h3><p>先查看系统类型。默认选项不能确认你的电脑架构。</p><h3>可以在手机上运行这些文件吗？</h3><p>这些是 Windows 桌面文件，不能当作 Android APK 或 iOS 应用。</p><h3>保存失败一定是安装问题吗？</h3><p>不一定。文档格式、权限、字体或效果也可能需要检查；保留原稿并核对实际提示。</p><p>先选对 PhotoCraft Windows 文件，再用样例验证完整流程。<a href="/zh/tutorial">浏览器练习教程</a> · <a href="/zh/download">其他系统下载</a>。</p>
+</section></div>
+</main>
+<!-- @include zh/footer -->
+</div>
+<script src="/scripts/site.js" defer></script>
+</body>
+</html>

@@ -178,7 +178,7 @@
       "recommended": "Recommended",
       "alternative": "Also available",
       "github_cta": "Open GitHub Releases",
-      "your_system": "Your system",
+      "your_system": "当前系统",
       "install_title": "How to install",
       "macos": {
         "name": "macOS",

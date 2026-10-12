@@ -161,7 +161,7 @@ if (languageButton) {
   window.addEventListener('scroll', () => { if (!menu.hidden) positionMenu(); }, { passive: true });
 }
 
-if (document.body.dataset.page === 'download') {
+if (['download', 'download/windows'].includes(document.body.dataset.page)) {
   const ua = navigator.userAgent;
   // iPad desktop mode reports MacIntel; Android often reports Linux.
   const mobile = navigator.userAgentData?.mobile || /android|iphone|ipad|ipod/i.test(ua)
