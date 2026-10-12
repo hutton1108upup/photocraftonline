@@ -8,14 +8,14 @@
       "locale": "en",
       "page": "index",
       "title": "Free PhotoCraft Online – Open-Source Image Editor",
-      "source_sha256": "8c0110c4d844e172aa918d9243a333748c8ac047d14cbf5a0a4db38e00810e2b"
+      "source_sha256": "1a4bf97e343a8f8f6420a5ee62c99fbaa700d0cd1488afd8827a178f83e34b36"
     },
     {
       "route": "/zh",
       "locale": "zh",
       "page": "index",
       "title": "Free PhotoCraft Online – Open-Source Image Editor",
-      "source_sha256": "7ce8993574dad7a1cdf94efddb688f32cba083640b2cfc362c12f7610e67069f"
+      "source_sha256": "e21da1207d71839443689f7eba31cd8e20e77a8c058e2d3092d3c31f6e39fbd2"
     },
     {
       "route": "/editor",

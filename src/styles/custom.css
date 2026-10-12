@@ -74,6 +74,26 @@
 .guide-home-resources h2 { font-size: 22px; }
 .guide-home-resources p { font-size: 14px; line-height: 1.7; margin: 12px 0; color: var(--muted-foreground); }
 .guide-home-start { text-align: center; padding: 0 20px 30px; font-size: 14px; }
+.home-guide-section { width: min(100% - 32px, 1024px); margin: 0 auto; padding: 48px 0; }
+.home-guide-section + .home-guide-section { border-top: 1px solid var(--border); }
+.home-guide-section h2 { margin-top: 0; }
+.home-guide-section .home-guide-meta { color: var(--muted-foreground); font-size: 13px; }
+.home-guide-section table { min-width: 760px; table-layout: fixed; }
+.home-guide-section th:first-child { width: 16%; }
+.home-install-cards { margin: 24px 0; }
+.home-install-cards article { display: flex; flex-direction: column; }
+.home-install-cards h3 { margin-top: 0; }
+.home-install-cards .guide-button { margin-top: auto; white-space: normal; text-align: center; }
+.home-practice { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 32px; align-items: center; margin-top: 36px; padding-top: 28px; border-top: 1px solid var(--border); }
+.home-practice h3 { font-family: var(--font-libre-baskerville, Georgia), serif; font-size: 22px; line-height: 1.4; }
+.home-practice p { margin: 12px 0 18px; font-size: 14px; line-height: 1.7; color: var(--muted-foreground); }
+.home-practice-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.home-practice .guide-button { white-space: normal; text-align: center; }
+.home-practice img { display: block; width: 100%; height: auto; border: 1px solid var(--border); border-radius: 8px; }
+.home-practice figcaption { margin-top: 10px; font-size: 12px; line-height: 1.7; color: var(--muted-foreground); }
+@media (max-width: 800px) {
+  .home-practice { grid-template-columns: 1fr; gap: 24px; }
+}
 .guide-home-faq { max-width: 760px; margin: 0 auto; padding: 36px 24px; }
 .guide-home-faq h2 { font-family: Georgia, serif; font-size: 28px; margin-bottom: 18px; }
 .guide-home-faq details { border-bottom: 1px solid var(--border); padding: 16px 0; }

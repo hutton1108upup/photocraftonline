@@ -103,6 +103,28 @@
 </div>
 </div>
 </section>
+<section class="home-guide-section guide-body" id="desktop-downloads" aria-labelledby="home-download-title">
+<h2 id="home-download-title">Download and Install PhotoCraft</h2>
+<p>Choose a desktop package for your computer. The download guides list official upstream files; this website does not supply a separate installer.</p>
+<p class="home-guide-meta">Guide packages: v0.7.0, checked October 11, 2026. The hosted browser build is separate. Check the upstream latest release for newer files. <a href="https://github.com/storytold/photocraft/releases/latest" target="_blank" rel="noopener noreferrer">Check the latest official release</a></p>
+<div class="guide-platforms home-install-cards"><article><h3>Windows</h3><p class="home-guide-meta">MSI installer or portable ZIP · x64, ARM64 or x86</p><p>Check Settings → System → About for your system type. Run the matching MSI, or extract the entire portable ZIP before opening PhotoCraft.</p><a class="guide-button guide-button-secondary" href="/download/windows">Choose a Windows download</a></article>
+<article><h3>Mac</h3><p class="home-guide-meta">Universal DMG · Apple Silicon and Intel</p><p>Open the DMG in Finder → Downloads, drag PhotoCraft into Applications, then launch it from Applications.</p><a class="guide-button guide-button-secondary" href="/download#macos">Get the Mac DMG and guide</a></article>
+<article><h3>Linux</h3><p class="home-guide-meta">AppImage, DEB, RPM or Flatpak · x86_64 or ARM64</p><p>Run uname -m to check your architecture. Choose the format for your distribution; follow the matching install or executable-permission steps.</p><a class="guide-button guide-button-secondary" href="/download#linux">Choose a Linux package</a></article></div>
+<p class="home-guide-meta">After launch, choose File → Open and confirm a small sample image appears. Windows x64 CLI conversion was tested; desktop GUI startup and Mac/Linux installation have not been tested here.</p>
+</section>
+<section class="home-guide-section guide-body" id="feature-comparison" aria-labelledby="home-comparison-title">
+<h2 id="home-comparison-title">PhotoCraft Web, Desktop and Photoshop Compared</h2>
+<p>Choose by the task you need to finish. “Tested” below refers to our simple sample; “documented” refers to the linked product documentation.</p>
+<p class="guide-table-hint" id="home-table-hint">On a small screen, swipe the table horizontally. Keyboard users can focus the table and use the arrow keys.</p>
+<div class="guide-table-wrap" tabindex="0" role="region" aria-label="Scrollable PhotoCraft feature comparison" aria-describedby="home-table-hint"><table><caption>Six practical checks before choosing an editor</caption><thead><tr><th scope="col">Task</th><th scope="col">PhotoCraft on this site</th><th scope="col">PhotoCraft desktop v0.7.0</th><th scope="col">Photoshop desktop</th></tr></thead><tbody><tr><th scope="row">Getting started</th><td>Open in your browser; no site signup or desktop install.</td><td>Download the package for your system and architecture.</td><td>Adobe account and plan access; install through Adobe.</td></tr>
+<tr><th scope="row">Basic layers</th><td>Tested: duplicate a pixel layer and draw with the brush.</td><td>Upstream documents layer editing; GUI not tested here.</td><td>Adobe documents layer editing; not tested side by side.</td></tr>
+<tr><th scope="row">PNG export</th><td>Tested: edited PNG downloaded and checked.</td><td>Tested with Windows x64 CLI: PNG → PSD → PNG retains sample pixels.</td><td>Adobe documents PNG export.</td></tr>
+<tr><th scope="row">Editable PSD</th><td>Tested: save and reopen a PSD with two pixel layers.</td><td>CLI sample PSD created; GUI editing and layered round trip untested here.</td><td>Native document format; Adobe documents saving layers.</td></tr>
+<tr><th scope="row">Complex documents</th><td>Fonts, masks, smart objects and cross-app round trips unverified.</td><td>Complex PSD workflows unverified here.</td><td>Check fonts, linked assets and plugins for your project.</td></tr>
+<tr><th scope="row">Best first check</th><td>Try the small PNG tutorial in your browser.</td><td>Try a copy of your project on your own computer.</td><td>Validate the workflow you rely on before switching tools.</td></tr></tbody></table></div>
+<p><a href="/photocraft-vs-photoshop">Sample results, sources and migration checks</a> · <a href="/photocraft-app#tested">Versions and test scope</a></p>
+<p class="home-guide-meta">Official documentation: <a href="https://github.com/storytold/photocraft/tree/v0.7.0" target="_blank" rel="noopener noreferrer">PhotoCraft v0.7.0</a> · <a href="https://helpx.adobe.com/photoshop/using/export-artboards-layers.html" target="_blank" rel="noopener noreferrer">Photoshop PNG</a> · <a href="https://helpx.adobe.com/photoshop/using/saving-images.html" target="_blank" rel="noopener noreferrer">Photoshop PSD</a></p>
+</section>
 <section class="border-border bg-muted/30 border-y px-4 py-12 sm:py-14" id="how-it-works">
 <div class="mx-auto max-w-5xl">
 <div class="mb-8 text-center">
@@ -113,21 +135,25 @@
 <div class="relative text-center"><span aria-hidden="true" class="text-muted-foreground/40 absolute top-5 left-[calc(50%+2rem)] hidden w-[calc(100%-4rem)] text-center text-lg sm:block">→</span>
 <div class="bg-background border-border mx-auto mb-3 flex size-10 items-center justify-center rounded-full border shadow-sm"><svg aria-hidden="true" class="lucide lucide-upload text-foreground size-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M12 3v12"></path><path d="m17 8-5-5-5 5"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path></svg>
 </div>
-<h3 class="text-sm font-medium">Launch the editor</h3>
-<p class="text-muted-foreground mx-auto mt-1.5 max-w-[220px] text-xs leading-relaxed sm:text-sm">Open PhotoCraft in your browser — first load may take 30–60 seconds.</p>
+<h3 class="text-sm font-medium">1. Open the practice image</h3>
+<p class="text-muted-foreground mx-auto mt-1.5 max-w-[220px] text-xs leading-relaxed sm:text-sm">Download the practice PNG below. Open the editor, then choose File → Open… and select the image. First load downloads about 25 MB.</p>
 </div>
 <div class="relative text-center"><span aria-hidden="true" class="text-muted-foreground/40 absolute top-5 left-[calc(50%+2rem)] hidden w-[calc(100%-4rem)] text-center text-lg sm:block">→</span>
 <div class="bg-background border-border mx-auto mb-3 flex size-10 items-center justify-center rounded-full border shadow-sm"><svg aria-hidden="true" class="lucide lucide-layers text-foreground size-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path></svg>
 </div>
-<h3 class="text-sm font-medium">Edit your project</h3>
-<p class="text-muted-foreground mx-auto mt-1.5 max-w-[220px] text-xs leading-relaxed sm:text-sm">Open a small PNG, duplicate a layer, and make a basic brush edit.</p>
+<h3 class="text-sm font-medium">2. Duplicate a layer and edit</h3>
+<p class="text-muted-foreground mx-auto mt-1.5 max-w-[220px] text-xs leading-relaxed sm:text-sm">Duplicate Background in the Layers panel. Select the copy and draw a short line with the Brush tool; the full tutorial shows each click.</p>
 </div>
 <div class="relative text-center">
 <div class="bg-background border-border mx-auto mb-3 flex size-10 items-center justify-center rounded-full border shadow-sm"><svg aria-hidden="true" class="lucide lucide-download text-foreground size-4" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg>
 </div>
-<h3 class="text-sm font-medium">Export &amp; save</h3>
-<p class="text-muted-foreground mx-auto mt-1.5 max-w-[220px] text-xs leading-relaxed sm:text-sm">Export a PNG and check the downloaded image. Keep the original file and save your work before closing.</p>
+<h3 class="text-sm font-medium">3. Save PSD and export PNG</h3>
+<p class="text-muted-foreground mx-auto mt-1.5 max-w-[220px] text-xs leading-relaxed sm:text-sm">Use File → Save As… for the PSD, then File → Export → Quick Export as PNG. Check both files in your browser Downloads.</p>
 </div>
+</div>
+<div class="home-practice">
+<div><h3>Try the Same Image Yourself</h3><p>Use our original 640 × 400 PNG for the three steps above. Keep the original and save the editable PSD separately from your finished PNG.</p><div class="home-practice-actions"><a class="guide-button" href="/assets/tutorial/practice-image.png" download="practice-image.png">Download the practice PNG</a><a class="guide-button guide-button-secondary" href="/tutorial">Follow the full screenshot tutorial</a></div></div>
+<figure><a href="/tutorial#save-layers"><img src="/assets/tutorial/save-and-reopen-psd.png" width="1440" height="1000" loading="lazy" decoding="async" alt="Tested PhotoCraft browser workflow: reopened PSD with Background copy and Background layers, and a black brush edit."/></a><figcaption>Actual October 10, 2026 local browser test: a saved PSD reopens with both pixel layers and the brush edit. This sample does not establish complex PSD compatibility.</figcaption></figure>
 </div>
 </div>
 </section>
