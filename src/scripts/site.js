@@ -58,14 +58,14 @@ if (mobileButton) {
   const header = mobileButton.closest('header');
   const menu = document.createElement('div');
   menu.id = 'mobile-navigation';
-  menu.className = 'border-border border-t px-4 pt-2 pb-4 md:hidden';
+  menu.className = 'site-mobile-menu border-border border-t px-4 pt-2 pb-4';
   menu.hidden = true;
   const nav = header.querySelector('nav').cloneNode(true);
   nav.className = 'flex flex-col gap-2';
   nav.querySelectorAll('a').forEach(link => { link.className = 'text-muted-foreground hover:bg-accent hover:text-foreground rounded-md px-3 py-2 text-sm transition-colors'; });
-  const action = header.querySelector('div.md\\:flex a').cloneNode(true);
+  const action = header.querySelector('.site-desktop-action a').cloneNode(true);
   action.querySelector('svg')?.remove();
-  action.className = header.querySelector('div.md\\:flex a').className;
+  action.className = header.querySelector('.site-desktop-action a').className;
   const bottom = document.createElement('div');
   bottom.className = 'border-border mt-3 flex items-center gap-2 border-t pt-3';
   const spacer = document.createElement('div');
@@ -77,6 +77,7 @@ if (mobileButton) {
   const originalIcon = mobileButton.innerHTML;
   const closeIcon = '<svg aria-hidden="true" class="lucide lucide-x size-5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>';
   const close = () => {
+    menu.querySelectorAll('details[open]').forEach(group => { group.open = false; });
     menu.hidden = true;
     mobileButton.setAttribute('aria-expanded', 'false');
     mobileButton.setAttribute('aria-label', copy.openMenu);
@@ -91,9 +92,68 @@ if (mobileButton) {
     mobileButton.innerHTML = closeIcon;
   });
   menu.addEventListener('click', event => { if (event.target.closest('a')) close(); });
-  document.addEventListener('keydown', event => { if (event.key === 'Escape') close(); });
-  window.matchMedia('(min-width: 768px)').addEventListener('change', event => { if (event.matches) close(); });
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && !menu.hidden && !menu.querySelector('details[open]')) {
+      close();
+      mobileButton.focus();
+    }
+  });
+  window.matchMedia('(min-width: 1100px)').addEventListener('change', event => { if (event.matches) close(); });
 }
+
+// Native details keep navigation usable without JavaScript. Enhance closing,
+// one-open-group behavior and current-page indication for desktop and its clone.
+const navigationGroups = [...document.querySelectorAll('.site-header details.site-nav-group')];
+for (const group of navigationGroups) {
+  group.addEventListener('toggle', () => {
+    if (!group.open) return;
+    for (const other of group.closest('nav').querySelectorAll('details[open]')) {
+      if (other !== group) other.open = false;
+    }
+  });
+  const summary = group.querySelector('summary');
+  summary.addEventListener('keydown', event => {
+    if (event.key !== 'ArrowDown') return;
+    event.preventDefault();
+    group.open = true;
+    group.querySelector('a').focus();
+  });
+  group.addEventListener('click', event => {
+    if (event.target.closest('a')) group.open = false;
+  });
+}
+function updateNavigationCurrent() {
+  for (const group of navigationGroups) {
+    const links = [...group.querySelectorAll('a')];
+    const exactHashLink = links.some(link => {
+      const target = new URL(link.href);
+      return target.pathname === location.pathname && target.hash && target.hash === location.hash;
+    });
+    delete group.dataset.current;
+    for (const link of links) {
+      link.removeAttribute('aria-current');
+      const target = new URL(link.href);
+      if (target.pathname === location.pathname && (exactHashLink ? target.hash === location.hash : !target.hash)) {
+        link.setAttribute('aria-current', target.hash ? 'location' : 'page');
+        group.dataset.current = 'true';
+      }
+    }
+  }
+}
+updateNavigationCurrent();
+window.addEventListener('hashchange', updateNavigationCurrent);
+document.addEventListener('keydown', event => {
+  if (event.key !== 'Escape') return;
+  const activeGroup = document.activeElement?.closest('.site-nav-group');
+  const groups = activeGroup?.open ? [activeGroup] : navigationGroups.filter(group => group.open);
+  for (const group of groups) group.open = false;
+  if (groups.length) groups[0].querySelector('summary').focus();
+});
+document.addEventListener('click', event => {
+  for (const group of navigationGroups) {
+    if (group.open && !group.contains(event.target)) group.open = false;
+  }
+});
 
 const languageButton = document.querySelector('[data-slot="dropdown-menu-trigger"]');
 if (languageButton) {

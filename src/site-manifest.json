@@ -8,56 +8,56 @@
       "locale": "en",
       "page": "index",
       "title": "Free PhotoCraft Online – Open-Source Image Editor",
-      "source_sha256": "1a4bf97e343a8f8f6420a5ee62c99fbaa700d0cd1488afd8827a178f83e34b36"
+      "source_sha256": "1a86e8a8ebd5173f328a089bb25dc03d05a8a532cf87ba43bddc9fa255d03ddb"
     },
     {
       "route": "/zh",
       "locale": "zh",
       "page": "index",
       "title": "Free PhotoCraft Online – Open-Source Image Editor",
-      "source_sha256": "e21da1207d71839443689f7eba31cd8e20e77a8c058e2d3092d3c31f6e39fbd2"
+      "source_sha256": "4eb04f1579783ceee8c52d92b01a9d6fff5760aa776879b6b977d47e44066c99"
     },
     {
       "route": "/editor",
       "locale": "en",
       "page": "editor",
       "title": "PhotoCraft Editor – Edit Images Online for Free",
-      "source_sha256": "c52b057fdb9103187b28f7310cbc8ba4ada1e6347755ef847e3b4459b3ecf1ca"
+      "source_sha256": "8641b44f387832cb2b60ab3e4eb6dfd787e0de4f747116f5d8fc39a5449205af"
     },
     {
       "route": "/zh/editor",
       "locale": "zh",
       "page": "editor",
       "title": "PhotoCraft 编辑器 – 免费在线编辑图片",
-      "source_sha256": "f75941c0c635553dafb07d548c871d833e3d0324695af2a705cbf18fe7b8c964"
+      "source_sha256": "a92b7dcae7ed98b94b531dd7813354d940918cbaf65164781d17f1a273fc569e"
     },
     {
       "route": "/download",
       "locale": "en",
       "page": "download",
       "title": "PhotoCraft Free Download for Windows, Mac & Linux",
-      "source_sha256": "8cc79d951b612b6b518a254aabcc9b5d8be50dcd5ac7db84807cefdf0129b9ec"
+      "source_sha256": "69f29a044a7ae9624723fa70ac937aa1e3eac599c3f82aa3a0eb9a8c7f75f70c"
     },
     {
       "route": "/zh/download",
       "locale": "zh",
       "page": "download",
       "title": "PhotoCraft 免费下载 – Windows、Mac 与 Linux",
-      "source_sha256": "8296843e3f87b12e26ae65a3cb661ac208406ffb0686a113312cbc61e54d8723"
+      "source_sha256": "4759b58e646270e4ebe167ae4bf930987807e1bea13ea609d2272c9af5d8e10b"
     },
     {
       "route": "/github",
       "locale": "en",
       "page": "github",
       "title": "PhotoCraft GitHub & Open Source: Source, Releases and Licenses",
-      "source_sha256": "d1ac7fffe3a5b8ce47e58b9df6605720c2874edf7aac92bd4872f13af7d0cca1"
+      "source_sha256": "baee4bd7aa37ca05b6441faddb6c097e825143da402cb94138412901fdbea597"
     },
     {
       "route": "/zh/github",
       "locale": "zh",
       "page": "github",
       "title": "PhotoCraft GitHub 与开源 – 源码、发行版和许可证指南",
-      "source_sha256": "8819157120f8efc67a79c9d0466df189c6ee7da7deabf8eb612727f13c6e5d1a"
+      "source_sha256": "4ac8882bf7cae94131c9ad8d0788f295a8b41196d295b7f1006d9ccbfa88559a"
     },
     {
       "route": "/about",
@@ -92,56 +92,56 @@
       "locale": "en",
       "page": "terms-of-service",
       "title": "Terms of Use – FreePhotoCraft.online",
-      "source_sha256": "ea43e401ccfa79110d0d438d32a200b7e1b138ffb58b2d90b0925b0acd6c6142"
+      "source_sha256": "479042b4d0cfe9a1dc006fc185f9c261370abcbeda88f8debb9d9883a78e34ea"
     },
     {
       "route": "/zh/terms-of-service",
       "locale": "zh",
       "page": "terms-of-service",
       "title": "使用条款 – FreePhotoCraft.online",
-      "source_sha256": "20c85bcb9b6cb9fcc8b3bd9e72e077c5b05086d538d1dfb7e22caca6be2c84a7"
+      "source_sha256": "4ed1b5de935201b0b8a6ce9e30fabf50cb77d6d2bae31d9a76b5820292c4a957"
     },
     {
       "route": "/blog/blocks-vs-components",
       "locale": "en",
       "page": "blog/blocks-vs-components",
       "title": "Blocks vs Components: What Survives a Rebrand | PhotoCraft Online",
-      "source_sha256": "de1c9cb5e3734b94cd5099c3777a3d6f23c4dc3103c9c83cbca3286418a594cc"
+      "source_sha256": "20bb0ad39ac1719d7bb08a15fe1485f28d5736787bb74078125f535dcc06e0a8"
     },
     {
       "route": "/zh/blog/blocks-vs-components",
       "locale": "zh",
       "page": "blog/blocks-vs-components",
       "title": "Blocks 与 Components:改版后留下的是什么 | PhotoCraft Online",
-      "source_sha256": "d44b1b1e4f6b84f4010546b1ba1cf28e5d09a58aa8eccf7418b0a5d82196def9"
+      "source_sha256": "9f7eb41707492a1426609e9545ad7fdeea8c7b1666555669167e7a34d06393fc"
     },
     {
       "route": "/blog/what-is-shipany",
       "locale": "en",
       "page": "blog/what-is-shipany",
       "title": "What is ShipAny Next | PhotoCraft Online",
-      "source_sha256": "3f5b7bd6402e3e901ea133b5b851f899f1e22a171a6b5eb5b2cf3bfe69d9cee9"
+      "source_sha256": "02ee6a08138d01d1483c7f60e27e4d2ec8e4e973c6068e6d654460f2216cadcd"
     },
     {
       "route": "/zh/blog/what-is-shipany",
       "locale": "zh",
       "page": "blog/what-is-shipany",
       "title": "什么是 ShipAny Next | PhotoCraft Online",
-      "source_sha256": "f68c87c6f7a5ed55e919a407d4cea137db7483ad377181d6cb22498b1d242dcf"
+      "source_sha256": "345db85a111ee713195bfe715826f8a5caf56da7117c561c857d8919f3c450c6"
     },
     {
       "route": "/blog",
       "locale": "en",
       "page": "blog",
       "title": "Blog | PhotoCraft Online",
-      "source_sha256": "d344354b88f6d225b4288f97bfe89772687446ef0e1b994b9833bfdc996720ad"
+      "source_sha256": "ee60fd94264c709c356eeed04c5d6756ed5c473f1e102155098ce3cf00de750b"
     },
     {
       "route": "/zh/blog",
       "locale": "zh",
       "page": "blog",
       "title": "博客 | PhotoCraft Online",
-      "source_sha256": "d8b2703609007d63f52283105936a06d2959eb4f5e64d7de0b57a831e0d60dba"
+      "source_sha256": "cabb48e06e5ea477a66cb7fddd230d32c6ef3c6d636735b6383424a746872d70"
     },
     {
       "route": "/tutorial",
@@ -218,28 +218,28 @@
       "locale": "en",
       "page": "download/windows",
       "title": "PhotoCraft for Windows: Download, Install & Portable Guide",
-      "source_sha256": "4a5937ce9e59e3dffaf7f2f365518290e4b0a54a08a2e87990b75738748e159c"
+      "source_sha256": "71440c22494462b3b35fc47e4bb94180c5fb0d298ab67690720449d0f7ffcb51"
     },
     {
       "route": "/zh/download/windows",
       "locale": "zh",
       "page": "download/windows",
       "title": "PhotoCraft Windows 下载 – 安装、便携版与故障排查",
-      "source_sha256": "41d524bd0d3540b12ea9d0b74a936ef50bda01478010daf0289785e19df5de66"
+      "source_sha256": "7b703e53e1f17b587b4c5d96bcddb9168e192fc9eb4f1dd6b8fc7cbcefa8f315"
     },
     {
       "route": "/artcraft-photocraft",
       "locale": "en",
       "page": "artcraft-photocraft",
-      "title": "ArtCraft and PhotoCraft: Apps, GitHub & AI Studio Explained",
-      "source_sha256": "c3aff6a8c68be3c255be01383e5547d19ab897903c85dcd9e551686de9cefb62"
+      "title": "ArtCraft Apps Guide: PhotoCraft, VectorCraft and GitHub",
+      "source_sha256": "43b9639868c733668848968fcab49efe66dc7424f924f37ed06b60b2258ca4c3"
     },
     {
       "route": "/zh/artcraft-photocraft",
       "locale": "zh",
       "page": "artcraft-photocraft",
-      "title": "ArtCraft 与 PhotoCraft – GitHub、软件系列与 AI 产品关系",
-      "source_sha256": "e54de9adc0062d027ff7fecce2e990722b323436b3caf128c7d8a792035874a1"
+      "title": "ArtCraft Apps 工具导航：PhotoCraft、VectorCraft 与 GitHub",
+      "source_sha256": "62b334acdcf29c5f1b6559cd7376ad8c72aa9ad051ce4bc9d4d8c4455f7ea838"
     },
     {
       "route": "/photocraft-app",
@@ -254,6 +254,34 @@
       "page": "photocraft-app",
       "title": "PhotoCraft App 是什么 – 桌面软件、在线版与下载指南",
       "source_sha256": "ba877a8e50f0b913429440cd263a0c2fa2f58eb2f0c4ee12f8687b7492c75377"
+    },
+    {
+      "route": "/vectorcraft-app",
+      "locale": "en",
+      "page": "vectorcraft-app",
+      "title": "VectorCraft App: Downloads, GitHub and PhotoCraft Differences",
+      "source_sha256": "65b2be05cc1c5628f2d021f5a7c195b2f1afd469347ef41b7a849bcac7c26415"
+    },
+    {
+      "route": "/getartcraft-review",
+      "locale": "en",
+      "page": "getartcraft-review",
+      "title": "GetArtCraft Review: Limited PhotoCraft and VectorCraft Samples",
+      "source_sha256": "09c82563716333d80aeeaa30011f415c5fe3540381da53462be26f6164510d13"
+    },
+    {
+      "route": "/zh/vectorcraft-app",
+      "locale": "zh",
+      "page": "vectorcraft-app",
+      "title": "VectorCraft App 指南：下载、GitHub 与 PhotoCraft 区别",
+      "source_sha256": "9fdac6328143160e56bee1f5c3f975ce87edc45d793aad908c3a8e118b9355b3"
+    },
+    {
+      "route": "/zh/getartcraft-review",
+      "locale": "zh",
+      "page": "getartcraft-review",
+      "title": "GetArtCraft Review：PhotoCraft 与 VectorCraft 有限样例评估",
+      "source_sha256": "197d966b0656f6e33ea3f6f7cc9d0ab30cb1310a1ebd20bbdb24a01845311c7f"
     }
   ],
   "assets": [
