@@ -17,6 +17,7 @@
     "vectorcraft-app",
     "getartcraft-review",
     "effectcraft-app",
-    "effectcraft/tutorial"
+    "effectcraft/tutorial",
+    "effectcraft/desktop-tutorial"
   ]
 }
