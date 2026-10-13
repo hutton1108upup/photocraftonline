@@ -8,14 +8,14 @@
       "locale": "en",
       "page": "index",
       "title": "Free PhotoCraft Online – Open-Source Image Editor",
-      "source_sha256": "4f77a581b72c2f27d1c5103a2e8ce54348080f5d4525ac85f20b6f9e71be41a0"
+      "source_sha256": "ac3b1a67b405c215992178b442aba5fc901c7c713620564aeb7b580d62bd6f0e"
     },
     {
       "route": "/zh",
       "locale": "zh",
       "page": "index",
       "title": "Free PhotoCraft Online – Open-Source Image Editor",
-      "source_sha256": "5d9d72ee5d7c2919086208b0eb2e57184e663c86dfbcbb3681636a673f7c4b70"
+      "source_sha256": "38da2cd7fe4413a9967a7539b89379585494e4c06df5735454b4b76c394b86d8"
     },
     {
       "route": "/editor",
@@ -288,28 +288,42 @@
       "locale": "en",
       "page": "effectcraft-app",
       "title": "EffectCraft Download and Guide: AE Limits and Native Sample",
-      "source_sha256": "dfb6055a4fb5839dbfb3ed5b23a18b0d59b8b09c3994ec41412c07acac6c98f2"
+      "source_sha256": "5e1b56cc1181f9ed050ff8f358f024be5410f863a401f649e9f9c5b50c40788e"
     },
     {
       "route": "/effectcraft/tutorial",
       "locale": "en",
       "page": "effectcraft/tutorial",
       "title": "EffectCraft Tutorial: Native Project, Keyframes and GIF Export",
-      "source_sha256": "8381393d5ecf707174484287498d42bdf6934a3020d9c80388a74a51778579c3"
+      "source_sha256": "2a3038a1f703b03e9bf53a6a8fa01f1d00654df18fa1e814b0c57612cfcc0432"
     },
     {
       "route": "/zh/effectcraft-app",
       "locale": "zh",
       "page": "effectcraft-app",
       "title": "EffectCraft 下载与入门：安装、AE 对比和原生样例",
-      "source_sha256": "9489db9d99cee0600fbaa218abe00112b9ed901d1eba547fcbc4af94aacd2b48"
+      "source_sha256": "a64b4ff27989eaab66cd5aaa9859383f2004a560052cba8453ca4f982a67d726"
     },
     {
       "route": "/zh/effectcraft/tutorial",
       "locale": "zh",
       "page": "effectcraft/tutorial",
       "title": "EffectCraft 入门教程：原生项目、关键帧与 GIF 导出",
-      "source_sha256": "e915d6543fc12a2cd784cc7eb6450ac15f14421ba9f3581c68ad167bda52ea13"
+      "source_sha256": "e3d2f420fb8c5f6c091594e9d4d42ec387c45c57adbd09c5b32747abca9a733a"
+    },
+    {
+      "route": "/effectcraft/desktop-tutorial",
+      "locale": "en",
+      "page": "effectcraft/desktop-tutorial",
+      "title": "EffectCraft Desktop Tutorial: Keyframes, Save As and GIF Export",
+      "source_sha256": "8675657915d75a41a3c1aef9130b4bace9d2ad8ad76559930557f61e432bc704"
+    },
+    {
+      "route": "/zh/effectcraft/desktop-tutorial",
+      "locale": "zh",
+      "page": "effectcraft/desktop-tutorial",
+      "title": "EffectCraft 桌面图文教程：关键帧、另存与 GIF 导出",
+      "source_sha256": "05e5afe4c7ca5a9597aa4838d73268be810034b462326f98f6d3d5c7c17ec08b"
     }
   ],
   "assets": [

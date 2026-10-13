@@ -25,7 +25,8 @@ export async function render(route, { liveReload = false, production = false } =
       'artcraft-photocraft': zh ? 'Craft 工具导航' : 'Craft app directory',
       'vectorcraft-app': zh ? 'VectorCraft 指南' : 'VectorCraft guide',
       'effectcraft-app': zh ? 'EffectCraft 指南' : 'EffectCraft guide',
-      'effectcraft/tutorial': zh ? 'EffectCraft 入门教程' : 'EffectCraft tutorial',
+      'effectcraft/tutorial': zh ? 'EffectCraft CLI 教程' : 'EffectCraft CLI tutorial',
+      'effectcraft/desktop-tutorial': zh ? 'EffectCraft 桌面教程' : 'EffectCraft desktop tutorial',
       'getartcraft-review': zh ? '有限样例评测' : 'Limited sample review',
       github: zh ? 'GitHub 与开源' : 'GitHub and open source',
       tutorial: zh ? '入门教程' : 'Beginner tutorial',
@@ -38,10 +39,10 @@ export async function render(route, { liveReload = false, production = false } =
     };
     const items = [{ name: zh ? '首页' : 'Home', route: prefix || '/' }];
     if (page.page === 'download/windows') items.push({ name: labels.download, route: `${prefix}/download` });
-    if (['vectorcraft-app', 'getartcraft-review', 'effectcraft-app', 'effectcraft/tutorial'].includes(page.page)) {
+    if (['vectorcraft-app', 'getartcraft-review', 'effectcraft-app', 'effectcraft/tutorial', 'effectcraft/desktop-tutorial'].includes(page.page)) {
       items.push({ name: labels['artcraft-photocraft'], route: `${prefix}/artcraft-photocraft` });
     }
-    if (page.page === 'effectcraft/tutorial') {
+    if (['effectcraft/tutorial', 'effectcraft/desktop-tutorial'].includes(page.page)) {
       items.push({ name: labels['effectcraft-app'], route: `${prefix}/effectcraft-app` });
     }
     items.push({ name: labels[page.page] || page.title, route });

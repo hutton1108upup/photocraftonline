@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<script src="/scripts/theme.js">
+</script>
+<link as="font" crossorigin="" href="/assets/fonts/38df7484fe560b25-s.p.0_h8~hcb-m6kp.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="/assets/fonts/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="/assets/fonts/f5031e7b18bdfbb3-s.p.17530ebvtj~5g.woff2" rel="preload" type="font/woff2"/>
+<link data-precedence="next" href="/assets/css/15sc_v~et~i94.css" rel="stylesheet"/>
+<link data-precedence="next" href="/assets/css/0x4i1d-5t.ch3.css" rel="stylesheet"/>
+<title>EffectCraft 桌面图文教程：关键帧、另存与 GIF 导出</title>
+<meta content="跟随 Windows v0.9.2 实拍截图，打开原生动画项目、修改位置关键帧、另存并重开，再用桌面渲染队列导出两秒 GIF。" name="description"/>
+<meta content="EffectCraft 桌面图文教程：关键帧、另存与 GIF 导出" property="og:title"/>
+<meta content="跟随 Windows v0.9.2 实拍截图，打开原生动画项目、修改位置关键帧、另存并重开，再用桌面渲染队列导出两秒 GIF。" property="og:description"/>
+<meta content="PhotoCraft Online" property="og:site_name"/>
+<meta content="https://www.photocraftonline.com/og-image.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="PhotoCraft Online" property="og:image:alt"/>
+<meta content="website" property="og:type"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="EffectCraft 桌面图文教程：关键帧、另存与 GIF 导出" name="twitter:title"/>
+<meta content="跟随 Windows v0.9.2 实拍截图，打开原生动画项目、修改位置关键帧、另存并重开，再用桌面渲染队列导出两秒 GIF。" name="twitter:description"/>
+<meta content="https://www.photocraftonline.com/og-image.png" name="twitter:image"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/favicon.ico" rel="icon" sizes="32x32"/>
+<link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="noindex, nofollow" name="robots"/>
+<link href="/styles/custom.css" rel="stylesheet"/>
+<link rel="canonical" href="https://freephotocraft.online/zh/effectcraft/desktop-tutorial"/>
+<link rel="alternate" hreflang="en" href="https://freephotocraft.online/effectcraft/desktop-tutorial"/>
+<link rel="alternate" hreflang="zh" href="https://freephotocraft.online/zh/effectcraft/desktop-tutorial"/>
+<link rel="alternate" hreflang="x-default" href="https://freephotocraft.online/effectcraft/desktop-tutorial"/>
+</head>
+<body class="inter_b2991b2-module__9mH_6q__variable libre_baskerville_17390e78-module__pDOJMW__variable font-sans antialiased" data-locale="zh" data-page="effectcraft/desktop-tutorial">
+<div class="bg-background text-foreground flex min-h-screen flex-col">
+<!-- @include zh/header -->
+
+<main class="guide-page"><header class="guide-intro"><p class="guide-kicker">EFFECTCRAFT · WINDOWS DESKTOP</p><h1>EffectCraft 桌面图文教程：做一个两秒方块动画</h1><p>跟随 Windows v0.9.2 实拍截图，打开原生动画项目、修改位置关键帧、另存并重开，再用桌面渲染队列导出两秒 GIF。</p></header><nav class="guide-toc" aria-label="本页目录"><a href="#prepare">准备</a><a href="#open">打开项目</a><a href="#keys">关键帧</a><a href="#edit">修改</a><a href="#save">另存与重开</a><a href="#render">导出 GIF</a><a href="#help">常见问题</a></nav><div class="guide-body">
+<section id="prepare"><h2>开始前准备：程序、原生项目和预期结果</h2><p>本教程于 2026 年 10 月 13 日使用 Windows 11 x64 的 EffectCraft v0.9.2 便携版实测，界面菜单为简体中文，部分面板和按钮仍显示英文。普通用户不需要安装 Rust，也不需要输入 CLI 命令。Mac/Linux 和 MSI 安装未在本教程测试。</p><ol><li>打开<a href="/zh/effectcraft-app#downloads">官方下载指南</a>，选择适合自己电脑的便携 ZIP，按同版 SHA256 清单核验。</li><li>右键 ZIP →“全部解压”，进入包含 effectcraft.exe 的文件夹，再双击启动；不要在压缩包中运行。</li><li>下载 first-motion.ecproj，记住保存目录。该原创项目只有两个纯色图层，不需要字体、图片或其他外部素材。</li></ol><p><a class="guide-button" href="/assets/effectcraft/first-motion.ecproj" download="first-motion.ecproj">下载开始项目</a> <a class="guide-button guide-button-secondary" href="/assets/effectcraft/desktop-motion.ecproj" download="desktop-motion.ecproj">下载完成项目</a> · <a href="/assets/effectcraft/desktop-motion.gif" download="desktop-motion.gif">下载桌面导出 GIF</a></p><p>目标：把原项目第 1.5 秒的位置 X 从 560 改为 500，保持 Y=180。保存成新项目，重开确认，再导出 640 × 360、24 fps、48 帧的两秒 GIF。下方截图可点击放大。</p></section>
+<section id="open"><h2>1. 从“文件 → 打开项目”载入练习</h2><ol><li>点击左上“文件”→“打开项目...”；Windows 下也可按 Ctrl+O。</li><li>在文件选择框找到 first-motion.ecproj，点击“打开”。这是项目打开入口，不是素材导入入口。</li><li>中间应显示绿色背景、左侧黄色方块；左侧 Project 面板出现 First Motion，下面时间线出现 Moving Block 和 Background。若合成没有进入查看器，在 Project 中双击 First Motion。</li></ol><figure><a href="/assets/effectcraft/desktop-file-menu.jpg" target="_blank" rel="noopener noreferrer"><img src="/assets/effectcraft/desktop-file-menu.jpg" width="1378" height="802" loading="lazy" alt="EffectCraft 文件菜单中的打开项目入口。"/></a><figcaption>实拍：文件菜单中的“打开项目...”与 Ctrl+O。</figcaption></figure><figure><a href="/assets/effectcraft/desktop-open.jpg" target="_blank" rel="noopener noreferrer"><img src="/assets/effectcraft/desktop-open.jpg" width="1378" height="802" loading="lazy" alt="打开原生项目后的 EffectCraft 桌面合成和两个图层。"/></a><figcaption>成功状态：First Motion 合成、两个图层和绿色背景上的黄色方块。</figcaption></figure></section>
+<section id="keys"><h2>2. 选中图层，展开两个位置关键帧</h2><ol><li>在下方时间线点击 Moving Block 的图层名称，不要选择 Background。</li><li>按键盘 P，展开 Position（位置）属性。旁边有蓝色秒表与两个菱形关键帧；这表示位置已随时间变化。</li><li>在第 0 秒检查 Position 为 80, 180。在时间线标尺上点击末端菱形上方，让时间指针停在 0:00:01:12，即 24 fps 下的第 36 帧，也就是 1.5 秒。</li></ol><p>确认时间读数再修改；在错误时间编辑会改变另一个关键帧或新增关键帧。原项目末端值应为 560, 180。</p><figure><a href="/assets/effectcraft/desktop-keyframes.jpg" target="_blank" rel="noopener noreferrer"><img src="/assets/effectcraft/desktop-keyframes.jpg" width="1378" height="802" loading="lazy" alt="P 展开 Position 后的两个位置关键帧。"/></a><figcaption>第 0 秒位置 80, 180；两个菱形分别对应第 0 秒和第 1.5 秒。</figcaption></figure></section>
+<section id="edit"><h2>3. 将末端的 X 坐标改为 500</h2><ol><li>保持时间为 0:00:01:12，在时间线 Position 的第一个蓝色数值 560.0 上双击。</li><li>输入 500，按 Enter 确认；第二个数值 Y 保持 180。</li><li>确认 Position 显示 500.0, 180.0，方块比原末端向左移动。窗口标题出现星号，表示改动尚未保存。</li></ol><figure><a href="/assets/effectcraft/desktop-edit.jpg" target="_blank" rel="noopener noreferrer"><img src="/assets/effectcraft/desktop-edit.jpg" width="1378" height="802" loading="lazy" alt="第1.5秒 Position 改为500,180后的桌面画面。"/></a><figcaption>成功状态：0:00:01:12、Position=500,180，窗口标题带未保存星号。</figcaption></figure></section>
+<section id="save"><h2>4. 另存新项目，并重开确认修改保留</h2><ol><li>点击“文件 → 另存为 → 另存为...”，或按 Ctrl+Shift+S。</li><li>在可写文件夹输入 desktop-motion.ecproj，点击“保存”。不要覆盖 first-motion.ecproj；标题应变为新文件名且不再带星号。</li><li>再用“文件 → 打开项目...”选择刚保存的 desktop-motion.ecproj。</li><li>重开后时间会回到第 0 秒。回到时间线 0:00:01:12，检查 Position 仍为 500, 180，方块位置与修改后的画面一致。</li></ol><figure><a href="/assets/effectcraft/desktop-save-menu.jpg" target="_blank" rel="noopener noreferrer"><img src="/assets/effectcraft/desktop-save-menu.jpg" width="1378" height="802" loading="lazy" alt="文件另存为菜单中的另存为子项。"/></a><figcaption>“另存为”是两级菜单；选择子菜单中的“另存为...”。</figcaption></figure><figure><a href="/assets/effectcraft/desktop-reopened.jpg" target="_blank" rel="noopener noreferrer"><img src="/assets/effectcraft/desktop-reopened.jpg" width="1378" height="802" loading="lazy" alt="重开另存项目后末端位置仍为500,180。"/></a><figcaption>真实重开结果：新项目标题、0:00:01:12、Position=500,180。</figcaption></figure></section>
+<section id="render"><h2>5. 用桌面渲染队列导出 GIF</h2><ol><li>当前合成为 First Motion 时，点击“合成 → 添加到渲染队列”，或按 Ctrl+M。</li><li>下方面板切换到 Render Queue。点击 First Motion 行最左侧的小箭头，展开 Render Settings、Output Module 和“输出到”。</li><li>Render Settings 保留 Best Settings，确认右侧参数为 640×360、24.000 fps、0.00s–2.00s、48 frames。</li><li>点击 Output Module 下拉列表，选择 Animated GIF。</li><li>点击“输出到”旁的省略号按钮 → Choose File...，选一个可写目录，文件名填 desktop-motion.gif，点击“保存”。检查蓝色输出路径以 .gif 结尾。</li><li>点击右上 Render。等待 Status 显示 Done，底部显示 Message: 1 of 1 done；正在渲染或仅选好文件名不算完成。</li><li>在刚才选择的输出文件夹打开 desktop-motion.gif。检查方块从左向右移动，最后停在 x=500 附近；不要把导出的 GIF 当作可继续编辑的原生项目。</li></ol><figure><a href="/assets/effectcraft/desktop-render-settings.jpg" target="_blank" rel="noopener noreferrer"><img src="/assets/effectcraft/desktop-render-settings.jpg" width="1378" height="802" loading="lazy" alt="Animated GIF 输出模块和640乘360、48帧渲染设置。"/></a><figcaption>实拍：Animated GIF、完整两秒区间、48 frames 和 .gif 输出路径。</figcaption></figure><figure><a href="/assets/effectcraft/desktop-render-done.jpg" target="_blank" rel="noopener noreferrer"><img src="/assets/effectcraft/desktop-render-done.jpg" width="1378" height="802" loading="lazy" alt="EffectCraft 渲染队列显示 Done 和1 of1 done。"/></a><figcaption>成功状态：Status=Done，Message: 1 of 1 done。</figcaption></figure><details class="effect-animation"><summary>查看本次桌面实际导出的 GIF</summary><figure><img src="/assets/effectcraft/desktop-motion.gif" width="640" height="360" loading="lazy" alt="桌面实际导出的黄色方块从x80移动到x500的两秒动画。"/><figcaption>来自本次桌面渲染队列的文件，640 × 360、48 帧。</figcaption></figure></details></section>
+<section id="help"><h2>遇到问题时先检查这些位置</h2><h3>为什么找不到 Position 或看不到关键帧？</h3><p>先在时间线选中 Moving Block，再按 P。确认打开的是本站原生 .ecproj，而不是把文件当作素材导入。已有蓝色秒表时不要反复点击秒表，以免关闭动画。</p><h3>为什么末端不是 500？</h3><p>确认时间为 0:00:01:12、修改的是 X、已按 Enter、另存的新文件名正确。重开后再检查同一时间；只看到星号消失不足以证明修改保留。</p><h3>为什么导出按钮不能用或找不到 GIF？</h3><p>确认 First Motion 已加入渲染队列且左侧复选框勾选，Output Module 为 Animated GIF，输出路径可写。到蓝色路径指向的目录查找文件，等待 Done；失败时保留报错，不跳过错误继续判断成功。</p><h3>电脑启动失败或提示内存不足怎么办？</h3><p>核对系统架构、版本和完整错误。本机曾提示内存不足并自动缩小缓存，但这个两层练习最终导出成功；这不代表大型项目也可用。保留原件和已保存副本，查看上游 Issues，避免为启动绕过系统安全提示。</p></section>
+<section id="scope"><h2>验证范围与后续练习</h2><p>本次验证的是 Windows x64 v0.9.2 便携版真实桌面操作：打开、P 展开位置、修改、另存、重开及 GIF 渲染。另以文件检查确认原生项目保存版本为 0.9.2、两个关键帧与末端值正确，GIF 为 640 × 360、48 帧。没有进行 AE 同机性能对测，没有验证 MSI、其他系统、新版 Web、字体、音频、3D 或专业项目。</p><p>完成后可用新文件再试改变 Y 或时长，每次只改一个参数并另存。需要脚本操作时查看<a href="/zh/effectcraft/tutorial">CLI 教程</a>；迁移已有工作前阅读<a href="/zh/effectcraft-app#after-effects">AE 功能与迁移对比</a>。</p><p><a href="https://github.com/storytold/effectcraft/blob/v0.9.2/README.md" target="_blank" rel="noopener noreferrer">EffectCraft v0.9.2 README</a> · <a href="https://github.com/storytold/effectcraft/blob/v0.9.2/docs/gaps.md" target="_blank" rel="noopener noreferrer">官方已知缺口</a> · <a href="https://github.com/storytold/effectcraft/releases/tag/v0.9.2" target="_blank" rel="noopener noreferrer">同版官方发布</a></p></section></div></main>
+<!-- @include zh/footer -->
+</div>
+<script src="/scripts/site.js" defer></script>
+</body>
+</html>
