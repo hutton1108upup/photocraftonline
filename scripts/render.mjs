@@ -24,6 +24,8 @@ export async function render(route, { liveReload = false, production = false } =
       'download/windows': 'Windows',
       'artcraft-photocraft': zh ? 'Craft 工具导航' : 'Craft app directory',
       'vectorcraft-app': zh ? 'VectorCraft 指南' : 'VectorCraft guide',
+      'wordcraft-app': zh ? 'WordCraft 文档指南' : 'WordCraft document guide',
+      'gridcraft-app': zh ? 'GridCraft 表格指南' : 'GridCraft spreadsheet guide',
       'cadcraft-app': zh ? 'CADCraft 下载指南' : 'CADCraft download guide',
       'cadcraft/tutorial': zh ? 'CADCraft 图文教程' : 'CADCraft tutorial',
       'cadcraft-vs-autocad': zh ? '与 AutoCAD 对比' : 'Compare AutoCAD',
@@ -43,7 +45,7 @@ export async function render(route, { liveReload = false, production = false } =
     };
     const items = [{ name: zh ? '首页' : 'Home', route: prefix || '/' }];
     if (page.page === 'download/windows') items.push({ name: labels.download, route: `${prefix}/download` });
-    if (['vectorcraft-app', 'getartcraft-review', 'effectcraft-app', 'effectcraft/tutorial', 'effectcraft/desktop-tutorial', 'cadcraft-app', 'cadcraft/tutorial', 'cadcraft-vs-autocad'].includes(page.page)) {
+    if (['vectorcraft-app', 'wordcraft-app', 'gridcraft-app', 'getartcraft-review', 'effectcraft-app', 'effectcraft/tutorial', 'effectcraft/desktop-tutorial', 'cadcraft-app', 'cadcraft/tutorial', 'cadcraft-vs-autocad'].includes(page.page)) {
       items.push({ name: labels['artcraft-photocraft'], route: `${prefix}/artcraft-photocraft` });
     }
     if (['effectcraft/tutorial', 'effectcraft/desktop-tutorial'].includes(page.page)) {

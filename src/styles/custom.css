@@ -12,6 +12,8 @@
 .site-nav-group:last-child .site-nav-panel { left: auto; right: 0; }
 .site-nav-panel a { display: block; padding: 9px 12px; border-radius: 5px; text-decoration: none; }
 .site-nav-panel a:hover, .site-nav-panel a[aria-current] { background: var(--muted); color: var(--foreground); }
+.site-nav-panel .site-nav-label { margin: 0; padding: 10px 12px 3px; color: var(--muted-foreground); font-size: 11px; font-weight: 600; }
+.site-desktop-nav .site-nav-panel { max-height: calc(100dvh - 64px); overflow-y: auto; }
 .site-nav-group summary:focus-visible, .site-nav-panel a:focus-visible { outline: 2px solid var(--foreground); outline-offset: 3px; }
 .site-mobile-menu { max-height: calc(100dvh - 48px); overflow-y: auto; }
 .site-mobile-menu .site-nav-group { border-bottom: 1px solid var(--border); }
