@@ -8,14 +8,14 @@
       "locale": "en",
       "page": "index",
       "title": "Free PhotoCraft Online – Open-Source Image Editor",
-      "source_sha256": "63d33f066c37ce217abe421238f4958a5efd6ea54042a9e59bb234876e89cac6"
+      "source_sha256": "b4a711f05dfab56e36d48930ef6e6d7cea9807c1774d58f9719e1ba383033a47"
     },
     {
       "route": "/zh",
       "locale": "zh",
       "page": "index",
       "title": "Free PhotoCraft Online – Open-Source Image Editor",
-      "source_sha256": "8d22062c078a94f1ef67e1f08a09ddc242827a54c268d467a8000c2655e46b80"
+      "source_sha256": "61005ffdbf152100cbe602b7794b566904b4046c414fe2fcff6cf8ed624318a0"
     },
     {
       "route": "/editor",
@@ -232,14 +232,14 @@
       "locale": "en",
       "page": "artcraft-photocraft",
       "title": "ArtCraft Apps Guide: PhotoCraft, VectorCraft and GitHub",
-      "source_sha256": "c484f307e13055ec6852780e686a1995086e03111e60c6ef65c1015d1b95249c"
+      "source_sha256": "d3022dcb56e5ce7a3dfe80c71e74d0e8692a33c26e71c6f1797321fcb183547c"
     },
     {
       "route": "/zh/artcraft-photocraft",
       "locale": "zh",
       "page": "artcraft-photocraft",
       "title": "ArtCraft Apps 工具导航：PhotoCraft、VectorCraft 与 GitHub",
-      "source_sha256": "cdebacd17fa47016da2a89cbde89f74a42f99992d4c1be2391b4f13fb80b56a8"
+      "source_sha256": "4a51f57b2827f591e79d01f6eb4ee982c99dc80100449771b1a31d8028db918d"
     },
     {
       "route": "/photocraft-app",
@@ -394,6 +394,34 @@
       "page": "cadcraft/editor",
       "title": "CADCraft 在线编辑器 — 本站托管 v0.6.2",
       "source_sha256": "d2df5892490c9bc9c721cf22a910870f9e1bdd4ae51d5ad72c343edfa60d69b1"
+    },
+    {
+      "route": "/wordcraft-app",
+      "locale": "en",
+      "page": "wordcraft-app",
+      "title": "WordCraft by ArtCraft: Downloads, DOCX and PDF Guide",
+      "source_sha256": "77cd56de91652379b2c630d790ab34408b7705bc4e15960104995dcc2eafec04"
+    },
+    {
+      "route": "/gridcraft-app",
+      "locale": "en",
+      "page": "gridcraft-app",
+      "title": "GridCraft by ArtCraft: Downloads, XLSX, CSV and Formulas",
+      "source_sha256": "a27daae11da9775a11c46872f93005db26c889593d043ac06b6c536c367186f0"
+    },
+    {
+      "route": "/zh/wordcraft-app",
+      "locale": "zh",
+      "page": "wordcraft-app",
+      "title": "WordCraft 下载与使用指南：DOCX 编辑、PDF 导出与限制",
+      "source_sha256": "2da433214d4e7782c5759cd7251b89b6b4c92535aebdb549bcaa4c0ff3d8a4e7"
+    },
+    {
+      "route": "/zh/gridcraft-app",
+      "locale": "zh",
+      "page": "gridcraft-app",
+      "title": "GridCraft 下载与使用指南：XLSX、CSV 与公式",
+      "source_sha256": "b878d95a3717532e1644adc52edef08caeca232388e6fd07a1b99be7111a7238"
     }
   ],
   "assets": [
