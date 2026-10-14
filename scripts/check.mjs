@@ -6,7 +6,7 @@ import { root, manifest, render, routes } from './render.mjs';
 
 const base = process.env.CHECK_BASE_URL || 'http://127.0.0.1:5173';
 const checkedAssets = new Set();
-const report = { base, pages: [], assets: 0, localLinks: 0, engineBytes: 0 };
+const report = { base, pages: [], assets: 0, localLinks: 0, engineBytes: 0, engines: {} };
 
 async function checkLocalAsset(url) {
   const key = url.split('?')[0];
@@ -58,7 +58,10 @@ for (const asset of manifest.assets) {
     for (const match of css.matchAll(/url\((\/[^)]+)\)/g)) await checkLocalAsset(match[1]);
   }
   await checkLocalAsset(asset.local);
-  if (asset.local.endsWith('.wasm')) report.engineBytes = info.size;
+  if (asset.local.endsWith('.wasm')) {
+    report.engines[asset.local] = info.size;
+    if (asset.local.startsWith('/editor-app/')) report.engineBytes = info.size;
+  }
 }
 const editor = await (await fetch(base + '/editor-app/index.html')).text();
 assert.ok(editor.includes('photocraft_canvas'));

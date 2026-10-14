@@ -2,7 +2,7 @@
 
 `https://freephotocraft.online` 的网站源码与 Cloudflare Workers 静态部署配置。
 基于原公开 PhotoCraft Online 页面复刻，保留未修改的 PhotoCraft WebAssembly 编辑器。
-还原两种语言、首页、编辑器、下载、开源页、关于、隐私、条款、博客列表及两篇文章，提供中英文入门教程、Photoshop 对比、故障帮助、安全核验、替代工具、Windows 专页、Craft 工具导航、App 版本指南、VectorCraft 指南、有限样例评测及 EffectCraft 产品与入门指南，共 44 个页面。
+还原两种语言、首页、编辑器、下载、开源页、关于、隐私、条款、博客列表及两篇文章，提供中英文入门教程、Photoshop 对比、故障帮助、安全核验、替代工具、Windows 专页、Craft 工具导航、App 版本指南、VectorCraft 指南、有限样例评测、EffectCraft 指南与教程，以及 CADCraft 下载、桌面图文教程、浏览器编辑、AutoCAD 对比和 AI Photoshop Clone 专题，共 56 个页面；生产 sitemap 包含 42 个内容地址。
 
 ## 打开本地网站
 
@@ -29,6 +29,11 @@ npm.cmd run dev
 | 英文首页文案、布局、图片 | `src/pages/en/index.html` |
 | 中文首页 | `src/pages/zh/index.html` |
 | PhotoCraft App 身份与版本 | `src/pages/en/photocraft-app.html`、`src/pages/zh/photocraft-app.html` |
+| AI Photoshop Clone 专题 | `src/pages/en/ai-photoshop-clone.html`、`src/pages/zh/ai-photoshop-clone.html` |
+| CADCraft 下载指南 | `src/pages/en/cadcraft-app.html`、`src/pages/zh/cadcraft-app.html` |
+| CADCraft 图文教程 | `src/pages/en/cadcraft/tutorial.html`、`src/pages/zh/cadcraft/tutorial.html` |
+| CADCraft 与 AutoCAD 对比 | `src/pages/en/cadcraft-vs-autocad.html`、`src/pages/zh/cadcraft-vs-autocad.html` |
+| CADCraft 在线入口与上游构建 | `src/pages/{en,zh}/cadcraft/editor.html`、`public/cadcraft-engine/` |
 | ArtCraft 与 PhotoCraft 关系 | `src/pages/en/artcraft-photocraft.html`、`src/pages/zh/artcraft-photocraft.html` |
 | VectorCraft 产品、源码与下载 | `src/pages/en/vectorcraft-app.html`、`src/pages/zh/vectorcraft-app.html` |
 | EffectCraft 下载、安装与 AE 对比 | `src/pages/en/effectcraft-app.html`、`src/pages/zh/effectcraft-app.html` |

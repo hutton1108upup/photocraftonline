@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<script src="/scripts/theme.js">
+</script>
+<link as="font" crossorigin="" href="/assets/fonts/38df7484fe560b25-s.p.0_h8~hcb-m6kp.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="/assets/fonts/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="/assets/fonts/f5031e7b18bdfbb3-s.p.17530ebvtj~5g.woff2" rel="preload" type="font/woff2"/>
+<link data-precedence="next" href="/assets/css/15sc_v~et~i94.css" rel="stylesheet"/>
+<link data-precedence="next" href="/assets/css/0x4i1d-5t.ch3.css" rel="stylesheet"/>
+<title>CADCraft 图文教程：绘制、标注、保存与重开 DXF</title>
+<meta content="通过真实截图、原创 DXF 和已验证命令完成小型 CADCraft 桌面图纸，再在浏览器重复基础编辑。" name="description"/>
+<meta content="CADCraft 图文教程：绘制、标注、保存与重开 DXF" property="og:title"/>
+<meta content="通过真实截图、原创 DXF 和已验证命令完成小型 CADCraft 桌面图纸，再在浏览器重复基础编辑。" property="og:description"/>
+<meta content="PhotoCraft Online" property="og:site_name"/>
+<meta content="https://www.photocraftonline.com/og-image.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="PhotoCraft Online" property="og:image:alt"/>
+<meta content="website" property="og:type"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="CADCraft 图文教程：绘制、标注、保存与重开 DXF" name="twitter:title"/>
+<meta content="通过真实截图、原创 DXF 和已验证命令完成小型 CADCraft 桌面图纸，再在浏览器重复基础编辑。" name="twitter:description"/>
+<meta content="https://www.photocraftonline.com/og-image.png" name="twitter:image"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/favicon.ico" rel="icon" sizes="32x32"/>
+<link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="noindex, nofollow" name="robots"/>
+<link href="/styles/custom.css" rel="stylesheet"/>
+<link rel="canonical" href="https://freephotocraft.online/zh/cadcraft/tutorial"/>
+<link rel="alternate" hreflang="en" href="https://freephotocraft.online/cadcraft/tutorial"/>
+<link rel="alternate" hreflang="zh" href="https://freephotocraft.online/zh/cadcraft/tutorial"/>
+<link rel="alternate" hreflang="x-default" href="https://freephotocraft.online/cadcraft/tutorial"/>
+</head>
+<body class="inter_b2991b2-module__9mH_6q__variable libre_baskerville_17390e78-module__pDOJMW__variable font-sans antialiased" data-locale="zh" data-page="cadcraft/tutorial">
+<div class="bg-background text-foreground flex min-h-screen flex-col">
+<!-- @include zh/header -->
+<main class="guide-page"><header class="guide-intro"><p class="guide-kicker">FREE PHOTOCRAFT · CADCRAFT</p><h1>CADCraft 图文教程：绘制、标注、保存与重开 DXF</h1><p>通过真实截图、原创 DXF 和已验证命令完成小型 CADCraft 桌面图纸，再在浏览器重复基础编辑。</p></header><div class="guide-body"><aside class="guide-note">2026 年 10 月 14 日使用 Windows x64 的 CADCraft v0.6.2 便携版实测。命令和文件操作通过运行中应用的官方控制接口复现；截图为真实原生界面。未据此验证安装器或辅助功能行为。</aside><nav class="guide-toc" aria-label="本页目录"><a href="#open">打开</a><a href="#draw">绘制</a><a href="#dimension">图层与标注</a><a href="#save">保存重开</a><a href="#browser">浏览器步骤</a></nav><section id="open"><h2>1. 下载并打开练习图</h2><p><a href="/zh/cadcraft-app#install">先运行适合电脑的桌面文件</a>。下载下方 practice-plate.dxf。在 CADCraft 中选择“文件 → 打开”（Ctrl+O），选中它并确认。画布应显示 100 × 60 的矩形和圆心 50,30、半径 10 的圆。这些是图纸单位，并不代表打印比例。</p><p><a href="/assets/cadcraft/practice-plate.dxf" download>下载原创 DXF</a></p><figure><img src="/assets/cadcraft/desktop-open.png" width="3200" height="2000" alt="原生 CADCraft 显示两个原始实体" loading="lazy"/><figcaption>起始状态：一个多段线矩形与一个圆。</figcaption></figure><p>如果命令行被隐藏，按 Ctrl+9 显示。输入前点击画布底部的命令输入框。中文界面也可以输入英文命令；Esc 用于取消当前命令。</p></section><section id="draw"><h2>2. 增加第二个圆</h2><p>在命令行输入下方整行，再按 Enter。空格分隔命令、圆心和半径。成功标志：原有圆左侧出现圆心 25,30、半径 5 的小圆。</p><pre><code>CIRCLE 25,30 5</code></pre><p>也可以从 Ctrl+N 新建图形开始，逐行输入下方命令，每行后按 Enter。打开样例和自行新建任选一种，避免重复绘制相同图形。</p><pre><code>RECTANG 0,0 100,60
+CIRCLE 50,30 10
+CIRCLE 25,30 5</code></pre></section><section id="dimension"><h2>3. 创建标注图层并标注宽度</h2><p>输入 -LAYER M ANNOTATION 并按 Enter，创建并切换到 ANNOTATION 图层。此时仍在 LAYER 选项提示中，再按一次 Enter 结束图层命令。随后分别输入标注和缩放命令。</p><pre><code>-LAYER M ANNOTATION
+（再按一次 Enter 结束 LAYER）
+DIMLINEAR 0,0 100,0 0,-15
+ZOOM E</code></pre><p>成功标志：矩形下方出现数值 100 的宽度标注，当前图层为 ANNOTATION。图纸包含四个顶层实体：一个多段线、两个圆和一个标注。</p><figure><img src="/assets/cadcraft/desktop-edit.png" width="3200" height="2000" alt="编辑后的 CADCraft 图纸，包含两个圆与宽度标注" loading="lazy"/><figcaption>实际编辑后的桌面界面。</figcaption></figure></section><section id="save"><h2>4. 另存副本、重开并核对</h2><ol><li>选择“文件 → 另存为”，保留 DXF 格式，使用新文件名，例如 practice-plate-complete.dxf。保留原始样例。</li><li>用“文件 → 打开”选择保存后的副本，确认矩形、两个圆和数值 100 的标注均保留。</li><li>与下方完成版 DXF 和 PNG 核对。PNG 是渲染图，不是可编辑图纸。</li></ol><figure><img src="/assets/cadcraft/desktop-reopened.png" width="3200" height="2000" alt="已保存 DXF 在原生 CADCraft 中重开" loading="lazy"/><figcaption>保存重开后保留四个实体与标注图层。</figcaption></figure><p><a href="/assets/cadcraft/practice-plate-complete.dxf" download>完成版 DXF</a> · <a href="/assets/cadcraft/practice-plate-complete.png" download>渲染 PNG</a></p><p>可选 CLI 核对：在便携程序文件夹打开 PowerShell。将 INPUT 与 OUTPUT 替换成完整文件路径，输入输出使用不同文件名。先执行 info，出错时停止。下方 convert 命令已用保存后的 DXF 验证。</p><pre><code>.\cadcraft-cli.exe info "INPUT.dxf"
+.\cadcraft-cli.exe convert "INPUT.dxf" "OUTPUT.png"</code></pre></section><section id="browser"><h2>5. 用相同原始文件体验浏览器版</h2><p><a href="/zh/cadcraft/editor">打开本站 CADCraft 浏览器构建</a>。点击编辑器内部，按 Ctrl+O 选择 practice-plate.dxf。点击命令行，输入 CIRCLE 25,30 5，再按 Enter。Ctrl+S 会下载 DXF，不会静默覆盖本地原文件；用 Ctrl+O 重开下载后的副本。</p><figure><img src="/assets/cadcraft/web-reopened.png" width="1440" height="1000" alt="浏览器 CADCraft 重开保存后的三个实体 DXF" loading="lazy"/><figcaption>浏览器检查：矩形与两个圆；该独立样例不包含桌面标注。</figcaption></figure><p>自动渲染模式和 CPU 兼容模式均通过这个简单 Chromium 流程；未测试手机制图、大图纸或浏览器 DWG 往返。</p><p><a href="/zh/cadcraft-vs-autocad">兼容性与 AutoCAD 对比</a> · <a href="/zh/cadcraft-app#sources">官方源码与反馈</a></p></section></div></main>
+<!-- @include zh/footer -->
+</div>
+<script src="/scripts/site.js" defer></script>
+
+</body>
+</html>

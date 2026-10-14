@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<script src="/scripts/theme.js">
+</script>
+<link as="font" crossorigin="" href="/assets/fonts/38df7484fe560b25-s.p.0_h8~hcb-m6kp.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="/assets/fonts/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="/assets/fonts/f5031e7b18bdfbb3-s.p.17530ebvtj~5g.woff2" rel="preload" type="font/woff2"/>
+<link data-precedence="next" href="/assets/css/15sc_v~et~i94.css" rel="stylesheet"/>
+<link data-precedence="next" href="/assets/css/0x4i1d-5t.ch3.css" rel="stylesheet"/>
+<title>CADCraft Tutorial: Draw, Dimension, Save and Reopen a DXF</title>
+<meta content="Complete a small CADCraft desktop drawing with real screenshots, original DXF files and verified commands; then repeat a basic edit in your browser." name="description"/>
+<meta content="CADCraft Tutorial: Draw, Dimension, Save and Reopen a DXF" property="og:title"/>
+<meta content="Complete a small CADCraft desktop drawing with real screenshots, original DXF files and verified commands; then repeat a basic edit in your browser." property="og:description"/>
+<meta content="PhotoCraft Online" property="og:site_name"/>
+<meta content="https://www.photocraftonline.com/og-image.png" property="og:image"/>
+<meta content="1200" property="og:image:width"/>
+<meta content="630" property="og:image:height"/>
+<meta content="PhotoCraft Online" property="og:image:alt"/>
+<meta content="website" property="og:type"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="CADCraft Tutorial: Draw, Dimension, Save and Reopen a DXF" name="twitter:title"/>
+<meta content="Complete a small CADCraft desktop drawing with real screenshots, original DXF files and verified commands; then repeat a basic edit in your browser." name="twitter:description"/>
+<meta content="https://www.photocraftonline.com/og-image.png" name="twitter:image"/>
+<link href="/favicon.ico" rel="shortcut icon"/>
+<link href="/favicon.ico" rel="icon" sizes="32x32"/>
+<link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="noindex, nofollow" name="robots"/>
+<link href="/styles/custom.css" rel="stylesheet"/>
+<link rel="canonical" href="https://freephotocraft.online/cadcraft/tutorial"/>
+<link rel="alternate" hreflang="en" href="https://freephotocraft.online/cadcraft/tutorial"/>
+<link rel="alternate" hreflang="zh" href="https://freephotocraft.online/zh/cadcraft/tutorial"/>
+<link rel="alternate" hreflang="x-default" href="https://freephotocraft.online/cadcraft/tutorial"/>
+</head>
+<body class="inter_b2991b2-module__9mH_6q__variable libre_baskerville_17390e78-module__pDOJMW__variable font-sans antialiased" data-locale="en" data-page="cadcraft/tutorial">
+<div class="bg-background text-foreground flex min-h-screen flex-col">
+<!-- @include en/header -->
+<main class="guide-page"><header class="guide-intro"><p class="guide-kicker">FREE PHOTOCRAFT · CADCRAFT</p><h1>CADCraft Tutorial: Draw, Dimension, Save and Reopen a DXF</h1><p>Complete a small CADCraft desktop drawing with real screenshots, original DXF files and verified commands; then repeat a basic edit in your browser.</p></header><div class="guide-body"><aside class="guide-note">Tested October 14, 2026 on Windows x64 with CADCraft v0.6.2 portable. Commands and file operations were reproduced through the running app’s official control interface; screenshots are actual native UI frames. This does not establish installer or accessibility behavior.</aside><nav class="guide-toc" aria-label="On this page"><a href="#open">Open</a><a href="#draw">Draw</a><a href="#dimension">Layer and dimension</a><a href="#save">Save and reopen</a><a href="#browser">Browser steps</a></nav><section id="open"><h2>1. Download the sample and open it</h2><p><a href="/cadcraft-app#install">First run the matching desktop package</a>。Download practice-plate.dxf below. In CADCraft choose File → Open (Ctrl+O), select it and confirm Open. The canvas should show a 100 × 60 rectangle and a radius-10 circle centered at 50,30. These are drawing units; they do not establish a printer scale.</p><p><a href="/assets/cadcraft/practice-plate.dxf" download>Download original DXF</a></p><figure><img src="/assets/cadcraft/desktop-open.png" width="3200" height="2000" alt="Native CADCraft with two original entities" loading="lazy"/><figcaption>Starting state: one polyline rectangle and one circle.</figcaption></figure><p>If the command line is hidden, use Ctrl+9 to show it. Click its input at the bottom of the canvas before typing. Type commands in English even when the menus are Chinese. Esc cancels the current command.</p></section><section id="draw"><h2>2. Add a second circle</h2><p>At the command line type the line below, then press Enter. Spaces separate the command, center and radius. Success: a radius-5 circle appears at 25,30, to the left of the original circle.</p><pre><code>CIRCLE 25,30 5</code></pre><p>To build the starting drawing yourself instead, create a new drawing (Ctrl+N), then run each line and press Enter after each. Use either the sample or this route, so you do not duplicate the geometry.</p><pre><code>RECTANG 0,0 100,60
+CIRCLE 50,30 10
+CIRCLE 25,30 5</code></pre></section><section id="dimension"><h2>3. Create an annotation layer and dimension the width</h2><p>Type -LAYER M ANNOTATION and press Enter. This creates and selects ANNOTATION; the LAYER options prompt remains. Press Enter once more to finish the layer command. Then enter the dimension and zoom lines separately.</p><pre><code>-LAYER M ANNOTATION
+(press Enter again to finish LAYER)
+DIMLINEAR 0,0 100,0 0,-15
+ZOOM E</code></pre><p>Success: the width dimension reads 100 below the rectangle. ANNOTATION is the current layer, and the drawing has four top-level entities: one polyline, two circles and one dimension.</p><figure><img src="/assets/cadcraft/desktop-edit.png" width="3200" height="2000" alt="Edited CADCraft drawing with two circles and a width dimension" loading="lazy"/><figcaption>Actual edited desktop frame.</figcaption></figure></section><section id="save"><h2>4. Save a copy, reopen and inspect it</h2><ol><li>Choose File → Save As, keep DXF and save a new filename such as practice-plate-complete.dxf. Keep the original sample.</li><li>Use File → Open and choose the saved copy. Confirm both circles, the rectangle and the 100 dimension remain.</li><li>Compare your result with our completed DXF and PNG below. The PNG is a flattened rendering, not an editable drawing.</li></ol><figure><img src="/assets/cadcraft/desktop-reopened.png" width="3200" height="2000" alt="Saved DXF reopened in native CADCraft" loading="lazy"/><figcaption>Save/reopen retained four entities and the annotation layer.</figcaption></figure><p><a href="/assets/cadcraft/practice-plate-complete.dxf" download>Completed DXF</a> · <a href="/assets/cadcraft/practice-plate-complete.png" download>Rendered PNG</a></p><p>Optional CLI check: open PowerShell in the portable app folder. Replace INPUT and OUTPUT with full file paths, keeping output separate from input. Run info first; stop on an error. The convert command below was tested on the saved DXF.</p><pre><code>.\cadcraft-cli.exe info "INPUT.dxf"
+.\cadcraft-cli.exe convert "INPUT.dxf" "OUTPUT.png"</code></pre></section><section id="browser"><h2>5. Try the browser version with the same original file</h2><p><a href="/cadcraft/editor">Open our CADCraft browser build</a>。Click inside the editor, press Ctrl+O and select practice-plate.dxf. Click its command line, enter CIRCLE 25,30 5, then press Enter. Ctrl+S downloads a DXF; it does not silently save over your local source. Use Ctrl+O to reopen the downloaded copy.</p><figure><img src="/assets/cadcraft/web-reopened.png" width="1440" height="1000" alt="Browser CADCraft reopening a saved three-entity DXF" loading="lazy"/><figcaption>Browser check: rectangle and two circles. This separate sample did not include the desktop dimension.</figcaption></figure><p>Both the automatic renderer and CPU fallback passed this simple Chromium workflow. We did not test mobile drafting, large drawings or DWG browser round trips.</p><p><a href="/cadcraft-vs-autocad">Compatibility and AutoCAD comparison</a> · <a href="/cadcraft-app#sources">Official source and support</a></p></section></div></main>
+<!-- @include en/footer -->
+</div>
+<script src="/scripts/site.js" defer></script>
+
+</body>
+</html>
