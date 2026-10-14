@@ -12,7 +12,7 @@ await mkdir(output, { recursive: true });
 await cp(path.join(root, 'public'), output, { recursive: true });
 await cp(path.join(root, 'src/styles'), path.join(output, 'styles'), { recursive: true });
 await mkdir(path.join(output, 'scripts'), { recursive: true });
-for (const script of ['theme.js', 'site.js', 'editor-status.js']) await cp(path.join(root, 'src/scripts', script), path.join(output, 'scripts', script));
+for (const script of ['theme.js', 'site.js', 'editor-status.js', 'cadcraft-status.js']) await cp(path.join(root, 'src/scripts', script), path.join(output, 'scripts', script));
 for (const page of manifest.routes) {
   const directory = path.join(output, page.route.slice(1));
   await mkdir(directory, { recursive: true });
@@ -26,8 +26,8 @@ if (production) {
   const entries = manifest.routes.filter(page => site.indexablePages.includes(page.page));
   const sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + entries.map(page => `<url><loc>${site.origin}${page.route === '/' ? '/' : page.route}</loc></url>`).join('\n') + '\n</urlset>\n';
   await writeFile(path.join(output, 'sitemap.xml'), sitemap);
-  await writeFile(path.join(output, 'robots.txt'), `User-agent: *\nAllow: /\nDisallow: /editor-app/\nDisallow: /release.json\nSitemap: ${site.origin}/sitemap.xml\n`);
-  await writeFile(path.join(output, '_headers'), `/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n\n/assets/fonts/*\n  Cache-Control: public, max-age=31536000, immutable\n\n/editor-app/*\n  X-Robots-Tag: noindex, nofollow\n\n/editor-app/*.wasm\n  Cache-Control: public, max-age=31536000, immutable\n\n/release.json\n  Cache-Control: no-store\n  X-Robots-Tag: noindex\n\nhttps://:worker.:account.workers.dev/*\n  X-Robots-Tag: noindex, nofollow\n`);
+  await writeFile(path.join(output, 'robots.txt'), `User-agent: *\nAllow: /\nDisallow: /editor-app/\nDisallow: /cadcraft-engine/\nDisallow: /release.json\nSitemap: ${site.origin}/sitemap.xml\n`);
+  await writeFile(path.join(output, '_headers'), `/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n\n/assets/fonts/*\n  Cache-Control: public, max-age=31536000, immutable\n\n/editor-app/*\n  X-Robots-Tag: noindex, nofollow\n\n/cadcraft-engine/*\n  X-Robots-Tag: noindex, nofollow\n\n/cadcraft-engine/*.wasm\n  Cache-Control: public, max-age=31536000, immutable\n\n/cadcraft-engine/*.js\n  Cache-Control: public, max-age=31536000, immutable\n\n/editor-app/*.wasm\n  Cache-Control: public, max-age=31536000, immutable\n\n/release.json\n  Cache-Control: no-store\n  X-Robots-Tag: noindex\n\nhttps://:worker.:account.workers.dev/*\n  X-Robots-Tag: noindex, nofollow\n`);
 } else {
   await writeFile(path.join(output, 'robots.txt'), 'User-agent: *\nDisallow: /\n');
 }

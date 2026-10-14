@@ -8,14 +8,14 @@
       "locale": "en",
       "page": "index",
       "title": "Free PhotoCraft Online – Open-Source Image Editor",
-      "source_sha256": "ac3b1a67b405c215992178b442aba5fc901c7c713620564aeb7b580d62bd6f0e"
+      "source_sha256": "63d33f066c37ce217abe421238f4958a5efd6ea54042a9e59bb234876e89cac6"
     },
     {
       "route": "/zh",
       "locale": "zh",
       "page": "index",
       "title": "Free PhotoCraft Online – Open-Source Image Editor",
-      "source_sha256": "38da2cd7fe4413a9967a7539b89379585494e4c06df5735454b4b76c394b86d8"
+      "source_sha256": "8d22062c078a94f1ef67e1f08a09ddc242827a54c268d467a8000c2655e46b80"
     },
     {
       "route": "/editor",
@@ -36,42 +36,42 @@
       "locale": "en",
       "page": "download",
       "title": "PhotoCraft Free Download for Windows, Mac & Linux",
-      "source_sha256": "69f29a044a7ae9624723fa70ac937aa1e3eac599c3f82aa3a0eb9a8c7f75f70c"
+      "source_sha256": "c3d80b38379a96202cd3dfd2b25812dfe80a40066371b81b5857c85dc2f2cb42"
     },
     {
       "route": "/zh/download",
       "locale": "zh",
       "page": "download",
       "title": "PhotoCraft 免费下载 – Windows、Mac 与 Linux",
-      "source_sha256": "4759b58e646270e4ebe167ae4bf930987807e1bea13ea609d2272c9af5d8e10b"
+      "source_sha256": "b116091f6330fada927db05109c9723ce63ae4cb6c9f43075ae0d17e612eca21"
     },
     {
       "route": "/github",
       "locale": "en",
       "page": "github",
       "title": "PhotoCraft GitHub & Open Source: Source, Releases and Licenses",
-      "source_sha256": "baee4bd7aa37ca05b6441faddb6c097e825143da402cb94138412901fdbea597"
+      "source_sha256": "dd75fd4d8e25c5895b013f6ab9c084e2e5afecbff6267ef807163b94e05680f8"
     },
     {
       "route": "/zh/github",
       "locale": "zh",
       "page": "github",
       "title": "PhotoCraft GitHub 与开源 – 源码、发行版和许可证指南",
-      "source_sha256": "4ac8882bf7cae94131c9ad8d0788f295a8b41196d295b7f1006d9ccbfa88559a"
+      "source_sha256": "7dc6003bd7b17f957aa94050879e6b53b3b130dc23d851cde1478aa08acf89bc"
     },
     {
       "route": "/about",
       "locale": "en",
       "page": "about",
       "title": "About FreePhotoCraft.online – Project & Site Information",
-      "source_sha256": "a25d2999026258900b932ca810a23a7f450530018fdfc2637ccb6a2bb30d798c"
+      "source_sha256": "3dc0109c444e5a90c77d9cf42fd022a0b301398cbfae41cbad2b0fa23b27249c"
     },
     {
       "route": "/zh/about",
       "locale": "zh",
       "page": "about",
       "title": "关于 FreePhotoCraft.online – 项目与网站说明",
-      "source_sha256": "a3df2b3ff48727857a783f598d9b33e5f6527481d236ba388e2da7516abd8ed6"
+      "source_sha256": "acf92147459cd2446e3c49509ac08a2008e9a7b1a503a48db452434a0b38408f"
     },
     {
       "route": "/privacy-policy",
@@ -155,7 +155,7 @@
       "locale": "en",
       "page": "photocraft-vs-photoshop",
       "title": "PhotoCraft vs Photoshop – Free Editor or Paid Workflow?",
-      "source_sha256": "d783cee9da5bef92ef978531b159003be5df2519fc0da1674935ad5aa01c7628"
+      "source_sha256": "2ef5bf08cd6b40fd916c97802ac4248a6198e2ad2e3e50f1317d3b8ed3cdb21b"
     },
     {
       "route": "/help/photocraft-not-loading",
@@ -176,7 +176,7 @@
       "locale": "zh",
       "page": "photocraft-vs-photoshop",
       "title": "PhotoCraft 与 Photoshop 对比 – 免费编辑器是否适合你？",
-      "source_sha256": "7791434cebb03232e6c2fe83762184e609eb04388cc5c06cbc534ce1367fc4ab"
+      "source_sha256": "578a0a76511786e110ac80fa70adc4356472f5fba2bd1efd715a9def416fed5d"
     },
     {
       "route": "/zh/help/photocraft-not-loading",
@@ -218,49 +218,49 @@
       "locale": "en",
       "page": "download/windows",
       "title": "PhotoCraft for Windows: Download, Install & Portable Guide",
-      "source_sha256": "71440c22494462b3b35fc47e4bb94180c5fb0d298ab67690720449d0f7ffcb51"
+      "source_sha256": "73c5bec8b8c02eadf1d8eb8871885e488763084840e542180db5570e5f75359f"
     },
     {
       "route": "/zh/download/windows",
       "locale": "zh",
       "page": "download/windows",
       "title": "PhotoCraft Windows 下载 – 安装、便携版与故障排查",
-      "source_sha256": "7b703e53e1f17b587b4c5d96bcddb9168e192fc9eb4f1dd6b8fc7cbcefa8f315"
+      "source_sha256": "b985eb8594553967e32883f422efb500b9d5d610ee75be02c010e3c881839026"
     },
     {
       "route": "/artcraft-photocraft",
       "locale": "en",
       "page": "artcraft-photocraft",
       "title": "ArtCraft Apps Guide: PhotoCraft, VectorCraft and GitHub",
-      "source_sha256": "abc88536f885be1d0a76f7f63c8332fab5f1949b3c8e7f0c87dccd8317ae479c"
+      "source_sha256": "c484f307e13055ec6852780e686a1995086e03111e60c6ef65c1015d1b95249c"
     },
     {
       "route": "/zh/artcraft-photocraft",
       "locale": "zh",
       "page": "artcraft-photocraft",
       "title": "ArtCraft Apps 工具导航：PhotoCraft、VectorCraft 与 GitHub",
-      "source_sha256": "8db387a52df5598a96c5366ad26e903b13baafbc0479fab15b13c831439fcaa8"
+      "source_sha256": "cdebacd17fa47016da2a89cbde89f74a42f99992d4c1be2391b4f13fb80b56a8"
     },
     {
       "route": "/photocraft-app",
       "locale": "en",
       "page": "photocraft-app",
       "title": "PhotoCraft App: Desktop Software, Web Editor & Downloads",
-      "source_sha256": "bfb210c216628a4d53d79cc0d7fec67dc0e2ce787051522877203cae88301554"
+      "source_sha256": "d831607957223e5b214dd4356ae43fe6ff31dfd519e2b80d27a41baf05031e2d"
     },
     {
       "route": "/zh/photocraft-app",
       "locale": "zh",
       "page": "photocraft-app",
       "title": "PhotoCraft App 是什么 – 桌面软件、在线版与下载指南",
-      "source_sha256": "ba877a8e50f0b913429440cd263a0c2fa2f58eb2f0c4ee12f8687b7492c75377"
+      "source_sha256": "f878c75c2b85381248e3e71d2b5b371968b0feafa291e930719446aeef5ed0c1"
     },
     {
       "route": "/vectorcraft-app",
       "locale": "en",
       "page": "vectorcraft-app",
       "title": "VectorCraft App: Downloads, GitHub and PhotoCraft Differences",
-      "source_sha256": "65b2be05cc1c5628f2d021f5a7c195b2f1afd469347ef41b7a849bcac7c26415"
+      "source_sha256": "448e52f39e20302c08862daab947961e3fa47db17934ef258ba2a5404c83cc9a"
     },
     {
       "route": "/getartcraft-review",
@@ -274,7 +274,7 @@
       "locale": "zh",
       "page": "vectorcraft-app",
       "title": "VectorCraft App 指南：下载、GitHub 与 PhotoCraft 区别",
-      "source_sha256": "9fdac6328143160e56bee1f5c3f975ce87edc45d793aad908c3a8e118b9355b3"
+      "source_sha256": "64c19acc3d60bef14d265a4c46d7a83c05915f80508d756dab7d33098aab1e4c"
     },
     {
       "route": "/zh/getartcraft-review",
@@ -288,7 +288,7 @@
       "locale": "en",
       "page": "effectcraft-app",
       "title": "EffectCraft Download and Guide: AE Limits and Native Sample",
-      "source_sha256": "5e1b56cc1181f9ed050ff8f358f024be5410f863a401f649e9f9c5b50c40788e"
+      "source_sha256": "df19c2b375c3d830355a1058a346edff3d5aacaa01355877b87e9a6b1b5837a6"
     },
     {
       "route": "/effectcraft/tutorial",
@@ -302,7 +302,7 @@
       "locale": "zh",
       "page": "effectcraft-app",
       "title": "EffectCraft 下载与入门：安装、AE 对比和原生样例",
-      "source_sha256": "a64b4ff27989eaab66cd5aaa9859383f2004a560052cba8453ca4f982a67d726"
+      "source_sha256": "f1acd358a72c8688851448c28ff62c117810f856cde19a28543acd82f785e1d9"
     },
     {
       "route": "/zh/effectcraft/tutorial",
@@ -324,6 +324,76 @@
       "page": "effectcraft/desktop-tutorial",
       "title": "EffectCraft 桌面图文教程：关键帧、另存与 GIF 导出",
       "source_sha256": "05e5afe4c7ca5a9597aa4838d73268be810034b462326f98f6d3d5c7c17ec08b"
+    },
+    {
+      "route": "/cadcraft-app",
+      "locale": "en",
+      "page": "cadcraft-app",
+      "title": "CADCraft Download and Installation Guide: Free Open-Source CAD",
+      "source_sha256": "df77fa295b878e60c97a7759cdc4dd2f80eee16fc4588be9c5c671c4cb2bf0e7"
+    },
+    {
+      "route": "/ai-photoshop-clone",
+      "locale": "en",
+      "page": "ai-photoshop-clone",
+      "title": "AI Photoshop Clone: Try PhotoCraft and Understand Its Limits",
+      "source_sha256": "9ddc707774799b6924ab5c9f083fd53ef1f100b7ed9fdbdef38e9d3aa31f78ea"
+    },
+    {
+      "route": "/cadcraft/tutorial",
+      "locale": "en",
+      "page": "cadcraft/tutorial",
+      "title": "CADCraft Tutorial: Draw, Dimension, Save and Reopen a DXF",
+      "source_sha256": "4cbd73d516ebfcbe95c35ab70128caa6f024f10475ed83299487bbeece2b0d71"
+    },
+    {
+      "route": "/cadcraft-vs-autocad",
+      "locale": "en",
+      "page": "cadcraft-vs-autocad",
+      "title": "CADCraft vs AutoCAD: 2D Drafting, DXF/DWG and Current Limits",
+      "source_sha256": "4e94a97f95ff257d6f6a43401027d058d1b1fcf6ba903fafe44739d30c5a1bac"
+    },
+    {
+      "route": "/cadcraft/editor",
+      "locale": "en",
+      "page": "cadcraft/editor",
+      "title": "CADCraft Online Editor — Hosted v0.6.2",
+      "source_sha256": "926d340d4e5895ccef55fd435c13d83e92edff6d3cd3656411d168e9c6bf3ed6"
+    },
+    {
+      "route": "/zh/cadcraft-app",
+      "locale": "zh",
+      "page": "cadcraft-app",
+      "title": "CADCraft 下载与安装指南：免费开源 CAD 软件",
+      "source_sha256": "3a3f6ffac163daa58401bc9af71f0cac0881d32dc788ed035d1b7c8b96dc3b2f"
+    },
+    {
+      "route": "/zh/ai-photoshop-clone",
+      "locale": "zh",
+      "page": "ai-photoshop-clone",
+      "title": "AI Photoshop Clone 是什么？PhotoCraft 在线体验与能力边界",
+      "source_sha256": "731681851c220e5b6c700c2e211cd93591e94ad7a01d1183b8e80a9dfd5cfd75"
+    },
+    {
+      "route": "/zh/cadcraft/tutorial",
+      "locale": "zh",
+      "page": "cadcraft/tutorial",
+      "title": "CADCraft 图文教程：绘制、标注、保存与重开 DXF",
+      "source_sha256": "6e9ca0a35bb063a24f02fdd89ad99a8dcb5a39b8cbeb241fb891a6c99664890d"
+    },
+    {
+      "route": "/zh/cadcraft-vs-autocad",
+      "locale": "zh",
+      "page": "cadcraft-vs-autocad",
+      "title": "CADCraft 与 AutoCAD 对比：二维制图、DXF／DWG 与当前限制",
+      "source_sha256": "ccd0bc7b474b3875eb3a3c583b814a6b59dc105eb8e6f45bc72e80155e8fb682"
+    },
+    {
+      "route": "/zh/cadcraft/editor",
+      "locale": "zh",
+      "page": "cadcraft/editor",
+      "title": "CADCraft 在线编辑器 — 本站托管 v0.6.2",
+      "source_sha256": "d2df5892490c9bc9c721cf22a910870f9e1bdd4ae51d5ad72c343edfa60d69b1"
     }
   ],
   "assets": [
@@ -550,6 +620,27 @@
       "content_type": "image/png",
       "bytes": 40897,
       "sha256": "3a0aecb4543629bbce8a1abc930aa8b072c3eef5ec84b45ccf108a9087074f19"
+    },
+    {
+      "source": "https://github.com/storytold/cadcraft/releases/download/v0.6.2/cadcraft-web-0.6.2.zip#cadcraft-web-d269cf8fb65cf85.js",
+      "local": "/cadcraft-engine/cadcraft-web-d269cf8fb65cf85.js",
+      "content_type": "text/javascript",
+      "bytes": 158452,
+      "sha256": "e9b1f1e08def92f0727ad2bac902bed1a424a9345f5d4b159c05e9c43893185f"
+    },
+    {
+      "source": "https://github.com/storytold/cadcraft/releases/download/v0.6.2/cadcraft-web-0.6.2.zip#cadcraft-web-d269cf8fb65cf85_bg.wasm",
+      "local": "/cadcraft-engine/cadcraft-web-d269cf8fb65cf85_bg.wasm",
+      "content_type": "application/wasm",
+      "bytes": 20807938,
+      "sha256": "eeb7502dc1dc73bad7875e601dc1f6d5b02068f421dde2cd389c26cc39b208ea"
+    },
+    {
+      "source": "https://github.com/storytold/cadcraft/releases/download/v0.6.2/cadcraft-web-0.6.2.zip#index.html",
+      "local": "/cadcraft-engine/index.html",
+      "content_type": "text/html",
+      "bytes": 1448,
+      "sha256": "19834477a941eea758b1a3f6b12ce9930e4b64e7c7aa48829e45e0c8150992a1"
     }
   ]
 }

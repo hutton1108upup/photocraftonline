@@ -153,3 +153,9 @@
   [data-slot="accordion-content"]:not([hidden]) { animation: local-panel-in 150ms ease-out; }
   @keyframes local-panel-in { from { opacity: 0; } to { opacity: 1; } }
 }
+/* CADCraft's engine stays in its own full-width canvas, outside guide tables. */
+.cadcraft-editor-page { width: 100%; }
+.cadcraft-editor-page .guide-intro, .cadcraft-editor-controls { max-width: 1000px; margin: 0 auto; padding: 20px 24px; }
+.cadcraft-editor-controls p { margin: 12px 0; line-height: 1.6; }
+.cadcraft-editor-controls .guide-actions { flex-wrap: wrap; }
+#cadcraft-frame { display: block; border: 0; width: 100%; height: 75vh; height: 75dvh; min-height: 600px; background: #22282f; }

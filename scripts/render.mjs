@@ -24,6 +24,10 @@ export async function render(route, { liveReload = false, production = false } =
       'download/windows': 'Windows',
       'artcraft-photocraft': zh ? 'Craft 工具导航' : 'Craft app directory',
       'vectorcraft-app': zh ? 'VectorCraft 指南' : 'VectorCraft guide',
+      'cadcraft-app': zh ? 'CADCraft 下载指南' : 'CADCraft download guide',
+      'cadcraft/tutorial': zh ? 'CADCraft 图文教程' : 'CADCraft tutorial',
+      'cadcraft-vs-autocad': zh ? '与 AutoCAD 对比' : 'Compare AutoCAD',
+      'ai-photoshop-clone': zh ? 'AI Photoshop Clone 说明' : 'AI Photoshop Clone explained',
       'effectcraft-app': zh ? 'EffectCraft 指南' : 'EffectCraft guide',
       'effectcraft/tutorial': zh ? 'EffectCraft CLI 教程' : 'EffectCraft CLI tutorial',
       'effectcraft/desktop-tutorial': zh ? 'EffectCraft 桌面教程' : 'EffectCraft desktop tutorial',
@@ -39,11 +43,14 @@ export async function render(route, { liveReload = false, production = false } =
     };
     const items = [{ name: zh ? '首页' : 'Home', route: prefix || '/' }];
     if (page.page === 'download/windows') items.push({ name: labels.download, route: `${prefix}/download` });
-    if (['vectorcraft-app', 'getartcraft-review', 'effectcraft-app', 'effectcraft/tutorial', 'effectcraft/desktop-tutorial'].includes(page.page)) {
+    if (['vectorcraft-app', 'getartcraft-review', 'effectcraft-app', 'effectcraft/tutorial', 'effectcraft/desktop-tutorial', 'cadcraft-app', 'cadcraft/tutorial', 'cadcraft-vs-autocad'].includes(page.page)) {
       items.push({ name: labels['artcraft-photocraft'], route: `${prefix}/artcraft-photocraft` });
     }
     if (['effectcraft/tutorial', 'effectcraft/desktop-tutorial'].includes(page.page)) {
       items.push({ name: labels['effectcraft-app'], route: `${prefix}/effectcraft-app` });
+    }
+    if (['cadcraft/tutorial', 'cadcraft-vs-autocad'].includes(page.page)) {
+      items.push({ name: labels['cadcraft-app'], route: `${prefix}/cadcraft-app` });
     }
     items.push({ name: labels[page.page] || page.title, route });
     const breadcrumbs = `<nav class="site-breadcrumbs" aria-label="${zh ? '面包屑导航' : 'Breadcrumb'}">${items.map((item, index) => `${index ? '<span aria-hidden="true">/</span>' : ''}${index === items.length - 1 ? `<span aria-current="page">${item.name}</span>` : `<a href="${item.route}">${item.name}</a>`}`).join('')}</nav>`;
