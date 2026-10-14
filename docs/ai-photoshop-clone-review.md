@@ -28,8 +28,8 @@ Public sample outputs and screenshots are in `public/assets/clone/`. Local raw P
 
 ## Checks
 
-- Production build and production checks: 56 routes; valid domain, indexing, sitemap, links and JSON-LD.
-- Development route/asset checks: 56 routes, 85 assets, 2,544 internal links, unchanged 24,710,609-byte PhotoCraft engine.
+- Production build and production checks: 60 routes after synchronizing the newly merged Office guides; valid domain, indexing, sitemap, links and JSON-LD.
+- Development route/asset checks: 56 routes, 85 assets, 2,544 internal links in the initial scope; repeat the full check after the main sync, unchanged 24,710,609-byte PhotoCraft engine.
 - UI: English and Chinese clone, tutorial and comparison pages at 1440px and 390px; all images decode, no page overflow, menu open/Escape close, FAQ interaction and no page errors.
 - Staging is limited to these page, style, manifest, sample and documentation changes; build files, local test files and deployment ZIPs are excluded.
 
