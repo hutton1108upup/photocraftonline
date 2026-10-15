@@ -45,7 +45,7 @@
 <p>用一个完整流程完成第一次图片编辑。这份练习无需账号、安装桌面程序或付款。</p>
 </header>
 <div class="guide-body"><aside class="guide-note">于 2026 年 10 月 10 日在桌面 Chrome 本地预览实测，适用于本站 WebAssembly 构建 <code>72921900975c7e6f</code>。截图对应本站版本，不代表最新桌面版。处理自己的作品时先保留副本。</aside>
-<nav class="guide-toc" aria-label="本页目录"><a href="/zh/editor">打开编辑器</a><a href="#open">打开图片</a><a href="#layers">用图层编辑</a><a href="#export">导出 PNG</a><a href="#save-layers">保存图层</a><a href="#export-help">导出帮助</a></nav>
+<nav class="guide-toc" aria-label="本页目录"><a href="/zh/editor">打开编辑器</a><a href="#open">打开图片</a><a href="#layers">用图层编辑</a><a href="#export">导出 PNG</a><a href="#save-layers">保存图层</a><a href="#export-help">导出帮助</a><a href="#more-edits">更多实用编辑</a></nav>
 <section id="start">
 <h2>1. 打开 PhotoCraft 在线编辑器</h2>
 <p>打开编辑器，等待欢迎界面出现。建议使用支持图形加速的桌面浏览器；首次加载包含约 25 MB 的 WebAssembly 文件。</p>
@@ -82,11 +82,19 @@
 <li>打开下载的 PNG，确认笔刷修改已保留。PNG 是合成图片，不会保留可编辑图层。</li>
 </ol>
 <figure><img src="/assets/tutorial/export-png.png" alt="本站编辑器中的 File → Export → Quick Export as PNG 菜单。" width="1440" height="1000" loading="lazy"/><figcaption>本站编辑器中的 File → Export → Quick Export as PNG 菜单。</figcaption></figure>
-<p>本教程验证了 PNG 编辑，以及下方简单两层 PSD 的保存和重开；复杂 PSD、文字、蒙版和所有专业工作流仍需单独测试。</p>
+<p>本教程验证了 PNG 编辑，以及下方简单两层 PSD 的保存和重开；下方新增了基础文字与简单蒙版样例；复杂 PSD、任意字体及专业工作流仍需单独验证。</p>
 </section>
 <section id="save-layers"><h2>6. 保存图层，方便继续编辑</h2>
-<p>导出的 PNG 是合成图。需要继续调整图层时，另外保存可编辑文档。</p><ol><li>保持练习图中的两层文档打开，点击 <strong>File → Save As…</strong>。本次浏览器测试下载了 <code>practice-image.psd</code>。</li><li>在浏览器下载列表找到 PSD，确认文件已保存到电脑。</li><li>点击 <strong>File → Open…</strong> 重新打开该 PSD；检查 Layers 面板中仍有 <strong>Background copy</strong> 和 <strong>Background</strong>，并确认笔刷修改仍显示。</li><li>保留 PSD 供继续编辑，另外用 PNG 交付合成图片。</li></ol><figure><img src="/assets/tutorial/save-and-reopen-psd.png" alt="重新打开两层 PSD 后仍显示 Background copy、Background 和笔刷修改。" width="1440" height="1000" loading="lazy"/><figcaption>2026 年 10 月 10 日的本地浏览器测试：保存、重开两层像素 PSD，再导出 PNG 保留修改。</figcaption></figure><p>这是本站构建的简单样例，不代表在 Photoshop 中验证过，也不保证文字、智能对象、蒙版或其他 PSD 效果完整保留。</p>
+<p>导出的 PNG 是合成图。需要继续调整图层时，另外保存可编辑文档。</p><ol><li>保持练习图中的两层文档打开，点击 <strong>File → Save As…</strong>。本次浏览器测试下载了 <code>practice-image.psd</code>。</li><li>在浏览器下载列表找到 PSD，确认文件已保存到电脑。</li><li>点击 <strong>File → Open…</strong> 重新打开该 PSD；检查 Layers 面板中仍有 <strong>Background copy</strong> 和 <strong>Background</strong>，并确认笔刷修改仍显示。</li><li>保留 PSD 供继续编辑，另外用 PNG 交付合成图片。</li></ol><figure><img src="/assets/clone/layers-reopened.png" alt="重新打开两层 PSD 后仍显示 Background copy、Background 和笔刷修改。" width="1440" height="1000" loading="lazy"/><figcaption>2026 年 10 月 10 日的本地浏览器测试：保存、重开两层像素 PSD，再导出 PNG 保留修改。</figcaption></figure><p>这是本站构建的简单样例，不代表在 Photoshop 中验证过，也不保证文字、智能对象、蒙版或其他 PSD 效果完整保留。</p>
 </section>
+<section id="more-edits"><h2>7. 更多实用编辑：浏览器实测小样例</h2>
+<p>以下小样例于 2026 年 10 月 14 日在 Windows 桌面 Chrome 中运行，使用相同固定 Web 构建。每项练习都从新的练习 PNG 副本开始，导出并检查结果后再关闭编辑器。</p>
+<h3 id="resize">缩放图片</h3><ol><li>点击 Image → Image Size… 。</li><li>把 Width 设为 320、Height 设为 200 像素，保持 Resample 勾选，点击 OK。</li><li>使用 Quick Export as PNG，核对下载图片尺寸。本站输出为 320 × 200。</li></ol><figure><img src="/assets/clone/resize-result.png" width="1440" height="1000" loading="lazy" alt="Image Size 将练习图缩放为 320 × 200。"/><figcaption>Image Size 将练习图缩放为 320 × 200。</figcaption></figure>
+<h3 id="crop">裁剪选中区域</h3><ol><li>点击左侧 Crop 裁剪工具，拖出要保留区域的矩形。</li><li>点击右上方勾号确认，再导出 PNG。本站选中区域导出为 300 × 200。</li></ol><figure><img src="/assets/clone/crop-result.png" width="1440" height="1000" loading="lazy" alt="导出的裁剪样例尺寸为 300 × 200。"/><figcaption>导出的裁剪样例尺寸为 300 × 200。</figcaption></figure>
+<h3 id="text">增加短文字图层</h3><ol><li>点击 T / Type 文字工具，再点击画布空白处。</li><li>输入 Hello PhotoCraft。本样例使用默认 Inter 文字参数，通过顶部勾号确认。</li><li>导出 PNG 并检查文字。已验证简单文字渲染样例，未证明任意字体、排版或 PSD 文字可编辑性。</li></ol><figure><img src="/assets/clone/text-edit.png" width="1440" height="1000" loading="lazy" alt="当前浏览器编辑器中的短 Inter 文字图层。"/><figcaption>当前浏览器编辑器中的短 Inter 文字图层。</figcaption></figure>
+<h3 id="transparent">创建并导出透明 PNG</h3><ol><li>点击 File → New…，将 Width 设为 320、Height 设为 200 像素。</li><li>在 Background Contents 中选择 Transparent，再点击 Create。</li><li>画一条短笔刷线，再导出 PNG。核查后的 RGBA 输出含 0 至 255 的 alpha 值，保留了透明和不透明区域。</li></ol><figure><img src="/assets/clone/transparent-canvas.png" width="1440" height="1000" loading="lazy" alt="PNG 导出前，透明画布上绘制了一条黑色笔刷线。"/><figcaption>PNG 导出前，透明画布上绘制了一条黑色笔刷线。</figcaption></figure>
+<h3 id="mask">用简单蒙版隐藏图层副本上的修改</h3><ol><li>重复图层练习：复制 Background，在副本上画一条黑线。</li><li>选中副本，在 Layers 面板底部点击 Add layer mask（矩形内带圆形的图标），出现白色蒙版缩略图。</li><li>点击白色蒙版缩略图，选择 Brush 工具和黑色前景色，在黑线处绘制，露出下方原图层。</li><li>导出 PNG。本站采样像素从黑色修改 RGB(0, 0, 0) 恢复为原始绿色 RGB(22, 78, 71)。PNG 会合成结果，不保留可编辑蒙版。</li></ol><figure><img src="/assets/clone/mask-edited.png" width="1440" height="1000" loading="lazy" alt="在图层蒙版上绘制后，露出副本下方原图的绿色区域。"/><figcaption>在图层蒙版上绘制后，露出副本下方原图的绿色区域。</figcaption></figure>
+<p><a href="/zh/ai-photoshop-clone#examples">集中查看实际导出结果</a> · <a href="/zh/photocraft-vs-photoshop">查看与 Photoshop 的验证范围比较</a></p></section>
 <section id="export-help"><h2>没有找到导出图片时怎么检查？</h2>
 <ol><li>先确认已经打开文档，且画布显示预期修改；再点击 <strong>File → Export → Quick Export as PNG</strong>。</li><li>查看浏览器下载列表与下载文件夹，留意失败或被阻止的提示；重复下载的文件可能带编号。</li><li>如果浏览器提示下载权限或选择保存位置，按具体提示处理。不要在结果未保存前刷新或关闭标签页。</li><li>文件已下载但内容不符时，重新打开 PNG，核对图层可见性并再导出。无法完成时，保留原稿，查看<a href="/zh/help/photocraft-not-loading">故障帮助</a>或<a href="/zh/photocraft-alternatives">替代工具</a>。</li></ol><p>本站没有提供可依赖的自动备份；请自行保留原稿、PSD 与导出图片。<a href="/zh/is-photocraft-safe">文件处理与安全说明</a>。</p>
 </section>

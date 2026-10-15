@@ -148,14 +148,14 @@
       "locale": "en",
       "page": "tutorial",
       "title": "PhotoCraft Tutorial – How to Use the Free Editor",
-      "source_sha256": "1dae77e56eea222bd557088bb7f04ecfc6aac2bce9b6ccd3d4963e5b84104f0f"
+      "source_sha256": "8025f5dcec831ed1f3aab7cbf78e8dbc4f0f649cebe4f5ff484ceb8ab2b2ea37"
     },
     {
       "route": "/photocraft-vs-photoshop",
       "locale": "en",
       "page": "photocraft-vs-photoshop",
       "title": "PhotoCraft vs Photoshop – Free Editor or Paid Workflow?",
-      "source_sha256": "2ef5bf08cd6b40fd916c97802ac4248a6198e2ad2e3e50f1317d3b8ed3cdb21b"
+      "source_sha256": "028d6ff670aa33bcb1f0d5ef9b741bb4639c7d2d0d5858d572733a447bd8db7a"
     },
     {
       "route": "/help/photocraft-not-loading",
@@ -169,14 +169,14 @@
       "locale": "zh",
       "page": "tutorial",
       "title": "PhotoCraft 新手教程 – 免费在线编辑与导出图片",
-      "source_sha256": "4cd327452224e9bd2266b1341967a434dc7761e365c4bd35411fd955604d1ea7"
+      "source_sha256": "90609b6a40151a3ecbf3ecb083d9a3ffeb670afff134affc2c4cd7f9d949499a"
     },
     {
       "route": "/zh/photocraft-vs-photoshop",
       "locale": "zh",
       "page": "photocraft-vs-photoshop",
       "title": "PhotoCraft 与 Photoshop 对比 – 免费编辑器是否适合你？",
-      "source_sha256": "578a0a76511786e110ac80fa70adc4356472f5fba2bd1efd715a9def416fed5d"
+      "source_sha256": "1ba1a3c828ea4c0abde12553bc4fddcc1806fe0d411cb1a9df31fbc6e71b3f44"
     },
     {
       "route": "/zh/help/photocraft-not-loading",
@@ -336,8 +336,8 @@
       "route": "/ai-photoshop-clone",
       "locale": "en",
       "page": "ai-photoshop-clone",
-      "title": "AI Photoshop Clone: Try PhotoCraft and Understand Its Limits",
-      "source_sha256": "9ddc707774799b6924ab5c9f083fd53ef1f100b7ed9fdbdef38e9d3aa31f78ea"
+      "title": "AI Photoshop Clone — Free PhotoCraft Online Editor",
+      "source_sha256": "167e3df30f70d029d163e042078a9690c0dc8748907c1d5e07f3ba6515681574"
     },
     {
       "route": "/cadcraft/tutorial",
@@ -371,8 +371,8 @@
       "route": "/zh/ai-photoshop-clone",
       "locale": "zh",
       "page": "ai-photoshop-clone",
-      "title": "AI Photoshop Clone 是什么？PhotoCraft 在线体验与能力边界",
-      "source_sha256": "731681851c220e5b6c700c2e211cd93591e94ad7a01d1183b8e80a9dfd5cfd75"
+      "title": "AI Photoshop Clone — 免费 PhotoCraft 在线编辑器",
+      "source_sha256": "a4d5bee42624320d639d90bd5902f2b1002687a0846bd6bab9ea6d23f4d5b779"
     },
     {
       "route": "/zh/cadcraft/tutorial",

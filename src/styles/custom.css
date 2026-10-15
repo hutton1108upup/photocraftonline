@@ -161,3 +161,25 @@
 .cadcraft-editor-controls p { margin: 12px 0; line-height: 1.6; }
 .cadcraft-editor-controls .guide-actions { flex-wrap: wrap; }
 #cadcraft-frame { display: block; border: 0; width: 100%; height: 75vh; height: 75dvh; min-height: 600px; background: #22282f; }
+/* PhotoCraft landing content uses real exported samples and the existing theme. */
+.clone-intro { max-width: 850px; }
+.clone-intro .clone-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+.clone-intro .clone-ai-note { font-size: 13px; line-height: 1.6; color: var(--muted-foreground); margin-top: 14px; }
+.clone-image-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.clone-image-pair figure { margin: 8px 0 14px; }
+.clone-image-label { display: inline-block; margin-bottom: 10px; font-size: 12px; font-weight: 600; letter-spacing: .04em; }
+.clone-steps { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 24px; }
+.guide-body .clone-steps { list-style: none; padding-left: 0; }
+.clone-steps li { padding: 0; }
+.clone-steps li > span { font-size: 32px; line-height: 1.2; color: var(--muted-foreground); font-family: Georgia, serif; }
+.clone-task-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 24px; }
+.clone-task-grid article { border-top: 2px solid var(--foreground); padding-top: 6px; min-width: 0; }
+.clone-result-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; }
+.clone-result-grid img { aspect-ratio: 8/5; object-fit: contain; background: repeating-conic-gradient(#dedede 0 25%, #fafafa 0 50%) 0/18px 18px; }
+.clone-faq details { padding: 16px 0; border-bottom: 1px solid var(--border); }
+.clone-faq summary { cursor: pointer; font-weight: 500; }
+.clone-faq summary:focus-visible { outline: 2px solid var(--foreground); outline-offset: 4px; }
+@media (max-width: 700px) {
+  .clone-image-pair, .clone-steps, .clone-task-grid, .clone-result-grid { grid-template-columns: 1fr; gap: 20px; }
+  .clone-intro .guide-button { white-space: normal; text-align: center; }
+}
