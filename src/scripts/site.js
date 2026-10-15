@@ -69,7 +69,8 @@ if (mobileButton) {
   bottom.className = 'border-border mt-3 flex items-center gap-2 border-t pt-3';
   const spacer = document.createElement('div');
   spacer.className = 'flex-1';
-  bottom.append(spacer, action);
+  const languageLink = header.querySelector('[data-language-switch]').cloneNode(true);
+  bottom.append(languageLink, spacer, action);
   menu.append(nav, bottom);
   header.append(menu);
   mobileButton.setAttribute('aria-controls', menu.id);
@@ -144,6 +145,18 @@ function updateNavigationCurrent() {
 }
 updateNavigationCurrent();
 window.addEventListener('hashchange', updateNavigationCurrent);
+
+// Server-rendered links work without JS; add the current query and anchor for
+// desktop and cloned mobile language links after enhancement.
+function updateLanguageLinks() {
+  const current = location.pathname.replace(/^\/zh(?=\/|$)/, '').replace(/\/$/, '') || '/';
+  for (const link of document.querySelectorAll('[data-language-switch]')) {
+    const target = link.dataset.languageSwitch === 'zh' ? '/zh' + (current === '/' ? '' : current) : current;
+    link.href = target + location.search + location.hash;
+  }
+}
+updateLanguageLinks();
+window.addEventListener('hashchange', updateLanguageLinks);
 document.addEventListener('keydown', event => {
   if (event.key !== 'Escape') return;
   const activeGroup = document.activeElement?.closest('.site-nav-group');

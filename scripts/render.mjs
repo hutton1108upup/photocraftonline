@@ -16,6 +16,9 @@ export async function render(route, { liveReload = false, production = false } =
     const partial = await readFile(path.join(root, 'src/partials', `${include[1]}.html`), 'utf8');
     html = html.replace(include[0], partial);
   }
+  const unlocalizedRoute = route.replace(/^\/zh(?=\/|$)/, '') || '/';
+  const otherLanguageRoute = page.locale === 'zh' ? unlocalizedRoute : '/zh' + (route === '/' ? '' : route);
+  html = html.replaceAll('{{otherLanguageRoute}}', otherLanguageRoute);
   if (page.page !== 'index' && site.indexablePages.includes(page.page)) {
     const zh = page.locale === 'zh';
     const prefix = zh ? '/zh' : '';

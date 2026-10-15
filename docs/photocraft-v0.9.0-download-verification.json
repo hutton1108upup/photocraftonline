@@ -1,0 +1,83 @@
+{
+  "version": "v0.9.0",
+  "checked": "2026-10-15",
+  "method": "GitHub asset SHA256 digests matched official SHA256SUMS; packages not executed",
+  "checksum_sha256": "2703d9d6eac10659bc3538918296f5a5e67fc3a6a72e78205651640b7ca0f20c",
+  "assets": [
+    {
+      "name": "photocraft-0.9.0-linux-aarch64.AppImage",
+      "bytes": 73615880,
+      "sha256": "2752b5097e2788cc1ab0c7b410657b1eab790bcc3b576f8749de707282dba9e3"
+    },
+    {
+      "name": "photocraft-0.9.0-linux-aarch64.deb",
+      "bytes": 79466474,
+      "sha256": "dcf8e473124729d38120a5775be08151d13ff0e5125f33d6533110c780b45314"
+    },
+    {
+      "name": "photocraft-0.9.0-linux-aarch64.flatpak",
+      "bytes": 56541728,
+      "sha256": "df11591dbc49b946886e0d0abc873f491df2e6c3f23bade9e98395dd8507a69a"
+    },
+    {
+      "name": "photocraft-0.9.0-linux-aarch64.rpm",
+      "bytes": 78767925,
+      "sha256": "670865e0178da8fd151c977544d658cbfcb9e03a9325e007b31ff0b9d576d4f3"
+    },
+    {
+      "name": "photocraft-0.9.0-linux-x86_64.AppImage",
+      "bytes": 77478392,
+      "sha256": "483a9a79200e0c0864bb54cf3faa6a55e2b79c1433dacfcb153d3862e78f32bc"
+    },
+    {
+      "name": "photocraft-0.9.0-linux-x86_64.deb",
+      "bytes": 82784576,
+      "sha256": "18598fd17711b2618396c859426ef3e8ed7902f0d99c5e8c0657847ebfc740df"
+    },
+    {
+      "name": "photocraft-0.9.0-linux-x86_64.flatpak",
+      "bytes": 61114608,
+      "sha256": "3d3a6cdde84bf39d190545228344e1dc334080949cda32d53de7baeb5f387175"
+    },
+    {
+      "name": "photocraft-0.9.0-linux-x86_64.rpm",
+      "bytes": 82233240,
+      "sha256": "9803aa3a4c5a57733f843809034bffbbd7deb5776c0b6638a44782c0872c9446"
+    },
+    {
+      "name": "photocraft-0.9.0-macos-universal.dmg",
+      "bytes": 90386785,
+      "sha256": "06503eb1c845990e99f8824831cc73b274e2b1dbe4461eb6460dfc9a6008239d"
+    },
+    {
+      "name": "photocraft-0.9.0-windows-arm64-portable.zip",
+      "bytes": 78587831,
+      "sha256": "2c26983c9acbb3b3197c71a21ca55842cb322937c520ec299613846ae6fe040e"
+    },
+    {
+      "name": "photocraft-0.9.0-windows-arm64.msi",
+      "bytes": 64647168,
+      "sha256": "98f005f4de27d2412b69cb6866f9c31ac252ea60a951a579ce26696113a75098"
+    },
+    {
+      "name": "photocraft-0.9.0-windows-x64-portable.zip",
+      "bytes": 83169235,
+      "sha256": "e87bbe26f84d3c359765b61d128b9cc59f016a995956fe7909b328a97650fc97"
+    },
+    {
+      "name": "photocraft-0.9.0-windows-x64.msi",
+      "bytes": 69443584,
+      "sha256": "785c81a5fc78c9b683b0f9e6653c38f95b306a38303f60b391670a9e1ac590d4"
+    },
+    {
+      "name": "photocraft-0.9.0-windows-x86-portable.zip",
+      "bytes": 79169347,
+      "sha256": "184dc700d4a1bc923e854882f18c4bbeb76be3358c48490d641c85779d75d72a"
+    },
+    {
+      "name": "photocraft-0.9.0-windows-x86.msi",
+      "bytes": 67239936,
+      "sha256": "226892dbc266cea6d338081ec5683de7d5520411fa0da7124225239c4321eca4"
+    }
+  ]
+}
