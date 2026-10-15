@@ -1,7 +1,11 @@
 /* Add intentional visual adjustments here. The original site's CSS and fonts
    are preserved under public/assets and need not be edited for routine work. */
 [hidden] { display: none !important; }
+main [id] { scroll-margin-top: 72px; }
 .site-header > div { max-width: 1200px; gap: 16px; }
+.site-language-link { display: inline-flex; align-items: center; justify-content: center; min-height: 36px; padding: 6px 8px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; white-space: nowrap; }
+.site-language-link:hover { background: var(--muted); }
+.site-language-link:focus-visible { outline: 2px solid var(--foreground); outline-offset: 3px; }
 .site-desktop-nav { gap: 14px; }
 .site-nav-link { padding: 10px 0; font-size: 13px; white-space: nowrap; color: var(--muted-foreground); }
 .site-nav-link:hover, .site-nav-link[aria-current] { color: var(--foreground); }
@@ -258,6 +262,18 @@
 .homepage .home-support-grid ul, .homepage .home-craft-grid ul { margin-top: 16px; display: grid; gap: 12px; font-size: 14px; }
 .homepage .home-support-grid a, .homepage .home-craft a { text-decoration: underline; text-underline-offset: 4px; }
 .homepage .home-craft-more { margin-top: 28px; font-size: 13px; }
+.homepage .home-download-snapshot { font-size: 14px; }
+.homepage .home-version-details { margin-top: 20px; border-top: 1px solid var(--border); padding-top: 16px; }
+.homepage .home-version-details summary { cursor: pointer; font-size: 14px; font-weight: 500; }
+.homepage .home-version-details summary:focus-visible { outline: 2px solid var(--foreground); outline-offset: 3px; }
+.homepage .home-version-details .home-versions { margin: 20px 0 0; }
+.homepage .home-version-details .home-versions dd { font-size: 14px; }
+.homepage .audience-block { margin-top: 18px; padding-top: 0; }
+.homepage .audience-grid > article > p { font-size: 14px; }
+.homepage .home-task-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; margin: 24px 0; }
+.homepage .home-task-grid article { border-top: 1px solid var(--border); min-width: 0; padding-top: 16px; }
+.homepage .home-task-grid h3 { font-size: 16px; margin: 0 0 8px; }
+.homepage .home-task-grid p { font-size: 14px; margin: 0; }
 .homepage .home-final { padding: 48px 24px; text-align: center; border-top: 1px solid var(--border); }
 .homepage .home-final > p { margin: 12px auto 24px; color: var(--muted-foreground); font-size: 14px; line-height: 1.8; }
 .homepage .home-final .home-actions { justify-content: center; }
@@ -276,4 +292,11 @@
   .homepage .home-practice-strip { padding: 20px; }
   .homepage .home-practice-strip > a { max-width: 300px; }
   .homepage .home-versions { gap: 24px; }
+  .homepage .home-step-image { display: none; }
+  .homepage .home-step-copy { display: grid; grid-template-columns: 30px minmax(0, 1fr); column-gap: 12px; padding: 16px; }
+  .homepage .home-step-number { grid-row: 1 / 4; line-height: 1.3; }
+  .homepage .home-step-copy h3 { margin: 0; }
+  .homepage .home-step-copy p { grid-column: 2; margin: 8px 0; }
+  .homepage .home-step-copy > a { grid-column: 2; }
+  .homepage .home-task-grid { grid-template-columns: 1fr; gap: 16px; }
 }
