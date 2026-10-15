@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const rootFiles = new Set(['.gitignore', '.gitattributes', 'package.json', 'package-lock.json', 'site.config.json', 'wrangler.jsonc', 'README.md', 'THIRD-PARTY-NOTICES.md', '启动本地预览.cmd']);
-const scripts = new Set(['render.mjs', 'server.mjs', 'build.mjs', 'check.mjs', 'check-production.mjs', 'audit-upload.mjs']);
+const scripts = new Set(['render.mjs', 'server.mjs', 'build.mjs', 'check.mjs', 'check-production.mjs', 'check-analytics.mjs', 'audit-upload.mjs']);
 const allowed = file => rootFiles.has(file) || file.startsWith('src/') || file.startsWith('public/') || file.startsWith('docs/') || file.startsWith('.github/workflows/') || (file.startsWith('scripts/') && scripts.has(file.slice(8)));
 const excludedRoots = new Set(['node_modules', '.git', '.local', '.wrangler', 'dist']);
 const secretPath = /(?:^|\/)(?:\.env(?:\..*)?|\.dev\.vars(?:\..*)?|credentials[^/]*|[^/]*\.(?:pem|key|p12|pfx))$/i;

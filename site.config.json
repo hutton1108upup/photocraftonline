@@ -1,6 +1,10 @@
 {
   "origin": "https://freephotocraft.online",
   "workerName": "freephotocraft-online",
+  "analytics": {
+    "measurementId": "G-4M2NQH5S01",
+    "enabled": true
+  },
   "indexablePages": [
     "index",
     "download",

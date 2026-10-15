@@ -89,7 +89,7 @@ npm.cmd run deploy:dry-run
 - 编辑器的 JavaScript 和 WebAssembly 原始文件保持原版；可以在本地运行并处理图片。编辑器内部是 Rust/egui 绘制的界面，若要改内部工具逻辑，需要上游 Rust 源码和单独构建。
 - 编辑器需要浏览器与 GPU 支持，建议使用桌面 Chrome/Edge。`localhost` 属于浏览器安全上下文。原站已有的引擎限制继续存在。
 - 导航、页面链接和编辑器都指向本地；GitHub Releases、上游官网和编辑器内的社区链接仍指向相应外部网站，与原站一致。
-- 删除线上 Google Analytics 初始化及 Next.js 客户端代码；不在本地访问时向生产统计上报。不新增同意弹窗。
+- 本地不加载 Google Analytics；正式构建可按 site.config.json 复用本站已确认的 GA4 数据流，统计页面和关键按钮点击。编辑器、引擎及 workers.dev 预览排除，不新增同意弹窗。Next.js 客户端代码不恢复。
 - 首页保留现有布局；教程、对比、故障帮助、安全核验、替代工具、下载及法律页提供中英文版本。模板博客保持 noindex。法律页描述当前本站行为，不复用账号与支付模板。
 - `src/site-manifest.json` 记录构建所需路由、资源 URL、字节数及 SHA-256。
 - 原开发目录的 `reference/`、`evidence/`、本地基准采集工具与日志仅供本地对照，不进入 GitHub 或部署。
