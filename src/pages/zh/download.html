@@ -52,17 +52,17 @@
 <tr><th scope="row">管理多个 Craft 应用</th><td><a href="https://github.com/storytold/craft-launcher/releases/latest" target="_blank" rel="noopener noreferrer">官方 Launcher 最新发布</a></td><td>官方 Launcher 用于安装、更新和打开系列应用；功能来自文档说明，本站未实测安装。</td></tr>
 <tr><th scope="row">开发或源码编译</th><td><a href="/zh/github#rust">Rust 与源码入口</a></td><td>源码 ZIP 不能当作已编译安装包；普通使用不需要 Rust。</td></tr></tbody></table></div><p>Launcher 本身与 PhotoCraft 是不同发布。2026 年 10 月 12 日核对时，Launcher 最新发布为 v0.3.2；本页独立安装包仍对应核对过的 PhotoCraft v0.8.2。更新前查看各自发布说明和 SHA256 文件。 <a href="https://github.com/storytold/craft-launcher" target="_blank" rel="noopener noreferrer">Launcher 官方说明</a></p></section>
 <nav class="download-nav" aria-label="下载分区"><a href="#download-method">使用方式</a><a href="#windows">Windows</a><a href="#macos">Mac</a><a href="#linux">Linux</a><a href="/zh/download/windows#portable">免安装 ZIP</a><a href="#updates">最新发布</a></nav>
-<p id="download-system-hint" class="download-success">系统识别仅用于推荐，各系统入口始终保留。下载前请核对目标电脑的处理器架构。</p>
+
 <aside class="guide-note">下载链接核验时间：2026 年 10 月 14 日，版本 <a href="https://github.com/storytold/photocraft/releases/tag/v0.8.2" target="_blank" rel="noopener noreferrer">v0.8.2</a>。以下链接是已核验版本快照，不代表始终为最新版本。已核对文件名和来源，尚未在 Windows、Mac、Linux 上实测安装。</aside>
-<section id="platforms"><h2>选择桌面下载版本</h2><div class="download-platforms">
-<article id="windows" data-download-platform="windows"><h3>PhotoCraft Windows 版</h3><p>提供 x64、ARM64 和 x86 的 MSI 与便携 ZIP。先核对设置 → 系统 → 系统信息中的系统类型，再选择文件。</p><p><a class="guide-button guide-button-secondary" href="/zh/download/windows">选择 Windows 文件并查看安装指南</a></p><p><a href="/zh/download/windows#portable">便携 ZIP 操作</a> · <a href="/zh/download/windows#startup">无法启动排查</a></p></article>
-<article id="macos" data-download-platform="macos"><span class="download-anchor" id="mac"></span><h3>PhotoCraft Mac 版</h3>
+<section id="platforms"><h2>选择桌面下载版本</h2><div data-platform-switcher><div class="platform-controls" data-platform-controls hidden aria-label="选择目标电脑系统"><button type="button" id="download-switch-windows-tab" data-platform-choice="windows" data-platform-label="Windows">Windows</button><button type="button" id="download-switch-macos-tab" data-platform-choice="macos" data-platform-label="Mac">Mac</button><button type="button" id="download-switch-linux-tab" data-platform-choice="linux" data-platform-label="Linux">Linux</button></div><p class="platform-hint" data-platform-hint role="status">按目标电脑选择系统；不确定架构时，先查看对应安装指南。</p><div class="download-platforms download-system-panels">
+<article id="windows" data-download-platform="windows" data-platform-panel="windows"><h3>PhotoCraft Windows 版</h3><p>提供 x64、ARM64 和 x86 的 MSI 与便携 ZIP。先核对设置 → 系统 → 系统信息中的系统类型，再选择文件。</p><p><a class="guide-button guide-button-secondary" href="/zh/download/windows">选择 Windows 文件并查看安装指南</a></p><p><a href="/zh/download/windows#portable">便携 ZIP 操作</a> · <a href="/zh/download/windows#startup">无法启动排查</a></p></article>
+<article id="macos" data-download-platform="macos" data-platform-panel="macos"><span class="download-anchor" id="mac"></span><h3>PhotoCraft Mac 版</h3>
 <p>Apple Silicon 与 Intel 共用一个 Universal DMG。选择桌面版 DMG，不要误选单独的命令行工具 ZIP。</p>
 <p><a href="https://github.com/storytold/photocraft/releases/download/v0.8.2/photocraft-0.8.2-macos-universal.dmg" target="_blank" rel="noopener noreferrer" class="guide-button guide-button-secondary">下载 Universal DMG</a></p><p class="download-file">photocraft-0.8.2-macos-universal.dmg</p>
 <ol><li>保存以 -macos-universal.dmg 结尾的文件，在 Finder → 下载中双击打开。</li><li>把 PhotoCraft 拖入 Applications（应用程序），等待复制完成，再推出磁盘映像。</li><li>在 Finder → 应用程序中双击 PhotoCraft；若 macOS 询问是否打开下载的应用，核对后点击“打开”。</li></ol>
 <p class="download-success">成功检查：看到 PhotoCraft 窗口；点击 File → Open，选择一张测试图片，确认图片出现在画布中。</p>
 <p>若提示开发者未验证，先核对发布来源与发布者；仅针对该提示，系统设置 → 隐私与安全性中可能显示“仍要打开”。若提示应用已损坏或含恶意软件，应停止并查看上游帮助，不绕过该警告。</p></article>
-<article id="linux" data-download-platform="linux"><h3>PhotoCraft Linux 版</h3>
+<article id="linux" data-download-platform="linux" data-platform-panel="linux"><h3>PhotoCraft Linux 版</h3>
 <p>打开终端执行 uname -m。x86_64 对应 64 位 Intel/AMD，aarch64 对应 ARM64。独立运行选 AppImage，Debian/Ubuntu 选 DEB，Fedora/RHEL/openSUSE 选 RPM，使用 Flatpak 的系统可选 Flatpak 包。</p>
 <div class="download-command"><code>uname -m</code></div>
 <p>以下命令对应已核验的 v0.8.2 文件。在文件管理器中打开下载文件所在文件夹，选择“在终端中打开”。只执行所选格式的命令；任一步报错就停在该步，先查看错误。</p>
@@ -127,7 +127,7 @@
 </div>
 <p class="download-success">成功检查：看到 PhotoCraft 窗口；点击 File → Open，选择一张测试图片，确认图片出现在画布中。</p>
 <p>在 Wayland 下，若拖入文件不能打开，请使用 File → Open。其他压缩格式见 <a href="https://github.com/storytold/photocraft/releases/tag/v0.8.2" target="_blank" rel="noopener noreferrer">已核验发布页</a>.</p></article>
-</div></section>
+</div></div></section>
 <section id="package-types"><h2>不要混淆安装包、CLI、Web ZIP 与源码 ZIP</h2><ul><li>桌面安装包或便携包：运行图形编辑器，先核对系统和架构。</li><li>CLI：用于终端转换和自动化。文件中带 cli 不等于桌面图形应用。</li><li>photocraft-web ZIP：用于自行托管 WebAssembly 网站，需要 Web 服务环境。</li><li>GitHub Source code ZIP：包含源码，需要编译，不能双击安装。</li></ul><p>下载后核对完整文件名、发布版本、SHA256，再用样例检查打开与保存结果。 <a href="/zh/is-photocraft-safe#downloads">文件核验步骤</a> · <a href="/zh/tutorial">练习教程</a></p></section>
 <p><a href="/zh/ai-photoshop-clone">想找 AI Photoshop Clone？下载前先分清 AI 含义。</a></p><section id="updates"><h2>最新版本与发布记录</h2>
 <p>本页安装包链接固定为已核验的 v0.8.2。查看上游最新发布，确认是否有新版本，再选择相同系统与架构。</p>

@@ -62,7 +62,6 @@ if (mobileButton) {
   menu.hidden = true;
   const nav = header.querySelector('nav').cloneNode(true);
   nav.className = 'flex flex-col gap-2';
-  nav.querySelectorAll('a').forEach(link => { link.className = 'text-muted-foreground hover:bg-accent hover:text-foreground rounded-md px-3 py-2 text-sm transition-colors'; });
   const action = header.querySelector('.site-desktop-action a').cloneNode(true);
   action.querySelector('svg')?.remove();
   action.className = header.querySelector('.site-desktop-action a').className;
@@ -123,19 +122,22 @@ for (const group of navigationGroups) {
   });
 }
 function updateNavigationCurrent() {
-  for (const group of navigationGroups) {
-    const links = [...group.querySelectorAll('a')];
+  for (const nav of document.querySelectorAll('.site-header nav')) {
+    const links = [...nav.querySelectorAll('a')];
     const exactHashLink = links.some(link => {
       const target = new URL(link.href);
       return target.pathname === location.pathname && target.hash && target.hash === location.hash;
     });
-    delete group.dataset.current;
+    for (const group of nav.querySelectorAll('.site-nav-group')) delete group.dataset.current;
     for (const link of links) {
       link.removeAttribute('aria-current');
       const target = new URL(link.href);
-      if (target.pathname === location.pathname && (exactHashLink ? target.hash === location.hash : !target.hash)) {
-        link.setAttribute('aria-current', target.hash ? 'location' : 'page');
-        group.dataset.current = 'true';
+      const exactPage = target.pathname === location.pathname;
+      const childPage = link.dataset.navSection && location.pathname.startsWith(target.pathname + '/');
+      if ((exactPage && (exactHashLink ? target.hash === location.hash : !target.hash)) || childPage) {
+        link.setAttribute('aria-current', target.hash ? 'location' : childPage ? 'true' : 'page');
+        const group = link.closest('.site-nav-group');
+        if (group) group.dataset.current = 'true';
       }
     }
   }
@@ -221,13 +223,93 @@ if (languageButton) {
   window.addEventListener('scroll', () => { if (!menu.hidden) positionMenu(); }, { passive: true });
 }
 
-if (['download', 'download/windows'].includes(document.body.dataset.page)) {
+function detectDownloadSystem() {
   const ua = navigator.userAgent;
   // iPad desktop mode reports MacIntel; Android often reports Linux.
   const mobile = navigator.userAgentData?.mobile || /android|iphone|ipad|ipod/i.test(ua)
     || (/mac/i.test(navigator.platform) && navigator.maxTouchPoints > 1);
   const platform = navigator.userAgentData?.platform || navigator.platform || ua;
-  const system = mobile ? null : /win/i.test(platform) ? 'windows' : /mac/i.test(platform) ? 'macos' : /linux/i.test(platform) ? 'linux' : null;
+  const system = mobile || /cros|chrome\s?os/i.test(platform + ' ' + ua) ? null
+    : /win/i.test(platform) ? 'windows' : /mac/i.test(platform) ? 'macos' : /linux/i.test(platform) ? 'linux' : null;
+  return { mobile, system };
+}
+
+// Keep all systems in the HTML; enhance to keyboard-accessible tabs only when
+// JavaScript runs. System detection recommends a platform, never a CPU or file.
+for (const widget of document.querySelectorAll('[data-platform-switcher]')) {
+  const controls = widget.querySelector('[data-platform-controls]');
+  const buttons = [...controls.querySelectorAll('[data-platform-choice]')];
+  const panels = [...widget.querySelectorAll('[data-platform-panel]')];
+  const hint = widget.querySelector('[data-platform-hint]');
+  const detected = detectDownloadSystem();
+  const panelForHash = () => {
+    let id;
+    try { id = decodeURIComponent(location.hash.slice(1)); } catch { return null; }
+    const target = id && document.getElementById(id);
+    return target ? panels.find(panel => panel === target || panel.contains(target)) : null;
+  };
+  const labelFor = system => buttons.find(button => button.dataset.platformChoice === system).dataset.platformLabel;
+  function selectPlatform(system, manual = false) {
+    for (const button of buttons) {
+      const selected = button.dataset.platformChoice === system;
+      button.setAttribute('aria-selected', String(selected));
+      button.tabIndex = selected ? 0 : -1;
+    }
+    for (const panel of panels) panel.hidden = panel.dataset.platformPanel !== system;
+    const label = labelFor(system);
+    if (manual) {
+      hint.textContent = locale === 'zh' ? `已选择 ${label}。下载前请核对目标电脑的处理器架构。`
+        : `${label} selected. Check the target computer's processor architecture before downloading.`;
+    } else if (detected.mobile) {
+      hint.textContent = locale === 'zh' ? `当前为移动设备，桌面安装包需在电脑上运行。当前展示 ${label}，可切换到目标电脑的系统。`
+        : `You are on a mobile device; desktop packages run on a computer. Showing ${label}; choose the target computer's system.`;
+    } else if (detected.system) {
+      const recommended = labelFor(detected.system);
+      hint.textContent = locale === 'zh' ? `按浏览器信息推荐 ${recommended}；当前查看 ${label}，可随时手动切换系统。`
+        : `Browser information suggests ${recommended}. Showing ${label}; you can switch systems at any time.`;
+    } else {
+      hint.textContent = locale === 'zh' ? `无法可靠识别桌面系统，当前展示 ${label}。请手动选择目标电脑系统。`
+        : `The desktop system could not be identified reliably. Showing ${label}; choose the target computer's system.`;
+    }
+  }
+  controls.setAttribute('role', 'tablist');
+  for (const [index, button] of buttons.entries()) {
+    const panel = panels.find(panel => panel.dataset.platformPanel === button.dataset.platformChoice);
+    button.setAttribute('role', 'tab');
+    button.setAttribute('aria-controls', panel.id);
+    button.setAttribute('aria-label', button.dataset.platformLabel);
+    panel.setAttribute('role', 'tabpanel');
+    panel.setAttribute('aria-labelledby', button.id);
+    panel.tabIndex = 0;
+    if (button.dataset.platformChoice === detected.system) {
+      const badge = document.createElement('span');
+      badge.className = 'platform-recommendation';
+      badge.setAttribute('aria-hidden', 'true');
+      badge.textContent = locale === 'zh' ? '推荐' : 'Suggested';
+      button.append(badge);
+    }
+    button.addEventListener('click', () => selectPlatform(button.dataset.platformChoice, true));
+    button.addEventListener('keydown', event => {
+      const next = { ArrowRight: (index + 1) % buttons.length, ArrowLeft: (index - 1 + buttons.length) % buttons.length, Home: 0, End: buttons.length - 1 }[event.key];
+      if (next === undefined) return;
+      event.preventDefault();
+      buttons[next].focus();
+      selectPlatform(buttons[next].dataset.platformChoice, true);
+    });
+  }
+  const initial = panelForHash()?.dataset.platformPanel || detected.system || buttons[0].dataset.platformChoice;
+  selectPlatform(initial);
+  controls.hidden = false;
+  window.addEventListener('hashchange', () => {
+    const panel = panelForHash();
+    if (!panel) return;
+    selectPlatform(panel.dataset.platformPanel, true);
+    document.getElementById(decodeURIComponent(location.hash.slice(1))).scrollIntoView({ block: 'start' });
+  });
+}
+
+if (['download', 'download/windows'].includes(document.body.dataset.page)) {
+  const { mobile, system } = detectDownloadSystem();
   const card = system ? document.querySelector(`[data-download-platform="${system}"]`) : null;
   if (card) {
     card.classList.add('download-recommended');
