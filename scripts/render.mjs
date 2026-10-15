@@ -19,6 +19,15 @@ export async function render(route, { liveReload = false, production = false } =
   const unlocalizedRoute = route.replace(/^\/zh(?=\/|$)/, '') || '/';
   const otherLanguageRoute = page.locale === 'zh' ? unlocalizedRoute : '/zh' + (route === '/' ? '' : route);
   html = html.replaceAll('{{otherLanguageRoute}}', otherLanguageRoute);
+  if (site.indexablePages.includes(page.page)) {
+    const analytics = { enabled: production && site.analytics?.enabled === true,
+      measurementId: site.analytics?.measurementId || '', origin: site.origin,
+      pagePath: route, pageType: page.page, locale: page.locale };
+    html = html.replace('</body>', `<script type="application/json" id="site-analytics">${JSON.stringify(analytics).replace(/</g, '\\u003c')}</script><script src="/scripts/analytics.js" defer></script></body>`);
+  }
+  if (html.includes('data-image-viewer')) {
+    html = html.replace('</body>', '<script src="/scripts/image-viewer.js" defer></script></body>');
+  }
   if (page.page !== 'index' && site.indexablePages.includes(page.page)) {
     const zh = page.locale === 'zh';
     const prefix = zh ? '/zh' : '';

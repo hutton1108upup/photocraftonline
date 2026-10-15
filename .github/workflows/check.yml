@@ -16,6 +16,7 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run audit:upload
+      - run: npm run check:analytics
       - run: npm run build:production
       - run: npm run check:production
       - run: npm run deploy:dry-run

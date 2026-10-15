@@ -2,6 +2,32 @@
    are preserved under public/assets and need not be edited for routine work. */
 [hidden] { display: none !important; }
 main [id] { scroll-margin-top: 72px; }
+.screenshot-link { display: block; cursor: zoom-in; overflow: hidden; }
+.screenshot-link picture, .screenshot-link img { display: block; width: 100%; height: auto; }
+.screenshot-open-label { display: block; padding: 7px 12px; background: var(--muted); color: var(--foreground); font: 12px/1.6 system-ui, sans-serif; text-align: right; text-decoration: underline; text-underline-offset: 3px; }
+.screenshot-link:focus-visible, .screenshot-text-link:focus-visible { outline: 2px solid var(--foreground); outline-offset: 3px; }
+.screenshot-text-link { display: none; }
+.homepage .home-step-copy .screenshot-focus { margin: 0 0 12px; font-size: 12px; color: var(--muted-foreground); }
+.screenshot-dialog { width: min(96vw, 1600px); max-width: 96vw; max-height: 94dvh; margin: auto; padding: 18px; color: var(--foreground); background: var(--background); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+.screenshot-dialog[open] { display: flex; flex-direction: column; gap: 12px; }
+.screenshot-dialog::backdrop { background: #000b; }
+.screenshot-dialog-header { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.screenshot-dialog h2 { font-size: 18px; font-weight: 600; }
+.screenshot-dialog #screenshot-dialog-caption { font-size: 13px; line-height: 1.6; }
+.screenshot-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.screenshot-dialog button, .screenshot-toolbar a { min-height: 36px; padding: 6px 10px; background: var(--muted); border: 1px solid var(--border); border-radius: 5px; font: 13px/1.5 system-ui, sans-serif; cursor: pointer; }
+.screenshot-dialog button:focus-visible, .screenshot-toolbar a:focus-visible, .screenshot-stage:focus-visible { outline: 2px solid var(--foreground); outline-offset: 2px; }
+.screenshot-dialog button:disabled { opacity: .5; cursor: default; }
+.screenshot-toolbar output { min-width: 40px; font-size: 12px; text-align: center; }
+.screenshot-stage { min-height: 120px; height: min(62dvh, 1000px); padding: 12px; overflow: auto; border: 1px solid var(--border); background: var(--muted); overscroll-behavior: contain; }
+.screenshot-stage img { display: block; max-width: none; margin: 0 auto; }
+.screenshot-dialog-hint { font-size: 12px; color: var(--muted-foreground); }
+@media (max-width: 700px) {
+  .screenshot-dialog { padding: 12px; }
+  .screenshot-stage { height: 50dvh; }
+  .homepage .home-step-copy .screenshot-focus { grid-column: 1 / -1; }
+  .homepage .home-step-copy .screenshot-text-link { display: inline-block; grid-column: 2; margin-top: 8px; font-size: 14px; }
+}
 .site-header > div { max-width: 1200px; gap: 16px; }
 .site-language-link { display: inline-flex; align-items: center; justify-content: center; min-height: 36px; padding: 6px 8px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; white-space: nowrap; }
 .site-language-link:hover { background: var(--muted); }
@@ -294,7 +320,7 @@ main [id] { scroll-margin-top: 72px; }
   .homepage .home-versions { gap: 24px; }
   .homepage .home-step-image { display: none; }
   .homepage .home-step-copy { display: grid; grid-template-columns: 30px minmax(0, 1fr); column-gap: 12px; padding: 16px; }
-  .homepage .home-step-number { grid-row: 1 / 4; line-height: 1.3; }
+  .homepage .home-step-number { grid-column: 1; grid-row: 2 / 5; line-height: 1.3; }
   .homepage .home-step-copy h3 { margin: 0; }
   .homepage .home-step-copy p { grid-column: 2; margin: 8px 0; }
   .homepage .home-step-copy > a { grid-column: 2; }
