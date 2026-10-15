@@ -183,3 +183,69 @@
   .clone-image-pair, .clone-steps, .clone-task-grid, .clone-result-grid { grid-template-columns: 1fr; gap: 20px; }
   .clone-intro .guide-button { white-space: normal; text-align: center; }
 }
+/* Homepages lead with the existing browser-test evidence, in the site's theme. */
+.homepage .home-hero { border-bottom: 1px solid var(--border); padding: 64px 24px 48px; }
+.homepage .home-hero-layout { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.35fr); gap: 40px; align-items: center; max-width: 1200px; margin: 0 auto; }
+.homepage .home-hero-copy { min-width: 0; }
+.homepage .home-eyebrow { margin-bottom: 18px; font-size: 12px; letter-spacing: .08em; color: var(--muted-foreground); }
+.homepage h1 { font-family: var(--font-libre-baskerville, Georgia), serif; font-size: clamp(32px, 3.3vw, 48px); font-weight: 400; line-height: 1.25; letter-spacing: -.025em; text-wrap: balance; }
+.homepage .home-title-word { display: inline-block; white-space: nowrap; }
+.homepage .home-hero-value { margin: 14px 0 20px; font-size: clamp(19px, 1.7vw, 24px); font-weight: 500; line-height: 1.5; text-wrap: balance; }
+.homepage .home-hero-description { font-size: 16px; line-height: 1.85; color: var(--muted-foreground); }
+.homepage .home-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 18px; }
+.homepage .home-hero-copy > .home-actions { margin-top: 28px; }
+.homepage .guide-button { white-space: normal; text-align: center; line-height: 1.6; }
+.homepage .home-text-link { font-size: 14px; text-decoration: underline; text-underline-offset: 4px; }
+.homepage .home-hero-note { margin-top: 20px; font-size: 12px; line-height: 1.8; color: var(--muted-foreground); }
+.homepage .home-hero-proof { margin: 0; min-width: 0; }
+.homepage .home-hero-proof a { display: block; overflow: hidden; border: 1px solid var(--border); border-radius: 10px; box-shadow: 0 10px 28px #0002; }
+.homepage .home-hero-proof img { display: block; width: 100%; height: auto; }
+.homepage .home-hero-proof figcaption { margin-top: 10px; color: var(--muted-foreground); font-size: 12px; line-height: 1.7; }
+.homepage .home-section { max-width: 1072px; padding: 48px 24px; margin: 0 auto; }
+.homepage .home-section + .home-section { border-top: 1px solid var(--border); }
+.homepage .home-section-heading { margin-bottom: 28px; max-width: 780px; }
+.homepage .home-section h2, .homepage .home-final h2 { font-family: var(--font-libre-baskerville, Georgia), serif; font-size: clamp(24px, 2.3vw, 30px); line-height: 1.5; font-weight: 400; }
+.homepage .home-section-heading > p { margin-top: 12px; color: var(--muted-foreground); font-size: 14px; line-height: 1.8; }
+.homepage .home-anchor { display: block; scroll-margin-top: 72px; }
+.homepage section[id] { scroll-margin-top: 72px; }
+.homepage .home-step-grid, .homepage .home-support-grid, .homepage .home-craft-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
+.homepage .home-step-grid article { min-width: 0; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.homepage .home-step-image { display: block; border-bottom: 1px solid var(--border); }
+.homepage .home-step-image img { width: 100%; height: auto; display: block; }
+.homepage .home-step-copy { padding: 20px; }
+.homepage .home-step-number { font-family: Georgia, serif; font-size: 24px; line-height: 1; color: var(--muted-foreground); }
+.homepage .home-step-copy h3 { font-size: 17px; font-weight: 500; line-height: 1.6; margin: 12px 0; }
+.homepage .home-step-copy p { font-size: 14px; line-height: 1.8; color: var(--muted-foreground); margin-bottom: 16px; }
+.homepage .home-practice-strip { display: grid; grid-template-columns: minmax(0, 1fr) 240px; gap: 32px; align-items: center; margin-top: 28px; padding: 28px; background: var(--muted); border-radius: 8px; }
+.homepage .home-practice-strip h3 { font-size: 20px; line-height: 1.5; }
+.homepage .home-practice-strip p { margin: 12px 0 20px; font-size: 14px; line-height: 1.8; color: var(--muted-foreground); }
+.homepage .home-practice-strip img { width: 100%; height: auto; display: block; border: 1px solid var(--border); border-radius: 4px; }
+.homepage .home-versions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; padding: 20px 0; margin: 24px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.homepage .home-versions dt { font-size: 12px; color: var(--muted-foreground); margin-bottom: 8px; }
+.homepage .home-versions dd { margin: 0; font-size: 16px; line-height: 1.7; }
+.homepage .home-versions dd p { margin: 8px 0 0; font-size: 12px; line-height: 1.8; }
+.homepage .home-support-grid article, .homepage .home-craft-grid > div { min-width: 0; border-top: 1px solid var(--border); padding-top: 18px; }
+.homepage .home-support-grid h3, .homepage .home-craft-grid h3 { font-size: 17px; font-weight: 500; line-height: 1.6; }
+.homepage .home-support-grid p { margin-top: 12px; color: var(--muted-foreground); font-size: 14px; line-height: 1.8; }
+.homepage .home-support-grid ul, .homepage .home-craft-grid ul { margin-top: 16px; display: grid; gap: 12px; font-size: 14px; }
+.homepage .home-support-grid a, .homepage .home-craft a { text-decoration: underline; text-underline-offset: 4px; }
+.homepage .home-craft-more { margin-top: 28px; font-size: 13px; }
+.homepage .home-final { padding: 48px 24px; text-align: center; border-top: 1px solid var(--border); }
+.homepage .home-final > p { margin: 12px auto 24px; color: var(--muted-foreground); font-size: 14px; line-height: 1.8; }
+.homepage .home-final .home-actions { justify-content: center; }
+.homepage a:focus-visible { outline: 2px solid var(--foreground); outline-offset: 4px; }
+@media (max-width: 900px) {
+  .homepage .home-hero-layout { grid-template-columns: 1fr; gap: 32px; max-width: 720px; }
+  .homepage .home-hero { padding-top: 40px; }
+  .homepage .home-hero-copy { max-width: 640px; }
+  .homepage .home-step-grid { gap: 16px; }
+  .homepage .home-step-copy { padding: 16px; }
+  .homepage .home-practice-strip { grid-template-columns: minmax(0, 1fr) 180px; gap: 24px; }
+}
+@media (max-width: 700px) {
+  .homepage .home-hero, .homepage .home-section, .homepage .home-final { padding-left: 20px; padding-right: 20px; }
+  .homepage .home-step-grid, .homepage .home-support-grid, .homepage .home-craft-grid, .homepage .home-versions, .homepage .home-practice-strip { grid-template-columns: 1fr; }
+  .homepage .home-practice-strip { padding: 20px; }
+  .homepage .home-practice-strip > a { max-width: 300px; }
+  .homepage .home-versions { gap: 24px; }
+}
