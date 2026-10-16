@@ -35,12 +35,19 @@ export async function render(route, { liveReload = false, production = false } =
       download: zh ? '下载与安装' : 'Downloads and installation',
       'download/windows': 'Windows',
       'artcraft-photocraft': zh ? 'Crafting Apps 工具导航' : 'Crafting Apps directory',
+      'figcraft-app': zh ? 'FigCraft 下载与入门' : 'FigCraft downloads and guide',
+      'figcraft-vs-figma': zh ? '与 Figma 对比' : 'Compare with Figma',
       'vectorcraft-app': zh ? 'VectorCraft 指南' : 'VectorCraft guide',
       'wordcraft-app': zh ? 'WordCraft 文档指南' : 'WordCraft document guide',
       'gridcraft-app': zh ? 'GridCraft 表格指南' : 'GridCraft spreadsheet guide',
       'cadcraft-app': zh ? 'CADCraft 下载指南' : 'CADCraft download guide',
       'cadcraft/tutorial': zh ? 'CADCraft 图文教程' : 'CADCraft tutorial',
       'cadcraft-vs-autocad': zh ? '与 AutoCAD 对比' : 'Compare AutoCAD',
+      'solidcraft-app': zh ? 'SolidCraft 指南' : 'SolidCraft guide',
+      'solidcraft/download': zh ? '下载与安装' : 'Download and install',
+      'solidcraft/tutorial': zh ? '安装板教程' : 'Mounting plate tutorial',
+      'solidcraft-vs-fusion-360': zh ? '与 Fusion 360 对比' : 'Compare Fusion 360',
+      'solidcraft/mcp': zh ? 'AI / MCP 教程' : 'AI / MCP tutorial',
       'ai-photoshop-clone': zh ? 'AI Photoshop Clone 说明' : 'AI Photoshop Clone explained',
       'effectcraft-app': zh ? 'EffectCraft 指南' : 'EffectCraft guide',
       'effectcraft/tutorial': zh ? 'EffectCraft CLI 教程' : 'EffectCraft CLI tutorial',
@@ -57,7 +64,7 @@ export async function render(route, { liveReload = false, production = false } =
     };
     const items = [{ name: zh ? '首页' : 'Home', route: prefix || '/' }];
     if (page.page === 'download/windows') items.push({ name: labels.download, route: `${prefix}/download` });
-    if (['vectorcraft-app', 'wordcraft-app', 'gridcraft-app', 'getartcraft-review', 'effectcraft-app', 'effectcraft/tutorial', 'effectcraft/desktop-tutorial', 'cadcraft-app', 'cadcraft/tutorial', 'cadcraft-vs-autocad'].includes(page.page)) {
+    if (['figcraft-app', 'figcraft-vs-figma', 'vectorcraft-app', 'wordcraft-app', 'gridcraft-app', 'getartcraft-review', 'effectcraft-app', 'effectcraft/tutorial', 'effectcraft/desktop-tutorial', 'cadcraft-app', 'cadcraft/tutorial', 'cadcraft-vs-autocad'].includes(page.page)) {
       items.push({ name: labels['artcraft-photocraft'], route: `${prefix}/artcraft-photocraft` });
     }
     if (['effectcraft/tutorial', 'effectcraft/desktop-tutorial'].includes(page.page)) {
@@ -66,6 +73,10 @@ export async function render(route, { liveReload = false, production = false } =
     if (['cadcraft/tutorial', 'cadcraft-vs-autocad'].includes(page.page)) {
       items.push({ name: labels['cadcraft-app'], route: `${prefix}/cadcraft-app` });
     }
+    if (['solidcraft/download', 'solidcraft/tutorial', 'solidcraft-vs-fusion-360', 'solidcraft/mcp'].includes(page.page)) {
+      items.push({ name: labels['solidcraft-app'], route: `${prefix}/solidcraft-app` });
+    }
+    if (page.page === 'figcraft-vs-figma') items.push({ name: labels['figcraft-app'], route: `${prefix}/figcraft-app` });
     items.push({ name: labels[page.page] || page.title, route });
     const breadcrumbs = `<nav class="site-breadcrumbs" aria-label="${zh ? '面包屑导航' : 'Breadcrumb'}">${items.map((item, index) => `${index ? '<span aria-hidden="true">/</span>' : ''}${index === items.length - 1 ? `<span aria-current="page">${item.name}</span>` : `<a href="${item.route}">${item.name}</a>`}`).join('')}</nav>`;
     html = html.replace(/(<main\b[^>]*>)/, `$1${breadcrumbs}`);

@@ -28,6 +28,13 @@
     "cadcraft/tutorial",
     "cadcraft-vs-autocad",
     "wordcraft-app",
-    "gridcraft-app"
+    "gridcraft-app",
+    "solidcraft-app",
+    "solidcraft/download",
+    "solidcraft/tutorial",
+    "solidcraft-vs-fusion-360",
+    "solidcraft/mcp",
+    "figcraft-app",
+    "figcraft-vs-figma"
   ]
 }

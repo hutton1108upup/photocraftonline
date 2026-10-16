@@ -232,14 +232,14 @@
       "locale": "en",
       "page": "artcraft-photocraft",
       "title": "Crafting Apps by ArtCraft: App List, Downloads & Comparison",
-      "source_sha256": "d3022dcb56e5ce7a3dfe80c71e74d0e8692a33c26e71c6f1797321fcb183547c"
+      "source_sha256": "d60200adc429a7799fefd3592c8f2b4d3fab6e065a49419308d4498849f6b307"
     },
     {
       "route": "/zh/artcraft-photocraft",
       "locale": "zh",
       "page": "artcraft-photocraft",
       "title": "Crafting Apps 工具导航：ArtCraft 应用列表、下载与对比",
-      "source_sha256": "4a51f57b2827f591e79d01f6eb4ee982c99dc80100449771b1a31d8028db918d"
+      "source_sha256": "666ebcf20c0e3cf386c8a21feda8e0b80942d988e4b1ec84ddd53f11e1ce2be3"
     },
     {
       "route": "/photocraft-app",
@@ -260,7 +260,7 @@
       "locale": "en",
       "page": "vectorcraft-app",
       "title": "VectorCraft App: Downloads, GitHub and PhotoCraft Differences",
-      "source_sha256": "448e52f39e20302c08862daab947961e3fa47db17934ef258ba2a5404c83cc9a"
+      "source_sha256": "ab9a6751d60eac6e03399db471e410cee90211419ee7ed174f440105e3c01225"
     },
     {
       "route": "/getartcraft-review",
@@ -274,7 +274,7 @@
       "locale": "zh",
       "page": "vectorcraft-app",
       "title": "VectorCraft App 指南：下载、GitHub 与 PhotoCraft 区别",
-      "source_sha256": "64c19acc3d60bef14d265a4c46d7a83c05915f80508d756dab7d33098aab1e4c"
+      "source_sha256": "c9a8a198ce6734d067fa8946cb06a42abd80c022e867ee83b7c55cef6d6e61de"
     },
     {
       "route": "/zh/getartcraft-review",
@@ -422,6 +422,94 @@
       "page": "gridcraft-app",
       "title": "GridCraft 下载与使用指南：XLSX、CSV 与公式",
       "source_sha256": "b878d95a3717532e1644adc52edef08caeca232388e6fd07a1b99be7111a7238"
+    },
+    {
+      "route": "/solidcraft-app",
+      "locale": "en",
+      "page": "solidcraft-app",
+      "title": "SolidCraft Guide: Downloads, 3D CAD Tutorials and AI / MCP"
+    },
+    {
+      "route": "/solidcraft/download",
+      "locale": "en",
+      "page": "solidcraft/download",
+      "title": "SolidCraft Download and Install Guide for Windows, Mac and Linux"
+    },
+    {
+      "route": "/solidcraft/tutorial",
+      "locale": "en",
+      "page": "solidcraft/tutorial",
+      "title": "SolidCraft Beginner Tutorial: Model, Resize and Export a Mounting Plate"
+    },
+    {
+      "route": "/solidcraft-vs-fusion-360",
+      "locale": "en",
+      "page": "solidcraft-vs-fusion-360",
+      "title": "SolidCraft vs Fusion 360: Capabilities and Workflow Choices"
+    },
+    {
+      "route": "/solidcraft/mcp",
+      "locale": "en",
+      "page": "solidcraft/mcp",
+      "title": "SolidCraft AI / MCP Tutorial: Connect, Resize, Measure and Export"
+    },
+    {
+      "route": "/zh/solidcraft-app",
+      "locale": "zh",
+      "page": "solidcraft-app",
+      "title": "SolidCraft 中文指南：下载、3D 建模教程与 AI / MCP"
+    },
+    {
+      "route": "/zh/solidcraft/download",
+      "locale": "zh",
+      "page": "solidcraft/download",
+      "title": "SolidCraft 下载与安装：Windows、Mac、Linux 官方指南"
+    },
+    {
+      "route": "/zh/solidcraft/tutorial",
+      "locale": "zh",
+      "page": "solidcraft/tutorial",
+      "title": "SolidCraft 入门教程：带孔安装板建模、改尺寸与导出"
+    },
+    {
+      "route": "/zh/solidcraft-vs-fusion-360",
+      "locale": "zh",
+      "page": "solidcraft-vs-fusion-360",
+      "title": "SolidCraft vs Fusion 360：功能差异与工作流选择"
+    },
+    {
+      "route": "/zh/solidcraft/mcp",
+      "locale": "zh",
+      "page": "solidcraft/mcp",
+      "title": "SolidCraft AI / MCP 教程：连接客户端、改尺寸与检查导出"
+    },
+    {
+      "route": "/figcraft-app",
+      "locale": "en",
+      "page": "figcraft-app",
+      "title": "FigCraft App: Downloads, GitHub & Getting Started",
+      "source_sha256": "cb092be6c28266f22e95912aa4c325155aa15513be8a5ed0836836f25a112df5"
+    },
+    {
+      "route": "/figcraft-vs-figma",
+      "locale": "en",
+      "page": "figcraft-vs-figma",
+      "title": "FigCraft vs Figma: Features, File Compatibility & Trade-offs",
+      "source_sha256": "df71dd54a5e438fc47d69943e9a44ffc307c0ad3dbf8ecb02355dc5245712879"
+    },
+    {
+      "route": "/zh/figcraft-app",
+      "locale": "zh",
+      "page": "figcraft-app",
+      "title": "FigCraft 下载与入门：开源 Figma 替代品、GitHub 与在线版",
+      "source_sha256": "0ec30d4bcf0e865fca57f057bc089da7477e9eb544f96d6f30bbb0cc9c2579a2"
+    },
+    {
+      "route": "/zh/figcraft-vs-figma",
+      "locale": "zh",
+      "page": "figcraft-vs-figma",
+      "title": "FigCraft vs Figma：功能、文件兼容与使用选择",
+      "source_sha256": "95ae061167db3260ac9dfe6065c6b550867960a371aee2d55e5852458aff5561"
     }
   ],
   "assets": [

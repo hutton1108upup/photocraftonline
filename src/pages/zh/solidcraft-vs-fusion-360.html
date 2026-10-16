@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<script src="/scripts/theme.js">
+</script>
+<link as="font" crossorigin="" href="/assets/fonts/38df7484fe560b25-s.p.0_h8~hcb-m6kp.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="/assets/fonts/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="/assets/fonts/f5031e7b18bdfbb3-s.p.17530ebvtj~5g.woff2" rel="preload" type="font/woff2"/>
+<link data-precedence="next" href="/assets/css/15sc_v~et~i94.css" rel="stylesheet"/>
+<link data-precedence="next" href="/assets/css/0x4i1d-5t.ch3.css" rel="stylesheet"/>
+<title>SolidCraft vs Fusion 360：功能差异与工作流选择</title>
+<meta name="description" content="按草图建模、参数化时间线、装配、STEP/STL、CAM、仿真和 AI 自动化比较 SolidCraft 与 Autodesk Fusion，判断适合自己的工作流。"/>
+<meta property="og:title" content="SolidCraft vs Fusion 360：功能差异与工作流选择"/>
+<meta property="og:description" content="按草图建模、参数化时间线、装配、STEP/STL、CAM、仿真和 AI 自动化比较 SolidCraft 与 Autodesk Fusion，判断适合自己的工作流。"/>
+<meta property="og:type" content="article"/>
+<meta property="og:site_name" content="PhotoCraft Online"/>
+<meta property="og:url" content="https://freephotocraft.online/zh/solidcraft-vs-fusion-360"/>
+<meta property="og:image" content="https://freephotocraft.online/images/solidcraft/02-mounting-plate-60mm.webp"/>
+<meta property="og:image:alt" content="SolidCraft mounting plate worked example"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="SolidCraft vs Fusion 360：功能差异与工作流选择"/>
+<meta name="twitter:description" content="按草图建模、参数化时间线、装配、STEP/STL、CAM、仿真和 AI 自动化比较 SolidCraft 与 Autodesk Fusion，判断适合自己的工作流。"/>
+<meta name="twitter:image" content="https://freephotocraft.online/images/solidcraft/02-mounting-plate-60mm.webp"/>
+<meta content="noindex, nofollow" name="robots"/>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+<link rel="stylesheet" href="/styles/custom.css"/>
+<link rel="canonical" href="https://freephotocraft.online/zh/solidcraft-vs-fusion-360"/>
+<link rel="alternate" hreflang="en" href="https://freephotocraft.online/solidcraft-vs-fusion-360"/>
+<link rel="alternate" hreflang="zh" href="https://freephotocraft.online/zh/solidcraft-vs-fusion-360"/>
+<link rel="alternate" hreflang="x-default" href="https://freephotocraft.online/solidcraft-vs-fusion-360"/>
+</head>
+<body class="inter_b2991b2-module__9mH_6q__variable libre_baskerville_17390e78-module__pDOJMW__variable font-sans antialiased" data-locale="zh" data-page="solidcraft-vs-fusion-360">
+<div class="bg-background text-foreground flex min-h-screen flex-col">
+<!-- @include zh/header -->
+<main class="guide-page solidcraft-guide">
+<header class="guide-intro"><p class="guide-kicker">FREE PHOTOCRAFT · SOLIDCRAFT</p><h1>SolidCraft vs Fusion 360：功能差异与工作流选择</h1><p>按草图建模、参数化时间线、装配、STEP/STL、CAM、仿真和 AI 自动化比较 SolidCraft 与 Autodesk Fusion，判断适合自己的工作流。</p></header>
+<div class="guide-body">
+<p class="solidcraft-version">SolidCraft v0.12.0 · 独立中文指南 · 2026 年 10 月 16 日</p>
+<nav class="guide-toc" aria-label="SolidCraft 专区"><a href="/zh/solidcraft-app">中文指南</a><a href="/zh/solidcraft/download">下载与安装</a><a href="/zh/solidcraft/tutorial">安装板教程</a><a href="/zh/solidcraft-vs-fusion-360">与 Fusion 360 对比</a><a href="/zh/solidcraft/mcp">AI / MCP 教程</a></nav>
+<section id="decision"><h2>先按任务选工具</h2><p>如果目的是学习参数化建模、制作简单零件或尝试 MCP 自动化，SolidCraft 值得用一个小案例评估。若交付依赖成熟的加工、仿真、工程图或团队数据流程，先保留已经验证的工具链，再逐项验证迁移。</p><p>“界面相似”“有装配命令”“能导出 STEP”都不等于功能、几何稳定性和文件兼容完全相同。本页按官方资料比较能力范围；实际运行案例是本站安装板，不是两款软件的性能跑分。</p></section><section id="features"><h2>功能与流程对照</h2><p>手机端可在表格内左右滑动。</p><div class="guide-table-wrap" role="region" tabindex="0" aria-label="SolidCraft 与 Autodesk Fusion"><table><caption>SolidCraft 与 Autodesk Fusion</caption><thead><tr><th scope="col">工作流</th><th scope="col">SolidCraft v0.12.0</th><th scope="col">Autodesk Fusion</th><th scope="col">怎么判断</th></tr></thead><tbody><tr><th scope="row">草图与参数化建模</th><td>提供约束、尺寸、特征时间线和表达式。</td><td>提供参数化设计工作流。</td><td>用同一个零件修改关键尺寸，检查重建。</td></tr><tr><th scope="row">装配与钣金</th><td>官方列出组件、关节、运动与钣金工具；支持边界按版本核对。</td><td>提供相应设计工作区和工具。</td><td>用自己的关节、展开图和交付标准测试。</td></tr><tr><th scope="row">STEP / STL 交换</th><td>支持相关导入或导出，本站案例跑通 STEP 往返与 STL 导出。</td><td>有导入导出与格式支持文档。</td><td>交换后检查单位、实体和尺寸；不保证历史树迁移。</td></tr><tr><th scope="row">CAM / CAE / PCB</th><td>不能把本例的实体建模结果扩展为 CAM、仿真或 PCB 工作流保证。</td><td>官方产品范围覆盖 CAD、CAM、CAE、PCB；具体能力受许可和扩展影响。</td><td>这些是刚需时，逐项查支持与许可。</td></tr><tr><th scope="row">AI / MCP</th><td>内置 MCP 服务，可由兼容客户端调用建模和测量工具。</td><td>自动化能力按 Autodesk 当前 API 与产品文档评估。</td><td>看 AI 是否能稳定完成你的真实任务。</td></tr><tr><th scope="row">运行与授权</th><td>MIT OR Apache-2.0；桌面、浏览器、CLI，AI 客户端费用另计。</td><td>许可、个人用途资格和服务条件以 Autodesk 当前条款为准。</td><td>根据使用场景核对，避免只比较软件标价。</td></tr></tbody></table></div></section><section id="trial"><h2>用一份零件做迁移试验</h2><ol><li>选一个简单且可公开的零件副本，记录尺寸、单位、孔位和需要的文件格式。</li><li>先在 SolidCraft 打开或重建，再改一个会影响后续特征的尺寸。</li><li>导出 STEP，用接收方实际使用的软件重新打开，核对体积、单位、零件数量与关键尺寸。</li><li>如果工作依赖工程图、CAM 或仿真，单独验证该链路后再决定迁移；不要从 STEP 成功推出整个工作流都能替换。</li></ol><p><a href="/zh/solidcraft/tutorial">直接使用本站安装板作为第一份试验零件</a></p></section><section id="cadcraft"><h2>什么时候看 CADCraft？</h2><p>如果主要工作是二维技术图纸与命令式制图，先看 <a href="/zh/cadcraft-app">CADCraft</a> 和 <a href="/zh/cadcraft-vs-autocad">CADCraft 与 AutoCAD 对比</a>。如果任务是有草图、拉伸和尺寸驱动历史的三维零件，继续本专区教程。两条路径按任务互相补充。</p></section><section id="sources"><h2>来源与适用版本</h2><p>资料核对：2026 年 10 月 16 日。本文以 SolidCraft v0.12.0 为案例版本；最新发行版和主分支文档可能继续变化。本站是独立指南。</p><p><a href="https://github.com/bherbruck/solidcraft" target="_blank" rel="noopener noreferrer">官方 GitHub</a> · <a href="https://github.com/bherbruck/solidcraft/releases/tag/v0.12.0" target="_blank" rel="noopener noreferrer">v0.12.0 发行说明</a> · <a href="https://bherbruck.github.io/solidcraft/guide/getting-started.html" target="_blank" rel="noopener noreferrer">官方入门文档</a> · <a href="https://help.autodesk.com/view/fusion360/ENU/" target="_blank" rel="noopener noreferrer">Autodesk Fusion 官方帮助</a> · <a href="https://github.com/bherbruck/solidcraft/blob/v0.12.0/ROADMAP.md" target="_blank" rel="noopener noreferrer">SolidCraft 路线与限制</a></p></section>
+</div>
+</main>
+<!-- @include zh/footer -->
+</div>
+<script src="/scripts/site.js" defer></script>
+</body>
+</html>
