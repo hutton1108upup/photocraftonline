@@ -488,7 +488,7 @@
       "locale": "en",
       "page": "figcraft-app",
       "title": "FigCraft App: Downloads, GitHub & Getting Started",
-      "source_sha256": "cb092be6c28266f22e95912aa4c325155aa15513be8a5ed0836836f25a112df5"
+      "source_sha256": "55276d0d8bdf44d78b0937d8aab35b6de3ca627ac5c11715a5bdcd452eb0bd23"
     },
     {
       "route": "/figcraft-vs-figma",
@@ -502,7 +502,7 @@
       "locale": "zh",
       "page": "figcraft-app",
       "title": "FigCraft 下载与入门：开源 Figma 替代品、GitHub 与在线版",
-      "source_sha256": "0ec30d4bcf0e865fca57f057bc089da7477e9eb544f96d6f30bbb0cc9c2579a2"
+      "source_sha256": "3d735d310867e683b4d27ae646cdb92d13f94529f8506b6933a58932040383c2"
     },
     {
       "route": "/zh/figcraft-vs-figma",
