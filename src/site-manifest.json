@@ -232,14 +232,14 @@
       "locale": "en",
       "page": "artcraft-photocraft",
       "title": "ArtCraft Apps Guide: PhotoCraft, VectorCraft and GitHub",
-      "source_sha256": "41a1b46620ac4727b6d6d5685086ee3c636cd8b0720ef18cea6f690fbbf516bd"
+      "source_sha256": "2d9c70456080b4df7aea740baa440b6cccaf4513888e9c6bbb2993a915e15a09"
     },
     {
       "route": "/zh/artcraft-photocraft",
       "locale": "zh",
       "page": "artcraft-photocraft",
       "title": "ArtCraft Apps 工具导航：PhotoCraft、VectorCraft 与 GitHub",
-      "source_sha256": "c3794f787c6ab063f12b99b1c08659d57603a6931621a4400f8662abe6cb7552"
+      "source_sha256": "10a72130234e45f2c08426fb539fffb0038bafcf35e800df1ce07eb99c8c6af1"
     },
     {
       "route": "/photocraft-app",
