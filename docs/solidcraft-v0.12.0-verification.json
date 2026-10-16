@@ -1,0 +1,158 @@
+{
+  "status": "PASS",
+  "before": {
+    "body_count": 1,
+    "dimensions_mm": [
+      60.0,
+      30.0,
+      4.0
+    ],
+    "volume_mm3": 6973.842900710108,
+    "analytic_volume_mm3": 6973.805328941535
+  },
+  "after": {
+    "body_count": 1,
+    "dimensions_mm": [
+      80.0,
+      30.0,
+      4.0
+    ],
+    "volume_mm3": 9373.842900710115,
+    "analytic_volume_mm3": 9373.805328941535
+  },
+  "hole_centers_mm": [
+    [
+      10.0,
+      15.0
+    ],
+    [
+      70.0,
+      15.0
+    ]
+  ],
+  "sketch_dof": 0,
+  "reopened": {
+    "body_count": 1,
+    "dimensions_mm": [
+      80.0,
+      30.0,
+      4.0
+    ],
+    "volume_mm3": 9373.842900710115,
+    "analytic_volume_mm3": 9373.805328941535
+  },
+  "step_reimport": {
+    "body_count": 1,
+    "dimensions_mm": [
+      80.0,
+      30.0,
+      4.0
+    ],
+    "volume_mm3": 9373.828352802064,
+    "analytic_volume_mm3": 9373.805328941535
+  },
+  "checked_at": "2026-10-16",
+  "release": "v0.12.0",
+  "platform": "Windows x64",
+  "case": "Original two-hole parametric mounting plate",
+  "desktop_capture_method": "SolidCraft MCP screenshot tool, source=window, bridged desktop on loopback",
+  "desktop_tool_chain": [
+    "new_design",
+    "execute",
+    "measure",
+    "inspect_design",
+    "save",
+    "export",
+    "set_parameter",
+    "screenshot",
+    "open"
+  ],
+  "download_sha256": {
+    "solidcraft-0.12.0-windows-x64-portable.zip": "2c66701d4c66630f3d1988e43ceaf5c4b2179baf89dddb15ea70b3e03a0e24c1",
+    "solidcraft-web-0.12.0.zip": "e7de4f5a276de48cba9a4b729f55bbd20affa128b4aec5f56a33f5f1be30e162"
+  },
+  "scope_limits": [
+    "No paid model conversation",
+    "No macOS or Linux installation test",
+    "No physical printing or slicer test",
+    "No Fusion side-by-side performance benchmark"
+  ],
+  "artifacts": [
+    {
+      "file": "public/examples/solidcraft/mcp-resize.py",
+      "bytes": 6001,
+      "sha256": "a0031be1918a353867f1fb65ee22231c0ddd97568c45730e7fd28504c6f2f77e"
+    },
+    {
+      "file": "public/examples/solidcraft/mounting-plate-60.solidcraft",
+      "bytes": 1308,
+      "sha256": "69d9be7a740502c85da8d1e00717df70b664d37071f1e4579230de6a0beb8e51"
+    },
+    {
+      "file": "public/examples/solidcraft/mounting-plate-60.step",
+      "bytes": 11176,
+      "sha256": "957839606fb613f9e129826ae1aa3233b156a1c86e4bd4094e63a92008cb47b5"
+    },
+    {
+      "file": "public/examples/solidcraft/mounting-plate-60.stl",
+      "bytes": 41884,
+      "sha256": "2165e45a162e2deecaf77497c36950044fd27f4b838ce6d5f73f15912ebfc518"
+    },
+    {
+      "file": "public/examples/solidcraft/mounting-plate-80.solidcraft",
+      "bytes": 1308,
+      "sha256": "5dc38898465e6853a5970163be905dbf0aa3f27cf725b7c78f868526fd9e2b25"
+    },
+    {
+      "file": "public/examples/solidcraft/mounting-plate-80.step",
+      "bytes": 11176,
+      "sha256": "86055542ad5b73833187d055450679becd602067b0c6fec32c8c1c146c07340d"
+    },
+    {
+      "file": "public/examples/solidcraft/mounting-plate.json",
+      "bytes": 3076,
+      "sha256": "5ebb03b5e849c5a5c9c7586c152a73a6356849549dade72d5f871cbda3fafb14"
+    },
+    {
+      "file": "public/images/solidcraft/01-dimensioned-sketch.webp",
+      "bytes": 56614,
+      "sha256": "ad9276f7bac9be2302c5d5f60dc300a5d156a1fbd6f735ebe145c07f3ef60c1c"
+    },
+    {
+      "file": "public/images/solidcraft/02-mounting-plate-60mm.webp",
+      "bytes": 95118,
+      "sha256": "a6e62e107872d8669b7e32e671270b3cf829bd8ba06ca1349db7f12add74970e"
+    },
+    {
+      "file": "public/images/solidcraft/03-mounting-plate-80mm.webp",
+      "bytes": 110166,
+      "sha256": "1889689ff5538a955cf6bb355d8eb967e757ba7125d116b02721b3fbcb1c915c"
+    }
+  ],
+  "web_validation": {
+    "production_pages": 70,
+    "local_assets_checked": 96,
+    "internal_links_checked": 3284,
+    "external_new_page_urls_checked": 15,
+    "local_new_page_urls_checked": 34,
+    "browser_cases": 30,
+    "viewports": [
+      [
+        1440,
+        1000
+      ],
+      [
+        390,
+        844
+      ],
+      [
+        320,
+        812
+      ]
+    ],
+    "page_errors": 0,
+    "document_overflow": false,
+    "mobile_navigation": "PASS",
+    "status": "PASS"
+  }
+}

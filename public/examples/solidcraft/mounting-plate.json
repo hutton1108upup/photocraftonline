@@ -1,0 +1,168 @@
+{
+  "commands": [
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "width",
+        "expression": "60 mm"
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "height",
+        "expression": "30 mm"
+      }
+    },
+    {
+      "command": "parameters.add",
+      "params": {
+        "name": "thickness",
+        "expression": "4 mm"
+      }
+    },
+    {
+      "command": "sketch.create",
+      "params": {
+        "plane": "XY",
+        "name": "PlateProfile"
+      }
+    },
+    {
+      "command": "sketch.rectangle.two_point",
+      "params": {
+        "p0": [
+          0,
+          0
+        ],
+        "p1": [
+          60,
+          30
+        ]
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "l1"
+        ],
+        "value": "width"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "l2"
+        ],
+        "value": "height"
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          10,
+          15
+        ],
+        "diameter": 6
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "c1.center"
+        ],
+        "type": "horizontal",
+        "value": "10 mm"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "c1.center"
+        ],
+        "type": "vertical",
+        "value": "height / 2"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "c1"
+        ],
+        "type": "diameter",
+        "value": "6 mm"
+      }
+    },
+    {
+      "command": "sketch.circle.center",
+      "params": {
+        "center": [
+          50,
+          15
+        ],
+        "diameter": 6
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "c2.center"
+        ],
+        "type": "horizontal",
+        "value": "width - 10 mm"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "p1",
+          "c2.center"
+        ],
+        "type": "vertical",
+        "value": "height / 2"
+      }
+    },
+    {
+      "command": "sketch.dimension",
+      "params": {
+        "entities": [
+          "c2"
+        ],
+        "type": "diameter",
+        "value": "6 mm"
+      }
+    },
+    {
+      "command": "sketch.finish",
+      "params": {}
+    },
+    {
+      "command": "solid.extrude",
+      "params": {
+        "distance": "thickness",
+        "profiles": [
+          {
+            "curves": [
+              "l1",
+              "l4",
+              "l2",
+              "l3"
+            ]
+          }
+        ],
+        "body_name": "MountingPlate"
+      }
+    }
+  ]
+}
