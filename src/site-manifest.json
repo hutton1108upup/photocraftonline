@@ -232,14 +232,14 @@
       "locale": "en",
       "page": "artcraft-photocraft",
       "title": "ArtCraft Apps Guide: PhotoCraft, VectorCraft and GitHub",
-      "source_sha256": "d3022dcb56e5ce7a3dfe80c71e74d0e8692a33c26e71c6f1797321fcb183547c"
+      "source_sha256": "5ee16a8d9df2cd2100817f257914be75ade345fd1321dd2e65b1c0259a29f0c6"
     },
     {
       "route": "/zh/artcraft-photocraft",
       "locale": "zh",
       "page": "artcraft-photocraft",
       "title": "ArtCraft Apps 工具导航：PhotoCraft、VectorCraft 与 GitHub",
-      "source_sha256": "4a51f57b2827f591e79d01f6eb4ee982c99dc80100449771b1a31d8028db918d"
+      "source_sha256": "df784cac2e5a35fadf678681eab244a850ef0a4cbead12cfaade7183f3f3fb90"
     },
     {
       "route": "/photocraft-app",
@@ -260,7 +260,7 @@
       "locale": "en",
       "page": "vectorcraft-app",
       "title": "VectorCraft App: Downloads, GitHub and PhotoCraft Differences",
-      "source_sha256": "448e52f39e20302c08862daab947961e3fa47db17934ef258ba2a5404c83cc9a"
+      "source_sha256": "f930338fcb11a28fdfa7eb97250549613de6996e5988581393887eeccc21c534"
     },
     {
       "route": "/getartcraft-review",
@@ -274,7 +274,7 @@
       "locale": "zh",
       "page": "vectorcraft-app",
       "title": "VectorCraft App 指南：下载、GitHub 与 PhotoCraft 区别",
-      "source_sha256": "64c19acc3d60bef14d265a4c46d7a83c05915f80508d756dab7d33098aab1e4c"
+      "source_sha256": "522ab9752b3d8da6a63232138addce72a53f0db3b60fa8861657e6b9881c5a89"
     },
     {
       "route": "/zh/getartcraft-review",
@@ -422,6 +422,34 @@
       "page": "gridcraft-app",
       "title": "GridCraft 下载与使用指南：XLSX、CSV 与公式",
       "source_sha256": "b878d95a3717532e1644adc52edef08caeca232388e6fd07a1b99be7111a7238"
+    },
+    {
+      "route": "/figcraft-app",
+      "locale": "en",
+      "page": "figcraft-app",
+      "title": "FigCraft App: Downloads, GitHub & Getting Started",
+      "source_sha256": "cb092be6c28266f22e95912aa4c325155aa15513be8a5ed0836836f25a112df5"
+    },
+    {
+      "route": "/figcraft-vs-figma",
+      "locale": "en",
+      "page": "figcraft-vs-figma",
+      "title": "FigCraft vs Figma: Features, File Compatibility & Trade-offs",
+      "source_sha256": "df71dd54a5e438fc47d69943e9a44ffc307c0ad3dbf8ecb02355dc5245712879"
+    },
+    {
+      "route": "/zh/figcraft-app",
+      "locale": "zh",
+      "page": "figcraft-app",
+      "title": "FigCraft 下载与入门：开源 Figma 替代品、GitHub 与在线版",
+      "source_sha256": "0ec30d4bcf0e865fca57f057bc089da7477e9eb544f96d6f30bbb0cc9c2579a2"
+    },
+    {
+      "route": "/zh/figcraft-vs-figma",
+      "locale": "zh",
+      "page": "figcraft-vs-figma",
+      "title": "FigCraft vs Figma：功能、文件兼容与使用选择",
+      "source_sha256": "95ae061167db3260ac9dfe6065c6b550867960a371aee2d55e5852458aff5561"
     }
   ],
   "assets": [
