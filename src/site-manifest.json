@@ -231,15 +231,15 @@
       "route": "/artcraft-photocraft",
       "locale": "en",
       "page": "artcraft-photocraft",
-      "title": "ArtCraft Apps Guide: PhotoCraft, VectorCraft and GitHub",
-      "source_sha256": "2d9c70456080b4df7aea740baa440b6cccaf4513888e9c6bbb2993a915e15a09"
+      "title": "Crafting Apps by ArtCraft: App List, Downloads & Comparison",
+      "source_sha256": "d60200adc429a7799fefd3592c8f2b4d3fab6e065a49419308d4498849f6b307"
     },
     {
       "route": "/zh/artcraft-photocraft",
       "locale": "zh",
       "page": "artcraft-photocraft",
-      "title": "ArtCraft Apps 工具导航：PhotoCraft、VectorCraft 与 GitHub",
-      "source_sha256": "10a72130234e45f2c08426fb539fffb0038bafcf35e800df1ce07eb99c8c6af1"
+      "title": "Crafting Apps 工具导航：ArtCraft 应用列表、下载与对比",
+      "source_sha256": "666ebcf20c0e3cf386c8a21feda8e0b80942d988e4b1ec84ddd53f11e1ce2be3"
     },
     {
       "route": "/photocraft-app",
@@ -260,7 +260,7 @@
       "locale": "en",
       "page": "vectorcraft-app",
       "title": "VectorCraft App: Downloads, GitHub and PhotoCraft Differences",
-      "source_sha256": "f930338fcb11a28fdfa7eb97250549613de6996e5988581393887eeccc21c534"
+      "source_sha256": "ab9a6751d60eac6e03399db471e410cee90211419ee7ed174f440105e3c01225"
     },
     {
       "route": "/getartcraft-review",
@@ -274,7 +274,7 @@
       "locale": "zh",
       "page": "vectorcraft-app",
       "title": "VectorCraft App 指南：下载、GitHub 与 PhotoCraft 区别",
-      "source_sha256": "522ab9752b3d8da6a63232138addce72a53f0db3b60fa8861657e6b9881c5a89"
+      "source_sha256": "c9a8a198ce6734d067fa8946cb06a42abd80c022e867ee83b7c55cef6d6e61de"
     },
     {
       "route": "/zh/getartcraft-review",
