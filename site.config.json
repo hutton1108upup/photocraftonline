@@ -33,6 +33,8 @@
     "solidcraft/download",
     "solidcraft/tutorial",
     "solidcraft-vs-fusion-360",
-    "solidcraft/mcp"
+    "solidcraft/mcp",
+    "figcraft-app",
+    "figcraft-vs-figma"
   ]
 }

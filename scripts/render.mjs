@@ -35,6 +35,8 @@ export async function render(route, { liveReload = false, production = false } =
       download: zh ? '下载与安装' : 'Downloads and installation',
       'download/windows': 'Windows',
       'artcraft-photocraft': zh ? 'Craft 工具导航' : 'Craft app directory',
+      'figcraft-app': zh ? 'FigCraft 下载与入门' : 'FigCraft downloads and guide',
+      'figcraft-vs-figma': zh ? '与 Figma 对比' : 'Compare with Figma',
       'vectorcraft-app': zh ? 'VectorCraft 指南' : 'VectorCraft guide',
       'wordcraft-app': zh ? 'WordCraft 文档指南' : 'WordCraft document guide',
       'gridcraft-app': zh ? 'GridCraft 表格指南' : 'GridCraft spreadsheet guide',
@@ -62,7 +64,7 @@ export async function render(route, { liveReload = false, production = false } =
     };
     const items = [{ name: zh ? '首页' : 'Home', route: prefix || '/' }];
     if (page.page === 'download/windows') items.push({ name: labels.download, route: `${prefix}/download` });
-    if (['vectorcraft-app', 'wordcraft-app', 'gridcraft-app', 'getartcraft-review', 'effectcraft-app', 'effectcraft/tutorial', 'effectcraft/desktop-tutorial', 'cadcraft-app', 'cadcraft/tutorial', 'cadcraft-vs-autocad'].includes(page.page)) {
+    if (['figcraft-app', 'figcraft-vs-figma', 'vectorcraft-app', 'wordcraft-app', 'gridcraft-app', 'getartcraft-review', 'effectcraft-app', 'effectcraft/tutorial', 'effectcraft/desktop-tutorial', 'cadcraft-app', 'cadcraft/tutorial', 'cadcraft-vs-autocad'].includes(page.page)) {
       items.push({ name: labels['artcraft-photocraft'], route: `${prefix}/artcraft-photocraft` });
     }
     if (['effectcraft/tutorial', 'effectcraft/desktop-tutorial'].includes(page.page)) {
@@ -74,6 +76,7 @@ export async function render(route, { liveReload = false, production = false } =
     if (['solidcraft/download', 'solidcraft/tutorial', 'solidcraft-vs-fusion-360', 'solidcraft/mcp'].includes(page.page)) {
       items.push({ name: labels['solidcraft-app'], route: `${prefix}/solidcraft-app` });
     }
+    if (page.page === 'figcraft-vs-figma') items.push({ name: labels['figcraft-app'], route: `${prefix}/figcraft-app` });
     items.push({ name: labels[page.page] || page.title, route });
     const breadcrumbs = `<nav class="site-breadcrumbs" aria-label="${zh ? '面包屑导航' : 'Breadcrumb'}">${items.map((item, index) => `${index ? '<span aria-hidden="true">/</span>' : ''}${index === items.length - 1 ? `<span aria-current="page">${item.name}</span>` : `<a href="${item.route}">${item.name}</a>`}`).join('')}</nav>`;
     html = html.replace(/(<main\b[^>]*>)/, `$1${breadcrumbs}`);
