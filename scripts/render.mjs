@@ -34,7 +34,7 @@ export async function render(route, { liveReload = false, production = false } =
     const labels = {
       download: zh ? '下载与安装' : 'Downloads and installation',
       'download/windows': 'Windows',
-      'artcraft-photocraft': zh ? 'Craft 工具导航' : 'Craft app directory',
+      'artcraft-photocraft': zh ? 'Crafting Apps 工具导航' : 'Crafting Apps directory',
       'vectorcraft-app': zh ? 'VectorCraft 指南' : 'VectorCraft guide',
       'wordcraft-app': zh ? 'WordCraft 文档指南' : 'WordCraft document guide',
       'gridcraft-app': zh ? 'GridCraft 表格指南' : 'GridCraft spreadsheet guide',

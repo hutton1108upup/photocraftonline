@@ -231,14 +231,14 @@
       "route": "/artcraft-photocraft",
       "locale": "en",
       "page": "artcraft-photocraft",
-      "title": "ArtCraft Apps Guide: PhotoCraft, VectorCraft and GitHub",
+      "title": "Crafting Apps by ArtCraft: App List, Downloads & Comparison",
       "source_sha256": "d3022dcb56e5ce7a3dfe80c71e74d0e8692a33c26e71c6f1797321fcb183547c"
     },
     {
       "route": "/zh/artcraft-photocraft",
       "locale": "zh",
       "page": "artcraft-photocraft",
-      "title": "ArtCraft Apps 工具导航：PhotoCraft、VectorCraft 与 GitHub",
+      "title": "Crafting Apps 工具导航：ArtCraft 应用列表、下载与对比",
       "source_sha256": "4a51f57b2827f591e79d01f6eb4ee982c99dc80100449771b1a31d8028db918d"
     },
     {
