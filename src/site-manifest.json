@@ -232,14 +232,14 @@
       "locale": "en",
       "page": "artcraft-photocraft",
       "title": "ArtCraft Apps Guide: PhotoCraft, VectorCraft and GitHub",
-      "source_sha256": "5ee16a8d9df2cd2100817f257914be75ade345fd1321dd2e65b1c0259a29f0c6"
+      "source_sha256": "41a1b46620ac4727b6d6d5685086ee3c636cd8b0720ef18cea6f690fbbf516bd"
     },
     {
       "route": "/zh/artcraft-photocraft",
       "locale": "zh",
       "page": "artcraft-photocraft",
       "title": "ArtCraft Apps 工具导航：PhotoCraft、VectorCraft 与 GitHub",
-      "source_sha256": "df784cac2e5a35fadf678681eab244a850ef0a4cbead12cfaade7183f3f3fb90"
+      "source_sha256": "c3794f787c6ab063f12b99b1c08659d57603a6931621a4400f8662abe6cb7552"
     },
     {
       "route": "/photocraft-app",
@@ -422,6 +422,66 @@
       "page": "gridcraft-app",
       "title": "GridCraft 下载与使用指南：XLSX、CSV 与公式",
       "source_sha256": "b878d95a3717532e1644adc52edef08caeca232388e6fd07a1b99be7111a7238"
+    },
+    {
+      "route": "/solidcraft-app",
+      "locale": "en",
+      "page": "solidcraft-app",
+      "title": "SolidCraft Guide: Downloads, 3D CAD Tutorials and AI / MCP"
+    },
+    {
+      "route": "/solidcraft/download",
+      "locale": "en",
+      "page": "solidcraft/download",
+      "title": "SolidCraft Download and Install Guide for Windows, Mac and Linux"
+    },
+    {
+      "route": "/solidcraft/tutorial",
+      "locale": "en",
+      "page": "solidcraft/tutorial",
+      "title": "SolidCraft Beginner Tutorial: Model, Resize and Export a Mounting Plate"
+    },
+    {
+      "route": "/solidcraft-vs-fusion-360",
+      "locale": "en",
+      "page": "solidcraft-vs-fusion-360",
+      "title": "SolidCraft vs Fusion 360: Capabilities and Workflow Choices"
+    },
+    {
+      "route": "/solidcraft/mcp",
+      "locale": "en",
+      "page": "solidcraft/mcp",
+      "title": "SolidCraft AI / MCP Tutorial: Connect, Resize, Measure and Export"
+    },
+    {
+      "route": "/zh/solidcraft-app",
+      "locale": "zh",
+      "page": "solidcraft-app",
+      "title": "SolidCraft 中文指南：下载、3D 建模教程与 AI / MCP"
+    },
+    {
+      "route": "/zh/solidcraft/download",
+      "locale": "zh",
+      "page": "solidcraft/download",
+      "title": "SolidCraft 下载与安装：Windows、Mac、Linux 官方指南"
+    },
+    {
+      "route": "/zh/solidcraft/tutorial",
+      "locale": "zh",
+      "page": "solidcraft/tutorial",
+      "title": "SolidCraft 入门教程：带孔安装板建模、改尺寸与导出"
+    },
+    {
+      "route": "/zh/solidcraft-vs-fusion-360",
+      "locale": "zh",
+      "page": "solidcraft-vs-fusion-360",
+      "title": "SolidCraft vs Fusion 360：功能差异与工作流选择"
+    },
+    {
+      "route": "/zh/solidcraft/mcp",
+      "locale": "zh",
+      "page": "solidcraft/mcp",
+      "title": "SolidCraft AI / MCP 教程：连接客户端、改尺寸与检查导出"
     },
     {
       "route": "/figcraft-app",
