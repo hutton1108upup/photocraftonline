@@ -41,6 +41,11 @@ export async function render(route, { liveReload = false, production = false } =
       'cadcraft-app': zh ? 'CADCraft 下载指南' : 'CADCraft download guide',
       'cadcraft/tutorial': zh ? 'CADCraft 图文教程' : 'CADCraft tutorial',
       'cadcraft-vs-autocad': zh ? '与 AutoCAD 对比' : 'Compare AutoCAD',
+      'solidcraft-app': zh ? 'SolidCraft 指南' : 'SolidCraft guide',
+      'solidcraft/download': zh ? '下载与安装' : 'Download and install',
+      'solidcraft/tutorial': zh ? '安装板教程' : 'Mounting plate tutorial',
+      'solidcraft-vs-fusion-360': zh ? '与 Fusion 360 对比' : 'Compare Fusion 360',
+      'solidcraft/mcp': zh ? 'AI / MCP 教程' : 'AI / MCP tutorial',
       'ai-photoshop-clone': zh ? 'AI Photoshop Clone 说明' : 'AI Photoshop Clone explained',
       'effectcraft-app': zh ? 'EffectCraft 指南' : 'EffectCraft guide',
       'effectcraft/tutorial': zh ? 'EffectCraft CLI 教程' : 'EffectCraft CLI tutorial',
@@ -65,6 +70,9 @@ export async function render(route, { liveReload = false, production = false } =
     }
     if (['cadcraft/tutorial', 'cadcraft-vs-autocad'].includes(page.page)) {
       items.push({ name: labels['cadcraft-app'], route: `${prefix}/cadcraft-app` });
+    }
+    if (['solidcraft/download', 'solidcraft/tutorial', 'solidcraft-vs-fusion-360', 'solidcraft/mcp'].includes(page.page)) {
+      items.push({ name: labels['solidcraft-app'], route: `${prefix}/solidcraft-app` });
     }
     items.push({ name: labels[page.page] || page.title, route });
     const breadcrumbs = `<nav class="site-breadcrumbs" aria-label="${zh ? '面包屑导航' : 'Breadcrumb'}">${items.map((item, index) => `${index ? '<span aria-hidden="true">/</span>' : ''}${index === items.length - 1 ? `<span aria-current="page">${item.name}</span>` : `<a href="${item.route}">${item.name}</a>`}`).join('')}</nav>`;
