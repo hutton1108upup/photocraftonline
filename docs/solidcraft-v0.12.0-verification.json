@@ -110,8 +110,8 @@
     },
     {
       "file": "public/examples/solidcraft/mounting-plate.json",
-      "bytes": 3076,
-      "sha256": "5ebb03b5e849c5a5c9c7586c152a73a6356849549dade72d5f871cbda3fafb14"
+      "bytes": 2908,
+      "sha256": "d9f649ab5f264129dde1de8563d97559d05700bdaf8498df4be2f0e8913f2d71"
     },
     {
       "file": "public/images/solidcraft/01-dimensioned-sketch.webp",
@@ -154,5 +154,6 @@
     "document_overflow": false,
     "mobile_navigation": "PASS",
     "status": "PASS"
-  }
+  },
+  "hash_basis": "Git-normalized working-tree artifacts; text uses LF line endings."
 }
