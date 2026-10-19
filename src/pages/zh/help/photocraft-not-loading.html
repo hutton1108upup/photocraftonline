@@ -11,10 +11,10 @@
 <link as="image" imagesizes="(max-width: 896px) 100vw, 896px" imagesrcset="/assets/images/hero-editor-640-q75.webp 640w, /assets/images/hero-editor-750-q75.webp 750w, /assets/images/hero-editor-828-q75.webp 828w, /assets/images/hero-editor-1080-q75.webp 1080w, /assets/images/hero-editor-1200-q75.webp 1200w, /assets/images/hero-editor-1920-q75.webp 1920w, /assets/images/hero-editor-2048-q75.webp 2048w, /assets/images/hero-editor-3840-q75.webp 3840w" rel="preload"/>
 <link data-precedence="next" href="/assets/css/15sc_v~et~i94.css" rel="stylesheet"/>
 <link data-precedence="next" href="/assets/css/0x4i1d-5t.ch3.css" rel="stylesheet"/>
-<title>PhotoCraft 无法加载？浏览器检查与排查步骤</title>
-<meta content="PhotoCraft 在线版无法加载时，检查浏览器图形支持、加载状态和文件问题；获取桌面备用入口与上游问题反馈方式。" name="description"/>
-<meta content="PhotoCraft 无法加载？浏览器检查与排查步骤" property="og:title"/>
-<meta content="PhotoCraft 在线版无法加载时，检查浏览器图形支持、加载状态和文件问题；获取桌面备用入口与上游问题反馈方式。" property="og:description"/>
+<title>PhotoCraft 打不开？在线加载、图片与桌面启动排查</title>
+<meta content="区分 PhotoCraft 在线编辑器无法启动、文件打不开和桌面版不启动；按现象检查图形支持、资源加载、练习 PNG 与系统架构，附成功标志。" name="description"/>
+<meta content="PhotoCraft 打不开？在线加载、图片与桌面启动排查" property="og:title"/>
+<meta content="区分 PhotoCraft 在线编辑器无法启动、文件打不开和桌面版不启动；按现象检查图形支持、资源加载、练习 PNG 与系统架构，附成功标志。" property="og:description"/>
 <meta content="PhotoCraft Online" property="og:site_name"/>
 <meta content="https://www.photocraftonline.com/og-image.png" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
@@ -22,8 +22,8 @@
 <meta content="PhotoCraft Online" property="og:image:alt"/>
 <meta content="website" property="og:type"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="PhotoCraft 无法加载？浏览器检查与排查步骤" name="twitter:title"/>
-<meta content="PhotoCraft 在线版无法加载时，检查浏览器图形支持、加载状态和文件问题；获取桌面备用入口与上游问题反馈方式。" name="twitter:description"/>
+<meta content="PhotoCraft 打不开？在线加载、图片与桌面启动排查" name="twitter:title"/>
+<meta content="区分 PhotoCraft 在线编辑器无法启动、文件打不开和桌面版不启动；按现象检查图形支持、资源加载、练习 PNG 与系统架构，附成功标志。" name="twitter:description"/>
 <meta content="https://www.photocraftonline.com/og-image.png" name="twitter:image"/>
 <link href="/favicon.ico" rel="shortcut icon"/>
 <link href="/favicon.ico" rel="icon" sizes="32x32"/>
@@ -39,46 +39,16 @@
 <body class="inter_b2991b2-module__9mH_6q__variable libre_baskerville_17390e78-module__pDOJMW__variable font-sans antialiased" data-locale="zh" data-page="help/photocraft-not-loading">
 <div class="bg-background text-foreground flex min-h-screen flex-col">
 <!-- @include zh/header -->
-<main class="guide-page">
-<header class="guide-intro"><p class="guide-kicker">免费 PHOTOCRAFT · 指南与资源</p>
-<h1>PhotoCraft 在线版无法加载或使用？</h1>
-<p>从你看到的现象开始排查。以下步骤帮助定位原因，不保证所有浏览器或文件都能运行。</p>
-</header>
-<div class="guide-body"><aside class="guide-note">2026 年 10 月 10 日：PNG 教程已在桌面 Chrome 实测通过；另验证了本站缺少 WebGPU 的提示与 WebAssembly 请求被阻断的状态。未实测 Mac、Linux 或手机硬件。</aside>
-<section id="graphics">
-<h2>1. 检查浏览器与图形支持</h2>
-<ol><li>使用已更新的桌面 Chrome 或 Edge，再次打开编辑器。手机浏览器的操作方式和 GPU 支持可能不同。</li>
-<li>Chrome：打开 Settings → System，检查 “Use graphics acceleration when available”。Edge：在设置中搜索 “graphics acceleration”。修改后重启浏览器。</li>
-<li>如果本站提示 WebGPU 不可用，请换一个支持的桌面浏览器，或尝试桌面版。不把关闭浏览器安全保护或启用实验参数作为通用解决办法。</li>
-</ol>
-<p><a class="guide-button" href="/zh/editor">打开免费编辑器</a> · <a href="/zh/download">桌面下载</a></p>
-</section>
-<section id="loading">
-<h2>2. 编辑器停在加载状态时</h2>
-<ol><li>首次加载需要下载当前约 25 MB 的 WebAssembly 文件，速度受网络影响。</li>
-<li>如果还没打开文档且出现重试提示，点击 Retry editor。重新加载会丢失编辑器中未保存的工作。</li>
-<li>打开开发者工具 → Network，刷新后查看 <code>.wasm</code> 或 <code>photocraft-web-…js</code> 请求是否失败。HTTP 错误或被阻断的请求是加载问题，不能据此判断图片损坏。</li>
-<li>若文件请求成功但仍无法启动，可尝试新标签页和另一款支持的浏览器。反馈前记下可见错误。</li>
-</ol>
-</section>
-<section id="files">
-<h2>3. 文件打不开时</h2>
-<p>先打开教程里的小 PNG。若能打开，再测试自己文件的副本。复杂 PSD 或大图的失败原因可能与编辑器启动问题不同。</p>
-<p><a href="/zh/tutorial">新手教程</a></p>
-<p>保留备份；必要时尝试缩小文件；不要把机密文档上传到公开问题追踪。本站未验证所有格式或每一项 PSD 功能。</p>
-</section>
-<section id="desktop">
-<h2>4. 尝试桌面版本</h2>
-<p>如果问题来自浏览器图形支持，可以尝试运行环境不同的桌面原生版。从官方发布页选择正确系统和架构；桌面版是可尝试的替代方案，不保证文件问题必然消失。</p>
-<p><a href="/zh/download">桌面下载</a> · <a href="https://github.com/storytold/photocraft/releases/tag/v0.6.0" target="_blank" rel="noopener noreferrer">GitHub Releases · v0.6.0</a></p>
-</section>
-<section id="report">
-<h2>5. 反馈 PhotoCraft 问题</h2>
-<p>编辑器引擎问题请先搜索已有 issue，再说明系统、浏览器版本、本站构建标识、复现步骤，并附不含隐私的截图。本站与上游团队独立运营。</p>
-<p><a href="https://github.com/storytold/photocraft/issues" target="_blank" rel="noopener noreferrer">打开官方问题追踪</a></p>
-</section>
-</div>
-</main>
+<main class="guide-page"><header class="guide-intro"><p class="guide-kicker">免费 PHOTOCRAFT · 使用帮助</p><h1>PhotoCraft 打不开？在线加载、图片与桌面启动排查</h1><p>先选你看到的现象：编辑器还没启动、只有某个文件打不开，还是桌面程序无法运行。不同问题使用不同的检查路径。</p></header><div class="guide-body">
+<aside class="guide-note">本站托管的固定 Web 构建为 72921900975c7e6f。2026 年 10 月 19 日重现了缺少 WebGPU 时的提示；既有 PNG 教程实测保留原日期。上游新版本的 WebGL 或 CPU 支持不代表本站旧构建已具备相同行为。</aside>
+<nav class="guide-toc" aria-label="选择现象"><a href="#graphics">在线编辑器不启动</a><a href="#files">某个文件打不开</a><a href="#desktop">桌面程序打不开</a><a href="#report">记录问题</a></nav>
+<section id="symptoms"><h2>PhotoCraft not opening：先确认是哪一种问题</h2><ul><li>只看到加载提示、空白或 WebGPU 提示：从下方浏览器与网络检查开始。</li><li>编辑器已出现，但某个 PSD 或图片打不开：直接看<a href="#files">文件检查</a>。</li><li>下载到电脑的 EXE 或应用无法启动：直接看<a href="#desktop">桌面启动检查</a>。</li></ul></section>
+<section id="graphics"><h2>1. 在线编辑器不启动：检查浏览器图形支持</h2><ol><li>使用更新后的桌面 Chrome 或 Edge，打开<a href="/zh/editor">本站编辑器</a>。编辑区域出现工具栏和画布，才表示启动完成。</li><li>若显示“此浏览器未提供 WebGPU”，在 Chrome 设置 → 系统查看“使用图形加速功能（如果可用）”；Edge 可在设置搜索“图形加速”。更改后重启浏览器再试。</li><li>仍显示相同提示时，换支持图形加速的桌面浏览器，或查看<a href="/zh/download">官方桌面下载</a>。不要通过关闭浏览器安全保护来绕过问题。</li></ol><p><strong>成功检查：</strong>加载提示消失、编辑器工具栏与画布出现。出现浏览器页面或页头本身不等于编辑器已启动。</p>
+<figure><a href="/assets/seo-guides/photocraft-webgpu-message.png" target="_blank" rel="noopener"><img src="/assets/seo-guides/photocraft-webgpu-message.png" width="1440" height="1000" alt="本地复现的英文 WebGPU 缺失提示。测试中移除了 navigator.gpu；这不是线上故障记录，也没有修改引擎。" loading="lazy" decoding="async"/></a><figcaption>本地复现的英文 WebGPU 缺失提示。测试中移除了 navigator.gpu；这不是线上故障记录，也没有修改引擎。</figcaption></figure>
+</section><section id="loading"><h2>2. 一直加载或下载失败：检查编辑器资源</h2><ol><li>首次会请求约 25 MB 的 WebAssembly 文件，先确认网络有进展，不要连续刷新。</li><li>未打开工作文档时，可以点击“重试编辑器”。若已有未保存内容，先处理备份；重试和刷新会丢失未保存修改。</li><li>仍不能启动时，按 F12 打开开发者工具 → Network，刷新后查看 .wasm 或 photocraft-web-…js 请求是否失败；记录状态码或阻止原因。</li><li>资源成功返回但仍失败时，记录页面上的完整错误，再换浏览器核对。不要因此判断原图片损坏。</li></ol><p><strong>成功检查：</strong>资源加载完成，随后编辑器界面出现；单独一个 HTTP 200 不能证明引擎初始化成功。</p></section>
+<section id="files"><h2>3. 编辑器已启动，但某个图片或 PSD 打不开</h2><ol><li>下载本站<a href="/assets/tutorial/practice-image.png" download>640 × 400 练习 PNG</a>，在编辑器中先尝试打开它。</li><li>练习图成功后，再打开自己文件的副本。若只有复杂 PSD 或大图失败，记录格式、大小和出现错误的步骤；不要覆盖原件。</li><li>按<a href="/zh/tutorial#export">教程保存与导出</a>，检查浏览器下载列表，再重新打开导出的 PNG。</li></ol><p><strong>成功检查：</strong>练习图显示出来，导出的 PNG 在重新打开后仍显示图像。这个小样例不能证明所有 PSD 图层、字体或效果都兼容。</p></section>
+<section id="desktop"><h2>4. 桌面程序打不开：确认包类型、架构与文件</h2><ol><li>先从<a href="/zh/download">下载页</a>选择自己的系统和 CPU。源码 ZIP、Web ZIP 和桌面安装包用途不同。</li><li>Windows 便携版需右键 ZIP → 全部解压，然后在完整文件夹内运行程序；MSI 则走安装流程。校验值必须来自同一发行版、同一文件名。</li><li>如果程序能打开但只有某份文档失败，回到上方文件检查；不要反复重新安装来处理单个文件问题。</li><li>保留系统提示和完整报错，按官方当前版本说明处理。本站此次未重新测试桌面安装或 Mac/Linux 启动。</li></ol><p><strong>成功检查：</strong>桌面编辑器窗口出现，并能打开练习 PNG。下载完成、解压成功都不等于程序已经能工作。</p><p><a href="https://github.com/storytold/photocraft/releases/latest" target="_blank" rel="noopener noreferrer">查看官方当前发行版</a> · <a href="/zh/photocraft-app">理解桌面与本站 Web 版本区别</a></p></section>
+<section id="report"><h2>5. 仍未解决：整理可复现信息</h2><p>记录操作系统、浏览器版本、本站构建 ID、卡住的具体步骤、可见错误和去除私人内容后的截图。先搜索 <a href="https://github.com/storytold/photocraft/issues" target="_blank" rel="noopener noreferrer">官方 Issues</a>；引擎问题和本站页面加载问题需要分别描述。不要公开上传私人图片或设计文件。</p><p><a href="/zh/tutorial">返回练习教程</a> · <a href="/zh/editor">重新打开在线编辑器</a></p></section></div></main>
 <!-- @include zh/footer -->
 </div>
 <script src="/scripts/site.js" defer></script>
