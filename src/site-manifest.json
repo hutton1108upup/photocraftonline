@@ -8,14 +8,14 @@
       "locale": "en",
       "page": "index",
       "title": "Free PhotoCraft Online – Open-Source Image Editor",
-      "source_sha256": "b4a711f05dfab56e36d48930ef6e6d7cea9807c1774d58f9719e1ba383033a47"
+      "source_sha256": "4d6823db3fb6a8cd3330862785705cdd2bad373266e285a0ae4c1c35b3a3893c"
     },
     {
       "route": "/zh",
       "locale": "zh",
       "page": "index",
       "title": "PhotoCraft 在线编辑器｜免费下载、安装与入门教程",
-      "source_sha256": "61005ffdbf152100cbe602b7794b566904b4046c414fe2fcff6cf8ed624318a0"
+      "source_sha256": "6219cdd5eed1cee3f45f0da4ed08b1d48171f0dc9435e36dd4bf4f0aa0751936"
     },
     {
       "route": "/editor",
@@ -161,8 +161,8 @@
       "route": "/help/photocraft-not-loading",
       "locale": "en",
       "page": "help/photocraft-not-loading",
-      "title": "PhotoCraft Not Loading? Browser Checks and Fixes",
-      "source_sha256": "725344fe7f3b08d95b361d5e496b92f78715d87a87b3a9d50cab2f63905e233a"
+      "title": "PhotoCraft Not Opening? Browser, File & Desktop Checks",
+      "source_sha256": "51700d6dad520bea7b9cd4b43f76be181f83e472041804eb6becb78e7f0271ee"
     },
     {
       "route": "/zh/tutorial",
@@ -182,8 +182,8 @@
       "route": "/zh/help/photocraft-not-loading",
       "locale": "zh",
       "page": "help/photocraft-not-loading",
-      "title": "PhotoCraft 无法加载？浏览器检查与排查步骤",
-      "source_sha256": "07318a52975a5359766a2763b58f1de047ff511afa1c6aa7203ad5d3a2236f9d"
+      "title": "PhotoCraft 打不开？在线加载、图片与桌面启动排查",
+      "source_sha256": "0bf9625f937bc3d2b76f09ac562b1bcb528fafe7b50c9db9d48a8a4c7ee539c8"
     },
     {
       "route": "/is-photocraft-safe",
@@ -330,7 +330,7 @@
       "locale": "en",
       "page": "cadcraft-app",
       "title": "CADCraft Download and Installation Guide: Free Open-Source CAD",
-      "source_sha256": "df77fa295b878e60c97a7759cdc4dd2f80eee16fc4588be9c5c671c4cb2bf0e7"
+      "source_sha256": "d5e51e2224aa103b254e5d168e9f005c60cb65d2cb5d6a10bd0abf63972db8a4"
     },
     {
       "route": "/ai-photoshop-clone",
@@ -343,8 +343,8 @@
       "route": "/cadcraft/tutorial",
       "locale": "en",
       "page": "cadcraft/tutorial",
-      "title": "CADCraft Tutorial: Draw, Dimension, Save and Reopen a DXF",
-      "source_sha256": "4cbd73d516ebfcbe95c35ab70128caa6f024f10475ed83299487bbeece2b0d71"
+      "title": "CADCraft Tutorial for Beginners: Draw, Dimension & Save DXF",
+      "source_sha256": "de87af405ae11c7c3ce3c0e1fc3725b189e1a0c68eb32a30efc9eb82dec1d857"
     },
     {
       "route": "/cadcraft-vs-autocad",
@@ -365,7 +365,7 @@
       "locale": "zh",
       "page": "cadcraft-app",
       "title": "CADCraft 下载与安装指南：免费开源 CAD 软件",
-      "source_sha256": "3a3f6ffac163daa58401bc9af71f0cac0881d32dc788ed035d1b7c8b96dc3b2f"
+      "source_sha256": "61aea67794f386f61a1eeb94ad528ea3efaec7aacaf342597c2fa7b5b51a9ed2"
     },
     {
       "route": "/zh/ai-photoshop-clone",
@@ -378,8 +378,8 @@
       "route": "/zh/cadcraft/tutorial",
       "locale": "zh",
       "page": "cadcraft/tutorial",
-      "title": "CADCraft 图文教程：绘制、标注、保存与重开 DXF",
-      "source_sha256": "6e9ca0a35bb063a24f02fdd89ad99a8dcb5a39b8cbeb241fb891a6c99664890d"
+      "title": "CADCraft 新手教程：绘图、标注、保存与重开 DXF",
+      "source_sha256": "19e97836d2d59b7038a0c04605ed6d4e101495e93ac9d851b727685b80e03e73"
     },
     {
       "route": "/zh/cadcraft-vs-autocad",
@@ -427,13 +427,15 @@
       "route": "/solidcraft-app",
       "locale": "en",
       "page": "solidcraft-app",
-      "title": "SolidCraft Guide: Downloads, 3D CAD Tutorials and AI / MCP"
+      "title": "SolidCraft Guide: Downloads, 3D CAD Tutorials and AI / MCP",
+      "source_sha256": "8e884948c769112a82a99354821937d71a85a411fd866b68b95092c291ac526a"
     },
     {
       "route": "/solidcraft/download",
       "locale": "en",
       "page": "solidcraft/download",
-      "title": "SolidCraft Download and Install Guide for Windows, Mac and Linux"
+      "title": "SolidCraft Download: Windows, Mac & Linux Install Guide",
+      "source_sha256": "e5a90bfbd500caee7bd44087e36bf7ab91e9abd1ffb41e4d44dfd639650bc263"
     },
     {
       "route": "/solidcraft/tutorial",
@@ -457,13 +459,15 @@
       "route": "/zh/solidcraft-app",
       "locale": "zh",
       "page": "solidcraft-app",
-      "title": "SolidCraft 中文指南：下载、3D 建模教程与 AI / MCP"
+      "title": "SolidCraft 中文指南：下载、3D 建模教程与 AI / MCP",
+      "source_sha256": "2b1a8de908f9c06806e4c71230daffd40f236004166ea4aa0dd6a1b67e0c198f"
     },
     {
       "route": "/zh/solidcraft/download",
       "locale": "zh",
       "page": "solidcraft/download",
-      "title": "SolidCraft 下载与安装：Windows、Mac、Linux 官方指南"
+      "title": "SolidCraft 下载与安装：Windows、Mac、Linux 官方入口",
+      "source_sha256": "07d4702d7d5f03dc54359766385178f4f8541ef7166a8eb834ea2e4a4270243c"
     },
     {
       "route": "/zh/solidcraft/tutorial",

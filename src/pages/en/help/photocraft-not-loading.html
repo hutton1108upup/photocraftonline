@@ -11,10 +11,10 @@
 <link as="image" imagesizes="(max-width: 896px) 100vw, 896px" imagesrcset="/assets/images/hero-editor-640-q75.webp 640w, /assets/images/hero-editor-750-q75.webp 750w, /assets/images/hero-editor-828-q75.webp 828w, /assets/images/hero-editor-1080-q75.webp 1080w, /assets/images/hero-editor-1200-q75.webp 1200w, /assets/images/hero-editor-1920-q75.webp 1920w, /assets/images/hero-editor-2048-q75.webp 2048w, /assets/images/hero-editor-3840-q75.webp 3840w" rel="preload"/>
 <link data-precedence="next" href="/assets/css/15sc_v~et~i94.css" rel="stylesheet"/>
 <link data-precedence="next" href="/assets/css/0x4i1d-5t.ch3.css" rel="stylesheet"/>
-<title>PhotoCraft Not Loading? Browser Checks and Fixes</title>
-<meta content="Troubleshoot PhotoCraft loading with browser graphics checks, retry steps and file-opening guidance. Find a desktop fallback and the upstream issue tracker." name="description"/>
-<meta content="PhotoCraft Not Loading? Browser Checks and Fixes" property="og:title"/>
-<meta content="Troubleshoot PhotoCraft loading with browser graphics checks, retry steps and file-opening guidance. Find a desktop fallback and the upstream issue tracker." property="og:description"/>
+<title>PhotoCraft Not Opening? Browser, File &amp; Desktop Checks</title>
+<meta content="Separate PhotoCraft browser startup, file-opening and desktop problems. Check graphics, editor downloads, a practice PNG and package architecture." name="description"/>
+<meta content="PhotoCraft Not Opening? Browser, File &amp; Desktop Checks" property="og:title"/>
+<meta content="Separate PhotoCraft browser startup, file-opening and desktop problems. Check graphics, editor downloads, a practice PNG and package architecture." property="og:description"/>
 <meta content="PhotoCraft Online" property="og:site_name"/>
 <meta content="https://www.photocraftonline.com/og-image.png" property="og:image"/>
 <meta content="1200" property="og:image:width"/>
@@ -22,8 +22,8 @@
 <meta content="PhotoCraft Online" property="og:image:alt"/>
 <meta content="website" property="og:type"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="PhotoCraft Not Loading? Browser Checks and Fixes" name="twitter:title"/>
-<meta content="Troubleshoot PhotoCraft loading with browser graphics checks, retry steps and file-opening guidance. Find a desktop fallback and the upstream issue tracker." name="twitter:description"/>
+<meta content="PhotoCraft Not Opening? Browser, File &amp; Desktop Checks" name="twitter:title"/>
+<meta content="Separate PhotoCraft browser startup, file-opening and desktop problems. Check graphics, editor downloads, a practice PNG and package architecture." name="twitter:description"/>
 <meta content="https://www.photocraftonline.com/og-image.png" name="twitter:image"/>
 <link href="/favicon.ico" rel="shortcut icon"/>
 <link href="/favicon.ico" rel="icon" sizes="32x32"/>
@@ -39,46 +39,16 @@
 <body class="inter_b2991b2-module__9mH_6q__variable libre_baskerville_17390e78-module__pDOJMW__variable font-sans antialiased" data-locale="en" data-page="help/photocraft-not-loading">
 <div class="bg-background text-foreground flex min-h-screen flex-col">
 <!-- @include en/header -->
-<main class="guide-page">
-<header class="guide-intro"><p class="guide-kicker">FREE PHOTOCRAFT · GUIDES & RESOURCES</p>
-<h1>PhotoCraft Not Loading or Working Online?</h1>
-<p>Start with the symptom you can see. These checks help identify the cause; they cannot guarantee that every browser or file will work.</p>
-</header>
-<div class="guide-body"><aside class="guide-note">Tested October 10, 2026: the PNG tutorial succeeded in desktop Chrome. We also tested the site’s missing-WebGPU message and a blocked WebAssembly request. Mac, Linux and mobile hardware were not tested.</aside>
-<section id="graphics">
-<h2>1. Check Your Browser and Graphics Support</h2>
-<ol><li>Use an updated desktop Chrome or Edge and open the editor again. A phone browser may not provide the same controls or GPU support.</li>
-<li>In Chrome, open Settings → System and check “Use graphics acceleration when available.” In Edge, search Settings for “graphics acceleration.” If you change it, restart the browser.</li>
-<li>If this site says WebGPU is unavailable, try another supported desktop browser or the desktop app. Do not disable browser security or use experimental flags as a general fix.</li>
-</ol>
-<p><a class="guide-button" href="/editor">Open Free Editor</a> · <a href="/download">Desktop downloads</a></p>
-</section>
-<section id="loading">
-<h2>2. When the Editor Stops Loading</h2>
-<ol><li>Allow time for the first download. The current WebAssembly file is about 25 MB; network speed affects startup.</li>
-<li>If a retry prompt appears before you have opened a document, choose Retry editor. Reloading discards any unsaved editor work.</li>
-<li>Open Developer Tools → Network, reload, and look for a failed <code>.wasm</code> or <code>photocraft-web-…js</code> request. An HTTP error or blocked request is a loading issue, not evidence that your image is corrupt.</li>
-<li>If the file requests succeed but startup still stalls, try a fresh browser tab and a different supported browser. Record the visible error before reporting it.</li>
-</ol>
-</section>
-<section id="files">
-<h2>3. When a File Will Not Open</h2>
-<p>First open the small PNG used in our tutorial. If it works, test a copy of your original file. A complex PSD or large image can fail for different reasons than editor startup.</p>
-<p><a href="/tutorial">Beginner tutorial</a></p>
-<p>Keep backups, reduce file size where practical, and avoid uploading confidential documents to a public issue tracker. We have not validated every supported format or every PSD feature.</p>
-</section>
-<section id="desktop">
-<h2>4. Try the Desktop Version</h2>
-<p>If browser graphics support is the blocker, the native app uses a different environment. Choose the correct OS and architecture from the official release. A desktop download is an alternative to test, not a guarantee that a file problem will disappear.</p>
-<p><a href="/download">Desktop downloads</a> · <a href="https://github.com/storytold/photocraft/releases/tag/v0.6.0" target="_blank" rel="noopener noreferrer">GitHub Releases · v0.6.0</a></p>
-</section>
-<section id="report">
-<h2>5. Report a PhotoCraft Problem</h2>
-<p>For an editor-engine problem, search existing issues first, then include your OS, browser version, hosted build ID, steps to reproduce and a screenshot without private content. This site is independent of the upstream team.</p>
-<p><a href="https://github.com/storytold/photocraft/issues" target="_blank" rel="noopener noreferrer">Open the official issue tracker</a></p>
-</section>
-</div>
-</main>
+<main class="guide-page"><header class="guide-intro"><p class="guide-kicker">FREE PHOTOCRAFT · HELP</p><h1>PhotoCraft Not Opening? Browser, File & Desktop Checks</h1><p>Choose the symptom first: an editor that has not started, a particular file that will not open, or a desktop app that will not launch. Each needs a different check.</p></header><div class="guide-body">
+<aside class="guide-note">This site hosts pinned Web build 72921900975c7e6f. We reproduced its missing-WebGPU message on October 19, 2026; the existing PNG tutorial retains its original test date. WebGL or CPU support documented for newer upstream versions does not establish the same behavior in this older hosted build.</aside>
+<nav class="guide-toc" aria-label="Choose a symptom"><a href="#graphics">Browser startup</a><a href="#files">A file will not open</a><a href="#desktop">Desktop startup</a><a href="#report">Report details</a></nav>
+<section id="symptoms"><h2>PhotoCraft Not Opening: Identify Which Part Failed</h2><ul><li>A loading message, blank area or WebGPU notice: start with graphics and network checks below.</li><li>The editor is visible but one PSD or image fails: go to <a href="#files">file checks</a>.</li><li>An application downloaded to your computer does not launch: go to <a href="#desktop">desktop checks</a>.</li></ul></section>
+<section id="graphics"><h2>1. Browser Editor Will Not Start: Check Graphics Support</h2><ol><li>Use a current desktop Chrome or Edge and <a href="/editor">open our editor</a>. Its toolbar and canvas must appear before startup is complete.</li><li>For “WebGPU is unavailable in this browser,” check Chrome Settings → System → Use graphics acceleration when available, or search Edge Settings for graphics acceleration. Restart the browser after a change.</li><li>If the same notice remains, try another desktop browser with working graphics support or <a href="/download">official desktop downloads</a>. Do not disable browser security to work around it.</li></ol><p><strong>Success check:</strong> the loading message disappears and the editor toolbar and canvas appear. The surrounding website header alone does not establish editor startup.</p>
+<figure><a href="/assets/seo-guides/photocraft-webgpu-message.png" target="_blank" rel="noopener"><img src="/assets/seo-guides/photocraft-webgpu-message.png" width="1440" height="1000" alt="Actual local reproduction of the missing-WebGPU notice, with navigator.gpu removed for the test. This is not a production incident or an engine modification." loading="lazy" decoding="async"/></a><figcaption>Actual local reproduction of the missing-WebGPU notice, with navigator.gpu removed for the test. This is not a production incident or an engine modification.</figcaption></figure>
+</section><section id="loading"><h2>2. Loading Stalls or Fails: Inspect Editor Downloads</h2><ol><li>The first load requests about 25 MB of WebAssembly. Check that the download is progressing before repeatedly refreshing.</li><li>Before opening a work document, you can choose Retry editor. If you have unsaved work, address backups first; retrying and refreshing discard unsaved changes.</li><li>If startup still fails, press F12 → Network, reload and check failed .wasm or photocraft-web-…js requests. Record the HTTP status or blocking reason.</li><li>If resources return successfully but startup fails, record the visible error and compare another browser. This does not show that your image is damaged.</li></ol><p><strong>Success check:</strong> resources finish loading and the editor UI appears. An HTTP 200 alone does not establish successful engine initialization.</p></section>
+<section id="files"><h2>3. The Editor Opens, but an Image or PSD Does Not</h2><ol><li>Download our <a href="/assets/tutorial/practice-image.png" download>640 × 400 practice PNG</a> and try opening it in the editor first.</li><li>If that works, try a copy of your own file. If only a large image or complex PSD fails, record the format, size and failing step. Keep the original.</li><li>Follow the <a href="/tutorial#export">save and export lesson</a>, check browser downloads, then reopen the exported PNG.</li></ol><p><strong>Success check:</strong> the practice image appears and its exported PNG still displays when reopened. This small exercise does not establish compatibility with every PSD layer, font or effect.</p></section>
+<section id="desktop"><h2>4. Desktop App Will Not Launch: Check Package and Architecture</h2><ol><li>Choose your system and CPU on the <a href="/download">download page</a>. Source ZIPs, Web ZIPs and desktop installers serve different purposes.</li><li>For Windows portable, right-click the ZIP → Extract All, then run from the complete folder. For MSI, use its installer. Match checksums to the same release and filename.</li><li>If the app opens but only one document fails, return to file checks instead of repeatedly reinstalling.</li><li>Keep the exact system prompt and error, and follow the current official instructions. We did not repeat desktop installation or Mac/Linux startup tests in this update.</li></ol><p><strong>Success check:</strong> the desktop editor opens and displays the practice PNG. Downloading or extracting successfully is not enough.</p><p><a href="https://github.com/storytold/photocraft/releases/latest" target="_blank" rel="noopener noreferrer">Current official release</a> · <a href="/photocraft-app">Desktop versus our hosted Web build</a></p></section>
+<section id="report"><h2>5. Still Stuck: Record a Reproducible Problem</h2><p>Record your OS, browser version, hosted build ID, exact failing step, visible error and a screenshot without private content. Search <a href="https://github.com/storytold/photocraft/issues" target="_blank" rel="noopener noreferrer">upstream Issues</a> first. Describe engine behavior separately from this website’s loading behavior, and keep private images out of public reports.</p><p><a href="/tutorial">Return to the practice tutorial</a> · <a href="/editor">Open the browser editor again</a></p></section></div></main>
 <!-- @include en/footer -->
 </div>
 <script src="/scripts/site.js" defer></script>

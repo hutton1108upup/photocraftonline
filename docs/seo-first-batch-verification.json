@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-19",
+  "solidcraft_release": "v0.16.2",
+  "portable_sha256": "c1cdc511ec70a77536cb22bbcea5c9bcda6e0d29622fc5cb9c935d9a1c3977ef",
+  "solidcraft_sample_open": {
+    "body_count": 1,
+    "bbox_mm": [
+      60,
+      30,
+      4
+    ],
+    "scope": "Windows x64 portable startup and old sample opening only"
+  },
+  "cadcraft_browser": {
+    "version": "hosted v0.6.2",
+    "mode": "CPU browser",
+    "viewport": [
+      1440,
+      1000
+    ],
+    "saved_file": "cadcraft-browser-saved.dxf",
+    "bytes": 15169,
+    "entities": {
+      "CIRCLE": 2,
+      "LWPOLYLINE": 1
+    },
+    "sha256": "02aabaa378a4fa4073bfaef2dd1b2c6ee948bee2997510ae8be76b9b648a851c",
+    "errors": []
+  },
+  "photocraft_test": {
+    "mode": "local reproducible missing navigator.gpu test",
+    "message": "WebGPU is unavailable in this browser",
+    "engine_not_requested": true,
+    "production_incident": false
+  },
+  "screenshots": [
+    {
+      "path": "public/assets/seo-guides/cadcraft-browser-circle.png",
+      "sha256": "fb8732bbdae308d4f7c931baef4cb9f6707528787bec90cdea6e00cc530e46b1",
+      "bytes": 136352
+    },
+    {
+      "path": "public/assets/seo-guides/cadcraft-browser-open.png",
+      "sha256": "f706519cbfdc01f2fccea3a59d14494cd3b21c480341b96c3cb219cb785f0142",
+      "bytes": 153362
+    },
+    {
+      "path": "public/assets/seo-guides/cadcraft-browser-reopened.png",
+      "sha256": "3544dbfbc2e77701fa1dede583d01a9453b56efc6e05b196655f2b2a3ce563fc",
+      "bytes": 138044
+    },
+    {
+      "path": "public/assets/seo-guides/photocraft-webgpu-message.png",
+      "sha256": "0bcd44ae20bf2171e52a5da478e070bc1102ed55487734341d49b72176f8afc7",
+      "bytes": 25875
+    },
+    {
+      "path": "public/assets/seo-guides/solidcraft-0162-open-sample.png",
+      "sha256": "f85d458ee06f5390d7677b317ddfefc99f325dd241ff14d690de17819e6ce69a",
+      "bytes": 1139730
+    }
+  ]
+}
