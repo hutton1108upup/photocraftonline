@@ -10,6 +10,8 @@ const port = Number(portIndex >= 0 ? process.argv[portIndex + 1] : process.env.P
 if (!Number.isInteger(port) || port < 1 || port > 65535) throw new Error('Invalid port');
 const assetTypes = new Map(manifest.assets.map(asset => [asset.local, asset.content_type]));
 const mime = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.mjs': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.json': 'application/json; charset=utf-8', '.png': 'image/png', '.gif': 'image/gif', '.svg': 'image/svg+xml', '.ico': 'image/x-icon', '.woff2': 'font/woff2', '.wasm': 'application/wasm', '.jpg': 'image/jpeg', '.webp': 'image/webp' };
+mime['.txt'] = 'text/plain; charset=utf-8';
+mime['.xml'] = 'application/xml; charset=utf-8';
 const streams = new Set();
 const watchers = [];
 

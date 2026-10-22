@@ -1,0 +1,73 @@
+# FreePhotoCraft.online
+
+> Independent bilingual guides to PhotoCraft and the ArtCraft / Crafting Apps ecosystem: downloads, tutorials, comparisons, and troubleshooting.
+
+This is an independent guide site, not the official ArtCraft website. Links below point to public, indexable English and Chinese pages. Product availability, licenses, supported platforms, and tutorial version requirements are explained on the linked pages; do not assume every tool runs in this browser or has the same license.
+
+本站是独立的中英文指南网站，并非 ArtCraft 官方网站。以下页面提供工具介绍、下载入口、操作教程、功能对比和故障排查。具体可用版本、许可证、支持平台与教程版本要求，请以对应页面的说明及其引用的官方来源为准。
+
+## English guides
+
+- [Free PhotoCraft Online – Open-Source Image Editor](https://freephotocraft.online/)
+- [PhotoCraft Free Download for Windows, Mac & Linux](https://freephotocraft.online/download)
+- [PhotoCraft GitHub & Open Source: Source, Releases and Licenses](https://freephotocraft.online/github)
+- [About FreePhotoCraft.online – Project & Site Information](https://freephotocraft.online/about)
+- [PhotoCraft Tutorial – How to Use the Free Editor](https://freephotocraft.online/tutorial)
+- [PhotoCraft vs Photoshop – Free Editor or Paid Workflow?](https://freephotocraft.online/photocraft-vs-photoshop)
+- [PhotoCraft Not Opening? Browser, File & Desktop Checks](https://freephotocraft.online/help/photocraft-not-loading)
+- [Is PhotoCraft Safe? Download Sources, File Privacy & Checks](https://freephotocraft.online/is-photocraft-safe)
+- [PhotoCraft Alternatives: Browser, Desktop & Painting Options](https://freephotocraft.online/photocraft-alternatives)
+- [PhotoCraft for Windows: Download, Install & Portable Guide](https://freephotocraft.online/download/windows)
+- [Crafting Apps by ArtCraft: App List, Downloads & Comparison](https://freephotocraft.online/artcraft-photocraft)
+- [PhotoCraft App: Desktop Software, Web Editor & Downloads](https://freephotocraft.online/photocraft-app)
+- [VectorCraft App: Downloads, GitHub and PhotoCraft Differences](https://freephotocraft.online/vectorcraft-app)
+- [GetArtCraft Review: Limited PhotoCraft and VectorCraft Samples](https://freephotocraft.online/getartcraft-review)
+- [EffectCraft Download and Guide: AE Limits and Native Sample](https://freephotocraft.online/effectcraft-app)
+- [EffectCraft Tutorial: Native Project, Keyframes and GIF Export](https://freephotocraft.online/effectcraft/tutorial)
+- [EffectCraft Desktop Tutorial: Keyframes, Save As and GIF Export](https://freephotocraft.online/effectcraft/desktop-tutorial)
+- [CADCraft Download and Installation Guide: Free Open-Source CAD](https://freephotocraft.online/cadcraft-app)
+- [AI Photoshop Clone — Free PhotoCraft Online Editor](https://freephotocraft.online/ai-photoshop-clone)
+- [CADCraft Tutorial for Beginners: Draw, Dimension & Save DXF](https://freephotocraft.online/cadcraft/tutorial)
+- [CADCraft vs AutoCAD: 2D Drafting, DXF/DWG and Current Limits](https://freephotocraft.online/cadcraft-vs-autocad)
+- [WordCraft by ArtCraft: Downloads, DOCX and PDF Guide](https://freephotocraft.online/wordcraft-app)
+- [GridCraft by ArtCraft: Downloads, XLSX, CSV and Formulas](https://freephotocraft.online/gridcraft-app)
+- [SolidCraft Guide: Downloads, 3D CAD Tutorials and AI / MCP](https://freephotocraft.online/solidcraft-app)
+- [SolidCraft Download: Windows, Mac & Linux Install Guide](https://freephotocraft.online/solidcraft/download)
+- [SolidCraft Beginner Tutorial: Model, Resize and Export a Mounting Plate](https://freephotocraft.online/solidcraft/tutorial)
+- [SolidCraft vs Fusion 360: Capabilities and Workflow Choices](https://freephotocraft.online/solidcraft-vs-fusion-360)
+- [SolidCraft AI / MCP Tutorial: Connect, Resize, Measure and Export](https://freephotocraft.online/solidcraft/mcp)
+- [FigCraft App: Downloads, GitHub & Getting Started](https://freephotocraft.online/figcraft-app)
+- [FigCraft vs Figma: Features, File Compatibility & Trade-offs](https://freephotocraft.online/figcraft-vs-figma)
+
+## 中文指南
+
+- [PhotoCraft 在线编辑器｜免费下载、安装与入门教程](https://freephotocraft.online/zh)
+- [PhotoCraft 免费下载 – Windows、Mac 与 Linux](https://freephotocraft.online/zh/download)
+- [PhotoCraft GitHub 与开源 – 源码、发行版和许可证指南](https://freephotocraft.online/zh/github)
+- [关于 FreePhotoCraft.online – 项目与网站说明](https://freephotocraft.online/zh/about)
+- [PhotoCraft 新手教程 – 免费在线编辑与导出图片](https://freephotocraft.online/zh/tutorial)
+- [PhotoCraft 与 Photoshop 对比 – 免费编辑器是否适合你？](https://freephotocraft.online/zh/photocraft-vs-photoshop)
+- [PhotoCraft 打不开？在线加载、图片与桌面启动排查](https://freephotocraft.online/zh/help/photocraft-not-loading)
+- [PhotoCraft 安全吗？下载来源、文件隐私与核验方法](https://freephotocraft.online/zh/is-photocraft-safe)
+- [PhotoCraft 替代工具 – 浏览器编辑、桌面修图与绘画选择](https://freephotocraft.online/zh/photocraft-alternatives)
+- [PhotoCraft Windows 下载 – 安装、便携版与故障排查](https://freephotocraft.online/zh/download/windows)
+- [Crafting Apps 工具导航：ArtCraft 应用列表、下载与对比](https://freephotocraft.online/zh/artcraft-photocraft)
+- [PhotoCraft App 是什么 – 桌面软件、在线版与下载指南](https://freephotocraft.online/zh/photocraft-app)
+- [VectorCraft App 指南：下载、GitHub 与 PhotoCraft 区别](https://freephotocraft.online/zh/vectorcraft-app)
+- [GetArtCraft Review：PhotoCraft 与 VectorCraft 有限样例评估](https://freephotocraft.online/zh/getartcraft-review)
+- [EffectCraft 下载与入门：安装、AE 对比和原生样例](https://freephotocraft.online/zh/effectcraft-app)
+- [EffectCraft 入门教程：原生项目、关键帧与 GIF 导出](https://freephotocraft.online/zh/effectcraft/tutorial)
+- [EffectCraft 桌面图文教程：关键帧、另存与 GIF 导出](https://freephotocraft.online/zh/effectcraft/desktop-tutorial)
+- [CADCraft 下载与安装指南：免费开源 CAD 软件](https://freephotocraft.online/zh/cadcraft-app)
+- [AI Photoshop Clone — 免费 PhotoCraft 在线编辑器](https://freephotocraft.online/zh/ai-photoshop-clone)
+- [CADCraft 新手教程：绘图、标注、保存与重开 DXF](https://freephotocraft.online/zh/cadcraft/tutorial)
+- [CADCraft 与 AutoCAD 对比：二维制图、DXF／DWG 与当前限制](https://freephotocraft.online/zh/cadcraft-vs-autocad)
+- [WordCraft 下载与使用指南：DOCX 编辑、PDF 导出与限制](https://freephotocraft.online/zh/wordcraft-app)
+- [GridCraft 下载与使用指南：XLSX、CSV 与公式](https://freephotocraft.online/zh/gridcraft-app)
+- [SolidCraft 中文指南：下载、3D 建模教程与 AI / MCP](https://freephotocraft.online/zh/solidcraft-app)
+- [SolidCraft 下载与安装：Windows、Mac、Linux 官方入口](https://freephotocraft.online/zh/solidcraft/download)
+- [SolidCraft 入门教程：带孔安装板建模、改尺寸与导出](https://freephotocraft.online/zh/solidcraft/tutorial)
+- [SolidCraft vs Fusion 360：功能差异与工作流选择](https://freephotocraft.online/zh/solidcraft-vs-fusion-360)
+- [SolidCraft AI / MCP 教程：连接客户端、改尺寸与检查导出](https://freephotocraft.online/zh/solidcraft/mcp)
+- [FigCraft 下载与入门：开源 Figma 替代品、GitHub 与在线版](https://freephotocraft.online/zh/figcraft-app)
+- [FigCraft vs Figma：功能、文件兼容与使用选择](https://freephotocraft.online/zh/figcraft-vs-figma)
