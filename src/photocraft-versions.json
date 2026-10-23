@@ -1,0 +1,17 @@
+{
+  "web": {
+    "buildId": "72921900975c7e6f",
+    "upstreamVersion": "unconfirmed",
+    "note": "The hosted WebAssembly files are pinned by build ID; no upstream release tag has been verified for this binary."
+  },
+  "desktop": {
+    "checkedVersion": "0.10.0",
+    "checkedAt": "2026-10-23",
+    "tested": false
+  },
+  "upstreamLatest": {
+    "version": "0.14.0",
+    "checkedAt": "2026-10-23",
+    "releaseUrl": "https://github.com/storytold/photocraft/releases/tag/v0.14.0"
+  }
+}

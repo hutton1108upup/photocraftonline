@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<script src="/scripts/theme.js">
+</script>
+<link as="font" crossorigin="" href="/assets/fonts/38df7484fe560b25-s.p.0_h8~hcb-m6kp.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="/assets/fonts/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="/assets/fonts/f5031e7b18bdfbb3-s.p.17530ebvtj~5g.woff2" rel="preload" type="font/woff2"/>
+<link data-precedence="next" href="/assets/css/15sc_v~et~i94.css" rel="stylesheet"/>
+<link data-precedence="next" href="/assets/css/0x4i1d-5t.ch3.css" rel="stylesheet"/>
+<title>PhotoCraft PSD 兼容性：图层、文字与蒙版实测范围</title>
+<meta name="description" content="查看 PhotoCraft 浏览器版已有真实样例证据：简单 PSD 图层、文字、透明 PNG 与蒙版，以及尚未验证的边界。"/>
+<meta content="noindex, nofollow" name="robots"/><link rel="stylesheet" href="/styles/custom.css"/><link rel="canonical" href="https://freephotocraft.online/zh/psd-compatibility"/>
+<link rel="alternate" hreflang="en" href="https://freephotocraft.online/psd-compatibility"/><link rel="alternate" hreflang="zh" href="https://freephotocraft.online/zh/psd-compatibility"/><link rel="alternate" hreflang="x-default" href="https://freephotocraft.online/psd-compatibility"/>
+</head>
+<body class="inter_b2991b2-module__9mH_6q__variable libre_baskerville_17390e78-module__pDOJMW__variable font-sans antialiased" data-locale="zh" data-page="psd-compatibility"><div class="bg-background text-foreground flex min-h-screen flex-col"><!-- @include zh/header --><main class="guide-page">
+<header class="guide-intro"><p class="guide-kicker">免费 PHOTOCRAFT · 实测证据</p><h1>PhotoCraft PSD 与图片兼容性</h1><p>按已有浏览器样例判断先试什么。这里记录的是固定 Web 构建的工作流核验，不是 Photoshop 全面兼容承诺。</p></header>
+<div class="guide-body"><p class="guide-note">版本详情见 <a href="/zh/photocraft-app#current-version">软件与版本</a>。以下输入与输出文件来自 2026 年 10 月 14 日、Web 构建 <code>72921900975c7e6f</code> 的真实记录。</p>
+<nav class="guide-toc" aria-label="本页目录"><a href="#tested">已有证据</a><a href="#limits">边界</a><a href="/zh/editor">打开编辑器</a><a href="/zh/tutorial">入门教程</a></nav>
+<section id="sample-files"><h2>五类样例：输入、步骤与输出</h2><div class="guide-table-wrap" role="region" tabindex="0" aria-label="五类样例文件"><table><caption>可下载的真实样例记录</caption><thead><tr><th>类别</th><th>输入与步骤</th><th>输出与边界</th></tr></thead><tbody><tr><th>PNG 基础编辑</th><td><a href="/assets/tutorial/practice-image.png" download>练习 PNG</a> → 打开、复制图层、画笔、缩放/裁剪。</td><td><a href="/samples/photocraft/resized.png">缩放输出</a> · <a href="/samples/photocraft/cropped.png">裁剪输出</a>；小型栅格样例。</td></tr><tr><th>透明 PNG</th><td>新建透明画布、画笔、导出。</td><td><a href="/samples/photocraft/transparent.png">透明输出</a>；未证明复杂透明 PSD。</td></tr><tr><th>双层 PSD</th><td><a href="/samples/photocraft/layered.psd" download>双层 PSD 输入</a> → 打开、编辑、保存、重开。</td><td><a href="/samples/photocraft/reopened.png">重开记录</a>；PhotoCraft 内部往返，未做 Photoshop 往返。</td></tr><tr><th>文字</th><td>练习图 → Type 工具输入短文字 → 导出。</td><td><a href="/samples/photocraft/text.png">文字输出</a>；仅默认 Inter 渲染。</td></tr><tr><th>蒙版</th><td>复制图层 → 添加蒙版 → 在蒙版上画笔 → 导出。</td><td><a href="/samples/photocraft/masked.png">蒙版输出</a>；简单像素层，PNG 已扁平化。</td></tr></tbody></table></div><p><a class="guide-button" href="/zh/tutorial#try-sample">查看三步样例流程</a></p></section><section id="tested"><h2>已有真实证据</h2><div class="guide-table-wrap" role="region" tabindex="0" aria-label="兼容性证据"><table><caption>浏览器样例证据</caption><thead><tr><th>工作流</th><th>观察结果</th><th>边界</th></tr></thead><tbody>
+<tr><th>PNG 打开、图层编辑与导出</th><td>练习 PNG 已打开、复制图层、画笔修改并导出。</td><td>只覆盖小型栅格样例。</td></tr>
+<tr><th>简单双图层 PSD</th><td>两个像素图层保存并重开，笔刷修改仍显示。<a href="/assets/clone/layers-reopened.png">查看截图</a>。</td><td>仅 PhotoCraft 内部往返，未做 Photoshop 往返。</td></tr>
+<tr><th>透明背景</th><td>RGBA PNG 样例保留透明与不透明像素。<a href="/assets/clone/transparent-canvas.png">查看样例</a>。</td><td>一个新画布和一条笔刷线。</td></tr>
+<tr><th>文字</th><td>默认 Inter 短文字成功渲染并导出。</td><td>任意字体、复杂排版和 PSD 文字可编辑性未验证。</td></tr>
+<tr><th>简单蒙版</th><td>像素图层蒙版露出下方原图并导出。</td><td>PNG 已扁平化；复杂蒙版和调整层未验证。</td></tr>
+</tbody></table></div></section>
+<section id="limits"><h2>需要你自行核对的范围</h2><p>JPEG 输入、复杂 PSD、智能对象、调整层、插件、印刷色彩流程和 Photoshop 往返，目前没有完成测试记录。先保留原件，用小型代表文件测试；分别保存可编辑文件与合成图片，再重新打开检查。</p><p><a class="guide-button" href="/zh/editor">打开固定 Web 编辑器</a> <a class="guide-button guide-button-secondary" href="/zh/tutorial">查看样例教程</a></p></section>
+
+</div></main><!-- @include zh/footer --></div><script src="/scripts/site.js" defer></script></body></html>

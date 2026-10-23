@@ -256,6 +256,20 @@
       "source_sha256": "d7f8299bcb9dbbe9698128d2e3bbe9394d7ef202fa6c337ff6e3afaf1d8b577c"
     },
     {
+      "route": "/psd-compatibility",
+      "locale": "en",
+      "page": "psd-compatibility",
+      "title": "PhotoCraft PSD Compatibility: Tested Layers, Text & Masks",
+      "source_sha256": "local-ai-recommendation"
+    },
+    {
+      "route": "/zh/psd-compatibility",
+      "locale": "zh",
+      "page": "psd-compatibility",
+      "title": "PhotoCraft PSD 兼容性：图层、文字与蒙版实测范围",
+      "source_sha256": "local-ai-recommendation"
+    },
+    {
       "route": "/vectorcraft-app",
       "locale": "en",
       "page": "vectorcraft-app",

@@ -5,6 +5,7 @@ import path from 'node:path';
 export const root = fileURLToPath(new URL('../', import.meta.url));
 export const manifest = JSON.parse(await readFile(path.join(root, 'src/site-manifest.json'), 'utf8'));
 export const site = JSON.parse(await readFile(path.join(root, 'site.config.json'), 'utf8'));
+export const versions = JSON.parse(await readFile(path.join(root, 'src/photocraft-versions.json'), 'utf8'));
 export const routes = new Map(manifest.routes.map(page => [page.route, page]));
 
 export async function render(route, { liveReload = false, production = false } = {}) {
@@ -19,6 +20,23 @@ export async function render(route, { liveReload = false, production = false } =
   const unlocalizedRoute = route.replace(/^\/zh(?=\/|$)/, '') || '/';
   const otherLanguageRoute = page.locale === 'zh' ? unlocalizedRoute : '/zh' + (route === '/' ? '' : route);
   html = html.replaceAll('{{otherLanguageRoute}}', otherLanguageRoute);
+  html = html.replaceAll('/releases/tag/{{desktopVersion}}', '/releases/tag/v{{desktopVersion}}')
+    .replaceAll('/releases/download/{{desktopVersion}}', '/releases/download/v{{desktopVersion}}')
+    .replaceAll('/blob/{{desktopVersion}}', '/blob/v{{desktopVersion}}')
+    .replaceAll('{{webBuildId}}', versions.web.buildId)
+    .replaceAll('{{webUpstreamVersion}}', versions.web.upstreamVersion)
+    .replaceAll('{{desktopVersion}}', versions.desktop.checkedVersion)
+    .replaceAll('{{upstreamLatestVersion}}', `v${versions.upstreamLatest.version}`)
+    .replaceAll('{{upstreamLatestUrl}}', versions.upstreamLatest.releaseUrl)
+    .replaceAll('{{versionCheckedAt}}', versions.desktop.checkedAt)
+    ;
+  if (['photocraft-app', 'github', 'ai-photoshop-clone'].includes(page.page)) {
+    const zh = page.locale === 'zh';
+    const currentCard = zh
+      ? `<aside class="guide-note" id="current-version">版本信息：本站 Web 构建固定为 <code>${versions.web.buildId}</code>；桌面下载核对快照为 <strong>v${versions.desktop.checkedVersion}</strong>（${versions.desktop.checkedAt}）；上游 latest 于 ${versions.upstreamLatest.checkedAt} 另行核对为 <a href="${versions.upstreamLatest.releaseUrl}">v${versions.upstreamLatest.version}</a>。</aside>`
+      : `<aside class="guide-note" id="current-version">Version information: this site pins Web build <code>${versions.web.buildId}</code>; the checked desktop download snapshot is <strong>v${versions.desktop.checkedVersion}</strong> (${versions.desktop.checkedAt}); upstream latest was checked separately on ${versions.upstreamLatest.checkedAt} as <a href="${versions.upstreamLatest.releaseUrl}">v${versions.upstreamLatest.version}</a>.</aside>`;
+    html = html.replace('<div class="guide-body">', `<div class="guide-body">${currentCard}`);
+  }
   if (site.indexablePages.includes(page.page)) {
     const analytics = { enabled: production && site.analytics?.enabled === true,
       measurementId: site.analytics?.measurementId || '', origin: site.origin,
@@ -59,6 +77,7 @@ export async function render(route, { liveReload = false, production = false } =
       'help/photocraft-not-loading': zh ? '加载帮助' : 'Loading help',
       'is-photocraft-safe': zh ? '安全与文件隐私' : 'Safety and file privacy',
       'photocraft-app': zh ? '软件与版本' : 'App and versions',
+      'psd-compatibility': zh ? 'PSD 兼容性实测' : 'PSD compatibility checks',
       'photocraft-vs-photoshop': zh ? '与 Photoshop 对比' : 'Compare Photoshop',
       'photocraft-alternatives': zh ? '替代工具' : 'Alternatives',
       about: zh ? '关于本站' : 'About this site',
@@ -83,6 +102,10 @@ export async function render(route, { liveReload = false, production = false } =
     html = html.replace(/(<main\b[^>]*>)/, `$1${breadcrumbs}`);
     const schema = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: items.map((item, index) => ({ '@type': 'ListItem', position: index + 1, name: item.name, item: site.origin + (item.route === '/' ? '/' : item.route) })) };
     html = html.replace('</head>', `<script type="application/ld+json">${JSON.stringify(schema).replace(/</g, '\\u003c')}</script></head>`);
+  }
+  if (page.page === 'index') {
+    const webApplication = { '@context': 'https://schema.org', '@type': 'WebApplication', name: 'FreePhotoCraft.online', url: site.origin, applicationCategory: 'ImageEditingApplication', operatingSystem: 'Web browser', offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' } };
+    html = html.replace('</head>', `<script type="application/ld+json">${JSON.stringify(webApplication)}</script></head>`);
   }
   const copy = JSON.parse(await readFile(path.join(root, 'src/content', `${page.locale}.json`), 'utf8'));
   const options = {
