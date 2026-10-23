@@ -358,7 +358,8 @@
       "locale": "en",
       "page": "cadcraft/tutorial",
       "title": "CADCraft Tutorial for Beginners: Draw, Dimension & Save DXF",
-      "source_sha256": "de87af405ae11c7c3ce3c0e1fc3725b189e1a0c68eb32a30efc9eb82dec1d857"
+      "source_sha256": "de87af405ae11c7c3ce3c0e1fc3725b189e1a0c68eb32a30efc9eb82dec1d857",
+      "lastmod": "2026-10-19"
     },
     {
       "route": "/cadcraft-vs-autocad",
@@ -393,7 +394,8 @@
       "locale": "zh",
       "page": "cadcraft/tutorial",
       "title": "CADCraft 新手教程：绘图、标注、保存与重开 DXF",
-      "source_sha256": "19e97836d2d59b7038a0c04605ed6d4e101495e93ac9d851b727685b80e03e73"
+      "source_sha256": "19e97836d2d59b7038a0c04605ed6d4e101495e93ac9d851b727685b80e03e73",
+      "lastmod": "2026-10-19"
     },
     {
       "route": "/zh/cadcraft-vs-autocad",
@@ -449,14 +451,16 @@
       "locale": "en",
       "page": "solidcraft/download",
       "title": "SolidCraft Download: Windows, Mac & Linux Install Guide",
-      "source_sha256": "e5a90bfbd500caee7bd44087e36bf7ab91e9abd1ffb41e4d44dfd639650bc263"
+      "source_sha256": "e5a90bfbd500caee7bd44087e36bf7ab91e9abd1ffb41e4d44dfd639650bc263",
+      "lastmod": "2026-10-19"
     },
     {
       "route": "/solidcraft/tutorial",
       "locale": "en",
       "page": "solidcraft/tutorial",
       "title": "SolidCraft Beginner Tutorial: Model, Resize and Export a Mounting Plate",
-      "source_sha256": "09217aa11aa87808436321b9d0c1f79b7e715f92b26af446de334d131ad07f68"
+      "source_sha256": "09217aa11aa87808436321b9d0c1f79b7e715f92b26af446de334d131ad07f68",
+      "lastmod": "2026-10-22"
     },
     {
       "route": "/solidcraft-vs-fusion-360",
@@ -470,7 +474,8 @@
       "locale": "en",
       "page": "solidcraft/mcp",
       "title": "SolidCraft AI / MCP Tutorial: Connect, Resize, Measure and Export",
-      "source_sha256": "41675c7e81eded1afbc6b1975412565c15e79748a73cfac2ffa54467292fa8d6"
+      "source_sha256": "41675c7e81eded1afbc6b1975412565c15e79748a73cfac2ffa54467292fa8d6",
+      "lastmod": "2026-10-22"
     },
     {
       "route": "/zh/solidcraft-app",
@@ -484,14 +489,16 @@
       "locale": "zh",
       "page": "solidcraft/download",
       "title": "SolidCraft 下载与安装：Windows、Mac、Linux 官方入口",
-      "source_sha256": "07d4702d7d5f03dc54359766385178f4f8541ef7166a8eb834ea2e4a4270243c"
+      "source_sha256": "07d4702d7d5f03dc54359766385178f4f8541ef7166a8eb834ea2e4a4270243c",
+      "lastmod": "2026-10-19"
     },
     {
       "route": "/zh/solidcraft/tutorial",
       "locale": "zh",
       "page": "solidcraft/tutorial",
       "title": "SolidCraft 入门教程：带孔安装板建模、改尺寸与导出",
-      "source_sha256": "358e7c800dc2056514f0e17cceac6aba6786c75f0baa0ca86671044c1a6dcd10"
+      "source_sha256": "358e7c800dc2056514f0e17cceac6aba6786c75f0baa0ca86671044c1a6dcd10",
+      "lastmod": "2026-10-22"
     },
     {
       "route": "/zh/solidcraft-vs-fusion-360",
@@ -505,7 +512,8 @@
       "locale": "zh",
       "page": "solidcraft/mcp",
       "title": "SolidCraft AI / MCP 教程：连接客户端、改尺寸与检查导出",
-      "source_sha256": "3499af4b3720ba8b7d3aa1a887744c279b2ee91ded81c6d24ac061534e992deb"
+      "source_sha256": "3499af4b3720ba8b7d3aa1a887744c279b2ee91ded81c6d24ac061534e992deb",
+      "lastmod": "2026-10-22"
     },
     {
       "route": "/figcraft-app",
