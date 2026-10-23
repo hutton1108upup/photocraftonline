@@ -34,6 +34,7 @@ export async function render(route, { liveReload = false, production = false } =
     const labels = {
       download: zh ? '下载与安装' : 'Downloads and installation',
       'download/windows': 'Windows',
+      'artcraft-download': zh ? 'ArtCraft 下载选择' : 'ArtCraft download choices',
       'artcraft-photocraft': zh ? 'Crafting Apps 工具导航' : 'Crafting Apps directory',
       'figcraft-app': zh ? 'FigCraft 下载与入门' : 'FigCraft downloads and guide',
       'figcraft-vs-figma': zh ? '与 Figma 对比' : 'Compare with Figma',
