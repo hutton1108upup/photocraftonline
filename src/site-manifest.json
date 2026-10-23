@@ -36,28 +36,28 @@
       "locale": "en",
       "page": "download",
       "title": "PhotoCraft Free Download for Windows, Mac & Linux",
-      "source_sha256": "c3d80b38379a96202cd3dfd2b25812dfe80a40066371b81b5857c85dc2f2cb42"
+      "source_sha256": "403388e2b80e7523b075665c9d69253ddb9f85832a680da17f058d8405f72a35"
     },
     {
       "route": "/zh/download",
       "locale": "zh",
       "page": "download",
       "title": "PhotoCraft 免费下载 – Windows、Mac 与 Linux",
-      "source_sha256": "b116091f6330fada927db05109c9723ce63ae4cb6c9f43075ae0d17e612eca21"
+      "source_sha256": "fcf5b8a1cfacc5af904783cdbfa75edf90ae96bf6454c44412e3211f0f6b0da2"
     },
     {
       "route": "/github",
       "locale": "en",
       "page": "github",
       "title": "PhotoCraft GitHub & Open Source: Source, Releases and Licenses",
-      "source_sha256": "dd75fd4d8e25c5895b013f6ab9c084e2e5afecbff6267ef807163b94e05680f8"
+      "source_sha256": "c2383cd7ac9caf482bb6ff9714feecca85dda305c978fae279585a151e1a11ea"
     },
     {
       "route": "/zh/github",
       "locale": "zh",
       "page": "github",
       "title": "PhotoCraft GitHub 与开源 – 源码、发行版和许可证指南",
-      "source_sha256": "7dc6003bd7b17f957aa94050879e6b53b3b130dc23d851cde1478aa08acf89bc"
+      "source_sha256": "dfc385e15ba064ee2bd51398994689d52e31c8c80f626b1511b365766a47e95d"
     },
     {
       "route": "/about",
@@ -148,7 +148,7 @@
       "locale": "en",
       "page": "tutorial",
       "title": "PhotoCraft Tutorial – How to Use the Free Editor",
-      "source_sha256": "8025f5dcec831ed1f3aab7cbf78e8dbc4f0f649cebe4f5ff484ceb8ab2b2ea37"
+      "source_sha256": "ed6f7182222eadb1905df94c705a993eb26af5065821c3689cb763c3707321bf"
     },
     {
       "route": "/photocraft-vs-photoshop",
@@ -169,7 +169,7 @@
       "locale": "zh",
       "page": "tutorial",
       "title": "PhotoCraft 新手教程 – 免费在线编辑与导出图片",
-      "source_sha256": "90609b6a40151a3ecbf3ecb083d9a3ffeb670afff134affc2c4cd7f9d949499a"
+      "source_sha256": "b9420f45b30cf528481600f65abda6f3d40fe5483616e9fd92add9128c844727"
     },
     {
       "route": "/zh/photocraft-vs-photoshop",
@@ -218,42 +218,56 @@
       "locale": "en",
       "page": "download/windows",
       "title": "PhotoCraft for Windows: Download, Install & Portable Guide",
-      "source_sha256": "73c5bec8b8c02eadf1d8eb8871885e488763084840e542180db5570e5f75359f"
+      "source_sha256": "fd3c0be6891f23be47fa8ac6522bdd1db7cf5192f1963c9c7e4e919175fc6243"
     },
     {
       "route": "/zh/download/windows",
       "locale": "zh",
       "page": "download/windows",
       "title": "PhotoCraft Windows 下载 – 安装、便携版与故障排查",
-      "source_sha256": "b985eb8594553967e32883f422efb500b9d5d610ee75be02c010e3c881839026"
+      "source_sha256": "a43942f200e30ab555a730c8d896d905b0ce9357c7ff166cfd78bb7a9ef13649"
     },
     {
       "route": "/artcraft-photocraft",
       "locale": "en",
       "page": "artcraft-photocraft",
       "title": "Crafting Apps by ArtCraft: App List, Downloads & Comparison",
-      "source_sha256": "d60200adc429a7799fefd3592c8f2b4d3fab6e065a49419308d4498849f6b307"
+      "source_sha256": "67b9f0b0ce2703832985d0687d8e8d90899f68b03688bf8d77a64b5f336c717e"
     },
     {
       "route": "/zh/artcraft-photocraft",
       "locale": "zh",
       "page": "artcraft-photocraft",
       "title": "Crafting Apps 工具导航：ArtCraft 应用列表、下载与对比",
-      "source_sha256": "666ebcf20c0e3cf386c8a21feda8e0b80942d988e4b1ec84ddd53f11e1ce2be3"
+      "source_sha256": "163bd5fae29e9095dc142d2128ba496326df527eda3e5e2200e935fac6c69f57"
     },
     {
       "route": "/photocraft-app",
       "locale": "en",
       "page": "photocraft-app",
       "title": "PhotoCraft App: Desktop Software, Web Editor & Downloads",
-      "source_sha256": "d831607957223e5b214dd4356ae43fe6ff31dfd519e2b80d27a41baf05031e2d"
+      "source_sha256": "cada70e589d35dbb7ad6ec24bd41ce85f75826b7be3e6d0c2a54eeca06cb8e40"
     },
     {
       "route": "/zh/photocraft-app",
       "locale": "zh",
       "page": "photocraft-app",
       "title": "PhotoCraft App 是什么 – 桌面软件、在线版与下载指南",
-      "source_sha256": "f878c75c2b85381248e3e71d2b5b371968b0feafa291e930719446aeef5ed0c1"
+      "source_sha256": "d7f8299bcb9dbbe9698128d2e3bbe9394d7ef202fa6c337ff6e3afaf1d8b577c"
+    },
+    {
+      "route": "/psd-compatibility",
+      "locale": "en",
+      "page": "psd-compatibility",
+      "title": "PhotoCraft PSD Compatibility: Tested Layers, Text & Masks",
+      "source_sha256": "local-ai-recommendation"
+    },
+    {
+      "route": "/zh/psd-compatibility",
+      "locale": "zh",
+      "page": "psd-compatibility",
+      "title": "PhotoCraft PSD 兼容性：图层、文字与蒙版实测范围",
+      "source_sha256": "local-ai-recommendation"
     },
     {
       "route": "/vectorcraft-app",
@@ -401,8 +415,8 @@
       "route": "/wordcraft-app",
       "locale": "en",
       "page": "wordcraft-app",
-      "title": "WordCraft by ArtCraft: Downloads, DOCX and PDF Guide",
-      "source_sha256": "77cd56de91652379b2c630d790ab34408b7705bc4e15960104995dcc2eafec04"
+      "title": "WordCraft Download for Windows, Mac & Linux | DOCX Test",
+      "source_sha256": "1acca3ddec049f88bc2ee772c756f2195cab7711aa08fee7a469f72990fa09da"
     },
     {
       "route": "/gridcraft-app",
@@ -415,8 +429,8 @@
       "route": "/zh/wordcraft-app",
       "locale": "zh",
       "page": "wordcraft-app",
-      "title": "WordCraft 下载与使用指南：DOCX 编辑、PDF 导出与限制",
-      "source_sha256": "2da433214d4e7782c5759cd7251b89b6b4c92535aebdb549bcaa4c0ff3d8a4e7"
+      "title": "WordCraft 下载：Windows、Mac、Linux 与 DOCX 实测",
+      "source_sha256": "8903ef9f75db21f4b380d600572d9032b9599a93079d85b6dc488d2144f1a406"
     },
     {
       "route": "/zh/gridcraft-app",
@@ -445,19 +459,22 @@
       "locale": "en",
       "page": "solidcraft/tutorial",
       "title": "SolidCraft Beginner Tutorial: Model, Resize and Export a Mounting Plate",
+      "source_sha256": "09217aa11aa87808436321b9d0c1f79b7e715f92b26af446de334d131ad07f68",
       "lastmod": "2026-10-22"
     },
     {
       "route": "/solidcraft-vs-fusion-360",
       "locale": "en",
       "page": "solidcraft-vs-fusion-360",
-      "title": "SolidCraft vs Fusion 360: Capabilities and Workflow Choices"
+      "title": "SolidCraft vs Fusion 360: Capabilities and Workflow Choices",
+      "source_sha256": "182ac8919d1b5b8c0708268c5a2312a9ff85738c0cc24f89d7278aff5d3e6a55"
     },
     {
       "route": "/solidcraft/mcp",
       "locale": "en",
       "page": "solidcraft/mcp",
       "title": "SolidCraft AI / MCP Tutorial: Connect, Resize, Measure and Export",
+      "source_sha256": "41675c7e81eded1afbc6b1975412565c15e79748a73cfac2ffa54467292fa8d6",
       "lastmod": "2026-10-22"
     },
     {
@@ -480,19 +497,22 @@
       "locale": "zh",
       "page": "solidcraft/tutorial",
       "title": "SolidCraft 入门教程：带孔安装板建模、改尺寸与导出",
+      "source_sha256": "358e7c800dc2056514f0e17cceac6aba6786c75f0baa0ca86671044c1a6dcd10",
       "lastmod": "2026-10-22"
     },
     {
       "route": "/zh/solidcraft-vs-fusion-360",
       "locale": "zh",
       "page": "solidcraft-vs-fusion-360",
-      "title": "SolidCraft vs Fusion 360：功能差异与工作流选择"
+      "title": "SolidCraft vs Fusion 360：功能差异与工作流选择",
+      "source_sha256": "941a4d6bd65ff3c93938a40accd3b0323bccfbe85bcbd175b666db785fc02e4d"
     },
     {
       "route": "/zh/solidcraft/mcp",
       "locale": "zh",
       "page": "solidcraft/mcp",
       "title": "SolidCraft AI / MCP 教程：连接客户端、改尺寸与检查导出",
+      "source_sha256": "3499af4b3720ba8b7d3aa1a887744c279b2ee91ded81c6d24ac061534e992deb",
       "lastmod": "2026-10-22"
     },
     {
@@ -522,6 +542,20 @@
       "page": "figcraft-vs-figma",
       "title": "FigCraft vs Figma：功能、文件兼容与使用选择",
       "source_sha256": "95ae061167db3260ac9dfe6065c6b550867960a371aee2d55e5852458aff5561"
+    },
+    {
+      "route": "/artcraft-download",
+      "locale": "en",
+      "page": "artcraft-download",
+      "title": "ArtCraft Download: AI Studio, Craft Apps & Launcher",
+      "source_sha256": "73d94ed31750c9c72c98c7d845a1f09a39d56d4f1722c5bacb4647f87dbdbf4e"
+    },
+    {
+      "route": "/zh/artcraft-download",
+      "locale": "zh",
+      "page": "artcraft-download",
+      "title": "ArtCraft 下载：AI 创作工具、Craft 应用与 Launcher",
+      "source_sha256": "4a5dfdf8d9bed912f7b51bdf42918e2dddb17d355c25f97836c7b9219a1290f8"
     }
   ],
   "assets": [

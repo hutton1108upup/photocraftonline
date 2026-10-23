@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<script src="/scripts/theme.js">
+</script>
+<link as="font" crossorigin="" href="/assets/fonts/38df7484fe560b25-s.p.0_h8~hcb-m6kp.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="/assets/fonts/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="/assets/fonts/f5031e7b18bdfbb3-s.p.17530ebvtj~5g.woff2" rel="preload" type="font/woff2"/>
+<link data-precedence="next" href="/assets/css/15sc_v~et~i94.css" rel="stylesheet"/>
+<link data-precedence="next" href="/assets/css/0x4i1d-5t.ch3.css" rel="stylesheet"/>
+<title>PhotoCraft PSD Compatibility: Tested Layers, Text &amp; Masks</title>
+<meta name="description" content="See which PhotoCraft browser workflows have real sample evidence, including simple PSD layers, text, transparency and masks."/>
+<meta content="noindex, nofollow" name="robots"/><link rel="stylesheet" href="/styles/custom.css"/><link rel="canonical" href="https://freephotocraft.online/psd-compatibility"/>
+<link rel="alternate" hreflang="en" href="https://freephotocraft.online/psd-compatibility"/><link rel="alternate" hreflang="zh" href="https://freephotocraft.online/zh/psd-compatibility"/><link rel="alternate" hreflang="x-default" href="https://freephotocraft.online/psd-compatibility"/>
+</head>
+<body class="inter_b2991b2-module__9mH_6q__variable libre_baskerville_17390e78-module__pDOJMW__variable font-sans antialiased" data-locale="en" data-page="psd-compatibility"><div class="bg-background text-foreground flex min-h-screen flex-col"><!-- @include en/header --><main class="guide-page">
+<header class="guide-intro"><p class="guide-kicker">FREE PHOTOCRAFT · EVIDENCE GUIDE</p><h1>PhotoCraft PSD and Image Compatibility</h1><p>Use the checked browser samples to decide what to try first. These are workflow checks of the pinned Web build, not a Photoshop compatibility guarantee.</p></header>
+<div class="guide-body"><p class="guide-note">See <a href="/photocraft-app#current-version">App and versions</a> for version details. The inputs and outputs below are real records from October 14, 2026 on Web build <code>72921900975c7e6f</code>.</p>
+<nav class="guide-toc" aria-label="On this page"><a href="#tested">Tested scope</a><a href="#limits">Limits</a><a href="/editor">Open editor</a><a href="/tutorial">Tutorial</a></nav>
+<section id="sample-files"><h2>Five sample workflows: inputs, steps and outputs</h2><div class="guide-table-wrap" role="region" tabindex="0" aria-label="Five sample files"><table><caption>Downloadable real sample records</caption><thead><tr><th>Type</th><th>Input and steps</th><th>Output and boundary</th></tr></thead><tbody><tr><th>PNG basics</th><td><a href="/assets/tutorial/practice-image.png" download>Practice PNG</a> → open, duplicate, brush, resize/crop.</td><td><a href="/samples/photocraft/resized.png">Resize output</a> · <a href="/samples/photocraft/cropped.png">Crop output</a>; small raster sample.</td></tr><tr><th>Transparent PNG</th><td>New transparent canvas → brush → export.</td><td><a href="/samples/photocraft/transparent.png">Transparent output</a>; complex transparent PSD unverified.</td></tr><tr><th>Two-layer PSD</th><td><a href="/samples/photocraft/layered.psd" download>Two-layer PSD input</a> → open, edit, save, reopen.</td><td><a href="/samples/photocraft/reopened.png">Reopen record</a>; PhotoCraft-only round trip, no Photoshop round trip.</td></tr><tr><th>Text</th><td>Practice image → Type tool short text → export.</td><td><a href="/samples/photocraft/text.png">Text output</a>; default Inter rendering only.</td></tr><tr><th>Mask</th><td>Duplicate layer → add mask → brush on mask → export.</td><td><a href="/samples/photocraft/masked.png">Mask output</a>; simple pixel layer, PNG flattened.</td></tr></tbody></table></div><p><a class="guide-button" href="/tutorial#try-sample">See the three-step sample flow</a></p></section><section id="tested"><h2>What has evidence</h2><div class="guide-table-wrap" role="region" tabindex="0" aria-label="Compatibility evidence"><table><caption>Browser sample evidence</caption><thead><tr><th>Workflow</th><th>Observed result</th><th>Boundary</th></tr></thead><tbody>
+<tr><th>PNG open, layer edit and export</th><td>Practice PNG opened, duplicated, brushed and exported.</td><td>Small raster sample only.</td></tr>
+<tr><th>Simple two-layer PSD</th><td>Two pixel layers were saved and reopened; the brush edit remained visible. <a href="/assets/clone/layers-reopened.png">View sample screenshot</a>.</td><td>PhotoCraft-to-PhotoCraft; no Photoshop round trip.</td></tr>
+<tr><th>Transparency</th><td>RGBA PNG sample retained transparent and opaque pixels. <a href="/assets/clone/transparent-canvas.png">View sample</a>.</td><td>One new canvas and one brush stroke.</td></tr>
+<tr><th>Text</th><td>Short default Inter text rendered and exported.</td><td>Arbitrary fonts, typography and editable PSD text are unverified.</td></tr>
+<tr><th>Simple mask</th><td>A pixel-layer mask revealed the original area and was exported.</td><td>PNG is flattened; complex masks and adjustment layers are unverified.</td></tr>
+</tbody></table></div></section>
+<section id="limits"><h2>What to check yourself</h2><p>JPEG input, complex PSDs, smart objects, adjustment layers, plug-ins, print color workflows and Photoshop round trips do not have a completed test record here. Keep an original copy, open a small representative file first, save an editable document, export a flattened image, and reopen both outputs.</p><p><a class="guide-button" href="/editor">Open the pinned browser editor</a> <a class="guide-button guide-button-secondary" href="/tutorial">Follow the sample tutorial</a></p></section>
+
+</div></main><!-- @include en/footer --></div><script src="/scripts/site.js" defer></script></body></html>

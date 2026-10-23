@@ -18,6 +18,7 @@
     "download/windows",
     "artcraft-photocraft",
     "photocraft-app",
+    "psd-compatibility",
     "vectorcraft-app",
     "getartcraft-review",
     "effectcraft-app",
@@ -35,6 +36,7 @@
     "solidcraft-vs-fusion-360",
     "solidcraft/mcp",
     "figcraft-app",
-    "figcraft-vs-figma"
+    "figcraft-vs-figma",
+    "artcraft-download"
   ]
 }
